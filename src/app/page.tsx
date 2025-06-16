@@ -12,7 +12,7 @@ export default function Home() {
         width={100}
         height={100}
         alt="Logo"
-        className="mix-blend-difference absolute lg:fixed top-8 left-1/2 -translate-x-1/2 w-16 h-16 lg:translate-0 lg:top-14 lg:left-14 lg:w-24 lg:h-24"
+        className="mix-blend-difference absolute lg:fixed top-8 left-1/2 -translate-x-1/2 w-16 h-16 lg:translate-0 lg:top-14 lg:left-14 lg:w-24 lg:h-24 animate-slide-in-left"
       />
       <section className="bg-[url(/cs_hero_bg.png)] bg-center bg-cover bg-no-repeat rounded-[32px] bg-[#F0F0F0] mx-4 lg:mx-8 pt-24 pb-8 lg:pb-12">
         <div className="flex flex-col lg:flex-row items-center justify-center pb-8 lg:pb-12">
@@ -30,6 +30,7 @@ export default function Home() {
               alt="Phone"
               width={1000}
               height={1000}
+              className="animate-slide-in-right"
             />
           </div>
         </div>
