@@ -1,103 +1,149 @@
 import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faPaperPlane } from "@fortawesome/free-regular-svg-icons";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+    <main className="bg-[#282828] py-8">
+      <Image
+        src="/logo.png"
+        width={100}
+        height={100}
+        alt="Logo"
+        className="mix-blend-difference fixed top-14 left-14"
+      />
+      <section className="bg-[url(/cs_hero_bg.png)] bg-center bg-cover bg-no-repeat rounded-[32px] bg-[#F0F0F0] md:mx-8 pt-24 pb-12">
+        <div className="flex items-center justify-center pb-12">
+          <div className="w-1/2 pl-36">
+            <div
+              style={{ fontFamily: "var(--font-funnel-display)" }}
+              className="text-[#282828] font-extrabold leading-[120px] tracking-wide text-[120px] -mr-[500px]"
+            >
+              Grip op je crypto, controle over je toekomst.
+            </div>
+          </div>
+          <div className="w-1/2 flex justify-center">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/cs_hero_phone.png"
+              alt="Phone"
+              width={1000}
+              height={1000}
             />
-            Deploy now
-          </a>
+          </div>
+        </div>
+
+        <div className="w-1/2 justify-self-center items-center text-[#525252] flex gap-20">
+          <p className="w-[60%]">
+            Korte uitleg over de app. Lorem ipsum dolor sit amet consectetur.
+            Rhoncus in eget eleifend velit arcu ut. Non ac tellus tortor ut
+            mattis placerat. A dolor et ac purus sed ullamcorper. In.
+          </p>
+          <div className="p-2 pb-0 h-16 rounded-full border flex">
+            <FontAwesomeIcon
+              icon={faArrowDown}
+              width={16}
+              className="animate-bounce-infinite"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="py-40">
+        <p className="font-bold text-center text-8xl">The Limitless Way</p>
+        <p className="mt-6 text-xl text-center md:w-[40rem] mx-auto">
+          Arcu tincidunt lacus et viverra. Non ultrices ac quis id tincidunt
+          cursus arcu imperdiet elementum. Vitae nam sit eget nunc iaculis
+          lorem.
+        </p>
+      </section>
+
+      <section className="flex mx-8">
+        <div className="w-1/2 flex flex-col justify-center items-center">
+          <h2 className="text-5xl mb-8">Neem contact op</h2>
+          <p className="text-center text-lg">
+            The Limitless Way BV <br />
+            Lorem ipsum <br />
+            0000 AA Lorem <br />
+            The Netherlands
+          </p>
           <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:lorem@thelimitlessway.nl"
+            className="flex gap-4 cursor-pointer mt-8 hover:underline"
           >
-            Read our docs
+            <FontAwesomeIcon icon={faEnvelope} width={20} />
+            <p className="text-lg">lorem@thelimitlessway.nl</p>
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+        <div className="w-1/2 flex justify-center">
+          <Image src="/cs_seminar.png" alt="Seminar" width={800} height={800} />
+        </div>
+      </section>
+
+      <section className="flex justify-center bg-white text-[#282828] rounded-[32px] mt-20 py-40">
+        <div className="lg:w-1/3 text-center">
+          <h1 className="text-7xl mb-8">Felis tortor feugiat et in congue.</h1>
+          <div className="flex items-center relative mb-4">
+            <input
+              type="email"
+              placeholder="janjansen@mail.com"
+              className="w-full bg-[#F0F0F0] rounded-full py-4 pl-6 pr-14 focus:outline-[#7F65CA]"
+            />
+            <FontAwesomeIcon
+              icon={faPaperPlane}
+              width={20}
+              className="cursor-pointer hover:text-gray-500 absolute right-4"
+            />
+          </div>
+          <input type="checkbox" className="mr-2" />
+          <span className="text-gray-600">
+            Ik ga akkoord met de algemene voorwaarden
+          </span>
+        </div>
+      </section>
+
+      <footer className="mt-40 flex flex-col items-center px-10">
+        <Image src="/footer_logo.png" alt="Logo" width={800} height={800} />
+        <div className="flex gap-8 mt-28 text-xl text-[#F0F0F0] font-extralight">
+          <Link href="https://facebook.com" target="_blank">
+            Facebook
+          </Link>
+          <Link href="https://instagram.com" target="_blank">
+            Instagram
+          </Link>
+          <Link href="https://linkedin.com/company" target="_blank">
+            LinkedIn
+          </Link>
+          <Link href="https://youtube.com" target="_blank">
+            Youtube
+          </Link>
+          <Link href="https://twitter.com" target="_blank">
+            Twitter
+          </Link>
+        </div>
+        <div className="flex justify-between w-full mt-16 pt-4 border-t border-[#7A7A7A] text-[#7A7A7A]">
+          <p>&copy; {new Date().getFullYear()} The Limitless Way BV</p>
+          <div className="flex gap-4">
+            <Link href="/security" className="hover:underline">
+              Security
+            </Link>
+            <Link href="/privacy-statement" className="hover:underline">
+              Privacy Statement
+            </Link>
+            <Link href="/terms-of-service" className="hover:underline">
+              Terms of Service
+            </Link>
+            <Link href="/customer-service" className="hover:underline">
+              Customer Service
+            </Link>
+            <Link href="/contact" className="hover:underline">
+              Contact
+            </Link>
+          </div>
+        </div>
       </footer>
-    </div>
+    </main>
   );
 }
