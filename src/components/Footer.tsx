@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="pt-20 lg:pt-32 flex flex-col items-center px-6 lg:px-10 bg-[#282828]">
       <Image src="/footer_logo.png" alt="Logo" width={600} height={600} />
-      <div className="flex flex-wrap justify-center gap-4 lg:gap-8 mt-16 lg:mt-28 text-base lg:text-xl text-[#F0F0F0] font-extralight">
+      <div className="flex text-white flex-wrap justify-center gap-4 lg:gap-8 mt-16 lg:mt-28 text-base lg:text-xl text-[#F0F0F0] font-extralight">
         <Link href="#" target="_blank" className="hover:scale-110 transition-all duration-300">
           Facebook
         </Link>

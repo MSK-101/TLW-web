@@ -44,7 +44,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 lg:py-40 px-4">
+      <section className="py-20 text-white lg:py-40 px-4">
         <p className="font-bold text-center text-4xl sm:text-6xl lg:text-8xl">
           The Limitless Way
         </p>
@@ -55,7 +55,7 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="flex flex-col lg:flex-row mx-4 lg:mx-8 gap-10 lg:gap-0">
+      <section className="flex flex-col text-white lg:flex-row mx-4 lg:mx-8 gap-10 lg:gap-0">
         <div className="w-full lg:w-1/2 flex flex-col justify-center items-center">
           <h2 className="text-3xl lg:text-5xl mb-6 lg:mb-8">Neem contact op</h2>
           <p className="text-center text-base lg:text-lg">
