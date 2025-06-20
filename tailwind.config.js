@@ -8,8 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        "funnel-display": ["var(--font-funnel-display)"],
-        "funnel-sans": ["var(--font-funnel-sans)"],
+        funnelDisplay: ["var(--font-funnel-display)"],
+        funnelSans: ["var(--font-funnel-sans)"],
       },
     },
   },

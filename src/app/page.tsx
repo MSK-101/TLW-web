@@ -11,8 +11,7 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row items-center justify-center pb-8 lg:pb-12">
           <div className="w-full lg:w-1/2 px-6 lg:pl-36 lg:pr-0">
             <div
-              style={{ fontFamily: "var(--font-funnel-display)" }}
-              className="text-[#282828] font-extrabold xl:leading-[120px] xl:tracking-wide text-5xl sm:text-6xl lg:text-7xl xl:text-[120px] lg:-mr-[250px]"
+              className="text-[#282828] font-extrabold xl:leading-[120px] xl:tracking-wide text-5xl sm:text-6xl lg:text-7xl xl:text-[120px] lg:-mr-[250px] font-funnel-display"
             >
               Grip op je crypto, controle over je toekomst.
             </div>

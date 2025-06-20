@@ -29,10 +29,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${funnelDisplay.variable} ${funnelSans.variable} antialiased`}
-      >
+    <html lang="dl" className={`${funnelDisplay.variable} ${funnelSans.variable} antialiased`}>
+      <body>
         <Header />
         {children}
         <Footer />
