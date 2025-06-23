@@ -15,6 +15,9 @@ export default function Footer() {
         <Link href="https://www.linkedin.com/in/tineke-zwart" target="_blank" className="hover:scale-110 transition-all duration-300">
           LinkedIn
         </Link>
+        <Link href="https://www.linkedin.com/in/myrte-scheffer/" target="_blank" className="hover:scale-110 transition-all duration-300">
+          LinkedIn
+        </Link>
         {/* <Link href="#" target="_blank" className="hover:scale-110 transition-all duration-300">
           Youtube
         </Link>

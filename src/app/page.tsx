@@ -46,7 +46,8 @@ export default function Home() {
 
         <div className="flex flex-col lg:flex-row lg:w-1/2 justify-self-center items-center text-[#525252] px-4 lg:px-0 lg:gap-20">
           <p className="w-full lg:w-[60%] mb-5 lg:mb-0">
-          The Limitless Way is de nieuwe crypto-app die overzicht, slimme strategieën en persoonlijke begeleiding samenbrengt in één krachtig platform. Of je nu net begint of al meerdere exchanges gebruikt: wij maken investeren eenvoudig, leuk én effectief – zodat jij met vertrouwen kunt bouwen aan je financiële toekomst.
+            The Limitless Way is de crypto-interface die jou helpt bouwen aan je financiële toekomst – met overzicht, educatie en volledige controle. Koppel je eigen exchanges, stel doelen, maak spaardoelen en volg e-learning en cursussen die passen bij jouw manier van investeren. Jij beslist. Wij geven je de inzichten en tools om slimme keuzes te maken – op jouw voorwaarden.
+            Disclaimer: The Limitless Way geeft geen financieel advies. Alle keuzes worden volledig gemaakt en uitgevoerd door de gebruiker.
           </p>
           <div className="w-8 h-14 rounded-full border relative text-[22px]">
             <FontAwesomeIcon
@@ -68,8 +69,10 @@ export default function Home() {
         <p className="mt-6 text-base lg:text-xl text-center lg:w-[40rem] mx-auto px-4 lg:px-0">
           Save the date: op 17 oktober 2025 vindt de app lancering plaats in Utrecht. Meer informatie volgt in juli 2025. Via de link onderaan de pagina kun je aangeven of je op de hoogte gehouden wil worden.
         </p>
+        <p className="mt-6 text-base lg:text-xl text-center lg:w-[40rem] mx-auto px-4 lg:px-0">
+          The Limitless Way is opgericht door co-founders Tineke Zwart en Myrte Scheffer.
+        </p>
       </section>
-
       <section className="flex flex-col text-white lg:flex-row mx-4 lg:mx-8 gap-10 lg:gap-0">
         <div className="w-full lg:w-1/2 flex flex-col justify-center items-center">
           <h2 className="text-3xl lg:text-5xl mb-6 lg:mb-8">Neem contact op</h2>
