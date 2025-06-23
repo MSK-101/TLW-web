@@ -34,7 +34,7 @@ export default function Footer() {
             Disclaimer
           </Link>
           <Link href="/privacy-statement" className="hover:underline">
-            Privacyverklaring
+            Privacystatement
           </Link>
           <Link href="/terms-of-service" className="hover:underline">
             Terms of Service
