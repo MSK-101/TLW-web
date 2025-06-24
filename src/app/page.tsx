@@ -4,6 +4,7 @@ import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope, faPaperPlane } from "@fortawesome/free-regular-svg-icons";
 import Link from "next/link";
 import ReviewSlider from "@/components/ReviewSlider";
+import TeamSlider from "@/components/TeamSlider";
 
 export default function Home() {
   return (
@@ -86,6 +87,8 @@ export default function Home() {
       </section>
 
       <ReviewSlider />
+
+      <TeamSlider />
 
       <section className="flex justify-center bg-white text-[#282828] rounded-2xl lg:rounded-[32px] mx-4 lg:mx-0 mt-16 lg:mt-20 py-20 lg:py-40">
         <div className="w-full px-6 lg:px-0 lg:w-1/3 text-center">

@@ -24,25 +24,61 @@ interface SwiperWrapperProps {
     };
   };
   className?: string;
+  navigationId?: string; // Unique ID for navigation
 }
 
-const NavigationArrow = ({ direction }: { direction: 'prev' | 'next' }) => (
+const NavigationArrow = ({ direction, navigationId }: { direction: 'prev' | 'next', navigationId: string }) => (
   <button
     className={`
-      swiper-button-${direction}-custom
-      w-12 h-12 bg-black bg-opacity-80 hover:bg-opacity-100
+      swiper-button-${direction}-${navigationId}
+      w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14
+      bg-black/90 hover:bg-black
       text-white rounded-full flex items-center justify-center
-      transition-all duration-200 shadow-lg z-10
-      disabled:opacity-50 disabled:cursor-not-allowed
+      transition-all duration-300 ease-out shadow-xl hover:shadow-2xl
+      disabled:opacity-30 disabled:cursor-not-allowed disabled:hover:scale-100
+      backdrop-blur-sm border border-white/10
+      hover:scale-110 active:scale-95
     `}
+    onClick={(e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      console.log(`${direction} arrow clicked for ${navigationId}`);
+
+      // Force trigger swiper navigation - REVERSED LOGIC
+      const swiperContainer = document.querySelector(`.swiper-container-${navigationId} .swiper`) as HTMLElement & { swiper?: { slidePrev: () => void; slideNext: () => void } };
+      if (swiperContainer?.swiper) {
+        const swiper = swiperContainer.swiper;
+        // Reversed: left arrow (prev) now goes forward, right arrow (next) now goes backward
+        if (direction === 'prev') {
+          swiper.slideNext(); // Left arrow now moves forward
+        } else {
+          swiper.slidePrev(); // Right arrow now moves backward
+        }
+      }
+    }}
+    style={{
+      pointerEvents: 'auto',
+      display: 'flex',
+      visibility: 'visible',
+      opacity: 1,
+      zIndex: 9999,
+      position: 'relative'
+    }}
   >
-    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg
+      className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      strokeWidth={2.5}
+    >
       <path
         strokeLinecap="round"
         strokeLinejoin="round"
-        strokeWidth={2}
         d={direction === 'prev' ? "M15 19l-7-7 7-7" : "M9 5l7 7-7 7"}
       />
+      {/* Debug: Add direction indicator */}
+      <title>{direction === 'prev' ? 'Previous (Left)' : 'Next (Right)'}</title>
     </svg>
   </button>
 );
@@ -56,10 +92,15 @@ export default function SwiperWrapper({
   navigation = true,
   pagination = false,
   autoplay = false,
-  allowOverlap = false,
+  allowOverlap = false, // Keep for future use but currently unused
   breakpoints,
-  className = ''
+  className = '',
+  navigationId = 'default'
 }: SwiperWrapperProps) {
+  // Suppress unused variable warning - allowOverlap kept for future use
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const _allowOverlap = allowOverlap;
+
   const modules = [
     ...(navigation ? [Navigation] : []),
     ...(pagination ? [Pagination] : []),
@@ -68,33 +109,95 @@ export default function SwiperWrapper({
 
     return (
     <div className="relative w-full max-w-7xl mx-auto">
-      <div className="relative flex items-center justify-center">
-        {/* Cards Container - Centered */}
-        <div className="max-w-5xl w-full overflow-hidden">
+      <div className="relative px-16 sm:px-20 lg:px-24" style={{ position: 'relative', zIndex: 1 }}>
+        {/* Navigation Arrows - Positioned within the padded container */}
+        {navigation && (
+          <>
+            <div className="absolute left-2 sm:left-4 lg:left-6 top-1/2 -translate-y-1/2 z-50 flex items-center justify-center">
+              <NavigationArrow direction="prev" navigationId={navigationId} />
+            </div>
+            <div
+              className="absolute right-2 sm:right-4 lg:right-6 top-1/2 -translate-y-1/2 z-50 flex items-center justify-center"
+              style={{
+                position: 'absolute',
+                zIndex: 9999,
+                pointerEvents: 'auto',
+                display: 'flex'
+              }}
+            >
+              <NavigationArrow direction="next" navigationId={navigationId} />
+            </div>
+          </>
+        )}
+        {/* Cards Container */}
+        <div className="w-full overflow-hidden">
           <Swiper
             modules={modules}
             spaceBetween={spaceBetween}
             slidesPerView={slidesPerView}
             centeredSlides={centeredSlides}
             loop={loop}
+            speed={800}
+            effect="slide"
+            grabCursor={true}
+            touchRatio={1}
+            threshold={10}
+            longSwipes={true}
+            longSwipesRatio={0.5}
+            longSwipesMs={300}
+            followFinger={true}
+            allowTouchMove={true}
+            resistance={true}
+            resistanceRatio={0.85}
+            watchSlidesProgress={true}
+            watchOverflow={true}
             navigation={navigation ? {
-              prevEl: '.swiper-button-prev-custom',
-              nextEl: '.swiper-button-next-custom',
+              prevEl: `.swiper-button-prev-${navigationId}`,
+              nextEl: `.swiper-button-next-${navigationId}`,
+              disabledClass: 'opacity-30 cursor-not-allowed',
+              hideOnClick: false,
             } : false}
-            pagination={pagination ? { clickable: true } : false}
-            autoplay={autoplay ? { delay: 3000, disableOnInteraction: false } : false}
+            pagination={pagination ? {
+              clickable: true,
+              dynamicBullets: true
+            } : false}
+            autoplay={autoplay ? {
+              delay: 3000,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true
+            } : false}
             breakpoints={breakpoints}
-            className={`w-full ${className}`}
+            className={`w-full ${className} swiper-container-${navigationId}`}
+            onSlideChange={(swiper) => {
+              // Force update navigation state
+              console.log(`Slide changed for ${navigationId}:`, {
+                activeIndex: swiper.activeIndex,
+                realIndex: swiper.realIndex,
+                isBeginning: swiper.isBeginning,
+                isEnd: swiper.isEnd
+              });
+            }}
+            onSwiper={(swiper) => {
+              // Ensure navigation is properly initialized
+              setTimeout(() => {
+                swiper.navigation?.update();
+                // Force enable navigation on desktop
+                if (window.innerWidth >= 1024) {
+                  swiper.allowSlideNext = true;
+                  swiper.allowSlidePrev = true;
+                }
+              }, 100);
+            }}
           >
             {children.map((child, index) => (
-              <SwiperSlide key={index} className="flex justify-center">
+              <SwiperSlide key={index} className="flex justify-center items-stretch">
                 {child}
               </SwiperSlide>
             ))}
           </Swiper>
 
-          {/* Conditional Overlapping Styles */}
-          {allowOverlap && (
+          {/* Conditional Overlapping Styles - Only for reviews */}
+          {/* {allowOverlap && (
             <style jsx global>{`
               @media (min-width: 1024px) {
                 .swiper-slide:not(.swiper-slide-active) {
@@ -109,20 +212,8 @@ export default function SwiperWrapper({
                 }
               }
             `}</style>
-          )}
+          )} */}
         </div>
-
-        {/* Navigation Arrows - Absolutely positioned with equal distance */}
-        {navigation && (
-          <>
-            <div className="absolute left-0 top-1/2 -translate-y-1/2 z-20">
-              <NavigationArrow direction="prev" />
-            </div>
-            <div className="absolute right-0 top-1/2 -translate-y-1/2 z-20">
-              <NavigationArrow direction="next" />
-            </div>
-          </>
-        )}
       </div>
     </div>
   );

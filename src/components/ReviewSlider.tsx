@@ -1,6 +1,7 @@
 import { Review } from './ReviewCard';
 import ReviewCard from './ReviewCard';
 import SwiperWrapper from './SwiperWrapper';
+import { getCardColorThemeByPosition } from '../utils/cardColors';
 
 // Mock data - easily replaceable with API data
 const MOCK_REVIEWS: Review[] = [
@@ -11,8 +12,7 @@ const MOCK_REVIEWS: Review[] = [
     stars: 5,
     content: "Suspendisse non ni sed tincidunt tortor sed. Dui vitae molestmod diam porttitor nunc elementum sed mattis vulputate. Nec volutpat duis pretium sapien velit in.",
     date: "21 maand 2025",
-    backgroundColor: "bg-purple-200",
-    textColor: "text-gray-800"
+    ...getCardColorThemeByPosition(0)
   },
   {
     id: 2,
@@ -21,8 +21,7 @@ const MOCK_REVIEWS: Review[] = [
     stars: 3,
     content: "Faucibus augiat et in congue nunc vitae facilisis. Eu tristique vel commodo dolor lorem urna et. Turpis rutrum risus ornare mi ipsum in augue urna.",
     date: "18 maand 2025",
-    backgroundColor: "bg-purple-600",
-    textColor: "text-white"
+    ...getCardColorThemeByPosition(7)
   },
   {
     id: 3,
@@ -31,8 +30,7 @@ const MOCK_REVIEWS: Review[] = [
     stars: 3,
     content: "Mauris nec placerat ultrices turpis amet. Morbi bibendum lacinia ut urna mi auctor faucibus imperdiet facibus pellentesque magna etium blandit scelerisque magna. Cursus nulla quis et id felis.",
     date: "15 maand 2025",
-    backgroundColor: "bg-yellow-200",
-    textColor: "text-gray-800"
+    ...getCardColorThemeByPosition(5)
   },
   {
     id: 4,
@@ -41,8 +39,7 @@ const MOCK_REVIEWS: Review[] = [
     stars: 3,
     content: "Sed diam porttitor nunc elementum mattis vulputate. Nec volutpat duis pretium sapien velit in. Suspendisse non ni sed tincidunt.",
     date: "12 maand 2025",
-    backgroundColor: "bg-gray-900",
-    textColor: "text-white"
+    ...getCardColorThemeByPosition(3)
   }
 ];
 
@@ -100,6 +97,7 @@ export default function ReviewSlider({
           navigation={true}
           allowOverlap={true}
           breakpoints={swiperBreakpoints}
+          navigationId="reviews"
           className="py-8"
         >
           {reviews.map((review) => (

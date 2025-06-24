@@ -89,3 +89,150 @@ body {
 .delay-200 {
   animation-delay: 200ms;
 }
+
+/* Line clamp utilities for text truncation */
+.line-clamp-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Hide default Swiper navigation */
+.swiper-button-next,
+.swiper-button-prev {
+  display: none !important;
+}
+
+/* Team slider specific styles */
+.team-slider {
+  @apply overflow-visible;
+}
+
+.team-slider .swiper {
+  overflow: visible !important;
+  padding: 20px 0;
+}
+
+.team-slider .swiper-wrapper {
+  align-items: stretch !important;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+}
+
+.team-slider .swiper-slide {
+  @apply h-auto flex items-stretch justify-center flex-shrink-0;
+  @apply transition-all duration-500 ease-out;
+  transform-origin: center;
+}
+
+.team-slider .swiper-slide > div {
+  @apply flex-shrink-0 transition-all duration-500 ease-out;
+}
+
+.team-slider .swiper-slide:not(.swiper-slide-active) {
+  @apply opacity-95;
+  transform: scale(0.98);
+}
+
+.team-slider .swiper-slide-active {
+  @apply opacity-100;
+  transform: scale(1);
+}
+
+/* Responsive card sizing with Tailwind approach */
+@media (max-width: 767px) {
+  .team-slider .swiper-slide > div {
+    width: 240px !important;
+    height: 320px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .team-slider .swiper-slide > div {
+    width: 220px !important;
+    height: 300px !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .team-slider .swiper-slide > div {
+    width: 200px !important;
+    height: 280px !important;
+  }
+}
+
+/* Navigation buttons for all sliders */
+[class*="swiper-button-prev-"],
+[class*="swiper-button-next-"] {
+  @apply relative z-50;
+  position: relative !important;
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+/* Enhanced navigation for team slider */
+.swiper-container-team .swiper-button-prev-team,
+.swiper-container-team .swiper-button-next-team {
+  @apply opacity-100;
+  pointer-events: auto !important;
+  display: flex !important;
+  visibility: visible !important;
+  position: relative !important;
+  z-index: 9999 !important;
+}
+
+/* Desktop specific fixes */
+@media (min-width: 1024px) {
+  .swiper-container-team .swiper-button-next-team {
+    pointer-events: auto !important;
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative !important;
+    z-index: 9999 !important;
+    cursor: pointer !important;
+    user-select: none !important;
+  }
+
+  /* Force right arrow visibility and functionality */
+  [class*="swiper-button-next-team"] {
+    pointer-events: auto !important;
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 9999 !important;
+    cursor: pointer !important;
+  }
+}
+
+/* Smooth slide transitions */
+.swiper {
+  overflow: visible !important;
+}
+
+.swiper-wrapper {
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+}
+
+.swiper-slide {
+  @apply transition-all duration-500 ease-out;
+  transform-origin: center;
+}
+
+.swiper-slide-active {
+  @apply transform-none opacity-100;
+}
+
+[class*="swiper-button-prev-"] svg,
+[class*="swiper-button-next-"] svg {
+  @apply w-6 h-6;
+}
