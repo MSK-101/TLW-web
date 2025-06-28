@@ -9,49 +9,49 @@ const MOCK_TEAM_MEMBERS: TeamMember[] = [
     id: 1,
     name: "Tineke Zwart",
     position: "Functie Ipsum",
-    image: "https://images.unsplash.com/photo-1494790108755-2616b612b169?w=400&h=400&fit=crop&crop=face", // Demo image
+    image: "/tineke_twart.png",
     linkedinUrl: "https://www.linkedin.com/in/tineke-zwart",
-    ...getCardColorThemeByPosition(0)
+    ...getCardColorThemeByPosition(0)  // Purple gradient
   },
   {
     id: 2,
     name: "Myrthe Scheffer",
     position: "Functie Ipsum",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face", // Demo image
+    image: "/myrthe_scheffer.png",
     linkedinUrl: "https://www.linkedin.com/in/myrthe-scheffer",
-    ...getCardColorThemeByPosition(1)
+    ...getCardColorThemeByPosition(1)  // Red gradient
   },
   {
     id: 3,
     name: "Tamara Stroop",
     position: "Functie Ipsum",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face", // Demo image
+    image: "/tamara_stroop.png",
     linkedinUrl: "https://www.linkedin.com/in/tamara-stroop",
-    ...getCardColorThemeByPosition(2)
+    ...getCardColorThemeByPosition(2)  // Blue gradient
   },
   {
     id: 4,
     name: "Tristan Melano",
     position: "Functie Ipsum",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face", // Demo image
+    image: "/tristan_melano.png",
     linkedinUrl: "https://www.linkedin.com/in/tristan-melano",
-    ...getCardColorThemeByPosition(3)
+    ...getCardColorThemeByPosition(3)  // Green gradient
   },
   {
     id: 5,
     name: "Naam Lorum",
     position: "Functie Ipsum",
-    // image: "/team/naam-lorum.jpg", // No image to test avatar fallback
+    image: "/no_image.png", // Commented out to show gradient with initials
     linkedinUrl: "https://www.linkedin.com/in/naam-lorum",
-    ...getCardColorThemeByPosition(4)
+    ...getCardColorThemeByPosition(4)  // Yellow gradient
   },
   {
     id: 6,
     name: "Alex Johnson",
     position: "Senior Developer",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face", // Demo image
+    image: "/no_image.png", // Commented out to show gradient with initials
     linkedinUrl: "https://www.linkedin.com/in/alex-johnson",
-    ...getCardColorThemeByPosition(5)
+    ...getCardColorThemeByPosition(5)  // Gray gradient
   }
 ];
 
@@ -68,7 +68,7 @@ export default function TeamSlider({
   subtitle = "Ons team",
   className = ""
 }: TeamSliderProps) {
-  // Responsive breakpoints for Swiper
+  // Responsive breakpoints for Swiper - Updated to match requirements
   const swiperBreakpoints = {
     // Mobile: 1 card
     320: {
@@ -78,16 +78,16 @@ export default function TeamSlider({
     // Tablet: 3 cards
     768: {
       slidesPerView: 3,
-      spaceBetween: 16,
+      spaceBetween: 20,
     },
     // Desktop/Laptop: 5 cards
     1024: {
       slidesPerView: 5,
-      spaceBetween: 16,
+      spaceBetween: 20,
     }
   };
 
-    return (
+  return (
     <section className={`py-16 bg-gray-50 ${className}`}>
       <div className="max-w-7xl mx-auto px-4">
         {/* Section Header */}

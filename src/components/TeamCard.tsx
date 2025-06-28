@@ -25,15 +25,6 @@ const LinkedInIcon = () => (
 
 export default function TeamCard({ member, className = '' }: TeamCardProps) {
   // Function to get gradient background based on color theme
-  const getGradientBackground = () => {
-    if (member.backgroundColor.includes('purple')) return 'linear-gradient(135deg, #a855f7, #8b5cf6)';
-    if (member.backgroundColor.includes('red')) return 'linear-gradient(135deg, #ef4444, #dc2626)';
-    if (member.backgroundColor.includes('blue')) return 'linear-gradient(135deg, #3b82f6, #2563eb)';
-    if (member.backgroundColor.includes('green')) return 'linear-gradient(135deg, #10b981, #059669)';
-    if (member.backgroundColor.includes('yellow')) return 'linear-gradient(135deg, #f59e0b, #d97706)';
-    if (member.backgroundColor.includes('gray')) return 'linear-gradient(135deg, #6b7280, #4b5563)';
-    return 'linear-gradient(135deg, #a855f7, #8b5cf6)'; // Default purple
-  };
 
   return (
     <div
@@ -44,9 +35,7 @@ export default function TeamCard({ member, className = '' }: TeamCardProps) {
         ${className}
       `}
       style={{
-        background: member.image
-          ? `url(${member.image}) center/cover no-repeat`
-          : getGradientBackground()
+        background: `url(${member.image || '/no_image.png'}) center/cover no-repeat`
       }}
     >
       {/* Dark overlay for text readability when image is background */}
@@ -72,10 +61,13 @@ export default function TeamCard({ member, className = '' }: TeamCardProps) {
 
       {/* Member Info and LinkedIn - Bottom layout */}
       <div className="absolute bottom-0 left-0 right-0 p-6">
-        <div className="flex items-end justify-between">
+        {/* Light purple gradient background behind text - doesn't overwrite content */}
+        <div className="absolute inset-0 bg-gradient-to-t from-purple-700/40 via-purple-600/30 to-transparent rounded-b-3xl"></div>
+
+        <div className="relative flex items-end justify-between">
           {/* Left side - Name and Position */}
           <div className="text-white flex-1 pr-4">
-            <h3 className="font-bold text-lg mb-1 line-clamp-1">{member.name}</h3>
+            <h3 className="text-sm mb-1 whitespace-nowrap">{member.name}</h3>
             <p className="text-sm opacity-90 line-clamp-1">{member.position}</p>
           </div>
 
