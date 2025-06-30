@@ -18,6 +18,10 @@ export default function AgendaSection(){
     {'name': 'Myrthe Scheffer', 'imageUrl': '/team/member2.png', 'label': 'Functie Ipsum'},
     {'name': 'Tamara Stroop', 'imageUrl': '/team/member3.png', 'label': 'Functie Ipsum'},
     {'name': 'Tristan Melano', 'imageUrl': '/team/member4.png', 'label': 'Functie Ipsum'},
+    {'name': 'Tristan Melano', 'imageUrl': '/team/member4.png', 'label': 'Functie Ipsum'},
+    {'name': 'Tristan Melano', 'imageUrl': '/team/member4.png', 'label': 'Functie Ipsum'},
+    {'name': 'Tristan Melano', 'imageUrl': '/team/member4.png', 'label': 'Functie Ipsum'},
+    {'name': 'Tristan Melano', 'imageUrl': '/team/member4.png', 'label': 'Functie Ipsum'},
   ]);
 
   return <div className="bg-[#282828] px-[24px] py-[124px]">
@@ -107,7 +111,7 @@ export default function AgendaSection(){
           <p className="my-10">Arcu tincidunt lacus et viverra. Non ultrices ac quis id tincidunt cursus arcu imperdiet elementum. Vulputate enim aliquet viverra aliquam venenatis felis. Vitae nam sit eget nunc iaculis lorem.</p>
         </div>
         <div className="">
-          <div className="grid grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
             <div className="rounded-3xl bg-[#F0F0F0] text-[#282828] p-[32px] self-end">
               <div className="flex items-center gap-3">
                 <FontAwesomeIcon icon={faChartLine} className="h-6 w-6"/>
