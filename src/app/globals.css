@@ -16,7 +16,8 @@ body {
 @theme {
   --animate-custom-bounce: custom-bounce 1.5s infinite;
   @keyframes custom-bounce {
-    0%, 100% {
+    0%,
+    100% {
       transform: translateY(-40%);
       animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
     }

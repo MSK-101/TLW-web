@@ -27,9 +27,7 @@ export default function Home() {
       <section className="bg-[url(/cs_hero_bg.png)] bg-center bg-cover bg-no-repeat rounded-[32px] bg-[#F0F0F0] mx-4 lg:mx-8 pt-24 pb-8 lg:pb-12">
         <div className="flex flex-col lg:flex-row items-center justify-center pb-8 lg:pb-12">
           <div className="w-full lg:w-1/2 px-6 lg:pl-36 lg:pr-0">
-            <div
-              className="text-[#282828] font-extrabold xl:leading-[120px] xl:tracking-wide text-5xl sm:text-6xl lg:text-7xl xl:text-[120px] lg:-mr-[250px] font-funnel-display"
-            >
+            <div className="text-[#282828] font-extrabold xl:leading-[120px] xl:tracking-wide text-5xl sm:text-6xl lg:text-7xl xl:text-[120px] lg:-mr-[250px] font-funnel-display">
               Grip op je crypto, controle over je toekomst.
             </div>
           </div>
@@ -46,10 +44,16 @@ export default function Home() {
 
         <div className="flex flex-col lg:flex-row lg:w-1/2 justify-self-center items-center text-[#525252] px-4 lg:px-0 lg:gap-20">
           <p className="w-full lg:w-[60%] mb-5 lg:mb-0">
-            The Limitless Way is de crypto-interface die jou helpt bouwen aan je financiële toekomst – met overzicht, educatie en volledige controle. Koppel je eigen exchanges, stel doelen, maak spaardoelen en volg e-learning en cursussen die passen bij jouw manier van investeren. Jij beslist. Wij geven je de inzichten en tools om slimme keuzes te maken – op jouw voorwaarden.
-            Disclaimer: The Limitless Way geeft geen financieel advies. Alle keuzes worden volledig gemaakt en uitgevoerd door de gebruiker.
+            The Limitless Way is de crypto-interface die jou helpt bouwen aan je
+            financiële toekomst – met overzicht, educatie en volledige controle.
+            Koppel je eigen exchanges, stel doelen, maak spaardoelen en volg
+            e-learning en cursussen die passen bij jouw manier van investeren.
+            Jij beslist. Wij geven je de inzichten en tools om slimme keuzes te
+            maken – op jouw voorwaarden. Disclaimer: The Limitless Way geeft
+            geen financieel advies. Alle keuzes worden volledig gemaakt en
+            uitgevoerd door de gebruiker.
           </p>
-          <div className="w-8 h-14 rounded-full border relative text-[22px]">
+          <div className="w-8 h-14 rounded-full border border-gray-600 relative text-[22px]">
             <FontAwesomeIcon
               icon={faArrowDown}
               width={22}
@@ -64,13 +68,17 @@ export default function Home() {
           The Limitless Way
         </p>
         <p className="mt-6 font-bold text-lg lg:text-2xl text-center lg:w-[40rem] mx-auto px-4 lg:px-0">
-          Binnenkort lanceren wij onze nieuwe website en onze app is in ontwikkeling.
+          Binnenkort lanceren wij onze nieuwe website en onze app is in
+          ontwikkeling.
         </p>
         <p className="mt-6 text-base lg:text-xl text-center lg:w-[40rem] mx-auto px-4 lg:px-0">
-          Save the date: op 17 oktober 2025 vindt de app lancering plaats in Utrecht. Meer informatie volgt in juli 2025. Via de link onderaan de pagina kun je aangeven of je op de hoogte gehouden wil worden.
+          Save the date: op 17 oktober 2025 vindt de app lancering plaats in
+          Utrecht. Meer informatie volgt in juli 2025. Via de link onderaan de
+          pagina kun je aangeven of je op de hoogte gehouden wil worden.
         </p>
         <p className="mt-6 text-base lg:text-xl text-center lg:w-[40rem] mx-auto px-4 lg:px-0">
-          The Limitless Way is opgericht door co-founders Tineke Zwart en Myrte Scheffer.
+          The Limitless Way is opgericht door co-founders Tineke Zwart en Myrte
+          Scheffer.
         </p>
       </section>
       <section className="flex flex-col text-white lg:flex-row mx-4 lg:mx-8 gap-10 lg:gap-0">
@@ -78,7 +86,8 @@ export default function Home() {
           <h2 className="text-3xl lg:text-5xl mb-6 lg:mb-8">Neem contact op</h2>
           <p className="text-center text-base lg:text-lg">
             The Limitless Way BV <br />
-            KVK: 96470186 <br /><br />
+            KVK: 96470186 <br />
+            <br />
             The Netherlands
           </p>
           <Link
@@ -86,7 +95,9 @@ export default function Home() {
             className="flex gap-4 cursor-pointer mt-6 lg:mt-8 hover:text-[#7F65CA] items-center"
           >
             <FontAwesomeIcon icon={faEnvelope} width={20} />
-            <span className="text-base lg:text-lg">info@thelimitlessway.nl</span>
+            <span className="text-base lg:text-lg">
+              info@thelimitlessway.nl
+            </span>
           </Link>
         </div>
 
@@ -131,7 +142,10 @@ export default function Home() {
               checked={isChecked}
               onChange={handleCheckboxChange}
             />
-            <label className="text-gray-600 text-sm lg:text-base" htmlFor="tnc_checkbox">
+            <label
+              className="text-gray-600 text-sm lg:text-base"
+              htmlFor="tnc_checkbox"
+            >
               Ik ga akkoord met de algemene voorwaarden
             </label>
           </div>
