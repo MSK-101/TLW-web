@@ -21,6 +21,12 @@ import {
   AccordionTrigger,
 } from "../ui/accordion";
 
+interface AgendaItem {
+  time: string;
+  title: string;
+  description: string;
+}
+
 export default function AgendaSection() {
   const [isChecked, setIsChecked] = useState(false);
 
@@ -107,7 +113,7 @@ export default function AgendaSection() {
           </div>
           <div>
             {Array.isArray(eventAgenda) &&
-              eventAgenda.map((agenda: any, agendaIndex: number) => (
+              eventAgenda.map((agenda: AgendaItem, agendaIndex: number) => (
                 <div
                   key={agendaIndex}
                   className="flex flex-col items-start mb-10"
