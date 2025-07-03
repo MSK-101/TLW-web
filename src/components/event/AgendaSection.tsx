@@ -1,18 +1,14 @@
-"use client"; // if you're using Next.js App Router and server components
+"use client";
 
 import { Button } from "@/components/ui/button";
 import {
+  faArrowLeft,
+  faArrowRight,
   faArrowUpRightFromSquare,
-  faChartLine,
-  faChevronLeft,
-  faChevronRight,
-  faGraduationCap,
   faPaperPlane,
-  faPiggyBank,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import eventAgenda from "@/utils/eventAgenda";
-import { faCircleDot } from "@fortawesome/free-regular-svg-icons";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -32,7 +28,7 @@ export default function AgendaSection() {
     setIsChecked(e.target.checked);
   };
 
-  const [team, setTeam] = useState([
+  const team = [
     {
       name: "Tineke Zwart",
       imageUrl: "/team/member1.png",
@@ -59,8 +55,18 @@ export default function AgendaSection() {
       label: "Functie Ipsum",
     },
     {
-      name: "Tristan Melano",
-      imageUrl: "/team/member4.png",
+      name: "Tineke Zwart",
+      imageUrl: "/team/member1.png",
+      label: "Functie Ipsum",
+    },
+    {
+      name: "Myrthe Scheffer",
+      imageUrl: "/team/member2.png",
+      label: "Functie Ipsum",
+    },
+    {
+      name: "Tamara Stroop",
+      imageUrl: "/team/member3.png",
       label: "Functie Ipsum",
     },
     {
@@ -69,11 +75,11 @@ export default function AgendaSection() {
       label: "Functie Ipsum",
     },
     {
-      name: "Tristan Melano",
-      imageUrl: "/team/member4.png",
+      name: "Naam Lorum",
+      imageUrl: "/team/member5.png",
       label: "Functie Ipsum",
     },
-  ]);
+  ];
 
   const handleIconClick = () => {
     if (isChecked) {
@@ -83,12 +89,12 @@ export default function AgendaSection() {
   };
 
   return (
-    <div className="bg-[#282828] px-[24px] py-[124px]" id="agenda">
-      <div className="bg-gray-50 py-[124px] rounded-[32px] px-[24px] lg:px-[124px]">
-        <div className="flex lg:flex-row flex-col gap-16 mb-[124px]">
+    <div className="py-12 md:py-24" id="agenda">
+      <div className="bg-gray-50 py-12 lg:py-28 rounded-[32px] px-[24px] lg:px-[124px]">
+        <div className="flex lg:flex-row flex-col gap-20 mb-[124px] lg:px-14">
           <div className="lg:max-w-[426px] text-center lg:text-left mb-5">
             <h2 className="text-sm">Agenda</h2>
-            <h2 className="text-5xl">Metus dolor enim pellentesque</h2>
+            <h2 className="text-5xl mt-2">Metus dolor enim pellentesque</h2>
             <p className="my-10">
               Ut felis vitae ullamcorper ultricies blandit facilisis faucibus.
               Velit non at et tincidunt tempor suspendisse cursus. Augue ut
@@ -99,7 +105,7 @@ export default function AgendaSection() {
               <FontAwesomeIcon icon={faArrowUpRightFromSquare} />{" "}
             </Button>
           </div>
-          <div className="">
+          <div>
             {Array.isArray(eventAgenda) &&
               eventAgenda.map((agenda: any, agendaIndex: number) => (
                 <div
@@ -125,7 +131,7 @@ export default function AgendaSection() {
           </Button>
         </div>
 
-        <div className="mb-[124px]">
+        <div className="mb-[124px] lg:px-14">
           <div className="text-center mb-15">
             <h2>Ons team</h2>
             <p className="text-[48px]">We are in this together</p>
@@ -133,57 +139,15 @@ export default function AgendaSection() {
           <div className="relative">
             <div
               id="swiperBtnNext"
-              className="absolute top-[50%] -translate-y-[50%] -right-5 bg-[#282828] rounded-full aspect-square w-10 text-gray-50 flex justify-center items-center z-10"
+              className="absolute top-[50%] -translate-y-[50%] -right-5 bg-[#282828] rounded-full aspect-square w-10 text-gray-50 flex justify-center items-center z-10 cursor-pointer hover:scale-105"
             >
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5 12H19"
-                  stroke="white"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M12 5L19 12L12 19"
-                  stroke="white"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+              <FontAwesomeIcon icon={faArrowRight} size="lg" />
             </div>
             <div
               id="swiperBtnPrev"
-              className="absolute top-[50%] -translate-y-[50%] -left-5 bg-[#282828] rounded-full aspect-square w-10 text-gray-50 flex justify-center items-center z-10"
+              className="absolute top-[50%] -translate-y-[50%] -left-5 bg-[#282828] rounded-full aspect-square w-10 text-gray-50 flex justify-center items-center z-10 cursor-pointer hover:scale-105"
             >
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M19 12H5"
-                  stroke="white"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M12 19L5 12L12 5"
-                  stroke="white"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+              <FontAwesomeIcon icon={faArrowLeft} size="lg" />
             </div>
             <Swiper
               modules={[Navigation]}
@@ -208,12 +172,11 @@ export default function AgendaSection() {
               }}
               spaceBetween={15}
               slidesPerView={1}
-              onSlideChange={() => console.log("slide change")}
-              onSwiper={(swiper) => console.log(swiper)}
+              loop={true}
             >
-              {team.map((member) => {
+              {team.map((member, index) => {
                 return (
-                  <SwiperSlide className="">
+                  <SwiperSlide key={index}>
                     <div className="rounded-2xl overflow-hidden relative aspect-[266/343] mx-auto">
                       <Image
                         src={member["imageUrl"]}
@@ -264,7 +227,7 @@ export default function AgendaSection() {
           </div>
         </div>
 
-        <div className="flex lg:flex-row flex-col gap-16 mb-[124px]">
+        <div className="flex lg:flex-row flex-col gap-16 mb-[124px] lg:px-14">
           <div className="lg:max-w-[426px] text-center lg:text-left mb-5">
             <h2 className="text-sm">Features</h2>
             <h2 className="text-5xl">Turpis at donec ut urna malesuada </h2>
@@ -380,14 +343,14 @@ export default function AgendaSection() {
           </div>
         </div>
 
-        <div className="mb-[124px]">
+        <div className="mb-[124px] lg:px-14">
           <div className="text-center mb-15">
             <h2>FAQ</h2>
             <p className="text-[48px]">Veelgestelde vragen</p>
           </div>
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
-              <AccordionTrigger>
+              <AccordionTrigger className="cursor-pointer">
                 Lorem ipsum dolor sit amet consectetur. Rhoncus eget massa
                 porttitor ullamcorper tincidunt quis dictum adipiscing?
               </AccordionTrigger>
@@ -400,7 +363,7 @@ export default function AgendaSection() {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
-              <AccordionTrigger>
+              <AccordionTrigger className="cursor-pointer">
                 Mi velit tortor mi feugiat. Tincidunt vestibulum tortor
                 habitasse tincidunt non?
               </AccordionTrigger>
@@ -412,7 +375,7 @@ export default function AgendaSection() {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
-              <AccordionTrigger>
+              <AccordionTrigger className="cursor-pointer">
                 Morbi interdum enim viverra ut urna mi auctor feugiat massa?
               </AccordionTrigger>
               <AccordionContent>
@@ -423,7 +386,7 @@ export default function AgendaSection() {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
-              <AccordionTrigger>
+              <AccordionTrigger className="cursor-pointer">
                 Ut consequat quam aliquam feugiat sed sapien fermentum. In ut
                 ullamcorper vestibulum sit?
               </AccordionTrigger>
@@ -437,15 +400,15 @@ export default function AgendaSection() {
           </Accordion>
         </div>
 
-        <div className="bg-[url(/background.png)] bg-bottom bg-cover bg-no-repeat rounded-[32px] lg:-mx-[100px] px-[40px] lg:px-[124px]">
+        <div className="bg-[url(/background.png)] bg-bottom bg-cover bg-no-repeat rounded-2xl lg:rounded-b-4xl -mx-5 lg:-mx-[100px] px-6 lg:px-[124px]">
           <div className="grid grid-cols-2">
-            <div className="col-auto self-center">
-              <h1 className="text-3xl lg:text-6xl font-extrabold leading-[90%]">
+            <div className="col-auto self-center lg:pl-6">
+              <h1 className="text-3xl md:text-6xl xl:text-7xl font-bold opacity-80 leading-[90%]">
                 Bestel nu <br /> je ticket!
               </h1>
-              <Button className="bg-gray-50 text-[#282828] py-[6px] px-[32px] h-[30px] lg:h-[42px] mt-8">
-                Bestel je ticket{" "}
-                <FontAwesomeIcon icon={faArrowUpRightFromSquare} />{" "}
+              <Button className="bg-gray-50 text-[#282828] py-[6px] px-3 lg:px-[32px] h-[30px] lg:h-[42px] mt-10">
+                Bestel je ticket
+                <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
               </Button>
             </div>
             <div className="col-auto py-6">
@@ -454,7 +417,7 @@ export default function AgendaSection() {
                 width={1106}
                 height={822}
                 alt=""
-                className="h-full w-full translate-y-6 max-h-[420px] object-contain scale-120"
+                className="h-full w-full translate-y-6 translate-x-6 lg:translate-x-0 max-h-[420px] object-contain scale-105 lg:scale-120 animate-slide-in-right"
               />
             </div>
           </div>
