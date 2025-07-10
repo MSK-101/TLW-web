@@ -60,7 +60,10 @@ export default function HeroSection() {
           </p>
         </div>
         <div className="flex gap-2 lg:gap-6 row-start-2 col-start-1 self-start">
-          <Link href="https://wwwthelimitlesswaynl.plugandpay.com/checkout/event">
+          <Link
+            href="https://wwwthelimitlesswaynl.plugandpay.com/checkout/event"
+            target="_blank"
+          >
             <Button className="bg-[#E6C7FF] text-[#282828] py-6 px-3 md:px-6 flex-1 md:flex-none gap-[18px] cursor-pointer hover:scale-105">
               Bestel je ticket{" "}
               <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
@@ -75,7 +78,7 @@ export default function HeroSection() {
             </Button>
           </Link>
         </div>
-        <div className="flex gap-4 row-start-3 col-span-2 md:row-start-2 md:col-start-2 md:col-span-1 xl:col-start-2 xl:row-start-1 rounded-2xl p-4 self-start justify-self-end w-full md:max-w-[300px] mt-5 md:mt-0 bg-[#E6C7FF] justify-between">
+        <div className="flex gap-4 animate-slide-in-right row-start-3 col-span-2 md:row-start-2 md:col-start-2 md:col-span-1 xl:col-start-2 xl:row-start-1 rounded-2xl p-4 self-start justify-self-end w-full md:max-w-[300px] mt-5 md:mt-0 bg-[#E6C7FF] justify-between">
           <p className="text-lg">
             Inclusief lancering van onze revolutionaire crypto app!
           </p>
@@ -109,7 +112,8 @@ export default function HeroSection() {
             </div>
           </div>
           <Link
-            href={"https://green-village.nl/ "}
+            href={"https://green-village.nl/"}
+            target="_blank"
             className="bg-gray-50 grow rounded-[20px] p-[12px] lg:p-[16px] lg:pr-[32px]"
           >
             <div className="flex items-center gap-4">
