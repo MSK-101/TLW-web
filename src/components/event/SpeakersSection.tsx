@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function SpeakersSection() {
   return (
     <div className="p-6 md:p-12">
-      <section className="bg-[url(/cs_hero_bg.png)] bg-center bg-cover bg-no-repeat rounded-[32px] text-[#282828] bg-[#F0F0F0] mx-4 lg:mx-10 xl:mx-40 mt-20 pt-20 pb-8 lg:pb-14 px-8 lg:px-24">
+      <section className="bg-[url(/cs_hero_bg.png)] bg-center bg-cover bg-no-repeat rounded-[32px] text-[#282828] bg-[#F0F0F0] lg:mx-10 xl:mx-40 mt-20 pt-20 pb-8 lg:pb-14 px-4 lg:px-24">
         <h1 className="text-5xl font-funnel-display">
           Exclusief event: maximaal 250 gasten
         </h1>
