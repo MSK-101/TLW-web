@@ -58,13 +58,13 @@ export default function SpeakersSection() {
                 managen
               </li>
               <li>
-                Hoe je goed kunt bijhouden of je 'on track' bent met betrekking
-                tot je financiële doelen
+                Hoe je goed kunt bijhouden of je &apos;on track&apos; bent met
+                betrekking tot je financiële doelen
               </li>
               <li>Hoe je met kleine aanpassingen grote stappen kunt zetten</li>
               <li>
                 Wat de verwachtingen zijn voor de komende jaren voor crypto,
-                edelmetalen, ETF's en aandelen
+                edelmetalen, ETF&apos;s en aandelen
               </li>
               <li>Het verschil tussen een goede en slechte strategie</li>
               <li>
@@ -115,7 +115,7 @@ export default function SpeakersSection() {
           />
           <div className="px-[24px] py-[40px] col-span-1 sm:col-span-2">
             <h2 className="font-medium text-[23px]">
-              Tineke Zwart - Co-founder TLW & Crypto Educator Technische analyse
+              Tineke Zwart - Co-founder TLW & Crypto Educator Technische analyse
               voor beginners: leer de basis en pas direct toe
             </h2>
             <p className="text-[18px] text-[#525252] line-clamp-3">
@@ -136,7 +136,7 @@ export default function SpeakersSection() {
           />
           <div className="px-[24px] py-[40px] col-span-1 sm:col-span-2">
             <h2 className="font-medium text-[23px]">
-              Anníka van Loon - TLW Crypto Expert Wat is jouw investor hat?
+              Anníka van Loon - TLW Crypto Expert Wat is jouw investor hat?
               Ontdek je beleggersprofiel en bijpassende assets
             </h2>
             <p className="text-[18px] text-[#525252] line-clamp-3">
@@ -157,8 +157,8 @@ export default function SpeakersSection() {
           />
           <div className="px-[24px] py-[40px] col-span-1 sm:col-span-2">
             <h2 className="font-medium text-[23px]">
-              Kim de Graeve - Finance Mentor & Freedom Coach Financiële vrijheid
-              met laagdrempelige assets – hoe bouw je een stevig fundament? 
+              Kim de Graeve - Finance Mentor & Freedom Coach Financiële vrijheid
+              met laagdrempelige assets – hoe bouw je een stevig fundament?
             </h2>
             <p className="text-[18px] text-[#525252] line-clamp-3">
               Ook met kleine bedragen kun je financieel vrij worden. Kim laat
@@ -177,8 +177,8 @@ export default function SpeakersSection() {
           />
           <div className="px-[24px] py-[40px] col-span-1 sm:col-span-2">
             <h2 className="font-medium text-[23px]">
-              Giovanni Jimmink - Vastgoedinvesteerder & Ondernemer Investeren in
-              buitenlands vastgoed – de do’s & dont’s 
+              Giovanni Jimmink - Vastgoedinvesteerder & Ondernemer Investeren in
+              buitenlands vastgoed – de do&apos;s & dont&apos;s
             </h2>
             <p className="text-[18px] text-[#525252] line-clamp-3">
               Wat doe je met je cryptowinst en welke manieren van vastgoed
@@ -198,8 +198,8 @@ export default function SpeakersSection() {
           />
           <div className="px-[24px] py-[40px] col-span-1 sm:col-span-2">
             <h2 className="font-medium text-[23px]">
-              Otto Schapendonk - De Cijferdokter & Financieel Analist Van crypto
-              tot goud – slim spreiden over verschillende assets  
+              Otto Schapendonk - De Cijferdokter & Financieel Analist Van crypto
+              tot goud – slim spreiden over verschillende assets
             </h2>
             <p className="text-[18px] text-[#525252] line-clamp-3">
               Crypto, vastgoed, goud – hoe combineer je dat slim? Otto legt je
@@ -219,7 +219,7 @@ export default function SpeakersSection() {
           />
           <div className="px-[24px] py-[40px] col-span-1 sm:col-span-2">
             <h2 className="font-medium text-[23px]">
-              Tim Kamp - Crypto Expert  De invloed van de macro economie op de
+              Tim Kamp - Crypto Expert De invloed van de macro economie op de
               crypto markt
             </h2>
             <p className="text-[18px] text-[#525252] line-clamp-3">
