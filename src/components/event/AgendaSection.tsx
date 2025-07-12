@@ -20,6 +20,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "../ui/accordion";
+import { faComment } from "@fortawesome/free-regular-svg-icons";
 
 interface AgendaItem {
   time: string;
@@ -56,9 +57,9 @@ export default function AgendaSection() {
       label: "Chief Audiovisual Officer",
     },
     {
-      name: "Ravikumar Sharma",
-      imageUrl: "/team/member5.png",
-      label: "Technical Architect DevRepublic (a.i.)",
+      name: "Barry Nijkamp",
+      imageUrl: "/team/member8.png",
+      label: "CFO",
     },
     {
       name: "Danitsha van der Reijken",
@@ -69,6 +70,26 @@ export default function AgendaSection() {
       name: "Anníka van Loon",
       imageUrl: "/team/member7.png",
       label: "Crypto expert",
+    },
+    {
+      name: "Team Communicatiemakers",
+      imageUrl: "/team/member9.png",
+      label: "Ontwikkeling visual design app",
+    },
+    {
+      name: "Team DevRepublic",
+      imageUrl: "/team/member10.png",
+      label: "Ontwikkeling app",
+    },
+    {
+      name: "Patricia Oostvogels",
+      imageUrl: "/team/member11.png",
+      label: "Boekhouding",
+    },
+    {
+      name: "Ravikumar Sharma",
+      imageUrl: "/team/member5.png",
+      label: "Technical Architect DevRepublic (a.i.)",
     },
   ];
 
@@ -82,7 +103,7 @@ export default function AgendaSection() {
   return (
     <div className="py-12 md:py-24" id="agenda">
       <div className="bg-gray-50 py-12 lg:py-28 rounded-[32px] px-[24px] lg:px-[124px]">
-        <div className="flex lg:flex-row flex-col gap-20 mb-[124px] lg:px-14">
+        <div className="flex lg:flex-row flex-col gap-20 mb-20 lg:px-14">
           <div className="lg:max-w-[426px] text-center lg:text-left mb-5">
             <h2 className="text-sm">Agenda</h2>
             <h2 className="text-4xl mt-2">
@@ -122,6 +143,68 @@ export default function AgendaSection() {
           </div>
         </div>
 
+        <div className="bg-[#F0F0F0] p-4 sm:p-8 rounded-[64px] flex flex-col lg:flex-row items-center xl:items-stretch mb-20">
+          <Image
+            src="/founders.png"
+            alt="Founders"
+            width={1000}
+            height={1000}
+            className="rounded-[64px] sm:rounded-[32px] lg:w-1/2 h-full xl:h-auto object-cover object-center"
+          />
+          <div className="lg:w-1/2 2xl:mt-4 opacity-80 my-6 lg:my-0 lg:pl-10 2xl:px-16">
+            <h1 className="text-4xl">Message from the founders</h1>
+            <div className="2xl:text-lg mt-3 space-y-2">
+              <p>
+                Wij zijn Myrte Scheffer en Tineke Zwart, de founders van The
+                Limitless Way (TLW). Achter de schermen zijn we al een paar jaar
+                bezig met deze app en nu is eindelijk het moment daar. We gaan
+                bijna live.
+              </p>
+
+              <p>
+                We zijn begonnen met ons concept vanuit persoonlijk gemis. We
+                misten bepaalde dingen in de cryptowereld en toen hebben we
+                gezegd: Dan moeten we het zelf maar regelen.
+              </p>
+
+              <p className="font-bold">Zo gezegd, zo gedaan.</p>
+
+              <p>
+                Beide hebben we onze eigen expertise en vanaf het begin af aan
+                hebben we gemerkt dat we elkaar heel goed aanvullen.
+              </p>
+
+              <p>
+                Myrte is fantastisch in het uitdenken van concepten (
+                <span className="font-bold">de app was haar idee!</span>) en het
+                neerzetten van alle 'grote lijnen'. Zij houdt zich dus vooral
+                bezig met: Waar willen we uiteindelijk naartoe en wat is daar nú
+                voor nodig? Dit doet ze inmiddels al 15 jaar voor andere
+                bedrijven, maar nu voor TLW. Leuk weetje: alle bedrijven waar ze
+                dit voor heeft gedaan, zijn inmiddels miljoenenbedrijven.
+              </p>
+
+              <p>
+                Tineke focust op de inhoud, de sales & marketing en managet
+                samen met een team van experts onze community. Ze is inmiddels
+                <span className="font-bold">
+                  &nbsp;8 jaar actief in de cryptomarkt
+                </span>
+                &nbsp;en heeft inmiddels meerdere tonnenbedrijven en een
+                miljoenenbedrijf gebouwd.
+              </p>
+
+              <p>
+                Daarom dachten we: We hebben nog nooit een app gebouwd, dus we
+                hebben geen idee hoe dat werkt maar volgens mij kunnen we dat
+                wel als we het samen doen :) We kijken er enorm naar uit om op
+                <span className="font-bold"> 17 oktober </span> onze kennis én
+                de app met jullie te delen.
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div className="flex flex-col items-center mb-[124px]">
           <div className="text-4xl text-center max-w-[650px]">
             Bestel nu je Early Bird ticket tot en met 25 juli voor €57,50.
@@ -137,7 +220,7 @@ export default function AgendaSection() {
         <div className="mb-[124px] lg:px-14">
           <div className="text-center mb-15">
             <h2>Ons team</h2>
-            <p className="text-[48px]">We are in this together</p>
+            <p className="text-[48px] leading-none">We are in this together</p>
           </div>
           <div className="relative">
             <div
@@ -230,8 +313,8 @@ export default function AgendaSection() {
           </div>
         </div>
 
-        <div className="flex lg:flex-row flex-col gap-16 mb-[124px] lg:px-14">
-          <div className="lg:max-w-[426px] text-center lg:text-left mb-5">
+        <div className="flex lg:flex-row flex-col gap-16 xl:gap-24 mb-[124px] lg:px-14">
+          <div className="xl:max-w-[600px] text-center lg:text-left mb-5">
             <h2 className="text-sm">Features</h2>
             <h2 className="text-5xl">
               Een korte sneak peak naar de app features
@@ -311,8 +394,9 @@ export default function AgendaSection() {
                 </p>
               </div>
               <div className="rounded-3xl bg-[#F0F0F0] text-[#282828] p-[32px] self-start">
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-3 shrink-0 grow-0">
                   <svg
+                    className="shrink-0 grow-0"
                     width="48"
                     height="48"
                     viewBox="0 0 48 48"
@@ -320,24 +404,27 @@ export default function AgendaSection() {
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      d="M23.1992 39.4002L11.5992 33.2002C11.1992 33.0002 10.7992 32.4002 10.7992 31.8002V21.8002L6.19922 19.4002C5.19922 18.8002 5.19922 17.4002 6.19922 16.8002L23.1992 7.6002C23.5992 7.4002 24.1992 7.4002 24.5992 7.6002L42.9992 17.6002C43.3992 17.8002 43.7992 18.4002 43.7992 19.0002V31.0002C43.7992 31.8002 43.1992 32.4002 42.3992 32.4002C41.5992 32.4002 40.9992 31.8002 40.9992 31.0002V19.8002L36.9992 22.0002V32.0002C36.9992 32.6002 36.5992 33.0002 36.1992 33.4002L24.5992 39.6002C24.1992 39.8002 23.5992 39.8002 23.1992 39.6002V39.4002ZM23.9992 25.4002L37.5992 18.0002L23.9992 10.6002L10.3992 18.0002L23.9992 25.4002ZM23.9992 36.2002L33.9992 30.8002V23.4002L24.9992 28.4002C24.3992 28.8002 23.5992 28.8002 22.9992 28.4002L13.9992 23.4002V30.8002L23.9992 36.2002Z"
+                      d="M32.0008 21.8C32.4008 21.8 33.0008 21.8 33.2008 21.2C33.6008 20.8 33.8008 20.4 33.8008 20C33.8008 19.6 33.8008 19 33.2008 18.8C32.8008 18.4 32.4008 18.2 32.0008 18.2C31.6008 18.2 31.0008 18.2 30.8008 18.8C30.4008 19.2 30.2008 19.6 30.2008 20C30.2008 20.4 30.2008 21 30.8008 21.2C31.2008 21.6 31.6008 21.8 32.0008 21.8ZM17.4008 17.4H24.4008C25.2008 17.4 25.8008 16.8 25.8008 16C25.8008 15.2 25.2008 14.4 24.4008 14.4H17.4008C16.6008 14.4 16.0008 15 16.0008 15.8C16.0008 16.6 16.6008 17.4 17.4008 17.4ZM11.2008 41C10.4008 41 9.60078 40.4 9.20078 39.6C8.20078 36.4 7.40078 33.2 6.40078 30.2C5.40078 26.6 4.80078 22.8 4.80078 19C4.80078 15.2 5.80078 13.8 7.80078 12C9.80078 10 12.2008 9 14.8008 9H25.4008C26.4008 7.8 27.4008 6.8 28.6008 6C29.8008 5.2 31.2008 5 32.8008 5C34.4008 5 33.8008 5 34.2008 5.6C34.6008 6.2 34.8008 6.4 34.8008 7C34.8008 7.6 34.8008 7.2 34.8008 7.4C34.8008 7.4 34.8008 7.6 34.8008 7.8C34.8008 8.2 34.4008 8.8 34.4008 9.2C34.4008 9.8 34.2008 10.2 34.0008 10.8L39.2008 16H41.0008C42.2008 16 43.0008 16.8 43.0008 18V26.8C43.0008 27.6 42.4008 28.4 41.6008 28.8L37.6008 30.2L34.8008 39.8C34.6008 40.6 33.8008 41.2 32.8008 41.2H27.0008C25.8008 41.2 25.0008 40.4 25.0008 39.2V37.2H19.0008V39.2C19.0008 40.4 18.2008 41.2 17.0008 41.2H11.2008V41ZM12.0008 38H16.0008V36C16.0008 34.8 16.8008 34 18.0008 34H26.0008C27.2008 34 28.0008 34.8 28.0008 36V38H32.0008L34.8008 28.6C34.8008 28 35.4008 27.4 36.0008 27.2L40.0008 25.8V18.8H38.0008L31.0008 11.8C31.0008 11.2 31.0008 10.4 31.0008 9.8C31.0008 9.2 31.2008 8.6 31.4008 8C30.4008 8.2 29.6008 8.8 28.8008 9.4C28.0008 10 27.6008 10.8 27.2008 11.8H14.8008C13.2008 11.8 11.6008 12.4 10.4008 13.4C9.20078 14.4 7.80078 16.6 7.80078 18.8C7.80078 22 8.20078 25.2 9.20078 28.4C10.2008 31.6 11.0008 34.6 11.8008 37.8L12.0008 38Z"
                       fill="#282828"
                     />
                   </svg>
-                  <div className="text-3xl"> Educatie</div>
+
+                  <div className="text-3xl">Spaardoelen</div>
                 </div>
                 <p className="text-sm mt-3">
-                  Leer stapsgewijs meer over crypto. Wij nemen je mee van de
-                  basis tot expert level door middel van in-app cursussen en
-                  (live) in-app masterclasses. Je begint op jouw niveau en
-                  groeit in jouw tempo naar het volgende level.
+                  Hoe vervelend is het dat al je geld op één bult zit in de
+                  exchanges:? En hoe zorg je ervoor dat je ook concrete doelen
+                  vaststelt én ook gaat behalen? Wat daarvoor investeer je
+                  toch.. om er iets uit te halen! Maak bij ons spaardoelen aan
+                  en bepaal met welke exchange en welke coins je deze wil gaan
+                  behalen! O ja, en je kunt het delen in de Partyzone als je het
+                  gehaald hebt (hoeft niet, mag wel).
                 </p>
               </div>
               <div className="space-y-5">
                 <div className="rounded-3xl bg-[#F0F0F0] text-[#282828] p-[32px] self-start">
-                  <div className="flex items-center gap-3 shrink-0 grow-0">
+                  <div className="flex items-center gap-3">
                     <svg
-                      className="shrink-0 grow-0"
                       width="48"
                       height="48"
                       viewBox="0 0 48 48"
@@ -345,38 +432,22 @@ export default function AgendaSection() {
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        d="M32.0008 21.8C32.4008 21.8 33.0008 21.8 33.2008 21.2C33.6008 20.8 33.8008 20.4 33.8008 20C33.8008 19.6 33.8008 19 33.2008 18.8C32.8008 18.4 32.4008 18.2 32.0008 18.2C31.6008 18.2 31.0008 18.2 30.8008 18.8C30.4008 19.2 30.2008 19.6 30.2008 20C30.2008 20.4 30.2008 21 30.8008 21.2C31.2008 21.6 31.6008 21.8 32.0008 21.8ZM17.4008 17.4H24.4008C25.2008 17.4 25.8008 16.8 25.8008 16C25.8008 15.2 25.2008 14.4 24.4008 14.4H17.4008C16.6008 14.4 16.0008 15 16.0008 15.8C16.0008 16.6 16.6008 17.4 17.4008 17.4ZM11.2008 41C10.4008 41 9.60078 40.4 9.20078 39.6C8.20078 36.4 7.40078 33.2 6.40078 30.2C5.40078 26.6 4.80078 22.8 4.80078 19C4.80078 15.2 5.80078 13.8 7.80078 12C9.80078 10 12.2008 9 14.8008 9H25.4008C26.4008 7.8 27.4008 6.8 28.6008 6C29.8008 5.2 31.2008 5 32.8008 5C34.4008 5 33.8008 5 34.2008 5.6C34.6008 6.2 34.8008 6.4 34.8008 7C34.8008 7.6 34.8008 7.2 34.8008 7.4C34.8008 7.4 34.8008 7.6 34.8008 7.8C34.8008 8.2 34.4008 8.8 34.4008 9.2C34.4008 9.8 34.2008 10.2 34.0008 10.8L39.2008 16H41.0008C42.2008 16 43.0008 16.8 43.0008 18V26.8C43.0008 27.6 42.4008 28.4 41.6008 28.8L37.6008 30.2L34.8008 39.8C34.6008 40.6 33.8008 41.2 32.8008 41.2H27.0008C25.8008 41.2 25.0008 40.4 25.0008 39.2V37.2H19.0008V39.2C19.0008 40.4 18.2008 41.2 17.0008 41.2H11.2008V41ZM12.0008 38H16.0008V36C16.0008 34.8 16.8008 34 18.0008 34H26.0008C27.2008 34 28.0008 34.8 28.0008 36V38H32.0008L34.8008 28.6C34.8008 28 35.4008 27.4 36.0008 27.2L40.0008 25.8V18.8H38.0008L31.0008 11.8C31.0008 11.2 31.0008 10.4 31.0008 9.8C31.0008 9.2 31.2008 8.6 31.4008 8C30.4008 8.2 29.6008 8.8 28.8008 9.4C28.0008 10 27.6008 10.8 27.2008 11.8H14.8008C13.2008 11.8 11.6008 12.4 10.4008 13.4C9.20078 14.4 7.80078 16.6 7.80078 18.8C7.80078 22 8.20078 25.2 9.20078 28.4C10.2008 31.6 11.0008 34.6 11.8008 37.8L12.0008 38Z"
+                        d="M23.1992 39.4002L11.5992 33.2002C11.1992 33.0002 10.7992 32.4002 10.7992 31.8002V21.8002L6.19922 19.4002C5.19922 18.8002 5.19922 17.4002 6.19922 16.8002L23.1992 7.6002C23.5992 7.4002 24.1992 7.4002 24.5992 7.6002L42.9992 17.6002C43.3992 17.8002 43.7992 18.4002 43.7992 19.0002V31.0002C43.7992 31.8002 43.1992 32.4002 42.3992 32.4002C41.5992 32.4002 40.9992 31.8002 40.9992 31.0002V19.8002L36.9992 22.0002V32.0002C36.9992 32.6002 36.5992 33.0002 36.1992 33.4002L24.5992 39.6002C24.1992 39.8002 23.5992 39.8002 23.1992 39.6002V39.4002ZM23.9992 25.4002L37.5992 18.0002L23.9992 10.6002L10.3992 18.0002L23.9992 25.4002ZM23.9992 36.2002L33.9992 30.8002V23.4002L24.9992 28.4002C24.3992 28.8002 23.5992 28.8002 22.9992 28.4002L13.9992 23.4002V30.8002L23.9992 36.2002Z"
                         fill="#282828"
                       />
                     </svg>
-
-                    <div className="text-3xl">Spaardoelen</div>
+                    <div className="text-3xl"> Educatie</div>
                   </div>
                   <p className="text-sm mt-3">
-                    Hoe vervelend is het dat al je geld op één bult zit in de
-                    exchanges:? En hoe zorg je ervoor dat je ook concrete doelen
-                    vaststelt én ook gaat behalen? Wat daarvoor investeer je
-                    toch.. om er iets uit te halen! Maak bij ons spaardoelen aan
-                    en bepaal met welke exchange en welke coins je deze wil gaan
-                    behalen! O ja, en je kunt het delen in de Partyzone als je
-                    het gehaald hebt (hoeft niet, mag wel).
+                    Leer stapsgewijs meer over crypto. Wij nemen je mee van de
+                    basis tot expert level door middel van in-app cursussen en
+                    (live) in-app masterclasses. Je begint op jouw niveau en
+                    groeit in jouw tempo naar het volgende level.
                   </p>
                 </div>
                 <div className="rounded-3xl bg-[#F0F0F0] text-[#282828] p-[32px] self-start">
                   <div className="flex items-center gap-3">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="shrink-0 grow-0"
-                      width="48"
-                      height="48"
-                      viewBox="0 0 48 48"
-                      fill="none"
-                    >
-                      <path
-                        d="M42 23.0001C42.0069 25.6398 41.3901 28.2438 40.2 30.6001C38.7889 33.4235 36.6195 35.7984 33.9349 37.4586C31.2503 39.1188 28.1565 39.9988 25 40.0001C22.3603 40.0069 19.7562 39.3902 17.4 38.2001L6 42.0001L9.8 30.6001C8.60986 28.2438 7.99312 25.6398 8 23.0001C8.00122 19.8436 8.88122 16.7498 10.5414 14.0652C12.2017 11.3806 14.5765 9.21119 17.4 7.80006C19.7562 6.60992 22.3603 5.99317 25 6.00006H26C30.1687 6.23004 34.1061 7.98958 37.0583 10.9418C40.0105 13.894 41.77 17.8314 42 22.0001V23.0001Z"
-                        fill="#282828"
-                      />
-                    </svg>
+                    <FontAwesomeIcon icon={faComment} className="text-4xl" />
 
                     <div className="text-3xl"> Marktupdates</div>
                   </div>
