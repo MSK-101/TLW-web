@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Button } from "../ui/button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 export default function FooterCTA() {
   return (
@@ -11,10 +12,15 @@ export default function FooterCTA() {
           <h1 className="text-3xl md:text-6xl xl:text-7xl font-bold opacity-80 leading-[90%]">
             Bestel nu <br /> je ticket!
           </h1>
-          <Button className="bg-gray-50 text-[#282828] py-[6px] px-3 lg:px-[32px] h-[30px] lg:h-[42px] mt-10">
-            Bestel je ticket
-            <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-          </Button>
+          <Link
+            href="https://wwwthelimitlesswaynl.plugandpay.com/checkout/event"
+            target="_blank"
+          >
+            <Button className="bg-gray-50 text-[#282828] py-[6px] px-3 lg:px-[32px] h-[30px] lg:h-[42px] mt-10 cursor-pointer hover:scale-105">
+              Bestel je ticket
+              <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+            </Button>
+          </Link>
         </div>
         <div className="col-auto py-6">
           <Image

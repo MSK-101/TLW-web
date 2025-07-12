@@ -65,7 +65,7 @@ export default function HeroSection() {
             target="_blank"
           >
             <Button className="bg-[#E6C7FF] text-[#282828] py-6 px-3 md:px-6 flex-1 md:flex-none gap-[18px] cursor-pointer hover:scale-105">
-              Bestel je ticket{" "}
+              Bestel je ticket
               <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
             </Button>
           </Link>

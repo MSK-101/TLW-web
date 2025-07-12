@@ -2,6 +2,7 @@ import eventAgenda from "@/utils/eventAgenda";
 import { Button } from "../ui/button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 interface AgendaItem {
   time: string;
@@ -29,10 +30,15 @@ export default function AgendaContent() {
           <p>Het programma is van 14-18 uur.</p>
           <p>We zien je graag dan!</p>
         </div>
-        <Button className="bg-[#282828] text-gray-50 mt-5 py-[6px] px-[32px] h-[42px]">
-          Bestel je ticket
-          <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-        </Button>
+        <Link
+          href="https://wwwthelimitlesswaynl.plugandpay.com/checkout/event"
+          target="_blank"
+        >
+          <Button className="bg-[#282828] text-gray-50 mt-5 py-[6px] px-[32px] h-[42px] cursor-pointer hover:scale-105">
+            Bestel je ticket
+            <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+          </Button>
+        </Link>
       </div>
       <div>
         {Array.isArray(eventAgenda) &&
