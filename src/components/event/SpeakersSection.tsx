@@ -113,12 +113,12 @@ export default function SpeakersSection() {
             height={123}
             className="object-cover object-top w-full h-96 md:h-full"
           />
-          <div className="px-[24px] py-[40px] col-span-1 sm:col-span-2">
+          <div className="px-[24px] py-6 col-span-1 sm:col-span-2">
             <h2 className="font-medium text-[23px]">
               Tineke Zwart - Co-founder TLW & Crypto Educator Technische analyse
               voor beginners: leer de basis en pas direct toe
             </h2>
-            <p className="text-[18px] text-[#525252] line-clamp-3">
+            <p className="text-[18px] text-[#525252]">
               Wat voor type belegger ben jij? In deze interactieve sessie ontdek
               je jouw investeerdersprofiel en leer je welke assets daarbij
               passen – voor meer grip op je keuzes en een strategie die écht bij
@@ -134,12 +134,12 @@ export default function SpeakersSection() {
             height={123}
             className="object-cover object-center md:object-top w-full h-96 md:h-full"
           />
-          <div className="px-[24px] py-[40px] col-span-1 sm:col-span-2">
+          <div className="px-[24px] py-6 col-span-1 sm:col-span-2">
             <h2 className="font-medium text-[23px]">
               Anníka van Loon - TLW Crypto Expert Wat is jouw investor hat?
               Ontdek je beleggersprofiel en bijpassende assets
             </h2>
-            <p className="text-[18px] text-[#525252] line-clamp-3">
+            <p className="text-[18px] text-[#525252]">
               Ontdek hoe je als beginnende belegger koersgrafieken leert lezen
               en slimme beslissingen maakt op basis van technische analyse. Deze
               praktische sessie geeft je direct toepasbare inzichten waarmee jij
@@ -155,12 +155,12 @@ export default function SpeakersSection() {
             height={123}
             className="object-cover object-top w-full h-96 md:h-full"
           />
-          <div className="px-[24px] py-[40px] col-span-1 sm:col-span-2">
+          <div className="px-[24px] py-6 col-span-1 sm:col-span-2">
             <h2 className="font-medium text-[23px]">
               Kim de Graeve - Finance Mentor & Freedom Coach Financiële vrijheid
               met laagdrempelige assets – hoe bouw je een stevig fundament?
             </h2>
-            <p className="text-[18px] text-[#525252] line-clamp-3">
+            <p className="text-[18px] text-[#525252]">
               Ook met kleine bedragen kun je financieel vrij worden. Kim laat
               zien hoe je met slimme keuzes en een heldere focus een krachtig
               fundament bouwt voor jouw lange termijn vermogen.
@@ -175,12 +175,12 @@ export default function SpeakersSection() {
             height={123}
             className="object-cover object-top w-full h-96 md:h-full"
           />
-          <div className="px-[24px] py-[40px] col-span-1 sm:col-span-2">
+          <div className="px-[24px] py-6 col-span-1 sm:col-span-2">
             <h2 className="font-medium text-[23px]">
               Giovanni Jimmink - Vastgoedinvesteerder & Ondernemer Investeren in
               buitenlands vastgoed – de do&apos;s & dont&apos;s
             </h2>
-            <p className="text-[18px] text-[#525252] line-clamp-3">
+            <p className="text-[18px] text-[#525252]">
               Wat doe je met je cryptowinst en welke manieren van vastgoed
               investeren zijn er? Giovanni deelt zijn lessen en valkuilen uit
               jarenlange ervaring met vastgoed in Spanje. Leer hoe jij deze
@@ -196,12 +196,12 @@ export default function SpeakersSection() {
             height={123}
             className="object-cover object-center md:object-top w-full h-96 md:h-full"
           />
-          <div className="px-[24px] py-[40px] col-span-1 sm:col-span-2">
+          <div className="px-[24px] py-6 col-span-1 sm:col-span-2">
             <h2 className="font-medium text-[23px]">
               Otto Schapendonk - De Cijferdokter & Financieel Analist Van crypto
               tot goud – slim spreiden over verschillende assets
             </h2>
-            <p className="text-[18px] text-[#525252] line-clamp-3">
+            <p className="text-[18px] text-[#525252]">
               Crypto, vastgoed, goud – hoe combineer je dat slim? Otto legt je
               op begrijpelijke wijze uit hoe verschillende assets scoren op
               risico, rendement en timing. Met rekenvoorbeelden en inzichten op
@@ -217,12 +217,12 @@ export default function SpeakersSection() {
             height={123}
             className="object-cover object-center md:object-top w-full h-96 md:h-full"
           />
-          <div className="px-[24px] py-[40px] col-span-1 sm:col-span-2">
+          <div className="px-[24px] py-6 col-span-1 sm:col-span-2">
             <h2 className="font-medium text-[23px]">
               Tim Kamp - Crypto Expert De invloed van de macro economie op de
               crypto markt
             </h2>
-            <p className="text-[18px] text-[#525252] line-clamp-3">
+            <p className="text-[18px] text-[#525252]">
               De cryptomarkt wordt erg beïnvloed alles wat er gebeurt op macro
               economisch en geopolitiek vlak. Tim vertelt exact welke dingen een
               positieve en negatieve impact hebben op de koersen zodat je daar
