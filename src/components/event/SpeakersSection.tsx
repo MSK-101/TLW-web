@@ -96,11 +96,11 @@ export default function SpeakersSection() {
         <p className="text-[#CCCCCC] font-bold mt-4 md:w-[584px] text-lg text-center">
           Tineke begint de middag met een plenaire keynote presentatie en daarna
           kun je 2 workshops van 45 minuten over specifieke financiële
-          onderwerpen volgen bij 2 andere sprekers. Hierbij kun je kiezen uit
-          maar liefst 6 verschillende experts.
+          onderwerpen volgen bij andere sprekers. Hierbij kun je kiezen uit maar
+          liefst 6 verschillende experts.
           <br />
           <br />
-          We sluiten af met de lancering van de app door Myrte.
+          We sluiten af met de lancering van de app door Tineke en Myrte.
         </p>
       </div>
 

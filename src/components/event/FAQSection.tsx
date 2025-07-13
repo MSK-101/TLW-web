@@ -21,10 +21,9 @@ export default function FAQSection() {
             Is het event dan ook voor mij?
           </AccordionTrigger>
           <AccordionContent>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores
-            dolorem nemo eaque! Sed, explicabo. Sed recusandae repellendus,
-            explicabo quibusdam quisquam commodi, sequi necessitatibus ducimus
-            dolores deserunt, reprehenderit sunt ab velit?
+            We hebben veel waardevolle producten voor beginners, maar dit event
+            is bedoeld voor mensen die al crypto bezitten. Je hoeft er echter
+            niet per se veel over te weten om mee te kunnen doen.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-2">
@@ -32,10 +31,9 @@ export default function FAQSection() {
             Ik ben ondernemer. Kan ik de kosten van dit event ook aftrekken?
           </AccordionTrigger>
           <AccordionContent>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ipsa
-            asperiores recusandae nemo deleniti sunt error hic sapiente quos
-            placeat ducimus libero atque ratione voluptas consequatur,
-            architecto, explicabo non unde!
+            In sommige gevallen kan dat, maar in de meeste gevallen niet. Het
+            wisselt ook per bedrijf. Daarom is het slim om dit even met je
+            boekhouder te checken.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-3">
@@ -43,10 +41,10 @@ export default function FAQSection() {
             Wat zijn de annuleringsvoorwaarden voor het event?
           </AccordionTrigger>
           <AccordionContent>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-            voluptas accusantium nam perspiciatis incidunt architecto sit at
-            modi, cum quisquam animi voluptate illo maiores dolorem. Hic veniam
-            deleniti molestias architecto?
+            Je kunt je kaartje aan iemand anders geven als je echt niet kan,
+            maar terug doen kan helaas niet. Dit mede in verband met het
+            reserveren van de locatie op basis van het aantal mensen dat erbij
+            is.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-4">
@@ -54,10 +52,8 @@ export default function FAQSection() {
             Waar kan ik parkeren?
           </AccordionTrigger>
           <AccordionContent>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-            voluptas accusantium nam perspiciatis incidunt architecto sit at
-            modi, cum quisquam animi voluptate illo maiores dolorem. Hic veniam
-            deleniti molestias architecto?
+            Op en rondom het terrein van Green Village is voldoende gratis
+            parkeerplek.
           </AccordionContent>
         </AccordionItem>
       </Accordion>

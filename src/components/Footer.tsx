@@ -9,15 +9,42 @@ export default function Footer() {
         {/* <Link href="#" target="_blank" className="hover:scale-110 transition-all duration-300">
           Facebook
         </Link> */}
-        <Link href="https://www.instagram.com/tlw_official2025" target="_blank" className="hover:scale-110 transition-all duration-300">
+        <Link
+          href="https://www.instagram.com/tlw_official2025"
+          target="_blank"
+          className="hover:scale-110 transition-all duration-300"
+        >
           Instagram
         </Link>
-        <Link href="https://www.linkedin.com/in/tineke-zwart" target="_blank" className="hover:scale-110 transition-all duration-300">
-          LinkedIn
+        <Link
+          href="https://www.linkedin.com/in/tineke-zwart"
+          target="_blank"
+          className="hover:scale-110 transition-all duration-300"
+        >
+          LinkedIn Tineke
         </Link>
-        <Link href="https://www.linkedin.com/in/myrte-scheffer/" target="_blank" className="hover:scale-110 transition-all duration-300">
-          LinkedIn
+        <Link
+          href="https://www.linkedin.com/in/myrte-scheffer/"
+          target="_blank"
+          className="hover:scale-110 transition-all duration-300"
+        >
+          LinkedIn Myrte
         </Link>
+        <Link
+          href="https://open.spotify.com/show/4awEL2IeSlqyr2rOQwNhH8?si=27feaf31a51e4d95"
+          target="_blank"
+          className="hover:scale-110 transition-all duration-300"
+        >
+          Spotify
+        </Link>
+        <Link
+          href="http://www.youtube.com/@thelimitlessway_official"
+          target="_blank"
+          className="hover:scale-110 transition-all duration-300"
+        >
+          YouTube
+        </Link>
+
         {/* <Link href="#" target="_blank" className="hover:scale-110 transition-all duration-300">
           Youtube
         </Link>
