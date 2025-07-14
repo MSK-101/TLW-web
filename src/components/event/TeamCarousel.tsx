@@ -63,6 +63,11 @@ const team = [
     imageUrl: "/team/member5.png",
     label: "Technical Architect DevRepublic (a.i.)",
   },
+  {
+    name: "Sophie van Koert",
+    imageUrl: "/team/member12.png",
+    label: "Projectsupport",
+  },
 ];
 
 export default function TeamCarousel() {

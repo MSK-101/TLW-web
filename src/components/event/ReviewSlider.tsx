@@ -17,9 +17,9 @@ const reviews = [
     textColor: "#525252",
   },
   {
-    name: "Naam Achternaam",
-    title: "",
-    text: "Myrte is echt een topaanwinst voor elk bedrijf wdat wil groeien en die dat wil doen met een vernieuwend concept.",
+    name: "Nasser el Kamouchi",
+    title: "(eigenaar Whello)",
+    text: "Myrte is echt een topaanwinst voor elk bedrijf dat wil groeien en die dat wil doen met een vernieuwend concept.",
     date: "21 maand 2025",
     bgColor: "#7F65CA",
     textColor: "#FFFFFF",

@@ -54,7 +54,7 @@ export default function HeroSection() {
           <h1 className="font-extrabold text-[42px] leading-[34.18px] md:text-[110px] md:leading-[105px] text-gray-50">
             Slimmer met geld. Vrijer in het leven.
           </h1>
-          <p className="my-5 text-gray-50 text-lg md:text-[23px] ">
+          <p className="my-5 text-gray-50 text-lg md:text-[23px] bg-black/50 rounded px-4 py-1">
             Voor iedereen die meer wil halen uit crypto en andere assets, maar
             vooral: uit zichzelf en het leven.
           </p>
