@@ -26,6 +26,19 @@ body {
       animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
     }
   }
+
+  --animate-rtl: rightToLeft 10s linear infinite;
+  --animate-rtl-md: rightToLeft 12s linear infinite;
+
+  @keyframes rightToLeft{
+    from{
+      transform: translateX(0);
+    }
+    to{
+      transform: translateX(-100%);
+    }
+  }
+
 }
 
 @keyframes slideInFromRight {
