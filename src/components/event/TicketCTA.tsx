@@ -8,7 +8,7 @@ export default function TicketCTA() {
     <div className="flex flex-col items-center mb-[124px]">
       <div className="text-4xl text-center max-w-[650px]">
         Bestel nu je Early Bird ticket tot en met 25 juli voor €59.
-        <p className="text-xl mt-6">Daarna gaat de prijs omhoog naar €77.</p>
+        <p className="text-xl mt-6">Daarna gaat de prijs omhoog naar €69.</p>
       </div>
       <Link
         href="https://wwwthelimitlesswaynl.plugandpay.com/checkout/event"
