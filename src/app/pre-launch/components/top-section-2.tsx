@@ -1,11 +1,32 @@
+"use client";
+
 import { DownArrowIcon } from "@/components/icons";
 import Image from "next/image";
+import React, { useEffect, useState } from "react";
 
 export default function TopSection2() {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Parallax speeds (smaller = slower)
+  const imageSpeed = 0.15;
+  const hoveringObjectsSpeed = 0.22;
+
+  const imageStyle = {
+    transform: `translateY(${scrollY * imageSpeed}px)`,
+  };
+  const hoveringObjectsStyle = {
+    transform: `translateY(${scrollY * hoveringObjectsSpeed}px)`,
+  };
+
   const MovingLogo = () => {
-    // width = (800 x 4 + 40 x 4) / 2
-    // md:width = (900 x 4 + 80 x 4) / 2
-    // lg:width = (1730 x 4 + 100 x 4) / 2
     return (
       <div className="overflow-hidden w-screen">
         <div className="flex gap-[40px] md:gap-[80px] lg:gap-[100px] w-[1680px] md:w-[1960px] lg:w-[3660px] animate-rtl md:animate-rtl-md">
@@ -39,6 +60,7 @@ export default function TopSection2() {
           height={719}
           alt="Hero Image"
           className="absolute h-[346px] sm:h-[450px] md:h-[500px] lg:h-[721px] object-cover object-top ml-10 md:ml-20"
+          style={imageStyle}
         />
 
         {/* Layer - Hovering Objects */}
@@ -48,6 +70,7 @@ export default function TopSection2() {
           height={719}
           alt="Hovering Objects"
           className="absolute md:h-[650px] lg:h-[900px] object-cover object-center hidden md:block"
+          style={hoveringObjectsStyle}
         />
 
         {/* Layer - Hovering Objects */}
@@ -57,6 +80,7 @@ export default function TopSection2() {
           height={719}
           alt="Hovering Objects"
           className="absolute h-[386px] sm:h-[450px] object-fill object-[0_-56px] block md:hidden"
+          style={hoveringObjectsStyle}
         />
       </div>
       <div className="self-center px-[24px] md:px-[120px] max-w-[1102px] flex justify-start items-center shrink gap-[30px] md:gap-[119px]">
