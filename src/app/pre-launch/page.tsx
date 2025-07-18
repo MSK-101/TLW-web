@@ -4,6 +4,8 @@ import TopSection2 from "./components/top-section-2";
 import { UserCheckIconDark, WishlistIconDark } from "@/components/icons";
 import Image from "next/image";
 import { BitvavoLogo, FinstLogo } from "@/components/logos";
+import SubscriptionCard from "./components/subscriptions-card";
+import subscriptions from "@/utils/subscriptions";
 
 export default function PreLaunch() {
   return (
@@ -134,6 +136,44 @@ export default function PreLaunch() {
               alt="Phone"
               className=""
             />
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-[#282828]">
+        <div className="px-[24px] py-[100px] rounded-3xl bg-gray-50 flex flex-col gap-[100px]">
+          <div className="rounded-3xl flex flex-col lg:flex-row justify-between overflow-hidden p-[36px] lg:p-[100px] bg-[url('/hero_image_event.jpg')] bg-cover bg-center h-[792px]">
+            <div className="text-gray-50">
+              <h2>Over ons</h2>
+              <p className="text-[48px] font-extrabold max-w-[490px]">
+                "Ligula mauris et scelerisque nullam pellente"
+              </p>
+            </div>
+            <div className="rounded-xl bg-gray-50 p-4 self-end sm:max-w-[380px]">
+              In mauris felis nec placerat ultrices quis aliquam amet. Morbi
+              interdum enim viverra ut urna mi auctor feugiat massa. Mauris
+              facilisis pellentesque sit sagittis pretium blandit scelerisque
+              ligula nullam. Cursus nulla quis et id condimentum. Orci nisi
+              neque laoreet convallis malesuada venenatis mauris at. Mattis
+              turpis amet mauris sit. Augue vitae ullamcorper nunc cursus urna
+              vestibulum pharetra convallis.
+            </div>
+          </div>
+          <div className="flex flex-col gap-5 lg:px-[100px]">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div className="flex flex-col">
+                <h2>Abonnementen</h2>
+                <p className="text-[26px] md:text-[48px]">
+                  Kies het abonnement dat bij je past en haal alles uit de app
+                </p>
+              </div>
+              <SubscriptionCard {...subscriptions[0]} />
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+              <SubscriptionCard {...subscriptions[1]} />
+              <SubscriptionCard {...subscriptions[2]} />
+              <SubscriptionCard {...subscriptions[3]} />
+            </div>
           </div>
         </div>
       </div>
