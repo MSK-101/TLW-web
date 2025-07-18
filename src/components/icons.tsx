@@ -243,3 +243,29 @@ export function DownArrowIcon({
     </svg>
   );
 }
+
+export function CheckIcon({
+  className,
+  stroke,
+  ...props
+}: { className?: string; stroke?: string } & React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="26"
+      viewBox="0 0 24 26"
+      fill="none"
+      className={className}
+      {...props}
+    >
+      <path
+        d="M20 8L9 19L4 14"
+        stroke={stroke || "#7F65CA"}
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
