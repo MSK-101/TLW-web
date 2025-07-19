@@ -3,6 +3,8 @@ import React from "react";
 import QuoteSection from "./quote";
 import IntroSection from "./intro";
 import GroupSection from "./group";
+import TeamSection from "./team";
+import TestimonialsSection from "./testimonials";
 
 export default function ComparisonSection() {
   const features = [
@@ -102,6 +104,8 @@ export default function ComparisonSection() {
       <QuoteSection />
       <IntroSection />
       <GroupSection />
+      <TeamSection />
+      <TestimonialsSection />
     </div>
   );
 }
