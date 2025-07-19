@@ -43,15 +43,6 @@ export default function IntroSection() {
           </p>
         </div>
       </div>
-
-      <div className="mb-20 px-20 mt-40">
-        <h5 className="text-2xl lg:text-6xl text-center text-[#282828] mb-12">
-          Wat anderen vinden..
-        </h5>
-        <h6 className="text-xl  lg:px-50 lg:text-2xl text-center text-[#282828] mb-4">
-          De reviews zijn afkomstig van deelnemers die meededen met de Crypto Cursus, de Trading cursus en/of de Crypto Alerts.
-        </h6>
-      </div>
     </div>
   );
 }

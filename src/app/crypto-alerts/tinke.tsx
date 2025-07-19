@@ -6,7 +6,7 @@ export default function Tinke() {
   return (
     <div className="bg-[url(/background.png)] bg-bottom bg-cover bg-no-repeat rounded-2xl lg:rounded-b-4xl -mx-5 lg:-mx-[100px] px-6 lg:px-[124px]">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <div className="col-auto self-center text-center sm:mt-10 lg:text-left lg:pl-6">
+        <div className="col-auto self-center text-center lg:text-left lg:pl-6">
           <h1 className="text-3xl md:text-6xl xl:text-7xl font-bold opacity-80 leading-[90%]">
             Meld je<br /> direct aan!
           </h1>
