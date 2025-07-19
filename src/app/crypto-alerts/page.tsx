@@ -3,6 +3,8 @@
 import CryptoAlertsMain from "./main";
 import BenefitsSection from "./benefits";
 import ComparisonSection from "./comparison";
+import Tinke from "./tinke";
+import FAQSection from "./faq_section";
 
 export default function CryptoAlertsPage() {
   return (
@@ -11,6 +13,8 @@ export default function CryptoAlertsPage() {
       <div className="bg-gray-50 py-12 lg:py-28 rounded-[32px] px-[24px] lg:px-[124px]">
         <BenefitsSection />
         <ComparisonSection />
+        <Tinke />
+        <FAQSection />
       </div>
     </main>
   );
