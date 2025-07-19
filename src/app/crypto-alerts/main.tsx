@@ -32,14 +32,37 @@ export default function CryptoAlertsMain() {
         </div>
       </div>
 
-      <div className="w-full lg:w-1/2 flex justify-center mt-8 lg:mt-0">
-        <Image
-          src="/crypto_phone.png"
-          alt="Crypto Phone"
-          width={500}
-          height={500}
-          className="animate-slide-in-right"
-        />
+      <div className="w-full lg:w-1/2 flex justify-center lg:justify-start lg:ml-20 mt-8 lg:mt-0 relative">
+        {/* Phone Image */}
+        <div className="relative">
+          <Image
+            src="/crypto_phone.png"
+            alt="Crypto Phone"
+            width={500}
+            height={500}
+            className="animate-slide-in-right"
+          />
+
+          {/* Floating Info Box */}
+          <div className="absolute animate-slide-in-right left-1/2 transform -translate-x-1/2 top-1/2 -translate-y-1/2 lg:left-auto lg:-left-16 lg:transform-none bg-[#E6C7FF] rounded-2xl p-4 lg:p-6 shadow-lg max-w-[280px] lg:max-w-[320px]">
+            <div className="flex items-start space-x-3 lg:space-x-4">
+              <div className="flex-1">
+                <p className="text-[#282828] text-sm lg:text-base leading-relaxed">
+                  De Crypto Alerts wordt geleid door <br/><span className="font-bold">Tineke Zwart en is een product van The Limitless Way.</span>
+                </p>
+              </div>
+              <div className="flex-shrink-0">
+                <Image
+                  src="/speakers/tineke.png"
+                  alt="Tineke Zwart"
+                  width={80}
+                  height={80}
+                  className="w-14 h-14 lg:w-16 lg:h-16 rounded-full object-cover object-top"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
