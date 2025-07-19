@@ -1,5 +1,8 @@
 "use client";
 import React from "react";
+import QuoteSection from "./quote";
+import IntroSection from "./intro";
+import GroupSection from "./group";
 
 export default function ComparisonSection() {
   const features = [
@@ -95,6 +98,10 @@ export default function ComparisonSection() {
           </div>
         </div>
       </div>
+
+      <QuoteSection />
+      <IntroSection />
+      <GroupSection />
     </div>
   );
 }
