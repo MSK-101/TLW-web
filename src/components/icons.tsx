@@ -1,7 +1,4 @@
-export function WishlistIconLight({
-  className,
-  ...props
-}: { className?: string } & React.SVGProps<SVGSVGElement>) {
+export function WishlistIconLight({ ...props }: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -9,7 +6,6 @@ export function WishlistIconLight({
       height="18"
       viewBox="0 0 18 18"
       fill="none"
-      className={className}
       {...props}
     >
       <g clipPath="url(#clip0_155_8052)">
@@ -51,10 +47,7 @@ export function WishlistIconLight({
   );
 }
 
-export function WishlistIconDark({
-  className,
-  ...props
-}: { className?: string } & React.SVGProps<SVGSVGElement>) {
+export function WishlistIconDark({ ...props }: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -62,6 +55,7 @@ export function WishlistIconDark({
       height="18"
       viewBox="0 0 18 18"
       fill="none"
+      {...props}
     >
       <g clipPath="url(#clip0_155_7963)">
         <path
@@ -103,9 +97,8 @@ export function WishlistIconDark({
 }
 
 export function UserCheckIconLight({
-  className,
   ...props
-}: { className?: string } & React.SVGProps<SVGSVGElement>) {
+}: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -113,7 +106,6 @@ export function UserCheckIconLight({
       height="18"
       viewBox="0 0 18 18"
       fill="none"
-      className={className}
       {...props}
     >
       <path
@@ -141,10 +133,7 @@ export function UserCheckIconLight({
   );
 }
 
-export function UserCheckIconDark({
-  className,
-  ...props
-}: { className?: string } & React.SVGProps<SVGSVGElement>) {
+export function UserCheckIconDark({ ...props }: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -152,7 +141,6 @@ export function UserCheckIconDark({
       height="18"
       viewBox="0 0 18 18"
       fill="none"
-      className={className}
       {...props}
     >
       <path
@@ -180,10 +168,7 @@ export function UserCheckIconDark({
   );
 }
 
-export function UserIcon({
-  className,
-  ...props
-}: { className?: string } & React.SVGProps<SVGSVGElement>) {
+export function UserIcon({ ...props }: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -191,7 +176,6 @@ export function UserIcon({
       height="24"
       viewBox="0 0 24 24"
       fill="none"
-      className={className}
       {...props}
     >
       <path
@@ -212,10 +196,7 @@ export function UserIcon({
   );
 }
 
-export function DownArrowIcon({
-  className,
-  ...props
-}: { className?: string } & React.SVGProps<SVGSVGElement>) {
+export function DownArrowIcon({ ...props }: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -223,7 +204,6 @@ export function DownArrowIcon({
       height="22"
       viewBox="0 0 22 22"
       fill="none"
-      className={className}
       {...props}
     >
       <path
@@ -245,10 +225,9 @@ export function DownArrowIcon({
 }
 
 export function CheckIcon({
-  className,
   stroke,
   ...props
-}: { className?: string; stroke?: string } & React.SVGProps<SVGSVGElement>) {
+}: { stroke?: string } & React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -256,7 +235,6 @@ export function CheckIcon({
       height="26"
       viewBox="0 0 24 26"
       fill="none"
-      className={className}
       {...props}
     >
       <path
