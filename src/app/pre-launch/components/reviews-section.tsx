@@ -1,7 +1,14 @@
 "use client";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowLeft,
+  faArrowRight,
+  faStar,
+  faStarHalfStroke,
+} from "@fortawesome/free-solid-svg-icons";
+import { faStar as faStarRegular } from "@fortawesome/free-regular-svg-icons";
+
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -25,12 +32,12 @@ const reviews = [
     text: "Felis tortor feugiat et in congue nunc magna enim facilisis. Eu tristique vel facilisi aliquet lorem urna et. Turpis egestas proin risus ornare mi ipsum feugiat dictum urna.",
     date: "21 maart 2025",
     bgColor: "#7F65CA",
-    textColor: "#CCC",
+    textColor: "#fff",
   },
   {
     full_name: "Naam Achternaam",
     username: "Gebruikersnaam",
-    rating: 5,
+    rating: 3.5,
     text: "In mauris felis nec placerat ultrices quis aliquam amet. Morbi interdum enim viverra ut urna mi auctor feugiat massa. Mauris facilisis pellentesque sit sagittis pretium blandit scelerisque ligula nullam. Cursus nulla quis et id condimentum.",
     date: "21 maart 2025",
     bgColor: "#F9F6B3",
@@ -43,16 +50,16 @@ const reviews = [
     text: "Dui euismod diam porttitor nunc elementum sed mattis vulputate. Nec volutpat duis pretium sapien velit in.",
     date: "21 maart 2025",
     bgColor: "#282828",
-    textColor: "#CCC",
+    textColor: "#fff",
   },
   {
     full_name: "Naam Achternaam",
     username: "Gebruikersnaam",
-    rating: 5,
+    rating: 4,
     text: "Felis tortor feugiat et in congue nunc magna enim facilisis. Eu tristique vel facilisi aliquet lorem urna et. Turpis egestas proin risus ornare mi ipsum feugiat dictum urna.",
     date: "21 maart 2025",
     bgColor: "#7F65CA",
-    textColor: "#CCC",
+    textColor: "#fff",
   },
   {
     full_name: "Naam Achternaam",
@@ -66,13 +73,49 @@ const reviews = [
   {
     full_name: "Naam Achternaam",
     username: "Gebruikersnaam",
-    rating: 5,
+    rating: 1,
     text: "Dui euismod diam porttitor nunc elementum sed mattis vulputate. Nec volutpat duis pretium sapien velit in.",
     date: "21 maart 2025",
     bgColor: "#282828",
-    textColor: "#CCC",
+    textColor: "#fff",
   },
 ];
+
+// StarRating component for dynamic stars
+function StarRating({ rating, color }: { rating: number; color: string }) {
+  const stars = [];
+  let remaining = rating;
+  for (let i = 0; i < 5; i++) {
+    if (remaining >= 1) {
+      stars.push(
+        <FontAwesomeIcon
+          icon={faStar}
+          key={i}
+          style={{ color, fontSize: "1.25rem" }}
+        />
+      );
+      remaining -= 1;
+    } else if (remaining >= 0.5) {
+      stars.push(
+        <FontAwesomeIcon
+          icon={faStarHalfStroke}
+          key={i}
+          style={{ color, fontSize: "1.25rem" }}
+        />
+      );
+      remaining -= 0.5;
+    } else {
+      stars.push(
+        <FontAwesomeIcon
+          icon={faStarRegular}
+          key={i}
+          style={{ color, fontSize: "1.25rem" }}
+        />
+      );
+    }
+  }
+  return <div className="flex gap-1">{stars}</div>;
+}
 
 export default function ReviewsSection() {
   return (
@@ -146,8 +189,14 @@ export default function ReviewsSection() {
                       </div>
                     </div>
                   </div>
+                  <div className="mt-8 mb-3">
+                    <StarRating
+                      rating={review.rating}
+                      color={review.textColor}
+                    />
+                  </div>
 
-                  <div className="text-base md:text-xl font-normal flex-grow mt-5">
+                  <div className="font-normal flex-grow mt-5">
                     {review.text}
                   </div>
 
