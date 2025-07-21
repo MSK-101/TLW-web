@@ -6,17 +6,17 @@ import Link from "next/link";
 
 export default function FooterCTA() {
   return (
-    <div className="bg-[url(/background.png)] bg-bottom bg-cover bg-no-repeat rounded-2xl lg:rounded-b-4xl -mx-5 lg:-mx-[100px] px-6 lg:px-[124px]">
+    <div className="bg-[url(/background.png)] bg-bottom bg-cover bg-no-repeat rounded-2xl lg:rounded-4xl px-6 py-2 lg:py-6 xl:px-[124px]">
       <div className="grid grid-cols-2">
         <div className="col-auto self-center lg:pl-6">
-          <h1 className="text-3xl md:text-6xl xl:text-7xl font-bold opacity-80 leading-[90%]">
+          <h1 className="text-3xl md:text-6xl 2xl:text-8xl font-bold opacity-80 leading-[90%]">
             Bestel nu <br /> je ticket!
           </h1>
           <Link
             href="https://wwwthelimitlesswaynl.plugandpay.com/checkout/event"
             target="_blank"
           >
-            <Button className="bg-gray-50 text-[#282828] py-[6px] px-3 lg:px-[32px] h-[30px] lg:h-[42px] mt-10 cursor-pointer hover:scale-105">
+            <Button className="bg-gray-50 text-[#282828] py-[6px] px-3 lg:px-[32px] h-[30px] lg:h-[42px] mt-6 md:mt-8 2xl:mt-12 cursor-pointer hover:scale-105">
               Bestel je ticket
               <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
             </Button>
@@ -28,7 +28,7 @@ export default function FooterCTA() {
             width={1106}
             height={822}
             alt=""
-            className="h-full w-full translate-y-6 translate-x-6 lg:translate-x-0 max-h-[420px] object-contain scale-105 lg:scale-120 animate-slide-in-right"
+            className="h-full w-full translate-y-2 md:translate-y-12 translate-x-7 lg:translate-x-0 max-h-[460px] object-contain scale-120 animate-slide-in-right"
           />
         </div>
       </div>

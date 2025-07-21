@@ -9,7 +9,7 @@ import {
 
 export default function FAQSection() {
   return (
-    <div className="mb-[124px] lg:px-14">
+    <div className="lg:px-14">
       <div className="text-center mb-15">
         <h2>FAQ</h2>
         <p className="text-[48px]">Veelgestelde vragen</p>
