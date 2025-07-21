@@ -1,6 +1,6 @@
 export default function FeaturesSection() {
   return (
-    <div className="flex lg:flex-row flex-col gap-16 xl:gap-24 mb-[124px]">
+    <div className="flex lg:flex-row flex-col gap-16 xl:gap-24 mb-[124px] lg:px-14">
       <div className="xl:max-w-[600px] text-center lg:text-left mb-5">
         <h2 className="text-sm">Features</h2>
         <h2 className="text-5xl">Turpis at donec ut urna malesuada </h2>

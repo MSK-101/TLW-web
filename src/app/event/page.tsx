@@ -4,7 +4,7 @@ import FeaturesSection from "@/components/event/FeaturesSection";
 import FooterCTA from "@/components/event/FooterCTA";
 import FoundersMessage from "@/components/event/FoundersMessage";
 import HeroSection from "@/components/event/HeroSection";
-import NewsletterSignup from "@/components/event/NewsletterSignup";
+import NewsletterSignup from "@/components/NewsletterSignup";
 import ReviewSlider from "@/components/event/ReviewSlider";
 import SpeakersSection from "@/components/event/SpeakersSection";
 import TeamCarousel from "@/components/event/TeamCarousel";

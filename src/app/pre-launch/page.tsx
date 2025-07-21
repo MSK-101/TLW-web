@@ -14,24 +14,9 @@ import WishlistSection from "./components/wishlist-section";
 import TeamCarousel from "@/components/event/TeamCarousel";
 import FAQSection from "@/components/event/FAQSection";
 import DownloadAppSection from "./components/download-app-section";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
+import NewsletterSignup from "@/components/NewsletterSignup";
 
 export default function PreLaunch() {
-  const [isChecked, setIsChecked] = useState(false);
-
-  const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setIsChecked(e.target.checked);
-  };
-
-  const handleIconClick = () => {
-    if (isChecked) {
-      // Handle email submission logic here
-      console.log("Email submitted");
-    }
-  };
-
   return (
     <div className="bg-[#282828] p-[24px]">
       <div className="bg-[url(/cs_hero_bg.png)] bg-center bg-cover bg-no-repeat rounded-[32px] bg-[#F0F0F0] py-[24px] overflow-hidden">
@@ -162,7 +147,7 @@ export default function PreLaunch() {
         </div>
       </div>
 
-      <div className="-mx-[24px] px-[24px] lg:px-[100px] py-[100px] rounded-3xl bg-gray-50 flex flex-col gap-[100px]">
+      <div className="-mx-[24px] px-[24px] lg:px-[124px] py-[100px] rounded-3xl bg-gray-50 flex flex-col gap-[100px]">
         <FeaturesSection />
         <ReviewsSection />
         <WishlistSection />
@@ -209,46 +194,7 @@ export default function PreLaunch() {
         </div>
 
         <DownloadAppSection />
-
-        <section className="flex justify-center text-[#282828] rounded-2xl lg:rounded-[32px] mx-4 lg:mx-0">
-          <div className="w-full px-6 lg:px-0 lg:w-2/4 text-center">
-            <h1 className="text-4xl lg:text-5xl mb-6 lg:mb-8">
-              Felis tortor feugiat et in congue.
-            </h1>
-            <div className="flex items-center relative mb-4">
-              <input
-                type="email"
-                placeholder="janjansen@mail.com"
-                className="w-full bg-[#F0F0F0] rounded-full py-3 lg:py-4 pl-6 pr-14 focus:outline-[#7F65CA]"
-              />
-              <FontAwesomeIcon
-                icon={faPaperPlane}
-                width={20}
-                className={`cursor-pointer absolute right-4 ${
-                  isChecked
-                    ? "text-[#7F65CA] hover:text-[#5a4a9a]"
-                    : "text-gray-400 cursor-not-allowed"
-                }`}
-                onClick={handleIconClick}
-              />
-            </div>
-            <div className="flex items-center justify-center self-center">
-              <input
-                type="checkbox"
-                className="mr-2"
-                id="tnc_checkbox"
-                checked={isChecked}
-                onChange={handleCheckboxChange}
-              />
-              <label
-                className="text-gray-600 text-sm lg:text-base"
-                htmlFor="tnc_checkbox"
-              >
-                Ik ga akkoord met de algemene voorwaarden
-              </label>
-            </div>
-          </div>
-        </section>
+        <NewsletterSignup />
       </div>
     </div>
   );
