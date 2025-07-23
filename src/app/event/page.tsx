@@ -1,14 +1,14 @@
-import AgendaContent from "@/components/event/AgendaContent";
-import FAQSection from "@/components/event/FAQSection";
-import FeaturesSection from "@/components/event/FeaturesSection";
-import FooterCTA from "@/components/event/FooterCTA";
-import FoundersMessage from "@/components/event/FoundersMessage";
-import HeroSection from "@/components/event/HeroSection";
+import AgendaContent from "@/app/event/components/AgendaContent";
+import FAQSection from "@/app/event/components/FAQSection";
+import FeaturesSection from "@/app/event/components/FeaturesSection";
+import FooterCTA from "@/app/event/components/FooterCTA";
+import FoundersMessage from "@/app/event/components/FoundersMessage";
+import HeroSection from "@/app/event/components/HeroSection";
 import NewsletterSignup from "@/components/NewsletterSignup";
-import ReviewSlider from "@/components/event/ReviewSlider";
-import SpeakersSection from "@/components/event/SpeakersSection";
-import TeamCarousel from "@/components/event/TeamCarousel";
-import TicketCTA from "@/components/event/TicketCTA";
+import ReviewSlider from "@/app/event/components/ReviewSlider";
+import SpeakersSection from "@/app/event/components/SpeakersSection";
+import TeamCarousel from "@/app/event/components/TeamCarousel";
+import TicketCTA from "@/app/event/components/TicketCTA";
 
 export default function Event() {
   return (

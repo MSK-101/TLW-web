@@ -11,9 +11,9 @@ import subscriptions from "@/utils/subscriptions";
 import FeaturesSection from "./components/features-section";
 import ReviewsSection from "./components/reviews-section";
 import WishlistSection from "./components/wishlist-section";
-import TeamCarousel from "@/components/event/TeamCarousel";
-import FAQSection from "@/components/event/FAQSection";
 import DownloadAppSection from "./components/download-app-section";
+import TeamCarousel from "@/components/TeamCarousel";
+import FAQSection from "@/components/FAQSection";
 import NewsletterSignup from "@/components/NewsletterSignup";
 
 export default function PreLaunch() {
