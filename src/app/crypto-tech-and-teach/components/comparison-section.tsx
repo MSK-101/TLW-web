@@ -40,11 +40,11 @@ export default function ComparisonSection() {
             {/* Header Row */}
             <div className="py-4 text-lg lg:text-3xl font-bold text-[#282828] text-left sm:text-center"></div>
 
-            <div className="py-4 text-lg lg:text-3xl font-bold text-[#282828] bg-[#faf6b4] rounded-t-md">
+            <div className="py-4 text-lg lg:text-3xl font-bold text-[#282828]">
               Crypto Alerts
             </div>
 
-            <div className="py-4 text-lg lg:text-3xl font-bold text-[#282828]">
+            <div className="py-4 text-lg lg:text-3xl font-bold text-[#282828] rounded-t-md bg-[#E6C7FF]">
               Crypto Tech & Teach
             </div>
 
@@ -66,8 +66,12 @@ export default function ComparisonSection() {
 
                   {/* Middle Column (Yellow BG, Rounded top and bottom only) */}
                   <div
-                    className={`py-6 px-2 lg:py-8 lg:px-6 bg-[#faf6b4] ${
-                      isFirst ? "rounded-t-md" : isLast ? "rounded-b-md" : ""
+                    className={`py-6 px-2 lg:py-8 lg:px-6 ${
+                      isFirst
+                        ? "rounded-t-md"
+                        : isLast
+                        ? "rounded-b-md border-t border-dashed"
+                        : "border-t border-dashed"
                     }`}
                   >
                     {["✓", "✗"].includes(feature.cryptoAlerts) ? (
@@ -91,8 +95,10 @@ export default function ComparisonSection() {
 
                   {/* Right Column */}
                   <div
-                    className={`py-6 px-2 lg:py-8 lg:px-6 text-[#282828] ${
-                      isFirst ? "" : "border-t border-dashed border-gray-300"
+                    className={`py-6 px-2 lg:py-8 lg:px-6 text-[#282828] bg-[#E6C7FF] ${
+                      !isLast
+                        ? ""
+                        : "rounded-b-md border-t border-dashed border-gray-300"
                     }`}
                   >
                     {["✓", "✗"].includes(feature.cryptoTechTeach) ? (
