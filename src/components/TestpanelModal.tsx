@@ -30,9 +30,9 @@ export default function TestpanelModal({
     }
   };
 
-  let ButtonIcon =
+  const ButtonIcon =
     buttonVariant === "dark" ? UserCheckIconDark : UserCheckIconLight;
-  let defaultButtonClass =
+  const defaultButtonClass =
     buttonVariant === "dark"
       ? "md:h-12 md:rounded-xl bg-gray-50 text-gray-900 cursor-pointer hover:opacity-90"
       : buttonVariant === "custom"

@@ -16,11 +16,11 @@ export default function QuoteSection() {
         </div>
 
         <blockquote className="text-3xl lg:text-4xl font-medium text-[#282828] leading-relaxed mb-8">
-          "Mijn verwachting is dat veel
+          &quot;Mijn verwachting is dat veel
           <br />
           cryptomunten x10 gaan de
           <br />
-          komende maanden"
+          komende maanden&quot;
         </blockquote>
 
         {/* Name */}
