@@ -9,14 +9,15 @@ import {
 
 export default function FAQSection() {
   return (
-    <div className="mb-[124px] lg:px-14 mt-20">
+    <div className="">
       <div className="text-center mb-15">
         <p className="text-[48px]">Veelgestelde vragen</p>
       </div>
       <Accordion type="single" collapsible>
         <AccordionItem value="item-1">
           <AccordionTrigger className="cursor-pointer">
-            Neem je ons mee in welke coins nu interessant zijn om in te investeren?
+            Neem je ons mee in welke coins nu interessant zijn om in te
+            investeren?
           </AccordionTrigger>
           <AccordionContent>
             We hebben veel waardevolle producten voor beginners, maar dit event
@@ -47,10 +48,13 @@ export default function FAQSection() {
         </AccordionItem>
         <AccordionItem value="item-4">
           <AccordionTrigger className="cursor-pointer">
-            Ik heb nog helemaal geen crypto en ik heb de cursus niet gedaan, is dit product interessant voor mij?
+            Ik heb nog helemaal geen crypto en ik heb de cursus niet gedaan, is
+            dit product interessant voor mij?
           </AccordionTrigger>
           <AccordionContent>
-            Ja, dit product is interessant voor jou. Je kunt deze producten gebruiken om jezelf te informeren over de cryptomarkt en om jezelf te voorbereiden op de komende bull run.
+            Ja, dit product is interessant voor jou. Je kunt deze producten
+            gebruiken om jezelf te informeren over de cryptomarkt en om jezelf
+            te voorbereiden op de komende bull run.
           </AccordionContent>
         </AccordionItem>
       </Accordion>

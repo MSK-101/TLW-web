@@ -1,24 +1,35 @@
 "use client";
 import React from "react";
-import QuoteSection from "./quote";
-import IntroSection from "./intro";
-import GroupSection from "./group";
-import TeamSection from "./team";
-import TestimonialsSection from "./testimonials";
 
 export default function ComparisonSection() {
   const features = [
     { name: "Markt updates", cryptoAlerts: "✓", cryptoTechTeach: "✓" },
     { name: "Q&A", cryptoAlerts: "✓", cryptoTechTeach: "✓" },
-    { name: "Trade alerts", cryptoAlerts: "Regelmatig BTC + altcoins", cryptoTechTeach: "Af en toe BTC en ETH" },
-    { name: "Technische analyse op verzoek", cryptoAlerts: "✗", cryptoTechTeach: "✓" },
+    {
+      name: "Trade alerts",
+      cryptoAlerts: "Regelmatig BTC + altcoins",
+      cryptoTechTeach: "Af en toe BTC en ETH",
+    },
+    {
+      name: "Technische analyse op verzoek",
+      cryptoAlerts: "✗",
+      cryptoTechTeach: "✓",
+    },
     { name: "Masterclasses", cryptoAlerts: "✓", cryptoTechTeach: "✗" },
-    { name: "Trading lessen", cryptoAlerts: "Beginners", cryptoTechTeach: "Gevorderden" },
-    { name: "Community platform", cryptoAlerts: "Whatsapp", cryptoTechTeach: "Discord" },
+    {
+      name: "Trading lessen",
+      cryptoAlerts: "Beginners",
+      cryptoTechTeach: "Gevorderden",
+    },
+    {
+      name: "Community platform",
+      cryptoAlerts: "Whatsapp",
+      cryptoTechTeach: "Discord",
+    },
   ];
 
   return (
-    <div className="py-20 lg:py-32">
+    <div className="">
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
         <h2 className="text-4xl lg:text-5xl font-bold text-center text-[#282828] mb-16">
           Lorem ipsum dolor sit
@@ -67,10 +78,14 @@ export default function ComparisonSection() {
                             : "bg-red-100 text-red-600"
                         }`}
                       >
-                        <span className="text-sm font-bold">{feature.cryptoAlerts}</span>
+                        <span className="text-sm font-bold">
+                          {feature.cryptoAlerts}
+                        </span>
                       </div>
                     ) : (
-                      <span className="text-[#282828] text-xs lg:text-base">{feature.cryptoAlerts}</span>
+                      <span className="text-[#282828] text-xs lg:text-base">
+                        {feature.cryptoAlerts}
+                      </span>
                     )}
                   </div>
 
@@ -88,10 +103,14 @@ export default function ComparisonSection() {
                             : "bg-red-100 text-red-600"
                         }`}
                       >
-                        <span className="text-sm font-bold">{feature.cryptoTechTeach}</span>
+                        <span className="text-sm font-bold">
+                          {feature.cryptoTechTeach}
+                        </span>
                       </div>
                     ) : (
-                      <span className="text-xs lg:text-base">{feature.cryptoTechTeach}</span>
+                      <span className="text-xs lg:text-base">
+                        {feature.cryptoTechTeach}
+                      </span>
                     )}
                   </div>
                 </React.Fragment>
@@ -100,12 +119,6 @@ export default function ComparisonSection() {
           </div>
         </div>
       </div>
-
-      <QuoteSection />
-      <IntroSection />
-      <GroupSection />
-      <TeamSection />
-      <TestimonialsSection />
     </div>
   );
 }

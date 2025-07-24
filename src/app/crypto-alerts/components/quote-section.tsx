@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function QuoteSection() {
   return (
-    <div className="py-20 lg:py-32 mt-20">
-      <div className="max-w-4xl mx-auto px-4 lg:px-8 text-center">
+    <div className="my-20">
+      <div className="max-w-4xl mx-auto text-center">
         <div className="mb-10">
           <Image
             src="/quote.png"
@@ -15,7 +15,7 @@ export default function QuoteSection() {
           />
         </div>
 
-        <blockquote className="text-3xl lg:text-5xl font-medium text-[#282828] leading-relaxed mb-8">
+        <blockquote className="text-3xl lg:text-4xl font-medium text-[#282828] leading-relaxed mb-8">
           "Mijn verwachting is dat veel
           <br />
           cryptomunten x10 gaan de
@@ -24,9 +24,7 @@ export default function QuoteSection() {
         </blockquote>
 
         {/* Name */}
-        <cite className="text-lg lg:text-xl text-gray-600">
-          - Tineke Zwart
-        </cite>
+        <cite className="text-md lg:text-lg text-gray-600">- Tineke Zwart</cite>
       </div>
     </div>
   );
