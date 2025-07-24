@@ -119,7 +119,7 @@ function StarRating({ rating, color }: { rating: number; color: string }) {
 
 export default function ReviewsSection() {
   return (
-    <div className="mb-24 xl:mx-20">
+    <div className="mb-24">
       <div className="text-center mb-12">
         <h2>Rating en reviews</h2>
         <h1 className="text-4xl leading-none max-w-[400px] text-center mx-auto">
@@ -148,7 +148,7 @@ export default function ReviewsSection() {
             768: {
               slidesPerView: 3,
             },
-            1280: {
+            1450: {
               slidesPerView: 4,
             },
           }}

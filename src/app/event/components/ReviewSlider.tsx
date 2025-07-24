@@ -60,7 +60,7 @@ const reviews = [
 
 export default function ReviewSlider() {
   return (
-    <div className="mb-24 xl:mx-24">
+    <div className="mb-24">
       <div className="text-center mb-12">
         <h2>Reviews</h2>
         <h1 className="text-4xl leading-none">Wat vinden gebruikers?</h1>
@@ -87,7 +87,7 @@ export default function ReviewSlider() {
             768: {
               slidesPerView: 3,
             },
-            1280: {
+            1450: {
               slidesPerView: 4,
             },
           }}

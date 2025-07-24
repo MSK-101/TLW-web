@@ -98,7 +98,7 @@ export default function TopSection2() {
         </div>
       </div>
 
-      <h1 className="px-[24px] pb-[40px] md:px-[100px] md:pb-[100px] text-[42px] font-extrabold leading-[34.181px] md:text-[70px] md:leading-[60px] lg:text-[160px] lg:leading-[130px]">
+      <h1 className="px-[24px] pb-[40px] md:px-[100px] md:pb-[100px] text-[42px] font-extrabold leading-[34.181px] md:text-[70px] md:leading-[60px] lg:text-[100px] lg:leading-[100px] xl:text-[120px] xl:leading-[110px] 2xl:text-[160px] 2xl:leading-[130px]">
         Grip op je crypto, controle over je toekomst.
       </h1>
     </div>
