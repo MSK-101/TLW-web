@@ -10,7 +10,7 @@ export default function NewsletterSignup() {
         <h1 className="text-4xl lg:text-6xl text-left sm:text-center lg:text-left 2xl:text-7xl px-5 w-full lg:w-1/2">
           Meld je aan en blijf op de hoogte van de ontwikkelingen.
         </h1>
-        <div className="w-full lg:w-1/2 lg:-mt-8">
+        <div className="w-full lg:w-1/2">
           <iframe
             src="https://thelimitlesswaybv.activehosted.com/f/1"
             className="w-full h-[300px] p-0 m-0"
