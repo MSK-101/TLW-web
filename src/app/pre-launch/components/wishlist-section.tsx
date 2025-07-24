@@ -1,5 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { WishlistIconLight } from "@/components/icons";
+import WaitlistModal from "@/components/WaitlistModal";
 
 export default function WishlistSection() {
   return (
@@ -8,9 +7,12 @@ export default function WishlistSection() {
         Schrijf je hieronder in voor de wachtlijst. Dan ontvang je meteen een
         mail zodra de app live is.
       </div>
-      <Button className="bg-[#282828] text-gray-50 py-[6px] px-[32px] h-[42px] mt-10 cursor-pointer hover:scale-105">
-        Ik wil op de wachtlijst <WishlistIconLight />
-      </Button>
+      <div className="mt-10">
+        <WaitlistModal
+          buttonVariant="custom"
+          buttonClassName="bg-[#282828] text-gray-50 py-6 px-[32px] cursor-pointer hover:scale-105"
+        />
+      </div>
     </div>
   );
 }

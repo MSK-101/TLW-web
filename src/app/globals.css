@@ -30,15 +30,14 @@ body {
   --animate-rtl: rightToLeft 10s linear infinite;
   --animate-rtl-md: rightToLeft 12s linear infinite;
 
-  @keyframes rightToLeft{
-    from{
+  @keyframes rightToLeft {
+    from {
       transform: translateX(0);
     }
-    to{
+    to {
       transform: translateX(-100%);
     }
   }
-
 }
 
 @keyframes slideInFromRight {

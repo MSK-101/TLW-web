@@ -1,9 +1,7 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import TopSection1 from "./components/top-section-1";
 import TopSection2 from "./components/top-section-2";
-import { UserCheckIconDark, WishlistIconDark } from "@/components/icons";
 import Image from "next/image";
 import { BitvavoLogo, FinstLogo } from "@/components/logos";
 import SubscriptionCard from "./components/subscriptions-card";
@@ -15,6 +13,8 @@ import DownloadAppSection from "./components/download-app-section";
 import TeamCarousel from "@/components/TeamCarousel";
 import FAQSection from "@/components/FAQSection";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import WaitlistModal from "@/components/WaitlistModal";
+import TestpanelModal from "@/components/TestpanelModal";
 
 export default function PreLaunch() {
   return (
@@ -51,12 +51,8 @@ export default function PreLaunch() {
               Tincidunt cursusarcu imperdiet elementum.
             </p>
             <div className="flex flex-wrap gap-3 justify-center mt-10">
-              <Button className="md:h-12 md:rounded-xl bg-gray-50 text-gray-900">
-                Ik wil op de wachtlijst <WishlistIconDark />
-              </Button>
-              <Button className="md:h-12 md:rounded-xl bg-gray-50 text-gray-900">
-                Ik wil in het Testpanel <UserCheckIconDark />
-              </Button>
+              <WaitlistModal buttonVariant="dark" />
+              <TestpanelModal buttonVariant="dark" />
             </div>
           </div>
           {/* Row-1 Col-2  */}
