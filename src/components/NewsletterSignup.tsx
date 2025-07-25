@@ -8,7 +8,7 @@ export default function NewsletterSignup() {
     >
       <div className="w-full flex flex-col lg:flex-row">
         <h1 className="text-4xl lg:text-6xl text-left sm:text-center lg:text-left 2xl:text-7xl px-5 w-full lg:w-1/2">
-          Meld je aan en blijf op de hoogte van de ontwikkelingen.
+          Meld je hier alvast aan voor de wachtlijst van de app!
         </h1>
         <div className="w-full lg:w-1/2">
           <iframe

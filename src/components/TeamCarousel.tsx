@@ -14,7 +14,7 @@ const team = [
     label: "Co-founder & Crypto expert, Keynote spreker",
   },
   {
-    name: "Myrthe Scheffer",
+    name: "Myrte Scheffer",
     imageUrl: "/team/member2.png",
     label: "Co-founder & Visie, dagvoorzitter",
   },
