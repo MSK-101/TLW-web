@@ -6,7 +6,6 @@ import Image from "next/image";
 import { BitvavoLogo, FinstLogo } from "@/components/logos";
 import SubscriptionCard from "./components/subscriptions-card";
 import subscriptions from "@/utils/subscriptions";
-import FeaturesSection from "./components/features-section";
 import ReviewsSection from "./components/reviews-section";
 import WishlistSection from "./components/wishlist-section";
 import DownloadAppSection from "./components/download-app-section";
@@ -15,6 +14,7 @@ import FAQSection from "@/components/FAQSection";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import WaitlistModal from "@/components/WaitlistModal";
 import TestpanelModal from "@/components/TestpanelModal";
+import FeaturesSection from "@/components/FeaturesSection";
 
 export default function PreLaunch() {
   return (

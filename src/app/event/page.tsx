@@ -1,6 +1,6 @@
 import AgendaContent from "@/app/event/components/AgendaContent";
 import FAQSection from "@/components/FAQSection";
-import FeaturesSection from "@/app/event/components/FeaturesSection";
+import FeaturesSection from "@/components/FeaturesSection";
 import FooterCTA from "@/app/event/components/FooterCTA";
 import FoundersMessage from "@/app/event/components/FoundersMessage";
 import HeroSection from "@/app/event/components/HeroSection";
