@@ -137,8 +137,8 @@ export default function SpeakersSection() {
           <Image
             src="/speakers/annika.png"
             alt="Annika"
-            width={100}
-            height={123}
+            width={1000}
+            height={1000}
             className="object-cover object-center md:object-top w-full h-96 md:h-full"
           />
           <div className="px-[24px] py-6 col-span-1 sm:col-span-2">
@@ -161,8 +161,8 @@ export default function SpeakersSection() {
           <Image
             src="/speakers/kim.jpeg"
             alt="Kim"
-            width={100}
-            height={123}
+            width={1000}
+            height={1000}
             className="object-cover object-top w-full h-96 md:h-full"
           />
           <div className="px-[24px] py-6 col-span-1 sm:col-span-2">
@@ -185,8 +185,8 @@ export default function SpeakersSection() {
           <Image
             src="/speakers/giovanni.png"
             alt="Giovanni"
-            width={100}
-            height={123}
+            width={1000}
+            height={1000}
             className="object-cover object-top w-full h-96 md:h-full"
           />
           <div className="px-[24px] py-6 col-span-1 sm:col-span-2">
@@ -209,8 +209,8 @@ export default function SpeakersSection() {
           <Image
             src="/speakers/otto.jpeg"
             alt="Otto"
-            width={100}
-            height={123}
+            width={1000}
+            height={1000}
             className="object-cover object-center md:object-top w-full h-96 md:h-full"
           />
           <div className="px-[24px] py-6 col-span-1 sm:col-span-2">
@@ -232,8 +232,8 @@ export default function SpeakersSection() {
           <Image
             src="/speakers/tim.png"
             alt="Tim"
-            width={100}
-            height={123}
+            width={1000}
+            height={1000}
             className="object-cover object-center md:object-top w-full h-96 md:h-full"
           />
           <div className="px-[24px] py-6 col-span-1 sm:col-span-2">
