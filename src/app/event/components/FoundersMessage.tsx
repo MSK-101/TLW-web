@@ -36,21 +36,21 @@ export default function FoundersMessage() {
           <p>
             Myrte is fantastisch in het uitdenken van concepten (
             <span className="font-bold">de app was haar idee!</span>) en het
-            neerzetten van alle &apos;grote lijnen&apos;. Zij houdt zich dus
-            vooral bezig met: Waar willen we uiteindelijk naartoe en wat is daar
-            nú voor nodig? Dit doet ze inmiddels al 15 jaar voor andere
-            bedrijven, maar nu voor TLW. Leuk weetje: alle bedrijven waar ze dit
-            voor heeft gedaan, zijn inmiddels miljoenenbedrijven.
+            neerzetten van alle ‘grote lijnen’. Zij houdt zich dus vooral bezig
+            met: Waar willen we uiteindelijk naartoe en wat is daar nú voor
+            nodig? Dit doet ze inmiddels al 15 jaar voor andere bedrijven, maar
+            nu voor TLW. Leuk weetje: alle bedrijven waar ze dit voor heeft
+            gedaan, zijn inmiddels miljoenenbedrijven.
           </p>
 
           <p>
             Tineke focust op de inhoud, de sales & marketing en managet samen
             met een team van experts onze community. Ze is inmiddels
-            <span className="font-bold">
-              &nbsp;8 jaar actief in de cryptomarkt
+            <span className="font-bold mx-1">
+              8 jaar actief in de cryptomarkt
             </span>
-            &nbsp;en heeft inmiddels meerdere tonnenbedrijven en een
-            miljoenenbedrijf gebouwd.
+            en heeft inmiddels meerdere tonnenbedrijven en een miljoenenbedrijf
+            gebouwd.
           </p>
 
           <p>
@@ -58,7 +58,7 @@ export default function FoundersMessage() {
             hebben geen idee hoe dat werkt maar volgens mij kunnen we dat wel
             als we het samen doen :) We kijken er enorm naar uit om op
             <span className="font-bold"> 17 oktober </span> onze kennis én de
-            app met jullie te delen.
+            app met je te delen.
           </p>
         </div>
       </div>

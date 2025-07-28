@@ -3,7 +3,7 @@
 import TopSection1 from "./components/top-section-1";
 import TopSection2 from "./components/top-section-2";
 import Image from "next/image";
-import { BitvavoLogo, FinstLogo } from "@/components/logos";
+import { BitvavoLogo } from "@/components/logos";
 import SubscriptionCard from "./components/subscriptions-card";
 import subscriptions from "@/utils/subscriptions";
 import ReviewsSection from "./components/reviews-section";
@@ -79,15 +79,31 @@ export default function PreLaunch() {
               cursus arcu imperdiet elementum. Nibh vulputate enim aliquet
               viverra aliquam venenatis felis.
             </p>
-            <div className="flex gap-x-3 md:gap-x-8 justify-center mt-10">
+            <div className="flex flex-wrap gap-x-3 md:gap-x-8 gap-y-3 md:gap-y-3 justify-center items-center mt-10">
               <BitvavoLogo />
               <Image
                 src="/logos/Coinmerce-diap.png"
                 width={109}
-                height={23}
+                height={24}
                 alt="Logo Coinmerce-diap"
+                className="h-[24px]"
               />
-              <FinstLogo />
+
+              <Image
+                src="/logos/bybit-logo-white.svg"
+                width={55}
+                height={24}
+                alt="Logo bybit"
+                className="h-[20px]"
+              />
+
+              <Image
+                src="/logos/mexc.svg"
+                width={95}
+                height={24}
+                alt="Logo Mexc"
+                className="h-[14px]"
+              />
             </div>
           </div>
 

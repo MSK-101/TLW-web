@@ -10,12 +10,12 @@ import "swiper/css";
 const team = [
   {
     name: "Tineke Zwart",
-    imageUrl: "/team/member1.png",
+    imageUrl: "/team/member1.jpeg",
     label: "Functie Ipsum",
   },
   {
     name: "Myrte Scheffer",
-    imageUrl: "/team/member2.png",
+    imageUrl: "/team/member2.jpeg",
     label: "Functie Ipsum",
   },
   {

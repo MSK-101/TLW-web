@@ -10,12 +10,12 @@ export default function SpeakersSection() {
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-10 xl:gap-20 mt-12">
           <p className="lg:w-1/2">
             Kom, samen met ons, in 1 middag je financiële kennis vergroten en je
-            strategie naar financiële vrijheid verbeteren.
+            strategie naar financiële vrijheid creëren of optimaliseren.
             <br />
             <br />
             Dit event is
-            <span className="font-bold">
-              &nbsp;voor iedereen die al crypto bezit
+            <span className="font-bold mx-1">
+              voor iedereen die al crypto bezit
             </span>
             en zich afvraagt: hoe kan ik hier nog meer uithalen? En hoe kan ik
             mijn doelen zo snel mogelijk behalen?
@@ -74,7 +74,8 @@ export default function SpeakersSection() {
             </ul>
             <h2 className="font-bold text-lg lg:text-2xl mt-4">
               En niet te vergeten: Hoe onze nieuwe app je op al deze gebieden
-              kan helpen.
+              kan helpen. Je kunt de app tijdens het event downloaden en ook
+              meteen gebruiken.
             </h2>
           </div>
         </div>
@@ -84,30 +85,34 @@ export default function SpeakersSection() {
         <h1 className="text-gray-50 text-3xl lg:text-[64px] font-bold mt-24">
           Sprekers
         </h1>
-        <p className="text-[#CCCCCC] md:w-[584px] text-center text-lg mt-2">
-          Op deze middag kun je naar meerdere inspirerende sprekers luisteren en
-          daarbij kun je deels zelf aangeven bij wiens presentatie je wilt zijn.
-          <span className="italic">
-            Je kunt je <span className="underline">voorkeur</span> aangeven
-            nadat je je ticket hebt gekocht en dichter na het event toe ontvang
-            je hierover per mail meer informatie.
-          </span>
-        </p>
-        <p className="text-[#CCCCCC] font-bold mt-4 md:w-[584px] text-lg text-center">
-          Tineke begint de middag met een plenaire keynote presentatie en daarna
-          kun je 2 workshops van 45 minuten over specifieke financiële
-          onderwerpen volgen bij andere sprekers. Hierbij kun je kiezen uit maar
-          liefst 6 verschillende experts.
-          <br />
-          <br />
-          We sluiten af met de lancering van de app door Tineke en Myrte.
-        </p>
+        <div className="text-[#CCCCCC] md:w-[584px] text-center text-lg flex flex-col gap-3 mt-3">
+          <p>
+            Op deze middag kun je naar meerdere inspirerende sprekers luisteren
+            en daarbij kun je deels zelf aangeven bij wiens presentatie je wilt
+            zijn.
+          </p>
+          <p>
+            Je kunt je voorkeur aangeven nadat je je ticket hebt gekocht en
+            dichter na het event toe ontvang je hierover per mail meer
+            informatie.
+          </p>
+          <p>
+            Tineke Zwart begint de middag met een plenaire keynote presentatie
+            en daarna kun je 2 workshops van 45 minuten over specifieke
+            financiële onderwerpen volgen bij andere sprekers
+          </p>
+          <p>Hierbij kun je kiezen uit maar liefst 6 verschillende experts.</p>
+          <p>
+            We sluiten af met de lancering van de app door Tineke Zwart en Myrte
+            Scheffer.
+          </p>
+        </div>
       </div>
 
       <div className="xl:mx-10 2xl:mx-20 grid grid-cols-1 lg:grid-cols-2 gap-[32px] mt-10">
         <div className="rounded-lg grid grid-cols-1 sm:grid-cols-3 bg-gray-50 overflow-hidden">
           <Image
-            src="/speakers/tineke.png"
+            src="/speakers/tineke.jpeg"
             alt="Tineke"
             width={100}
             height={123}
@@ -115,14 +120,16 @@ export default function SpeakersSection() {
           />
           <div className="px-[24px] py-6 col-span-1 sm:col-span-2">
             <h2 className="font-medium text-[23px]">
-              Tineke Zwart - Co-founder TLW & Crypto Educator Technische analyse
-              voor beginners: leer de basis en pas direct toe
+              Tineke Zwart - Co-founder TLW & Crypto Educator
             </h2>
-            <p className="text-[18px] text-[#525252]">
-              Wat voor type belegger ben jij? In deze interactieve sessie ontdek
-              je jouw investeerdersprofiel en leer je welke assets daarbij
-              passen – voor meer grip op je keuzes en een strategie die écht bij
-              je past.
+            <p className="font-bold text-lg">
+              Technische analyse voor beginners: leer de basis en pas direct toe
+            </p>
+            <p className="text-[#525252]">
+              Ontdek hoe je als beginnende belegger koersgrafieken leert lezen
+              en slimme beslissingen maakt op basis van technische analyse. Deze
+              praktische sessie geeft je direct toepasbare inzichten waarmee jij
+              zelf koersbewegingen kunt begrijpen én benutten.
             </p>
           </div>
         </div>
@@ -136,20 +143,23 @@ export default function SpeakersSection() {
           />
           <div className="px-[24px] py-6 col-span-1 sm:col-span-2">
             <h2 className="font-medium text-[23px]">
-              Anníka van Loon - TLW Crypto Expert Wat is jouw investor hat?
-              Ontdek je beleggersprofiel en bijpassende assets
+              Anníka van Loon - TLW Crypto Expert
             </h2>
-            <p className="text-[18px] text-[#525252]">
-              Ontdek hoe je als beginnende belegger koersgrafieken leert lezen
-              en slimme beslissingen maakt op basis van technische analyse. Deze
-              praktische sessie geeft je direct toepasbare inzichten waarmee jij
-              zelf koersbewegingen kunt begrijpen én benutten.
+            <p className="font-bold text-lg">
+              Wat is jouw investeer Hat? Ontdek je beleggersprofiel en
+              bijpassende assets
+            </p>
+            <p className="text-[#525252]">
+              Wat voor type belegger ben jij? In deze interactieve sessie ontdek
+              je jouw investeerdersprofiel en leer je welke assets daarbij
+              passen - voor meer grip op je keuzes en een strategie die écht bij
+              je past.
             </p>
           </div>
         </div>
         <div className="rounded-lg grid grid-cols-1 sm:grid-cols-3 bg-gray-50 overflow-hidden">
           <Image
-            src="/speakers/kim.png"
+            src="/speakers/kim.jpeg"
             alt="Kim"
             width={100}
             height={123}
@@ -157,13 +167,17 @@ export default function SpeakersSection() {
           />
           <div className="px-[24px] py-6 col-span-1 sm:col-span-2">
             <h2 className="font-medium text-[23px]">
-              Kim de Graeve - Finance Mentor & Freedom Coach Financiële vrijheid
-              met laagdrempelige assets – hoe bouw je een stevig fundament?
+              Kim de Graeve – Finance Mentor & Freedom Coach
             </h2>
-            <p className="text-[18px] text-[#525252]">
-              Ook met kleine bedragen kun je financieel vrij worden. Kim laat
-              zien hoe je met slimme keuzes en een heldere focus een krachtig
-              fundament bouwt voor jouw lange termijn vermogen.
+            <p className="font-bold text-lg">
+              Hoe bouw je een stevig fundament?
+            </p>
+            <p className="text-[#525252]">
+              Financiële vrijheid hoeft geen traag traject te zijn. Kim ging in
+              2 jaar tijd van nul euro op haar rekening naar financiële vrijheid
+              en toont hoe je met scherpe keuzes en een andere manier van denken
+              over tijd, geld en energie, op korte termijn een fundament legt
+              dat levenslang rendeert.
             </p>
           </div>
         </div>
@@ -177,20 +191,23 @@ export default function SpeakersSection() {
           />
           <div className="px-[24px] py-6 col-span-1 sm:col-span-2">
             <h2 className="font-medium text-[23px]">
-              Giovanni Jimmink - Vastgoedinvesteerder & Ondernemer Investeren in
-              buitenlands vastgoed – de do&apos;s & dont&apos;s
+              Giovanni Jimmink - Vastgoedinvesteerder & Ondernemer
             </h2>
+            <p className="font-bold text-lg">
+              Investeren in buitenlands vastgoed - de do&apos;s &amp;
+              don&apos;ts
+            </p>
             <p className="text-[18px] text-[#525252]">
               Wat doe je met je cryptowinst en welke manieren van vastgoed
               investeren zijn er? Giovanni deelt zijn lessen en valkuilen uit
               jarenlange ervaring met vastgoed in Spanje. Leer hoe jij deze
-              route zelf kunt verkennen – praktisch, eerlijk en zonder poespas.
+              route zelf kunt verkennen - praktisch, eerlijk en zonder poespas.
             </p>
           </div>
         </div>
         <div className="rounded-lg grid grid-cols-1 sm:grid-cols-3 bg-gray-50 overflow-hidden">
           <Image
-            src="/speakers/otto.png"
+            src="/speakers/otto.jpeg"
             alt="Otto"
             width={100}
             height={123}
@@ -198,11 +215,13 @@ export default function SpeakersSection() {
           />
           <div className="px-[24px] py-6 col-span-1 sm:col-span-2">
             <h2 className="font-medium text-[23px]">
-              Otto Schapendonk - De Cijferdokter & Financieel Analist Van crypto
-              tot goud – slim spreiden over verschillende assets
+              Otto Schapendonk - De Cijferdokter & Financieel Analist
             </h2>
+            <p className="font-bold text-lg">
+              Van Crypto tot goud - slim spreiden over verschillende assets
+            </p>
             <p className="text-[18px] text-[#525252]">
-              Crypto, vastgoed, goud – hoe combineer je dat slim? Otto legt je
+              Crypto, vastgoed, goud - hoe combineer je dat slim? Otto legt je
               op begrijpelijke wijze uit hoe verschillende assets scoren op
               risico, rendement en timing. Met rekenvoorbeelden en inzichten op
               1 A4.
@@ -219,14 +238,18 @@ export default function SpeakersSection() {
           />
           <div className="px-[24px] py-6 col-span-1 sm:col-span-2">
             <h2 className="font-medium text-[23px]">
-              Tim Kamp - Crypto Expert De invloed van de macro economie op de
-              crypto markt
+              Michael de Jong &amp; Sjoerd Lommen - Ervaren traders.
             </h2>
+            <p className="font-bold text-lg">
+              Technische analyse en traden voor beginners. Leer grafieken lezen
+              en geld verdienen met traden.
+            </p>
             <p className="text-[18px] text-[#525252]">
-              De cryptomarkt wordt erg beïnvloed alles wat er gebeurt op macro
-              economisch en geopolitiek vlak. Tim vertelt exact welke dingen een
-              positieve en negatieve impact hebben op de koersen zodat je daar
-              voortaan rekening mee kunt houden.
+              Je kunt investeren voor de lange termijn, maar je kunt er ook voor
+              kiezen om korte termijn trades te doen. In deze workshop nemen
+              Michael en Sjoerd je mee in de wereld van grafieken lezen, zodat
+              je aan de hand daarvan slimme trades kunt nemen en een (extra)
+              inkomstenstroom hebt.
             </p>
           </div>
         </div>

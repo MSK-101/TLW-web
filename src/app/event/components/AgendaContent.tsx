@@ -16,19 +16,19 @@ export default function AgendaContent() {
       <div className="lg:max-w-[426px] text-center lg:text-left mb-5">
         <h2 className="text-sm">Agenda</h2>
         <h2 className="text-4xl mt-2">
-          We kijken ernaar uit om julie veel waarde te geven deze middag!
+          We kijken ernaar uit om je veel waarde te geven deze middag!
         </h2>
         <div className="text-[#525252] space-y-5 mt-5">
           <p>
-            We hebben een gevarieerd programma waarin kennis, inspiratie,
-            netwerken en natuurlijk de app lancering samenkomen.
+            We hebben een gevarieerd programma samengesteld waarin kennis,
+            inspiratie, netwerken en de lancering van de app samenkomen
           </p>
           <p>
-            Het event vindt plaats in de prachtige &quot;Green Village&quot; in
-            Nieuwegein (Blokhoeve 7).
+            Het event vindt plaats in de prachtige “Green Village” in Nieuwegein
+            (Blokhoeve 7).
           </p>
-          <p>Het programma is van 14-18 uur.</p>
-          <p>We zien je graag dan!</p>
+          <p>Het programma duurt van 14:00 tot 18:00 uur.</p>
+          <p>Hopelijk tot dan!</p>
         </div>
         <Link
           href="https://wwwthelimitlesswaynl.plugandpay.com/checkout/event"
