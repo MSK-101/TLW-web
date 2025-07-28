@@ -55,11 +55,11 @@ export default function HeroSection() {
               </p>
             </div>
             <Image
-              src="/speakers/tineke.png"
+              src="/speakers/tineke.jpeg"
               alt="Tineke Zwart"
               width={80}
               height={80}
-              className="object-none object-top rounded-md aspect-square"
+              className="object-cover object-center rounded-md aspect-square"
             />
           </div>
         </div>

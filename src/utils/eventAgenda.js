@@ -24,7 +24,7 @@ const eventAgenda = [
   {
     time: "16:00 - 16:45",
     title:
-      "Workshopblok 2 (keuze uit 3 sessies - gericht op concrete strategie en toepasbaarheid)",
+      "Workshopblok 2 (keuze uit 6 sessies - gericht op concrete strategie en toepasbaarheid)",
     description:
       "Je kiest 1 van de 3 sessies, je ontvangt meer informatie hierover nadat je je ticket hebt gekocht.",
   },
@@ -36,12 +36,12 @@ const eventAgenda = [
   {
     time: "17:00 - 17:20",
     title: "App Reveal – Myrte & Tineke",
-    description: "Live demo, countdown, user incentives + mini-actie",
+    description: "Live demo van de app en lanceringsactie",
   },
   {
     time: "17:20 - 18:00",
-    title: "Borrel & activatieplein",
-    description: "Hapje, drankje en netwerken + QR goodie activatie",
+    title: "Borrel & downloaden + activeren app",
+    description: "Hapje, drankje, netwerken en de app uitproberen.",
   },
 ];
 

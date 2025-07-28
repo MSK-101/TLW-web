@@ -5,10 +5,10 @@ import FooterCTA from "@/app/event/components/FooterCTA";
 import FoundersMessage from "@/app/event/components/FoundersMessage";
 import HeroSection from "@/app/event/components/HeroSection";
 import NewsletterSignup from "@/components/NewsletterSignup";
-import ReviewSlider from "@/app/event/components/ReviewSlider";
 import SpeakersSection from "@/app/event/components/SpeakersSection";
-import TeamCarousel from "@/components/TeamCarousel";
 import TicketCTA from "@/app/event/components/TicketCTA";
+import OurTeamSection from "./components/OurTeamSection";
+import ReviewsSection from "./components/ReviewsSection";
 
 export default function Event() {
   return (
@@ -19,9 +19,9 @@ export default function Event() {
         <div className="bg-gray-50 py-12 lg:py-28 rounded-[32px] px-[24px] lg:px-[124px]">
           <AgendaContent />
           <FoundersMessage />
-          <ReviewSlider />
+          <ReviewsSection />
           <TicketCTA />
-          <TeamCarousel />
+          <OurTeamSection />
           <FeaturesSection />
           <FAQSection />
           <FooterCTA />
