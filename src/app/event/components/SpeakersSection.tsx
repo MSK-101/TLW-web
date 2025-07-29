@@ -120,16 +120,19 @@ export default function SpeakersSection() {
           />
           <div className="px-[24px] py-6 col-span-1 sm:col-span-2">
             <h2 className="font-medium text-[23px]">
-              Tineke Zwart - Co-founder TLW & Crypto Educator
+              Tineke Zwart - Co-founder TLW & Crypto Educator.
             </h2>
             <p className="font-bold text-lg">
-              Technische analyse voor beginners: leer de basis en pas direct toe
+              Wat is jouw investor hat en wat zijn je doelen? Ontdek je
+              beleggersprofiel en sluit je portfolio aan op zowel je profiel als
+              je doelen.
             </p>
             <p className="text-[#525252]">
-              Ontdek hoe je als beginnende belegger koersgrafieken leert lezen
-              en slimme beslissingen maakt op basis van technische analyse. Deze
-              praktische sessie geeft je direct toepasbare inzichten waarmee jij
-              zelf koersbewegingen kunt begrijpen én benutten.
+              Wat voor type belegger ben jij en waarom beleg je? Wat zijn je
+              uiteindelijke doelen? In deze interactieve sessie ontdek je wat
+              jouw beleggersprofiel is en hoe je binnen dat profiel het beste en
+              snelste je doelen kunt bereiken. Voor meer grip op je keuzes en
+              een strategie die écht bij je past.
             </p>
           </div>
         </div>
