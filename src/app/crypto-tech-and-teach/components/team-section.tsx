@@ -7,7 +7,7 @@ export default function TeamSection() {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 my-8 lg:my-12">
       <div className="bg-red-500 rounded-2xl overflow-hidden order-1 md:order-1 max-h-[600px]">
         <Image
-          src="/tinke_red.png"
+          src="/team/tinke_red.png"
           width={400}
           height={500}
           alt="Tineke Zwart"

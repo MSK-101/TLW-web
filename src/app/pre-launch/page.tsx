@@ -140,7 +140,7 @@ export default function PreLaunch() {
             </p>
             <div className="flex mt-10 items-center gap-2">
               <Image
-                src="/team/user-1.png"
+                src="/team/tineke-zwart-sm.png"
                 width={68}
                 height={68}
                 alt="User Image"

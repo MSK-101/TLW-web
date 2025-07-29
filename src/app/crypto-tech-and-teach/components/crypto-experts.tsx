@@ -10,32 +10,32 @@ import "swiper/css";
 const team = [
   {
     name: "Tineke Zwart",
-    imageUrl: "/team/member1.jpeg",
+    imageUrl: "/team/tineke-zwart.jpeg",
     label: "Functie Ipsum",
   },
   {
     name: "Myrte Scheffer",
-    imageUrl: "/team/member2.jpeg",
+    imageUrl: "/team/myrte-scheffer.jpeg",
     label: "Functie Ipsum",
   },
   {
     name: "Tamara Stroop",
-    imageUrl: "/team/member3.png",
+    imageUrl: "/team/tamara-stroop.png",
     label: "Functie Ipsum",
   },
   {
     name: "Anníka van Loon",
-    imageUrl: "/team/member7.png",
+    imageUrl: "/team/anníka-van-loon.jpeg",
     label: "Crypto expert",
   },
   {
     name: "Tristan Melano",
-    imageUrl: "/team/member4.png",
+    imageUrl: "/team/tristan-melano.png",
     label: "Chief Audiovisual Officer",
   },
   {
     name: "Barry Nijkamp",
-    imageUrl: "/team/member8.png",
+    imageUrl: "/team/barry-nijkamp.jpeg",
     label: "CFO",
   },
 ];

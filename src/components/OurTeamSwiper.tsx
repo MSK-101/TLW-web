@@ -10,68 +10,73 @@ import "swiper/css";
 const team = [
   {
     name: "Tineke Zwart",
-    imageUrl: "/team/member1.jpeg",
+    imageUrl: "/team/tineke-zwart.jpeg",
     label: "Co-founder & Crypto expert, Keynote spreker",
   },
   {
     name: "Myrte Scheffer",
-    imageUrl: "/team/member2.jpeg",
+    imageUrl: "/team/myrte-scheffer.jpeg",
     label: "Co-founder & Visie, dagvoorzitter",
   },
   {
     name: "Tamara Stroop",
-    imageUrl: "/team/member3.png",
+    imageUrl: "/team/tamara-stroop.png",
     label: "Chief Content Officer",
   },
   {
     name: "Tristan Melano",
-    imageUrl: "/team/member4.png",
+    imageUrl: "/team/tristan-melano.png",
     label: "Chief Audiovisual Officer",
   },
   {
     name: "Barry Nijkamp",
-    imageUrl: "/team/member8.png",
+    imageUrl: "/team/barry-nijkamp.jpeg",
     label: "CFO",
   },
   {
-    name: "Danitsha van der Reijken",
-    imageUrl: "/team/member6.png",
-    label: "Personal Assistant Tineke & Myrte",
-  },
-  {
     name: "Anníka van Loon",
-    imageUrl: "/team/member7.png",
+    imageUrl: "/team/anníka-van-loon.jpeg",
     label: "Crypto expert",
   },
   {
     name: "Team Communicatiemakers",
-    imageUrl: "/team/member9.png",
+    imageUrl: "/team/team-communicatiemakers.png",
     label: "Ontwikkeling visual design app",
   },
   {
     name: "Team DevRepublic",
-    imageUrl: "/team/member10.png",
+    imageUrl: "/team/team-dev-republic.png",
     label: "Ontwikkeling app",
   },
   {
     name: "Patricia Oostvogels",
-    imageUrl: "/team/member11.png",
+    imageUrl: "/team/patricia-oostvogels.jpeg",
     label: "Boekhouding",
   },
   {
     name: "Ravikumar Sharma",
-    imageUrl: "/team/member5.png",
+    imageUrl: "/team/ravikumar-sharma.jpeg",
     label: "Technical Architect DevRepublic (a.i.)",
   },
   {
-    name: "van de Putte",
-    imageUrl: "/team/member13.jpeg",
+    name: "Danitsha van de Putte",
+    imageUrl: "/team/danitsha-van-de-putte.jpeg",
     label: "Persoonlijke Assistent Tineke & Myrte",
   },
   {
     name: "Sophie van Koert",
-    imageUrl: "/team/member12.png",
+    imageUrl: "/team/sophie-van-koert.png",
     label: "Projectsupport",
+  },
+  {
+    name: "Sjoerd Lommen",
+    imageUrl: "/team/sjoerd-lommen.png",
+    label: "Crypto Expert",
+  },
+  {
+    name: "Michael de Jong",
+    imageUrl: "/team/michael-de-jong.png",
+    label: "Crypto Expert",
   },
 ];
 
@@ -121,8 +126,8 @@ export default function OurTeamSwiper() {
               <div className="rounded-2xl overflow-hidden relative aspect-[266/343] mx-auto">
                 <Image
                   src={member["imageUrl"]}
-                  width={266}
-                  height={343}
+                  width={1000}
+                  height={1000}
                   alt=""
                   className="w-full h-full object-cover"
                 />

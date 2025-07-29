@@ -47,10 +47,12 @@ export default function ReviewsSection() {
 
   return (
     <div className="mb-24">
-      <div className="text-center mb-12">
-        <h1 className="text-4xl leading-none">
-          Reviews over de sprekers op deze dag
-        </h1>
+      <div className="flex flex-col items-center gap-5">
+        <h2 className="text-5xl text-[#282828]">Wat anderen vinden..</h2>
+        <p className="max-w-[550px] text-center">
+          De reviews zijn afkomstig van deelnemers die meededen met de Crypto
+          Cursus, de Trading cursus en/of de Crypto Alerts.
+        </p>
       </div>
       <div className="flex flex-col md:flex-row gap-5 mt-10">
         <div className="flex flex-col gap-5 md:flex-1/2">

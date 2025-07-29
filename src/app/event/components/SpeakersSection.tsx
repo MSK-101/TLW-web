@@ -112,10 +112,10 @@ export default function SpeakersSection() {
       <div className="xl:mx-10 2xl:mx-20 grid grid-cols-1 lg:grid-cols-2 gap-[32px] mt-10">
         <div className="rounded-lg grid grid-cols-1 sm:grid-cols-3 bg-gray-50 overflow-hidden">
           <Image
-            src="/speakers/tineke.jpeg"
+            src="/team/tineke-zwart.jpeg"
             alt="Tineke"
-            width={100}
-            height={123}
+            width={1000}
+            height={1000}
             className="object-cover object-top w-full h-96 md:h-full"
           />
           <div className="px-[24px] py-6 col-span-1 sm:col-span-2">
@@ -135,7 +135,7 @@ export default function SpeakersSection() {
         </div>
         <div className="rounded-lg grid grid-cols-1 sm:grid-cols-3 bg-gray-50 overflow-hidden">
           <Image
-            src="/speakers/annika.png"
+            src="/team/anníka-van-loon.jpeg"
             alt="Annika"
             width={1000}
             height={1000}
@@ -159,7 +159,7 @@ export default function SpeakersSection() {
         </div>
         <div className="rounded-lg grid grid-cols-1 sm:grid-cols-3 bg-gray-50 overflow-hidden">
           <Image
-            src="/speakers/kim.jpeg"
+            src="/team/kim.jpeg"
             alt="Kim"
             width={1000}
             height={1000}
@@ -183,7 +183,7 @@ export default function SpeakersSection() {
         </div>
         <div className="rounded-lg grid grid-cols-1 sm:grid-cols-3 bg-gray-50 overflow-hidden">
           <Image
-            src="/speakers/giovanni.png"
+            src="/team/giovanni.png"
             alt="Giovanni"
             width={1000}
             height={1000}
@@ -207,7 +207,7 @@ export default function SpeakersSection() {
         </div>
         <div className="rounded-lg grid grid-cols-1 sm:grid-cols-3 bg-gray-50 overflow-hidden">
           <Image
-            src="/speakers/otto.jpeg"
+            src="/team/otto.jpeg"
             alt="Otto"
             width={1000}
             height={1000}
@@ -230,7 +230,7 @@ export default function SpeakersSection() {
         </div>
         <div className="rounded-lg grid grid-cols-1 sm:grid-cols-3 bg-gray-50 overflow-hidden">
           <Image
-            src="/speakers/tim.png"
+            src="/team/tim.jpeg"
             alt="Tim"
             width={1000}
             height={1000}

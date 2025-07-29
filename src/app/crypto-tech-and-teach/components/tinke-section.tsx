@@ -26,7 +26,7 @@ export default function TinkeSection() {
         </div>
         <div className="col-auto py-6 flex items-center justify-center lg:justify-end lg:pr-8">
           <Image
-            src={"/tinke_crypto.jpg"}
+            src={"/team/tinke_crypto.jpg"}
             width={300}
             height={400}
             alt="Tineke Zwart"

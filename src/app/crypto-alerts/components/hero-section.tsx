@@ -57,7 +57,7 @@ export default function HeroSection() {
               </p>
             </div>
             <Image
-              src="/speakers/tineke.jpeg"
+              src="/team/tineke-zwart.jpeg"
               alt="Tineke Zwart"
               width={80}
               height={80}
