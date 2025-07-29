@@ -4,7 +4,7 @@ export default function FeaturesSection() {
       <div className="xl:max-w-[600px] text-center lg:text-left mb-5">
         <h2 className="text-sm">Features</h2>
         <h2 className="text-5xl">
-          Een kort overzicht van de features van de app
+          Dit is wat je allemaal kunt doen met de app.
         </h2>
         <p className="my-10 text-lg text-gray-600">
           The Limitless Way is de crypto-interface die jou helpt bouwen aan je

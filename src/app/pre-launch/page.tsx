@@ -6,15 +6,17 @@ import Image from "next/image";
 import { BitvavoLogo } from "@/components/logos";
 import SubscriptionCard from "./components/subscriptions-card";
 import subscriptions from "@/utils/subscriptions";
-import ReviewsSection from "./components/reviews-section";
+
 import WishlistSection from "./components/wishlist-section";
 import DownloadAppSection from "./components/download-app-section";
 import TeamCarousel from "@/components/TeamCarousel";
-import FAQSection from "@/components/FAQSection";
+import FAQSection from "./components/FAQSection";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import WaitlistModal from "@/components/WaitlistModal";
 import TestpanelModal from "@/components/TestpanelModal";
 import FeaturesSection from "@/components/FeaturesSection";
+import FoundersMessage from "./components/FoundersMessage";
+import ReviewsSection from "./components/ReviewsSection";
 
 export default function PreLaunch() {
   return (
@@ -28,13 +30,17 @@ export default function PreLaunch() {
 
       <div>
         <div className="flex flex-col justify-center items-center text-gray-50 text-center">
-          <h2 className="text-[32px] md:text-[96px] font-bold mt-20">
-            Hoe werkt het?
+          <h2 className="text-[32px] md:text-7xl font-bold mt-20 mb-8">
+            De alles-in-één app voor jouw crypto
           </h2>
-          <p className="text-sm md:text-[23px] max-w-[584px]">
-            Arcu tincidunt lacus et viverra. Non ultrices ac quis id tincidunt
-            cursus arcu imperdiet elementum. Vitae nam sit eget nunc iaculis
-            lorem.
+          <p className="text-sm md:text-xl max-w-[584px]">
+            Beheer veilig al je crypto vanuit 1 overzichtelijke en
+            gebruiksvriendelijke app.
+            <br />
+            <br />
+            Vraag jezelf nooit meer af hoeveel winst of verlies je eigenlijk
+            hebt per coin of in totaal. In onze app wordt alles automatisch voor
+            je berekend zodat je continu weet hoe je portfolio ervoor staat.
           </p>
         </div>
 
@@ -45,10 +51,10 @@ export default function PreLaunch() {
               Stap 1
             </div>
             <h2 className="text-[26px] md:text-[48px] text-gray-50 max-w-[568px] leading-[100%]">
-              Nibh vulputate enim aliquet
+              Download de app gratis via de app store
             </h2>
             <p className="text-gray-50 max-w-[568px]">
-              Tincidunt cursusarcu imperdiet elementum.
+              Maak een gratis account aan en je kunt meteen aan de slag.
             </p>
             <div className="flex flex-wrap gap-3 justify-center mt-10">
               <WaitlistModal buttonVariant="dark" />
@@ -72,12 +78,12 @@ export default function PreLaunch() {
               Stap 2
             </div>
             <h2 className="text-[26px] md:text-[48px] text-gray-50 max-w-[568px] leading-[100%]">
-              Koppel je favoriete crypto platforms
+              Koppel je crypto exchanges en/of hardware walle
             </h2>
             <p className="text-gray-50 max-w-[568px]">
-              Arcu tincidunt lacus et viverra. Non ultrices ac quis id tincidunt
-              cursus arcu imperdiet elementum. Nibh vulputate enim aliquet
-              viverra aliquam venenatis felis.
+              Binnen een paar minuten kun je op een veilige manier jouw crypto
+              exchanges en/of hardware wallet koppelen aan de app. Daarna kun je
+              je bestaande crypto beheren, maar ook nieuwe crypto kopen.
             </p>
             <div className="flex flex-wrap gap-x-3 md:gap-x-8 gap-y-3 md:gap-y-3 justify-center items-center mt-10">
               <BitvavoLogo />
@@ -127,9 +133,10 @@ export default function PreLaunch() {
               Create a new reality
             </h2>
             <p className="text-gray-50 max-w-[568px]">
-              Arcu tincidunt lacus et viverra. Non ultrices ac quis id tincidunt
-              cursus arcu imperdiet elementum. Nibh vulputate enim aliquet
-              viverra aliquam venenatis felis.
+              Ga aan de slag met jouw persoonlijke plan om financieel vrij te
+              worden en leer alles, in Jip & Janneke taal, over de cryptomarkt.
+              Van slim investeren voor de langere termijn tot snel geld
+              verdienen door te traden.
             </p>
             <div className="flex mt-10 items-center gap-2">
               <Image
@@ -139,9 +146,12 @@ export default function PreLaunch() {
                 alt="User Image"
                 className="rounded-full"
               />
-              <div className="text-gray-50">
+              <div className="text-gray-50 flex flex-col items-start">
                 <p className="font-bold">Tineke Zwart</p>
-                <p className="ml-4">cryptomiljonair</p>
+                <p className="text-left max-w-[300px]">
+                  In de app zitten 3 uitgebreide cursussen die gemaakt zijn door
+                  cryptomiljonair Tineke Zwart
+                </p>
               </div>
             </div>
           </div>
@@ -163,33 +173,16 @@ export default function PreLaunch() {
         <FeaturesSection />
         <ReviewsSection />
         <WishlistSection />
-
-        <div className="lg:-mx-[76px] rounded-3xl flex flex-col lg:flex-row justify-between overflow-hidden p-[36px] lg:p-[100px] bg-[url('/hero_image_event.jpg')] bg-cover bg-center h-[792px]">
-          <div className="text-gray-50">
-            <h2>Over ons</h2>
-            <p className="text-[48px] font-extrabold max-w-[490px]">
-              &quot;Ligula mauris et scelerisque nullam pellente&quot;
-            </p>
-          </div>
-          <div className="rounded-xl bg-gray-50 p-4 self-end sm:max-w-[380px]">
-            In mauris felis nec placerat ultrices quis aliquam amet. Morbi
-            interdum enim viverra ut urna mi auctor feugiat massa. Mauris
-            facilisis pellentesque sit sagittis pretium blandit scelerisque
-            ligula nullam. Cursus nulla quis et id condimentum. Orci nisi neque
-            laoreet convallis malesuada venenatis mauris at. Mattis turpis amet
-            mauris sit. Augue vitae ullamcorper nunc cursus urna vestibulum
-            pharetra convallis.
-          </div>
-        </div>
-
+        <FoundersMessage />
         <TeamCarousel />
 
         <div className="flex flex-col gap-5">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <div className="flex flex-col">
+            <div className="flex flex-col mt-10">
               <h2>Abonnementen</h2>
-              <p className="text-[26px] md:text-[48px]">
-                Kies het abonnement dat bij je past en haal alles uit de app
+              <p className="text-[20px] md:text-[40px] leading-none">
+                Kies het abonnement dat bij je past en haal het maximale uit je
+                crypto portfolio.
               </p>
             </div>
             <SubscriptionCard {...subscriptions[0]} />

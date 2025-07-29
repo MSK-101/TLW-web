@@ -112,7 +112,6 @@ export default function ReviewsSection() {
   return (
     <div className="mb-24">
       <div className="text-center mb-12">
-        <h2>Rating en reviews</h2>
         <h1 className="text-4xl leading-none max-w-[400px] text-center mx-auto">
           Wat vinden gebruikers van The Limitless Way?
         </h1>

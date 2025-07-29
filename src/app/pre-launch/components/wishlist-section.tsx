@@ -3,9 +3,12 @@ import WaitlistModal from "@/components/WaitlistModal";
 export default function WishlistSection() {
   return (
     <div className="flex flex-col items-center mb-[124px]">
-      <div className="text-4xl text-center max-w-[850px]">
-        Schrijf je hieronder in voor de wachtlijst. Dan ontvang je meteen een
-        mail zodra de app live is.
+      <div className="text-xl text-center max-w-[850px]">
+        Helaas moet je nog even wachten totdat je de app kunt gebruiken. We
+        lanceren de app op vrijdag 17 oktober 2025. Schrijf je hieronder in voor
+        de wachtlijst en ontvang meteen een mail zodra de app live is. Daarnaast
+        krijg je tot de livegang regelmatig updates over de cryptomarkt en
+        investeringstips van Tineke Zwart.
       </div>
       <div className="mt-10">
         <WaitlistModal

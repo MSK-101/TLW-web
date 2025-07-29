@@ -8,10 +8,10 @@ export default function NewsletterSignup() {
     >
       <div className="w-full flex flex-col lg:flex-row">
         <h6 className="text-xl lg:text-2xl text-left sm:text-center lg:text-left 2xl:text-3xl px-5 w-full lg:w-1/2">
-          Kun je niet naar het event komen, maar wil je de komende maanden wel
-          op de hoogte worden gehouden over de ontwikkelingen met betrekking tot
-          de app en daarbij regelmatig investeringstips krijgen? Meld je dan aan
-          voor de wachtlijst van de app
+          We lanceren de app op vrijdag 17 oktober 2025. Meld je hier aan voor
+          de wachtlijst en ontvang meteen een mail zodra de app live is. Ook
+          ontvang je tot de livegang regelmatig updates over de cryptomarkt en
+          investeringstips van Tineke Zwart.
         </h6>
         <div className="w-full lg:w-1/2">
           <iframe

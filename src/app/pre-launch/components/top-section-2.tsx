@@ -88,11 +88,6 @@ export default function TopSection2() {
         />
       </div>
       <div className="self-center px-[24px] md:px-[120px] max-w-[1102px] flex justify-start items-center shrink gap-[30px] md:gap-[119px]">
-        <p className="max-w-[506px] text-sm">
-          Korte uitleg over de app. Lorem ipsum dolor sit amet consectetur.
-          Rhoncus in eget eleifend velit arcu ut. Non ac tellus tortor ut mattis
-          placerat. A dolor et ac purus sed ullamcorper. In.
-        </p>
         <div className="shrink-0 border rounded-full border-gray-800 w-[34px] h-[60px] flex items-center justify-center">
           <DownArrowIcon className="animate-custom-bounce" />
         </div>
