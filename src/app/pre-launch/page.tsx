@@ -174,7 +174,6 @@ export default function PreLaunch() {
         <ReviewsSection />
         <WishlistSection />
         <FoundersMessage />
-        <TeamCarousel />
 
         <div className="flex flex-col gap-5">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -193,6 +192,8 @@ export default function PreLaunch() {
             <SubscriptionCard {...subscriptions[3]} />
           </div>
         </div>
+
+        <TeamCarousel />
 
         <div className="lg:-mx-[56px]">
           <FAQSection />
