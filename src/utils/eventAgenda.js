@@ -17,16 +17,16 @@ const eventAgenda = [
   {
     time: "15:15 - 16:00",
     title:
-      "Workshopblok 1 (keuze uit 3 sessies - gericht op educatie, zelfinzicht en app functionaliteiten)",
+      "Workshopblok 1 (keuze uit de 6 aangeboden sessies)",
     description:
-      "Je kiest 1 van de 3 sessies, je ontvangt meer informatie hierover nadat je je ticket hebt gekocht.",
+      "Je geeft je voorkeur op nadat je je ticket hebt gekocht - er is per workshop ruimte voor maximaal 50 mensen - en je ontvangt in aanloop naar het event meer informatie. Alle workshops worden opgenomen, zodat je alles sowieso terug kunt kijken!",
   },
   {
     time: "16:00 - 16:45",
     title:
-      "Workshopblok 2 (keuze uit 6 sessies - gericht op concrete strategie en toepasbaarheid)",
+      "Workshopblok 2 (keuze uit de 6 aangeboden sessies)",
     description:
-      "Je kiest 1 van de 3 sessies, je ontvangt meer informatie hierover nadat je je ticket hebt gekocht.",
+      "Je geeft je voorkeur op nadat je je ticket hebt gekocht - er is per workshop ruimte voor maximaal 50 mensen - en je ontvangt in aanloop naar het event meer informatie. Alle workshops worden opgenomen, zodat je alles sowieso terug kunt kijken!",
   },
   {
     time: "16:45 - 17:00",
