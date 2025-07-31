@@ -39,29 +39,9 @@ const team = [
     label: "Crypto expert",
   },
   {
-    name: "Team Communicatiemakers",
-    imageUrl: "/team/team-communicatiemakers.png",
-    label: "Ontwikkeling visual design app",
-  },
-  {
-    name: "Team DevRepublic",
-    imageUrl: "/team/team-dev-republic.png",
-    label: "Ontwikkeling app",
-  },
-  {
     name: "Patricia Oostvogels",
     imageUrl: "/team/patricia-oostvogels.jpeg",
     label: "Boekhouding",
-  },
-  {
-    name: "Ravikumar Sharma",
-    imageUrl: "/team/ravikumar-sharma.jpeg",
-    label: "Technical Architect DevRepublic (a.i.)",
-  },
-  {
-    name: "Danitsha van de Putte",
-    imageUrl: "/team/danitsha-van-de-putte.jpeg",
-    label: "Persoonlijke Assistent Tineke & Myrte",
   },
   {
     name: "Sophie van Koert",
@@ -77,6 +57,31 @@ const team = [
     name: "Michael de Jong",
     imageUrl: "/team/michael-de-jong.png",
     label: "Crypto Expert",
+  },
+  {
+    name: "Ravikumar Sharma",
+    imageUrl: "/team/ravikumar-sharma.jpeg",
+    label: "Technical Architect DevRepublic (a.i.)",
+  },
+  {
+    name: "Team Communicatiemakers",
+    imageUrl: "/team/team-communicatiemakers.png",
+    label: "Ontwikkeling visual design app",
+  },
+  {
+    name: "Team DevRepublic",
+    imageUrl: "/team/team-dev-republic.png",
+    label: "Ontwikkeling app",
+  },
+  {
+    name: "Danitsha van de Putte",
+    imageUrl: "/team/danitsha-van-de-putte.jpeg",
+    label: "Persoonlijke Assistent Tineke & Myrte",
+  },
+  {
+    name: "Muhammad Subhan Khan",
+    imageUrl: "/team/subhan.png",
+    label: "Webontwikkelaar en technisch projectmanager",
   },
 ];
 
