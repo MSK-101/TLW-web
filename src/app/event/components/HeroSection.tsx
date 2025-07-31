@@ -80,7 +80,7 @@ export default function HeroSection() {
         </div>
         <div className="flex gap-4 animate-slide-in-right row-start-3 col-span-2 md:row-start-2 md:col-start-2 md:col-span-1 xl:col-start-2 xl:row-start-1 rounded-2xl p-4 self-start justify-self-end w-full md:max-w-[300px] mt-5 md:mt-0 bg-[#E6C7FF] justify-between">
           <p className="text-lg">
-            Inclusief lancering van onze revolutionaire crypto app!
+            Inclusief lancering van onze revolutionaire crypto app
           </p>
 
           <Image src={"./icons/hero-logo.svg"} width={50} height={50} alt="" />

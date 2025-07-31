@@ -146,17 +146,18 @@ export default function SpeakersSection() {
           />
           <div className="px-[24px] py-6 col-span-1 sm:col-span-2">
             <h2 className="font-medium text-[23px]">
-              Anníka van Loon - TLW Crypto Expert
+              Anníka van Loon - TLW Crypto Expert.
             </h2>
             <p className="font-bold text-lg">
-              Wat is jouw investeer Hat? Ontdek je beleggersprofiel en
-              bijpassende assets
+              De invloed van de macro economie op de cryptomarkt en hoe je hier
+              slim op in kunt spelen.
             </p>
             <p className="text-[#525252]">
-              Wat voor type belegger ben jij? In deze interactieve sessie ontdek
-              je jouw investeerdersprofiel en leer je welke assets daarbij
-              passen - voor meer grip op je keuzes en een strategie die écht bij
-              je past.
+              De cryptomarkt wordt erg beïnvloed door alles wat er gebeurt op
+              macro economisch vlak. Anníka vertelt exact welke dingen een
+              positieve en negatieve impact hebben op de koersen zodat je daar
+              voortaan rekening mee kunt houden. Is er opeens een stijging of
+              een dip? Jij zult voortaan altijd weten waarom.
             </p>
           </div>
         </div>

@@ -1,6 +1,5 @@
 import AgendaContent from "@/app/event/components/AgendaContent";
 import FAQSection from "@/components/FAQSection";
-import FeaturesSection from "@/components/FeaturesSection";
 import FooterCTA from "@/app/event/components/FooterCTA";
 import FoundersMessage from "@/app/event/components/FoundersMessage";
 import HeroSection from "@/app/event/components/HeroSection";
@@ -9,6 +8,7 @@ import SpeakersSection from "@/app/event/components/SpeakersSection";
 import TicketCTA from "@/app/event/components/TicketCTA";
 import OurTeamSection from "./components/OurTeamSection";
 import ReviewsSection from "./components/ReviewsSection";
+import FeaturesSection from "./components/FeaturesSection";
 
 export default function Event() {
   return (

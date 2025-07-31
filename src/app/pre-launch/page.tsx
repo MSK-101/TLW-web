@@ -88,11 +88,11 @@ export default function PreLaunch() {
             <div className="flex flex-wrap gap-x-3 md:gap-x-8 gap-y-3 md:gap-y-3 justify-center items-center mt-10">
               <BitvavoLogo />
               <Image
-                src="/logos/Coinmerce-diap.png"
-                width={109}
+                src="/logos/coinbase.svg"
+                width={106}
                 height={24}
-                alt="Logo Coinmerce-diap"
-                className="h-[24px]"
+                alt="Logo Coinbase"
+                className="h-[18px]"
               />
 
               <Image
