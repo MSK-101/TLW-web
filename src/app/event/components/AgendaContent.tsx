@@ -24,8 +24,8 @@ export default function AgendaContent() {
             inspiratie, netwerken en de lancering van de app samenkomen.
           </p>
           <p>
-            Het event vindt plaats in de prachtige "Green Village" in Nieuwegein
-            (Blokhoeve 7).
+            Het event vindt plaats in de prachtige &ldquo;Green Village&rdquo;
+            in Nieuwegein (Blokhoeve 7).
           </p>
           <p>Het programma duurt van 14:00 tot 18:00 uur.</p>
           <p>Hopelijk tot dan!</p>
