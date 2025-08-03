@@ -21,9 +21,12 @@ export default function FAQSection() {
             dan ook handig voor mij mij om te gebruiken?
           </AccordionTrigger>
           <AccordionContent>
-            We hebben veel waardevolle producten voor beginners, maar dit event
-            is bedoeld voor mensen die al crypto bezitten. Je hoeft er echter
-            niet per se veel over te weten om mee te kunnen doen.
+            Ja, zeker. Je hebt dan niet het voordeel dat je meerdere portfolio's
+            vanuit onze app kunt managen, maar daarnaast zijn er nog veel meer
+            voordelen. Je hebt bijvoorbeeld veel meer inzicht in je winst,
+            verlies en gemiddelde aankoopkoers per coin. Ook kun je spaardoelen
+            aanmaken, je beleggersprofiel ontdekken, je vrijheidsgetal berekenen
+            en verschillende cursussen volgen.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-2">
@@ -32,9 +35,11 @@ export default function FAQSection() {
             dat wel veilig?
           </AccordionTrigger>
           <AccordionContent>
-            In sommige gevallen kan dat, maar in de meeste gevallen niet. Het
-            wisselt ook per bedrijf. Daarom is het slim om dit even met je
-            boekhouder te checken.
+            Dat snappen we. We maken echter gebruik van de meest veilige
+            systemen die er zijn en we werken met een partij die al jaren ISO
+            gecertificeerd is. Ook kun je ervoor kiezen om handmatig je
+            portfolio's in te voeren zodat je geen koppeling hoeft te maken met
+            de API.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-3">
@@ -42,10 +47,9 @@ export default function FAQSection() {
             Hoe lang zit ik vast aan een abonnement?
           </AccordionTrigger>
           <AccordionContent>
-            Je kunt je kaartje aan iemand anders geven als je echt niet kan,
-            maar terug doen kan helaas niet. Dit mede in verband met het
-            reserveren van de locatie op basis van het aantal mensen dat erbij
-            is.
+            Als je kiest voor een maandabonnement is het maandelijks opzegbaar.
+            Als je kiest voor een jaarabonnement, is het opzegbaar vanaf de
+            einddatum van je abonnement.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-4">
@@ -54,8 +58,9 @@ export default function FAQSection() {
             een aparte online leeromgeving?
           </AccordionTrigger>
           <AccordionContent>
-            Op en rondom het terrein van Green Village is voldoende gratis
-            parkeerplek.
+            Op dit moment gaat dat nog via de app. We zijn alleen wel een online
+            leeromgeving aan het bouwen zodat je de cursussen straks ook op je
+            computer kunt volgen.
           </AccordionContent>
         </AccordionItem>
       </Accordion>
