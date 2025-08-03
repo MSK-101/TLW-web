@@ -19,7 +19,7 @@ export default function DownloadAppSection() {
             width={1106}
             height={822}
             alt=""
-            className="h-full w-full translate-y-2 lg:translate-y-18 translate-x-4 max-h-[500px] object-contain scale-110 lg:scale-125 animate-slide-in-right"
+            className="h-full w-full translate-y-2 lg:translate-y-18 translate-x-4 max-h-[500px] object-contain scale-110 lg:scale-120 animate-slide-in-right"
           />
         </div>
       </div>

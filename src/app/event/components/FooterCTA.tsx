@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function FooterCTA() {
   return (
-    <div className="bg-[url(/background.png)] bg-bottom bg-cover bg-no-repeat rounded-2xl lg:rounded-4xl px-6 py-2 lg:py-6 xl:px-[124px]">
+    <div className="bg-[url(/background.png)] bg-bottom bg-cover bg-no-repeat rounded-2xl lg:rounded-4xl mb-32 px-6 py-2 lg:py-6 xl:px-[124px]">
       <div className="grid grid-cols-2">
         <div className="col-auto self-center lg:pl-6">
           <h1 className="text-3xl md:text-6xl 2xl:text-8xl font-bold opacity-80 leading-[90%]">
