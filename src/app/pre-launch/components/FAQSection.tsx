@@ -21,12 +21,12 @@ export default function FAQSection() {
             dan ook handig voor mij mij om te gebruiken?
           </AccordionTrigger>
           <AccordionContent>
-            Ja, zeker. Je hebt dan niet het voordeel dat je meerdere portfolio's
-            vanuit onze app kunt managen, maar daarnaast zijn er nog veel meer
-            voordelen. Je hebt bijvoorbeeld veel meer inzicht in je winst,
-            verlies en gemiddelde aankoopkoers per coin. Ook kun je spaardoelen
-            aanmaken, je beleggersprofiel ontdekken, je vrijheidsgetal berekenen
-            en verschillende cursussen volgen.
+            Ja, zeker. Je hebt dan niet het voordeel dat je meerdere
+            portfolio&apos;s vanuit onze app kunt managen, maar daarnaast zijn
+            er nog veel meer voordelen. Je hebt bijvoorbeeld veel meer inzicht
+            in je winst, verlies en gemiddelde aankoopkoers per coin. Ook kun je
+            spaardoelen aanmaken, je beleggersprofiel ontdekken, je
+            vrijheidsgetal berekenen en verschillende cursussen volgen.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-2">
@@ -38,8 +38,8 @@ export default function FAQSection() {
             Dat snappen we. We maken echter gebruik van de meest veilige
             systemen die er zijn en we werken met een partij die al jaren ISO
             gecertificeerd is. Ook kun je ervoor kiezen om handmatig je
-            portfolio's in te voeren zodat je geen koppeling hoeft te maken met
-            de API.
+            portfolio&apos;s in te voeren zodat je geen koppeling hoeft te maken
+            met de API.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-3">
