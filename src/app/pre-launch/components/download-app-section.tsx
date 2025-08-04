@@ -9,8 +9,7 @@ export default function DownloadAppSection() {
             Download de app en werk aan je eigen toekomst.
           </h1>
           <p className="mt-2 md:mt-8 text-gray-700 lg:mr-10">
-            De app wordt gelanceerd op donderdag 25 september 2025! Non ultrices
-            ac quis id tincidunt cursus.
+            De app wordt gelanceerd op vrijdag 17 oktober 2025!
           </p>
         </div>
         <div className="col-auto py-6">

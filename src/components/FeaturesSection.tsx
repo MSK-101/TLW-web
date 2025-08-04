@@ -9,10 +9,10 @@ export default function FeaturesSection() {
         <p className="my-10 text-lg text-gray-600">
           The Limitless Way is de crypto-interface die jou helpt bouwen aan je
           financiële toekomst – met overzicht, educatie en volledige controle.
-          Koppel je eigen exchanges (Bitvavo, Coinbase, ByBit en Kraken hebben
-          we nu), stel doelen, maak spaardoelen en volg e-learning en cursussen
-          die passen bij jouw manier van investeren. Jij beslist. Wij geven je
-          de inzichten en tools om slimme keuzes te maken – op jouw voorwaarden.
+          Koppel je eigen exchanges (Bitvavo, Coinbase, ByBit en MEXC hebben we
+          nu), stel doelen, maak spaardoelen en volg e-learning en cursussen die
+          passen bij jouw manier van investeren. Jij beslist. Wij geven je de
+          inzichten en tools om slimme keuzes te maken – op jouw voorwaarden.
           <br />
           <br /> Disclaimer: The Limitless Way geeft geen financieel advies.
           Alle keuzes worden volledig gemaakt en uitgevoerd door de gebruiker.

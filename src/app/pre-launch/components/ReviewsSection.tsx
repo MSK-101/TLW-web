@@ -9,20 +9,12 @@ export default function ReviewsSection() {
       textColor: "#525252",
     },
     {
-      full_name: "Nasser el Kamouchi",
-      username: "(eigenaar Whello)",
-      text: "Myrte is echt een topaanwinst voor elk bedrijf dat wil groeien en die dat wil doen met een vernieuwend concept.",
+      full_name: "Anoniem",
+      username: "",
+      text: "De markt is zeer volatiel. Je ziet je geld hard stijgen en dalen. Door de begeleiding van Tineke lukt het mij om focus te houden op de lange termijn en dat vind ik heel waardevol.",
       date: "21 maart 2025",
       bgColor: "#7F65CA",
       textColor: "#FFFFFF",
-    },
-    {
-      full_name: "Yara Gilissen",
-      username: "",
-      text: "Ik ben met een relatief klein bedrag ingestapt en dat is nu al bijna verdrievoudigd.",
-      date: "21 maart 2025",
-      bgColor: "#F9F6B3",
-      textColor: "#525252",
     },
   ];
 
@@ -36,11 +28,11 @@ export default function ReviewsSection() {
       textColor: "#525252",
     },
     {
-      full_name: "Anoniem",
+      full_name: "Yara Gilissen",
       username: "",
-      text: "De markt is zeer volatiel. Je ziet je geld hard stijgen en dalen. Door de begeleiding van Tineke lukt het mij om focus te houden op de lange termijn en dat vind ik heel waardevol.",
+      text: "Ik ben met een relatief klein bedrag ingestapt en dat is nu al bijna verdrievoudigd.",
       date: "21 maart 2025",
-      bgColor: "#f7e3cb",
+      bgColor: "#F9F6B3",
       textColor: "#525252",
     },
   ];
