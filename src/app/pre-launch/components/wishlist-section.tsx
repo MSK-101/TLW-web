@@ -1,8 +1,15 @@
 import WaitlistModal from "@/components/WaitlistModal";
+import Image from "next/image";
 
 export default function WishlistSection() {
   return (
     <div className="flex flex-col items-center mb-[124px]">
+      <Image
+        src="/logos/pre-launch-logo.png"
+        width={250}
+        height={250}
+        alt="Pre-Launch Logo"
+      />
       <div className="text-xl text-center max-w-[850px]">
         Helaas moet je nog even wachten totdat je de app kunt gebruiken. We
         lanceren de app op vrijdag 17 oktober 2025. Schrijf je hieronder in voor
@@ -10,6 +17,7 @@ export default function WishlistSection() {
         krijg je tot de livegang regelmatig updates over de cryptomarkt en
         investeringstips van Tineke Zwart.
       </div>
+
       <div className="mt-10">
         <WaitlistModal
           buttonVariant="custom"

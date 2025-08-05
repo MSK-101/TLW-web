@@ -30,12 +30,20 @@ export default function PreLaunch() {
 
       <div>
         <div className="flex flex-col justify-center items-center text-gray-50 text-center">
-          <h2 className="text-[32px] md:text-7xl font-bold mt-20 mb-8">
-            De alles-in-één app voor jouw crypto
+          <h2 className="text-[32px] md:text-7xl font-bold mt-20 max-w-[1200px]">
+            Op 17 oktober 2025 lanceren wij dé alles-in-één app voor jouw crypto
           </h2>
-          <p className="text-sm md:text-xl max-w-[584px]">
+          <Image
+            src="/logos/pre-launch-logo.png"
+            width={350}
+            height={350}
+            alt="Pre-Launch Logo"
+            className="mt-4 w-[250px] md:w-[350px]"
+          />
+          <p className="text-sm md:text-xl max-w-[800px] mt-4">
             Beheer veilig al je crypto vanuit 1 overzichtelijke en
-            gebruiksvriendelijke app.
+            gebruiksvriendelijke app en meld je alvast via deze website aan voor
+            de wachtlijst
             <br />
             <br />
             Vraag jezelf nooit meer af hoeveel winst of verlies je eigenlijk
