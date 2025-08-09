@@ -1,7 +1,19 @@
 "use client";
 import Image from "next/image";
 
-export default function QuoteSection() {
+type QuoteSectionProps = {
+  quoteSectionData: any;
+};
+
+export default function QuoteSection({ quoteSectionData }: QuoteSectionProps) {
+  console.log(quoteSectionData);
+
+  const { quote, name } = quoteSectionData;
+
+  if (!quoteSectionData) {
+    return null;
+  }
+
   return (
     <div className="my-20">
       <div className="max-w-4xl mx-auto text-center">
@@ -15,16 +27,12 @@ export default function QuoteSection() {
           />
         </div>
 
-        <blockquote className="text-3xl lg:text-4xl font-medium text-[#282828] leading-relaxed mb-8">
-          &quot;Mijn verwachting is dat veel
-          <br />
-          cryptomunten x10 gaan de
-          <br />
-          komende maanden&quot;
+        <blockquote className="text-3xl lg:text-4xl font-medium text-[#282828] leading-relaxed mb-8 max-w-[600px] mx-auto">
+          &quot;{quote}&quot;
         </blockquote>
 
         {/* Name */}
-        <cite className="text-md lg:text-lg text-gray-600">- Tineke Zwart</cite>
+        <cite className="text-md lg:text-lg text-gray-600">- {name}</cite>
       </div>
     </div>
   );
