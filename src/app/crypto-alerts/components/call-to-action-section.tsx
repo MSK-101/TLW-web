@@ -9,6 +9,10 @@ export default function CallToActionSection({
 }) {
   const { heading, description, button_text, image } = callToActionSectionData;
 
+  if (!callToActionSectionData) {
+    return null;
+  }
+
   return (
     <div className="bg-[url(/background.png)] bg-bottom bg-cover bg-no-repeat rounded-2xl lg:rounded-b-4xl p-10">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

@@ -9,8 +9,6 @@ type BenefitsSectionProps = {
 export default function BenefitsSection({
   benefitsSectionData,
 }: BenefitsSectionProps) {
-  console.log(benefitsSectionData);
-
   const { heading, description, button_text, benefits } = benefitsSectionData;
 
   if (!benefitsSectionData) {

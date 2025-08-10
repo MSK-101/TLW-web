@@ -9,6 +9,10 @@ export default function ReviewsSection({
 }) {
   const { reviews, heading, description } = reviewsSectionData;
 
+  if (!reviewsSectionData) {
+    return null;
+  }
+
   return (
     <div>
       <div className="flex flex-col items-center gap-5">

@@ -9,6 +9,10 @@ export default function ProductOverviewSection({
 }) {
   const { product_overview, call_to_action } = productOverviewSectionData;
 
+  if (!productOverviewSectionData) {
+    return null;
+  }
+
   return (
     <div className="md:max-w-[60%] mx-auto text-[#282828]">
       <div className="flex flex-col gap-5">

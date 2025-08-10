@@ -10,6 +10,10 @@ export default function AboutTeamSection({
 }) {
   const { team_members } = aboutTeamSectionData;
 
+  if (!aboutTeamSectionData) {
+    return null;
+  }
+
   return (
     <div>
       {team_members.map((member: any, index: number) => (

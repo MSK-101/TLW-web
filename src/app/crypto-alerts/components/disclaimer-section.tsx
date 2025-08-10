@@ -10,6 +10,10 @@ export default function DisclaimerSection({
 }) {
   const { button_text, disclaimer } = disclaimerSectionData;
 
+  if (!disclaimerSectionData) {
+    return null;
+  }
+
   return (
     <div className="flex flex-col gap-5 items-center mt-20">
       <button className="bg-[#7F65CA] text-white px-8 py-3 rounded-xl hover:bg-[#5a4a9a] transition-colors duration-300">
