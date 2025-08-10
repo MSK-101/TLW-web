@@ -9,6 +9,10 @@ export default function AboutCompanySection({
 }) {
   const { heading, description } = aboutCompanySectionData;
 
+  if (!aboutCompanySectionData) {
+    return null;
+  }
+
   return (
     <div className="md:max-w-[60%] mx-auto text-[#282828] text-left flex flex-col gap-15">
       <h2 className="text-3xl lg:text-5xl font-bold text-[#282828]">

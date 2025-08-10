@@ -11,7 +11,9 @@ export default function AudienceSection({
   const { audience_benefits, button_text, background_image } =
     audienceSectionData;
 
-  console.log(audienceSectionData);
+  if (!audienceSectionData) {
+    return null;
+  }
 
   return (
     <div

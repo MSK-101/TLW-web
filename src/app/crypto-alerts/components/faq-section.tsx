@@ -15,6 +15,10 @@ export default function FAQSection({
 }) {
   const { heading, question_answers } = faqSectionData;
 
+  if (!faqSectionData) {
+    return null;
+  }
+
   return (
     <div className="">
       <div className="text-center mb-15">
