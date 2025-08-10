@@ -29,6 +29,7 @@ export default function CryptoAlertsPage() {
     about_company_section: any;
     faq_section: any;
     disclaimer_section: any;
+    perks_comparison_section: any;
   } | null>(null);
 
   const [loading, setLoading] = useState(true);
@@ -78,6 +79,10 @@ export default function CryptoAlertsPage() {
       key: "populate[disclaimer_section][populate]",
       value: "*",
     },
+    {
+      key: "populate[perks_comparison_section][populate][perks][populate]",
+      value: "*",
+    },
   ];
 
   const fetchData = async () => {
@@ -99,6 +104,7 @@ export default function CryptoAlertsPage() {
         about_company_section: response.data.about_company_section,
         faq_section: response.data.faq_section,
         disclaimer_section: response.data.disclaimer_section,
+        perks_comparison_section: response.data.perks_comparison_section,
       });
     } catch (error) {
       console.error(error);
@@ -135,7 +141,9 @@ export default function CryptoAlertsPage() {
         <BenefitsSection
           benefitsSectionData={cryptoAlertData?.benefits_section}
         />
-        <ComparisonSection />
+        <ComparisonSection
+          perksComparisonSectionData={cryptoAlertData?.perks_comparison_section}
+        />
         <QuoteSection quoteSectionData={cryptoAlertData?.quote_section} />
         <AudienceSection
           audienceSectionData={cryptoAlertData?.audience_section}
