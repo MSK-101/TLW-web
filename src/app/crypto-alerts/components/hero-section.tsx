@@ -1,16 +1,14 @@
 import Image from "next/image";
-import ReactMarkdown from "react-markdown";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import Markdown from "@/components/ui/markdown";
 
 type HeroSectionProps = {
   heroSectionData: any;
 };
 
 export default function HeroSection({ heroSectionData }: HeroSectionProps) {
-  console.log(heroSectionData);
-
   const { heading, description, button_text, phone_image, popup_text } =
     heroSectionData;
 
@@ -25,14 +23,9 @@ export default function HeroSection({ heroSectionData }: HeroSectionProps) {
           <div className="text-[#282828] font-extrabold text-3xl md:text-6xl lg:text-7xl xl:text-[110px] font-funnel-display lg:w-max">
             {heading}
           </div>
-          {description?.map((item: { id: number; text: string }) => (
-            <div
-              key={item.id}
-              className="text-lg text-[#525252] leading-relaxed"
-            >
-              <ReactMarkdown>{item.text}</ReactMarkdown>
-            </div>
-          ))}
+          <div className="text-lg text-[#525252] leading-relaxed flex flex-col gap-4">
+            <Markdown>{description.text}</Markdown>
+          </div>
           <button className="bg-[#7F65CA] lg:mt-4 text-white px-8 py-3 rounded-xl hover:bg-[#5a4a9a] transition-colors duration-300">
             {button_text}
           </button>
@@ -51,11 +44,7 @@ export default function HeroSection({ heroSectionData }: HeroSectionProps) {
           {/* Floating Info Box */}
           <div className="absolute top-[40%] lg:-translate-x-[10%] xl:-translate-x-[40%] animate-slide-in-right bg-[#E6C7FF] rounded-2xl pl-4 pr-3 py-2 shadow-lg flex gap-1">
             <div className="max-w-[160px] text-sm leading-[1.2] flex flex-col gap-1">
-              {popup_text?.map((item: { id: number; text: string }) => (
-                <div key={item.id}>
-                  <ReactMarkdown>{item.text}</ReactMarkdown>
-                </div>
-              ))}
+              <Markdown>{popup_text.text}</Markdown>
             </div>
             <Image
               src="/team/tineke-zwart.jpeg"

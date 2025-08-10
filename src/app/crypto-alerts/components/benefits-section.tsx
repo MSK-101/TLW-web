@@ -1,6 +1,6 @@
 "use client";
 
-import ReactMarkdown from "react-markdown";
+import Markdown from "@/components/ui/markdown";
 
 type BenefitsSectionProps = {
   benefitsSectionData: any;
@@ -21,11 +21,7 @@ export default function BenefitsSection({
     <div className="flex md:flex-row flex-col gap-16">
       <div className="flex-2/5 text-center md:text-left mb-5 flex flex-col gap-8">
         <h2 className="text-5xl">{heading}</h2>
-        {description?.map((item: { id: number; text: string }) => (
-          <div key={item.id}>
-            <ReactMarkdown>{item.text}</ReactMarkdown>
-          </div>
-        ))}
+        <Markdown>{description.text}</Markdown>
         <button className="bg-[#7F65CA] text-white px-8 py-3 rounded-xl hover:bg-[#5a4a9a] transition-colors duration-300 self-center md:self-start">
           {button_text}
         </button>

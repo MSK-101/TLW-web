@@ -6,8 +6,6 @@ type QuoteSectionProps = {
 };
 
 export default function QuoteSection({ quoteSectionData }: QuoteSectionProps) {
-  console.log(quoteSectionData);
-
   const { quote, name } = quoteSectionData;
 
   if (!quoteSectionData) {
