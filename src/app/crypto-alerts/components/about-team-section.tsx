@@ -22,10 +22,9 @@ export default function AboutTeamSection({
           key={member.id}
         >
           <div
-            className="rounded-2xl overflow-hidden max-h-[500px]"
-            style={{
-              order: index % 2 === 0 ? 1 : 2,
-            }}
+            className={`rounded-2xl overflow-hidden max-h-[500px] ${
+              index % 2 === 0 ? "md:order-1" : "md:order-2"
+            }`}
           >
             <Image
               src={member.member_image.url}
@@ -39,10 +38,9 @@ export default function AboutTeamSection({
             />
           </div>
           <div
-            className="flex flex-col justify-center"
-            style={{
-              order: index % 2 === 0 ? 2 : 1,
-            }}
+            className={`flex flex-col justify-center ${
+              index % 2 === 0 ? "md:order-2" : "md:order-1"
+            }`}
           >
             <h2 className="text-3xl lg:text-4xl font-bold text-[#282828] mb-6">
               {member.heading}
