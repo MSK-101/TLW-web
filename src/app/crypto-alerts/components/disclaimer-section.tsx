@@ -3,18 +3,21 @@
 import { faBell } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function CryptoFooter() {
+export default function DisclaimerSection({
+  disclaimerSectionData,
+}: {
+  disclaimerSectionData: any;
+}) {
+  const { button_text, disclaimer } = disclaimerSectionData;
+
   return (
     <div className="flex flex-col gap-5 items-center mt-20">
       <button className="bg-[#7F65CA] text-white px-8 py-3 rounded-xl hover:bg-[#5a4a9a] transition-colors duration-300">
-        Ik wil geen Alert missen!
+        {button_text}
         <FontAwesomeIcon icon={faBell} className="ml-3" />
       </button>
 
-      <p className="text-gray-50 max-w-[500px] text-center">
-        Wat ik deel is geen financieel advies, maar een kijkje in mijn aanpak.
-        Wat je hiermee doet, is jouw verantwoordelijkheid.
-      </p>
+      <p className="text-gray-50 max-w-[500px] text-center">{disclaimer}</p>
     </div>
   );
 }
