@@ -14,7 +14,7 @@ import FAQSection from "./components/FAQSection";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import WaitlistModal from "@/components/WaitlistModal";
 import TestpanelModal from "@/components/TestpanelModal";
-import FeaturesSection from "@/components/FeaturesSection";
+import FeaturesSection from "./components/FeaturesSection";
 import FoundersMessage from "./components/FoundersMessage";
 import ReviewsSection from "./components/ReviewsSection";
 

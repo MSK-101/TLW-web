@@ -7,10 +7,13 @@ export default function FeaturesSection() {
           Dit is wat je allemaal kunt doen met de app.
         </h2>
         <p className="my-10 text-lg text-gray-600">
-          The Limitless Way is de crypto-interface die jou helpt bouwen aan je
-          financiële toekomst - met overzicht, educatie en volledige controle.
-          Koppel je eigen exchanges (Bitvavo, Coinbase, ByBit en MEXC hebben we
-          nu), stel doelen, maak spaardoelen en volg e-learning en cursussen die
+          The Limitless Way is de meest volledige en gebruiksvriendelijke app
+          die jou helpt met het bouwen aan je financiële toekomst - met
+          overzicht, educatie en volledige controle. Koppel bijvoorbeeld je
+          eigen exchanges (Bitvavo, Coinbase, ByBit en MEXC hebben we nu), stel
+          doelen voor jezelf, maak spaardoelen, vraag je &ldquo;AI friend&rdquo;
+          en volg e-learning, masterclasses en cursussen. En nog veel meer!
+          Alles om jou te helpen om grip te krijgen op je crypto.
         </p>
       </div>
       <div className="">
