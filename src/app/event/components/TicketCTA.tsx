@@ -7,11 +7,8 @@ export default function TicketCTA() {
   return (
     <div className="flex flex-col items-center mb-[124px]">
       <div className="text-4xl text-center max-w-[650px]">
-        Bestel nu je Early Bird ticket tot en met 11 augustus voor €59 inclusief
-        21% BTW.
-        <p className="text-xl mt-6">
-          Daarna gaat de prijs omhoog naar €69 inclusief 21% BTW.
-        </p>
+        Bestel nu je ticket voor slechts €69 inclusief 21% BTW.
+        <p className="text-xl mt-6">Graag tot 17 oktober!</p>
       </div>
       <Link
         href="https://wwwthelimitlesswaynl.plugandpay.com/checkout/event"
