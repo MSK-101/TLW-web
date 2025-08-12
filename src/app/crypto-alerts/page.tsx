@@ -2,6 +2,7 @@
 
 import { getStrapiContentClient } from "@/lib/strapi-client";
 import { useEffect, useState } from "react";
+import cryptoAlertCache from "@/utils/api-cached-responses/crypto-alert.json";
 
 import BenefitsSection from "./components/benefits-section";
 import ComparisonSection from "./components/comparison-section";
@@ -107,7 +108,24 @@ export default function CryptoAlertsPage() {
         perks_comparison_section: response.data.perks_comparison_section,
       });
     } catch (error) {
-      console.error(error);
+      console.error("Error fetching data from API, using cached data:", error);
+      // Use fallback data from cache
+      setCryptoAlertData({
+        hero_section: cryptoAlertCache.data.hero_section,
+        benefits_section: cryptoAlertCache.data.benefits_section,
+        quote_section: cryptoAlertCache.data.quote_section,
+        audience_section: cryptoAlertCache.data.audience_section,
+        product_overview_section:
+          cryptoAlertCache.data.product_overview_section,
+        reviews_section: cryptoAlertCache.data.reviews_section,
+        about_team_section: cryptoAlertCache.data.about_team_section,
+        call_to_action_section: cryptoAlertCache.data.call_to_action_section,
+        about_company_section: cryptoAlertCache.data.about_company_section,
+        faq_section: cryptoAlertCache.data.faq_section,
+        disclaimer_section: cryptoAlertCache.data.disclaimer_section,
+        perks_comparison_section:
+          cryptoAlertCache.data.perks_comparison_section,
+      });
     } finally {
       setLoading(false);
     }
