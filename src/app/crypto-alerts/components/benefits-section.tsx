@@ -24,18 +24,20 @@ export default function BenefitsSection({
           {button_text}
         </button>
       </div>
-      <div className="flex-3/5 flex flex-col lg:flex-row gap-4 items-center justify-center">
+      <div className="flex-3/5 flex flex-col lg:flex-row gap-4">
         <div className="flex flex-col gap-4 lg:flex-1/2">
           {benefits
             .slice(0, Math.ceil(benefits.length / 2))
             .map((benefit: any) => (
               <div
-                className="rounded-3xl bg-[#F0F0F0] text-[#282828] p-[32px] self-end"
+                className="rounded-3xl bg-[#F0F0F0] text-[#282828] p-[32px]"
                 key={benefit.id}
               >
-                <div className="text-2xl xl:text-3xl">{benefit.heading}</div>
+                <div className="text-2xl xl:text-3xl mb-4">
+                  {benefit.heading}
+                </div>
 
-                <p className="mt-3">{benefit.description}</p>
+                <Markdown>{benefit.description}</Markdown>
               </div>
             ))}
         </div>
@@ -45,12 +47,14 @@ export default function BenefitsSection({
             .slice(Math.ceil(benefits.length / 2))
             .map((benefit: any) => (
               <div
-                className="rounded-3xl bg-[#F0F0F0] text-[#282828] p-[32px] self-end"
+                className="rounded-3xl bg-[#F0F0F0] text-[#282828] p-[32px]"
                 key={benefit.id}
               >
-                <div className="text-2xl xl:text-3xl">{benefit.heading}</div>
+                <div className="text-2xl xl:text-3xl mb-4">
+                  {benefit.heading}
+                </div>
 
-                <p className="mt-3">{benefit.description}</p>
+                <Markdown>{benefit.description}</Markdown>
               </div>
             ))}
         </div>
