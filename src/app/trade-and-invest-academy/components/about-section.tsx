@@ -22,7 +22,7 @@ export default function AboutSection() {
         bewegen met de markt.
       </p>
       <p>
-        📊 Crypto Tech & Teach – een leercommunity waarin je zelf leert
+        📊 Trade & Invest Academy – een leercommunity waarin je zelf leert
         analyseren en traden. Hierin werken 2 van onze beste traders iedere dag
         samen met de community!
       </p>

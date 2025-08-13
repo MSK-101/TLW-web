@@ -21,7 +21,9 @@ export default function IntroSection() {
         </p>
 
         <p>
-          <span className="font-bold">Daarom is er Crypto Tech & Teach.</span>
+          <span className="font-bold">
+            Daarom is er Trade & Invest Academy.
+          </span>
           <br />
           Voor investeerders (in ontwikkeling ;)) die niet alleen willen
           meeliften, maar écht willen begrijpen wat er gebeurt. Die zelf willen

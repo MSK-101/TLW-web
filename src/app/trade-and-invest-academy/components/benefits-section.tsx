@@ -8,7 +8,7 @@ export default function BenefitsSection() {
         <p>
           In de
           <span className="font-bold mx-1">
-            besloten Crypto Tech & Teach Discord- en WhatsApp-community
+            besloten Trade & Invest Academy Discord- en WhatsApp-community
           </span>
           zijn Sjoerd en Michael iedere dag actief om jou te helpen groeien als
           trader.
@@ -60,9 +60,11 @@ export default function BenefitsSection() {
 
             <p className="text-sm">
               Geen eindeloze YouTube-rabbit holes waar je niets mee kunt. In
-              <span className="font-bold mx-1">Crypto Tech & Teach</span> laten
-              we je zien wat er speelt, leggen we uit hoe je dat technisch én
-              strategisch interpreteert én leren we je hoe je zélf sterke
+              <span className="font-bold mx-1">
+                Trade & Invest Academy
+              </span>{" "}
+              laten we je zien wat er speelt, leggen we uit hoe je dat technisch
+              én strategisch interpreteert én leren we je hoe je zélf sterke
               analyses maakt.
             </p>
           </div>
@@ -72,7 +74,7 @@ export default function BenefitsSection() {
             </div>
 
             <p className="text-sm">
-              Het doel van Crypto Tech & Teach is niet dat je klakkeloos iets
+              Het doel van Trade & Invest Academy is niet dat je klakkeloos iets
               overneemt, maar dat je zélf nog meer leert denken als een trader.
               Je leert hoe je signalen herkent, hoe je marktbewegingen
               interpreteert en hoe je daar je eigen strategie op baseert. Kom je

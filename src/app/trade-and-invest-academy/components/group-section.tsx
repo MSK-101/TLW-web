@@ -24,7 +24,8 @@ export default function GroupSection() {
           <h2 className="text-5xl xl:text-6xl font-bold leading-[90%] mb-8 text-[#282828]">
             Voor wie is
             <br />
-            <span className="text-[#7F65CA]">Crypto Tech & Teach</span> <br />
+            <span className="text-[#7F65CA]">Trade & Invest Academy</span>{" "}
+            <br />
             interessant?
           </h2>
         </div>

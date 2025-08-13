@@ -45,7 +45,7 @@ export default function ComparisonSection() {
             </div>
 
             <div className="py-4 text-lg lg:text-3xl font-bold text-[#282828] rounded-t-md bg-[#E6C7FF]">
-              Crypto Tech & Teach
+              Trade & Invest Academy
             </div>
 
             {/* Feature Rows */}

@@ -6,24 +6,24 @@ export default function HeroSection() {
   return (
     <section className="bg-[url(/cs_hero_bg.png)] bg-center bg-cover bg-no-repeat rounded-[32px] bg-[#F0F0F0] pt-25 pb-8 xl:pb-12 px-2 lg:pt-32 xl:pt-44 lg:pb-10 lg:pl-20 xl:pl-30 2xl:pr-30">
       <div className="flex flex-col lg:flex-row lg:justify-between items-center lg:gap-8">
-        <div className="grow-0 flex flex-col items-center lg:items-start gap-6 text-center lg:text-left 2xl:max-w-[650px]">
+        <div className="grow-0 flex flex-col items-center lg:items-start gap-6 text-center lg:text-left 2xl:max-w-[780px]">
           <div className="text-[rgb(40,40,40)] font-extrabold text-3xl md:text-6xl lg:text-7xl xl:text-[110px] font-funnel-display">
-            Crypto Tech & Teach
+            Trade & Invest Academy
           </div>
-          <p className="font-bold text-lg lg:text-xl xl:text-2xl xl:mt-4 xl:mr-20 2xl:mr-0">
+          <p className="font-bold text-lg lg:text-xl xl:text-2xl xl:mt-4 xl:mr-40 2xl:mr-20">
             Marktupdates, technische analyses, trading tutorials en live
             inzichten van twee toptraders uit Team TLW. Alles wat jij nodig hebt
             om zélf te leren analyseren in deze bull run. 📈
           </p>
 
-          <p className="text-base lg:text-lg xl:mr-20 2xl:mr-0">
-            Met Crypto Tech & Teach krijg je dagelijks een exclusieve kijk in de
-            denkwijze en strategieën van ervaren én zeer bevlogen traders Sjoerd
-            en Michael. In een besloten WhatsApp- en Discord-community delen zij
-            marktupdates, technische setups en teaching content, waarmee jij
-            stap voor stap leert hoe je zelf sterke analyses maakt.
+          <p className="text-base lg:text-lg xl:mr-40 2xl:mr-20">
+            Met Trade & Invest Academy krijg je dagelijks een exclusieve kijk in
+            de denkwijze en strategieën van ervaren én zeer bevlogen traders
+            Sjoerd en Michael. In een besloten WhatsApp- en Discord-community
+            delen zij marktupdates, technische setups en teaching content,
+            waarmee jij stap voor stap leert hoe je zelf sterke analyses maakt.
           </p>
-          <p className="text-base lg:text-lg xl:mr-20 2xl:mr-0">
+          <p className="text-base lg:text-lg xl:mr-40 2xl:mr-20">
             <span className="font-bold">
               Meld je aan via de knop hieronder.
             </span>

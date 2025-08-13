@@ -40,8 +40,8 @@ export default function TeamSection() {
             </span>
           </p>
           <p className="font-bold">
-            Voor Crypto Tech & Teach bundelen we de krachten met twee van onze
-            meest ervaren traders: Sjoerd en Michael.
+            Voor Trade & Invest Academy bundelen we de krachten met twee van
+            onze meest ervaren traders: Sjoerd en Michael.
           </p>
           <p>
             Zij nemen je mee in hun strategie, denken hardop met je mee en leren
