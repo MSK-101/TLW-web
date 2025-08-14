@@ -1,4 +1,5 @@
 import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
 
 export default function Markdown({ children }: { children: string }) {
   return (
@@ -23,6 +24,7 @@ export default function Markdown({ children }: { children: string }) {
           <h6 className="text-xl text-[#282828]">{children}</h6>
         ),
       }}
+      rehypePlugins={[rehypeRaw]}
     >
       {children}
     </ReactMarkdown>
