@@ -19,8 +19,8 @@ export default function HeroSection({ heroSectionData }: HeroSectionProps) {
   return (
     <section className="bg-[url(/cs_hero_bg.png)] bg-center bg-cover bg-no-repeat rounded-[32px] bg-[#F0F0F0] pt-25 pb-8 xl:pb-12 px-2 lg:pt-32 xl:pt-44 lg:pb-10 lg:pl-20 xl:pl-30 2xl:pr-30">
       <div className="flex flex-col lg:flex-row lg:justify-between items-center lg:gap-8">
-        <div className="grow-0 flex flex-col items-center lg:items-start gap-6 text-center lg:text-left max-w-[610px]">
-          <div className="text-[#282828] font-extrabold text-3xl md:text-6xl lg:text-7xl xl:text-[110px] font-funnel-display lg:w-max">
+        <div className="grow-0 flex flex-col items-center lg:items-start gap-6 text-center lg:text-left max-w-[610px] 2xl:max-w-[780px]">
+          <div className="text-[#282828] font-extrabold text-3xl md:text-6xl xl:text-8xl font-funnel-display">
             {heading}
           </div>
           <div className="text-lg text-[#525252] leading-relaxed flex flex-col gap-4">

@@ -7,47 +7,28 @@ import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
-const team = [
-  {
-    name: "Tineke Zwart",
-    imageUrl: "/team/tineke-zwart.jpeg",
-    label: "Functie Ipsum",
-  },
-  {
-    name: "Myrte Scheffer",
-    imageUrl: "/team/myrte-scheffer.jpeg",
-    label: "Functie Ipsum",
-  },
-  {
-    name: "Tamara Stroop",
-    imageUrl: "/team/tamara-stroop.png",
-    label: "Functie Ipsum",
-  },
-  {
-    name: "Anníka van Loon",
-    imageUrl: "/team/anníka-van-loon.jpeg",
-    label: "Crypto expert",
-  },
-  {
-    name: "Tristan Melano",
-    imageUrl: "/team/tristan-melano.png",
-    label: "Chief Audiovisual Officer",
-  },
-  {
-    name: "Barry Nijkamp",
-    imageUrl: "/team/barry-nijkamp.jpeg",
-    label: "CFO",
-  },
-];
+export default function TeamMembersSection({
+  teamMembersSectionData,
+}: {
+  teamMembersSectionData: any;
+}) {
+  const { heading, sub_heading, team_members_slider } = teamMembersSectionData;
 
-export default function CryptoExperts() {
+  if (!teamMembersSectionData) {
+    return null;
+  }
+
+  const team = team_members_slider.team_member_cards.map((card: any) => ({
+    name: card.team_member_name,
+    imageUrl: card.team_member_image.url,
+    label: card.team_member_designation,
+  }));
+
   return (
     <div className="2xl:px-14">
       <div className="text-center mb-15">
-        <h2>Ons team</h2>
-        <p className="text-[48px] leading-none">
-          Je kunt rekenen op deze experts
-        </p>
+        <h2>{sub_heading}</h2>
+        <p className="text-[48px] leading-none">{heading}</p>
       </div>
       <div className="relative">
         <div
@@ -87,7 +68,7 @@ export default function CryptoExperts() {
           slidesPerView={1}
           loop={true}
         >
-          {team.map((member, index) => {
+          {team.map((member: any, index: number) => {
             return (
               <SwiperSlide key={index}>
                 <div className="rounded-2xl overflow-hidden relative aspect-[266/343] mx-auto">

@@ -1,22 +1,27 @@
 "use client";
 
+import Markdown from "@/components/ui/markdown";
 import Link from "next/link";
 
-export default function GroupSection() {
-  const benefits = [
-    "Je hebt al een cryptoportfolio en wilt leren hoe je hier slimmer en strategischer mee omgaat",
-    "Je hebt misschien al wat ervaring met traden (bijvoorbeeld via Crypto Alerts) en wilt zelf leren analyseren",
-    "Je wilt meer verdieping: technische analyses, patronen herkennen en eigen strategieën ontwikkelen",
-    "Je zoekt een leeromgeving waarin alles begrijpelijk wordt uitgelegd — ook de complexere materie",
-    "Je wilt niet alles alleen doen, maar samen groeien in een betrokken, toegankelijke community",
-    "Je hebt behoefte aan begeleiding van echte traders, maar zonder afhankelijk te zijn van “signalen”",
-    "Je bent al bekend met de basis van crypto — dit is geen instapgroep voor beginners",
-  ];
+export default function AudienceSection({
+  audienceSectionData,
+}: {
+  audienceSectionData: any;
+}) {
+  const { audience_benefits, button_text, background_image } =
+    audienceSectionData;
+
+  if (!audienceSectionData) {
+    return null;
+  }
 
   return (
     <div
-      className="bg-[url(/group.png)] bg-center bg-cover bg-no-repeat rounded-2xl lg:-mx-[84px] px-6 lg:px-[124px] py-12 lg:py-20"
-      style={{ height: "891px" }}
+      className="bg-center bg-cover bg-no-repeat rounded-2xl lg:-mx-[84px] px-6 lg:px-[124px] py-12 lg:py-20"
+      style={{
+        height: "891px",
+        backgroundImage: `url(${background_image.url})`,
+      }}
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 h-full items-end justify-center md:justify-between">
         {/* Left Side - Heading */}
@@ -32,8 +37,8 @@ export default function GroupSection() {
 
         {/* Right Side - Card */}
         <div className="col-auto bg-white rounded-2xl px-6 lg:px-10 py-8 lg:py-12 shadow-l mx-auto max-w-[450px] flex flex-col gap-4">
-          {benefits.map((benefit, index) => (
-            <div key={index} className="flex items-start gap-3">
+          {audience_benefits.map((benefit: { id: number; text: string }) => (
+            <div key={benefit.id} className="flex items-start gap-3">
               <svg
                 width="20"
                 height="20"
@@ -50,9 +55,9 @@ export default function GroupSection() {
                   strokeLinejoin="round"
                 />
               </svg>
-              <p className="text-[#282828] text-sm lg:text-base leading-relaxed">
-                {benefit}
-              </p>
+              <div className="text-[#282828] text-sm lg:text-base leading-relaxed">
+                <Markdown>{benefit.text}</Markdown>
+              </div>
             </div>
           ))}
 
@@ -62,7 +67,7 @@ export default function GroupSection() {
             className="cursor-pointer mt-3"
           >
             <button className="bg-[#7F65CA] text-white px-8 py-3 rounded-xl hover:bg-[#5a4a9a] transition-colors duration-300">
-              Direct aanmelden
+              {button_text}
             </button>
           </Link>
         </div>

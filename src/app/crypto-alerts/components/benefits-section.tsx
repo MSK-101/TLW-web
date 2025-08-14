@@ -17,7 +17,7 @@ export default function BenefitsSection({
 
   return (
     <div className="flex md:flex-row flex-col gap-16">
-      <div className="flex-2/5 text-center md:text-left mb-5 flex flex-col gap-8">
+      <div className="flex-2/5 text-center md:text-left mb-5 flex flex-col gap-4">
         <h2 className="text-5xl">{heading}</h2>
         <Markdown>{description.text}</Markdown>
         <button className="bg-[#7F65CA] text-white px-8 py-3 rounded-xl hover:bg-[#5a4a9a] transition-colors duration-300 self-center md:self-start">

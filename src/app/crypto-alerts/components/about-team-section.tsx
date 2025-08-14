@@ -22,7 +22,7 @@ export default function AboutTeamSection({
           key={member.id}
         >
           <div
-            className={`rounded-2xl overflow-hidden max-h-[500px] ${
+            className={`rounded-2xl overflow-hidden max-h-[600px] ${
               index % 2 === 0 ? "md:order-1" : "md:order-2"
             }`}
           >

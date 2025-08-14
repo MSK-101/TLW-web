@@ -1,38 +1,39 @@
 "use client";
 import React from "react";
 
-export default function ComparisonSection() {
-  const features = [
-    { name: "Markt updates", cryptoAlerts: "✓", cryptoTechTeach: "✓" },
-    { name: "Q&A", cryptoAlerts: "✓", cryptoTechTeach: "✓" },
-    {
-      name: "Trade alerts",
-      cryptoAlerts: "Regelmatig BTC + altcoins",
-      cryptoTechTeach: "Af en toe BTC en ETH",
-    },
-    {
-      name: "Technische analyse op verzoek",
-      cryptoAlerts: "✗",
-      cryptoTechTeach: "✓",
-    },
-    { name: "Masterclasses", cryptoAlerts: "✓", cryptoTechTeach: "✗" },
-    {
-      name: "Trading lessen",
-      cryptoAlerts: "Beginners",
-      cryptoTechTeach: "Gevorderden",
-    },
-    {
-      name: "Community platform",
-      cryptoAlerts: "Whatsapp",
-      cryptoTechTeach: "Discord",
-    },
-  ];
+export default function ComparisonSection({
+  perksComparisonSectionData,
+}: {
+  perksComparisonSectionData: any;
+}) {
+  const { heading, perks } = perksComparisonSectionData;
+
+  if (!perksComparisonSectionData) {
+    return null;
+  }
+
+  const availablity = (for_type: any) => {
+    switch (for_type.availablity) {
+      case "Yes":
+        return "✓";
+      case "No":
+        return "✗";
+      case "Other":
+        return for_type.text;
+    }
+  };
+
+  const features = perks.map((perk: any) => ({
+    name: perk.perk,
+    cryptoAlerts: availablity(perk.for_crypto_alerts),
+    cryptoTechTeach: availablity(perk.for_crypto_tech_and_tech),
+  }));
 
   return (
     <div className="">
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
         <h2 className="text-4xl lg:text-5xl font-bold text-center text-[#282828] mb-16">
-          Lorem ipsum dolor sit
+          {heading}
         </h2>
 
         <div className="relative overflow-x-auto">
@@ -49,7 +50,7 @@ export default function ComparisonSection() {
             </div>
 
             {/* Feature Rows */}
-            {features.map((feature, index) => {
+            {features.map((feature: any, index: number) => {
               const isFirst = index === 0;
               const isLast = index === features.length - 1;
 
