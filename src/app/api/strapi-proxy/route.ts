@@ -1,4 +1,6 @@
 import { NextResponse } from 'next/server';
+import { writeFile } from 'fs/promises';
+import path from 'path';
 
 export async function POST(request: Request) {
   try {
@@ -42,6 +44,20 @@ export async function POST(request: Request) {
 
     // Return the Strapi response
     const data = await res.json();
+
+    // Persist cache for this endpoint (server-side only)
+    try {
+      const fileName = `${endpoint.replace(/^\//, '')}.json`;
+      const cachePath = path.join(
+        process.cwd(),
+        'src/utils/api-cached-responses',
+        fileName
+      );
+      await writeFile(cachePath, JSON.stringify(data, null, 2), 'utf8');
+    } catch (e) {
+      console.error('Failed to write cached response:', e);
+    }
+
     return NextResponse.json(data);
 
   } catch (error) {

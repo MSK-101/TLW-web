@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { getStrapiContentClient } from "@/lib/strapi-client";
 import PageLoader from "@/components/ui/page-loader";
 
-import tradeAndInvestAcademyCache from "@/utils/api-cached-responses/trade-and-invest-academy.json";
+import tradeAndInvestAcademyCache from "@/utils/api-cached-responses/web-trade-and-invest-academy.json";
 
 import BenefitsSection from "../crypto-alerts/components/benefits-section";
 import HeroSection from "../crypto-alerts/components/hero-section";
