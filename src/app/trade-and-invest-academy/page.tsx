@@ -18,7 +18,6 @@ import FAQSection from "../crypto-alerts/components/faq-section";
 import DisclaimerSection from "../crypto-alerts/components/disclaimer-section";
 import ComparisonSection from "./components/comparison-section";
 import AudienceSection from "./components/audience-section";
-import TeamMembersSection from "./components/team-members-section";
 
 export default function TradeAndInvestAcademyPage() {
   const [tradeAndInvestAcademyData, setTradeAndInvestAcademyData] = useState<{
@@ -29,7 +28,6 @@ export default function TradeAndInvestAcademyPage() {
     product_overview_section: any;
     reviews_section: any;
     about_team_section: any;
-    team_members_section: any;
     call_to_action_section: any;
     about_company_section: any;
     faq_section: any;
@@ -65,10 +63,6 @@ export default function TradeAndInvestAcademyPage() {
     },
     {
       key: "populate[about_team_section][populate][team_members][populate]",
-      value: "*",
-    },
-    {
-      key: "populate[team_members_section][populate][team_members_slider][populate][team_member_cards][populate]",
       value: "*",
     },
     {
@@ -108,7 +102,6 @@ export default function TradeAndInvestAcademyPage() {
         product_overview_section: response.data.product_overview_section,
         reviews_section: response.data.reviews_section,
         about_team_section: response.data.about_team_section,
-        team_members_section: response.data.team_members_section,
         call_to_action_section: response.data.call_to_action_section,
         about_company_section: response.data.about_company_section,
         faq_section: response.data.faq_section,
@@ -127,8 +120,6 @@ export default function TradeAndInvestAcademyPage() {
           tradeAndInvestAcademyCache.data.product_overview_section,
         reviews_section: tradeAndInvestAcademyCache.data.reviews_section,
         about_team_section: tradeAndInvestAcademyCache.data.about_team_section,
-        team_members_section:
-          tradeAndInvestAcademyCache.data.team_members_section,
         call_to_action_section:
           tradeAndInvestAcademyCache.data.call_to_action_section,
         about_company_section:
@@ -179,12 +170,6 @@ export default function TradeAndInvestAcademyPage() {
         />
         <AboutTeamSection
           aboutTeamSectionData={tradeAndInvestAcademyData?.about_team_section}
-        />
-
-        <TeamMembersSection
-          teamMembersSectionData={
-            tradeAndInvestAcademyData?.team_members_section
-          }
         />
 
         <CallToActionSection
