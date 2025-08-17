@@ -1,12 +1,12 @@
 {
   "data": {
-    "id": 7,
+    "id": 19,
     "documentId": "sejyu1l39lgxyje2ebcw814s",
     "createdAt": "2025-08-13T23:54:14.827Z",
-    "updatedAt": "2025-08-14T09:03:08.189Z",
-    "publishedAt": "2025-08-14T09:03:08.515Z",
+    "updatedAt": "2025-08-17T20:05:15.763Z",
+    "publishedAt": "2025-08-17T20:05:16.088Z",
     "hero_section": {
-      "id": 51,
+      "id": 69,
       "heading": "Trade & Invest Academy",
       "button_text": "Count me in!",
       "phone_image": {
@@ -56,80 +56,77 @@
         "publishedAt": "2025-08-09T20:20:22.628Z"
       },
       "description": {
-        "id": 461,
-        "text": "**Marktupdates, technische analyses, trading tutorials en live inzichten van twee toptraders uit Team TLW. Alles wat jij nodig hebt om zélf te leren analyseren in deze bull run. 📈**\n\nMet Trade & Invest Academy krijg je dagelijks een exclusieve kijk in de denkwijze en strategieën van ervaren én zeer bevlogen traders Sjoerd en Michael. In een besloten WhatsApp- en Discord-community delen zij marktupdates, technische setups en teaching content, waarmee jij stap voor stap leert hoe je zelf sterke analyses maakt.\n\n**Meld je aan via de knop hieronder.** Je zit nergens aan vast – het is gewoon maandelijks opzegbaar."
+        "id": 635,
+        "text": "**Leer winstgevend traden in crypto en aandelen met twee toptraders uit Team TLW.**\n\nIn de Trade & Invest Academy krijg je een exclusieve kijk in de denkwijze en strategieën van ervaren traders Sjoerd en Michael. In een besloten Discord community delen zij, stap voor stap, alles wat je moet weten om succesvol te kunnen traden.\n\nZe nemen je mee in talloze video’s, doen regelmatig analyses van verschillende coins, beantwoorden vragen en geven feedback. Hierdoor leer jij stap voor stap hoe je grafieken kunt analyseren en goede trades kunt spotten.\n\n**Meld je aan via de knop hieronder.** Het is maandelijks opzegbaar."
       },
-      "popup_text": {
-        "id": 462,
-        "text": "De Crypto Alerts wordt geleid door\n\n**Tineke Zwart en is een product van The Limitless Way.**"
-      }
+      "popup_text": null
     },
     "benefits_section": {
-      "id": 48,
+      "id": 66,
       "heading": "Wat krijg je?",
       "button_text": "Direct aanmelden",
       "description": {
-        "id": 463,
-        "text": "In de **besloten Trade & Invest Academy Discord- en WhatsApp-community** zijn Sjoerd en Michael iedere dag actief om jou te helpen groeien als trader.\n\nJe ontvangt dagelijks een marktupdate – inclusief het grotere macro-economische plaatje van Tineke of haar team – zodat je beter snapt wat er speelt en waarom dat ertoe doet.\n\nDaarnaast delen Sjoerd en Michael meerdere keren per week technische setups, educatieve inzichten én zijn er vaste Q&A-momenten waarin je al je vragen kunt stellen. Ook kun je al je vragen stellen aan Sjoerd en Michael. Dit is geen financieel advies, maar bedoeld om jou als investeerder slimmer, zelfstandiger en strategischer te maken. Wat je ermee doet? Jouw eigen verantwoordelijkheid. 😉\n\n<u>Let op: deze groep is niet geschikt voor beginners, maar echt voor mensen die al wat verder zijn in hun crypto reis en hun kennis over de (termen van) traden.</u>\n\n**Alles draait hier om community, leren, oefenen en verdiepen.**\n\n_Dit is geen financieel advies, maar een leeromgeving waarin jij als investeerder groeit in kennis, vertrouwen en zelfstandigheid. 📊_\n\nJe betaalt een maandelijks bedrag van XX euro en kunt op elk moment opzeggen.\n\nBen je al lid van de Crypto Alerts? Dan geldt er een speciaal aanbod (meer info volgt).\n\nBonus: … (wordt nog ingevuld)"
+        "id": 636,
+        "text": "In het besloten Discord kanaal zijn Sjoerd en Michael iedere dag actief om jou te helpen groeien als beginnende, maar ook als gevorderde trader.\n\nJe kunt uitlegvideo’s bekijken waarin alles van A tot Z wordt uitgelegd. Daarnaast delen Sjoerd en Michael wekelijkse technische setups, extra kennis en behandelen ze ook veel vragen.\n\nZe delen niet alleen kennis over crypto, maar ook over aandelen. Zo nemen ze je bijvoorbeeld mee in de opbouw van een slimme aandelenportfolio.\n\nOok Tineke is actief in de Trade & Invest Academy. Op maandag deelt ze altijd een uitgebreide marktupdate zodat je weet wat er speelt in de markt en ook wat de belangrijkste gebeurtenissen zijn die week. Daar kun je vervolgens rekening mee houden in je trades.\n\nDaarnaast beantwoord ze ook regelmatig vragen in de groep.\n\nJe kunt lid worden voor €39 inclusief BTW per maand. Het is maandelijks opzegbaar."
       },
       "benefits": [
         {
-          "id": 189,
+          "id": 261,
           "heading": "Leer traden als een pro — mét begeleiding van echte traders",
           "description": "Geen eindeloze YouTube-rabbit holes waar je niets mee kunt. In **Trade & Invest Academy** laten we je zien wat er speelt, leggen we uit hoe je dat technisch én strategisch interpreteert én leren we je hoe je zélf sterke analyses maakt."
         },
         {
-          "id": 190,
+          "id": 262,
           "heading": "Ontwikkel je eigen strategie — met begeleiding",
           "description": "Het doel van Trade & Invest Academy is niet dat je klakkeloos iets overneemt, maar dat je zélf nog meer leert denken als een trader. Je leert hoe je signalen herkent, hoe je marktbewegingen interpreteert en hoe je daar je eigen strategie op baseert. Kom je er even niet uit? Dan kun je altijd je vragen stellen aan Sjoerd, Michael of andere leden in de community.\n\nSamen groeien = sneller leren. 💡"
         },
         {
-          "id": 191,
+          "id": 263,
           "heading": "Dieper inzicht in de markt",
           "description": "Sjoerd en Michael delen regelmatig lessen over het herkennen van patronen, technische indicatoren en hoe je marktbewegingen leert lezen. Ook leggen ze uit welke invloed nieuws heeft op de charts. Want hoe beter jij begrijpt wat er gebeurt, hoe slimmer je kunt handelen. 😉"
         },
         {
-          "id": 192,
+          "id": 264,
           "heading": "Kijk mee over de schouder van een pro",
           "description": "Sjoerd en Michael laten je regelmatig meekijken met interessante trades: waar zien zij kansen, welke indicatoren gebruiken ze, en hoe bepalen ze hun entry en exit? Ze nemen je mee in hun denkwijze, zodat jij leert hoe je zélf zulke afwegingen maakt. Wat je ermee doet, is helemaal aan jou."
         }
       ]
     },
     "quote_section": {
-      "id": 47,
-      "quote": "In deze markt ligt gigantisch veel potentie — maar alleen voor wie weet wát hij doet en wanneer.",
-      "name": "Tineke Zwart"
+      "id": 65,
+      "quote": "A few months of learning how to trade can produce a lifetime of freedom.",
+      "name": null
     },
     "audience_section": {
-      "id": 31,
+      "id": 49,
       "button_text": "Direct aanmelden",
       "audience_benefits": [
         {
-          "id": 464,
+          "id": 637,
           "text": "Je hebt al een cryptoportfolio en wilt leren hoe je hier slimmer en strategischer mee omgaat"
         },
         {
-          "id": 465,
+          "id": 638,
           "text": "Je hebt misschien al wat ervaring met traden (bijvoorbeeld via Crypto Alerts) en wilt zelf leren analyseren"
         },
         {
-          "id": 466,
+          "id": 639,
           "text": "Je wilt meer verdieping: technische analyses, patronen herkennen en eigen strategieën ontwikkelen"
         },
         {
-          "id": 467,
+          "id": 640,
           "text": "Je zoekt een leeromgeving waarin alles begrijpelijk wordt uitgelegd — ook de complexere materie"
         },
         {
-          "id": 468,
+          "id": 641,
           "text": "Je wilt niet alles alleen doen, maar samen groeien in een betrokken, toegankelijke community"
         },
         {
-          "id": 469,
+          "id": 642,
           "text": "Je hebt behoefte aan begeleiding van echte traders, maar zonder afhankelijk te zijn van “signalen”"
         },
         {
-          "id": 470,
+          "id": 643,
           "text": "Je bent al bekend met de basis van crypto — dit is geen instapgroep voor beginners"
         }
       ],
@@ -205,25 +202,25 @@
       }
     },
     "product_overview_section": {
-      "id": 30,
+      "id": 48,
       "product_overview": {
-        "id": 59,
+        "id": 95,
         "heading": "De markt beweegt. Nu is het moment om jouw skills te verdiepen.",
         "text": "De cryptomarkt zit in een cruciale fase. De halving van april 2024 markeert opnieuw het startschot van een mogelijke bull run — een periode waarin koersen historisch gezien sterk kunnen stijgen.\n\nMaar: rendement maken in deze markt vraagt meer dan alleen “erin zitten”. Het vraagt inzicht. Timing. Strategie. Weten wat je doet — en waarom.\n\n**Daarom is er Trade & Invest Academy.**\nVoor investeerders (in ontwikkeling ;)) die niet alleen willen meeliften, maar écht willen begrijpen wat er gebeurt. Die zelf willen leren analyseren, technische patronen willen herkennen en hun eigen keuzes willen maken. En dat niet alleen: ook willen sparren, vragen stellen en leren in een toegankelijke community van gelijkgestemden.\n\n**Sjoerd en Michael – ervaren traders uit Team TLW – nemen je dagelijks mee in de markt via een besloten WhatsApp- en Discord-groep.** Ze delen technische updates, marktinzichten, setups en strategie. Jij kijkt mee, stelt vragen én leert hoe je zelf steeds beter wordt.\n\nGeen financieel advies. Wel: verdieping, structuur en ondersteuning op weg naar meer zelfstandigheid in je trading journey.\n\nBen je klaar om je kennisniveau naar next level te tillen? Dan is dit voor jou. 👇"
       },
       "call_to_action": {
-        "id": 60,
+        "id": 96,
         "heading": "Meld je direct aan",
         "text": "**Je betaalt een maandelijks bedrag van €XX,- inclusief BTW. **\n\nBen je al lid van de Crypto Alerts? Dan geldt er een speciaal aanbod (meer info volgt).\n\nBonus: … (wordt nog ingevuld)\n\nVoor ondernemers is dit aftrekbaar. Je schrijft je in voor minimaal één maand en kunt daarna per maand opzeggen."
       }
     },
     "reviews_section": {
-      "id": 29,
+      "id": 47,
       "heading": "Wat anderen vinden..",
       "description": "De reviews zijn afkomstig van deelnemers die meededen met de Crypto Cursus, de Trading cursus en/of de Crypto Alerts.",
       "reviews": [
         {
-          "id": 115,
+          "id": 187,
           "username": "Florien Oost",
           "review": "**Tineke’s uitleg is helder en to-the-point. Wat ik vooral waardeer, is dat ze niet alleen haar keuzes onderbouwt, maar ook actuele nieuwsberichten en relevante ontwikkelingen deelt die je helpen om zelf betere beslissingen te nemen.** Binnen de Crypto Collective heerst een fijne, open sfeer. De communicatie in de verschillende groepen is vriendelijk, respectvol, en behulpzaam. Er zijn meerdere groepen binnen het programma, zoals een kletsgroep en een Q&A-groep, waardoor er voor iedereen iets passends is. **Ik heb in korte tijd ontzettend veel geleerd over traden en investeren in crypto, en ik ben meer dan tevreden met de winst die ik tot nu toe heb behaald.** Tineke’s enthousiasme en enorme kennis van crypto zijn aanstekelijk, en je merkt dat ze er plezier in heeft om haar kennis te delen en anderen te helpen groeien. **Als je serieus bent over crypto en op zoek bent naar een betrouwbare en inspirerende gids, dan is dit dé plek om te zijn.**",
           "date": null,
@@ -231,7 +228,7 @@
           "bg_color_code": "#E6C7FF"
         },
         {
-          "id": 116,
+          "id": 188,
           "username": "Naam Achternaam",
           "review": "Ik ben ontzettend blij dat ik de stap heb gezet in de wereld van crypto, en ik had het niet anders gewild dan leren van Tineke. Tineke legt alles altijd helder en begrijpelijk uit, neemt de tijd om al mijn vragen te beantwoorden, en denkt actief mee over hoe we in de crypto collective het maximale uit ons geld kunnen halen. Ik ben dankbaar dat ik van haar mag leren!",
           "date": "21 maand 2025",
@@ -239,7 +236,7 @@
           "bg_color_code": "#E6C7FF"
         },
         {
-          "id": 117,
+          "id": 189,
           "username": "Naam Achternaam",
           "review": "Zo blij dat ik ben ingestapt! Dankjewel, Tineke. Het gaat voor mij verder dan de winsten pakken. Ik leer veel en alleen al het feit om hiermee bezig te zijn voelt supergoed. Ik had eerder al crypto’s gekocht maar wist eerlijk gezegd niet wat ik er verder mee moest. Nu kan ik bouwen op de info en support van Tineke. Ik kan me voorstellen dat crypto’s best een beetje verslavend kunnen werken (dat gevoel als er weer een coin de limietorder heeft bereikt is eerlijk best lekker), maar omdat Tineke er zo strategisch in zit, laat je je niet leiden door gevoel en dopmineshotjes 😉 Tineke is duidelijk, betrouwbaar en ik heb respect hoe ze deze groep zo strak weet te leiden. Dikke aanrader!",
           "date": "21 maand 2025",
@@ -247,7 +244,7 @@
           "bg_color_code": "#E6C7FF"
         },
         {
-          "id": 118,
+          "id": 190,
           "username": "Naam Achternaam",
           "review": "Tineke neemt je elke dag mee in wat zij doet en legt duidelijk uit waarom ze wat doet. In makkelijk taal zodat iedereen dit begrijpt. Ik heb echt mega winsten behaald waar ik alleen maar van kon dromen. De whatsapp groep is heel fijn om met andere te sparren en te leren hoe Crypto ook voor jou kan werken zonder dat je een expert bent, want dat is Tineke. Ik raad dit iedereen aan die geld wilt verdienen met Crypto. ",
           "date": "21 maand 2025",
@@ -257,10 +254,10 @@
       ]
     },
     "about_team_section": {
-      "id": 22,
+      "id": 40,
       "team_members": [
         {
-          "id": 37,
+          "id": 64,
           "heading": "Jouw volgende stap begint hier — met een team dat met je meegroeit",
           "description": "Mijn reis in crypto begon klein, maar groeide uit tot een diepgaande expertise en uiteindelijk zelfs veel financieel succes, ik mag mezelf tegenwoordig cryptomiljonair noemen - hoewel ik dat nog steeds raar vind om op te schrijven.\n\nDie kennis geef ik nu door via The Limitless Way, het platform dat ik samen met Myrte Scheffer heb opgericht.\n\nWe geloven dat je sneller groeit als je leert van mensen die verder zijn — en dat je nóg sterker wordt als je onderdeel bent van een community die met je meedenkt. **Daarom werken we met een team van 12 experts aan onze content en begeleiding, én bouwen er 10 techspecialisten fulltime aan onze crypto app die we lanceren op 17 oktober 2025.**\n\n**Voor Trade & Invest Academy bundelen we de krachten met twee van onze meest ervaren traders: Sjoerd en Michael.**\n\nZij nemen je mee in hun strategie, denken hardop met je mee en leren je hoe jij zélf beter wordt in analyseren, interpreteren en beslissingen nemen.\n\n👇 Maak hieronder kennis met Sjoerd en Michael.",
           "vertical_offset": 0,
@@ -337,628 +334,274 @@
         }
       ]
     },
-    "team_members_section": {
-      "id": 5,
-      "heading": "Je kunt rekenen op deze experts",
-      "sub_heading": "Ons team",
-      "team_members_slider": {
-        "id": 33,
-        "team_member_cards": [
-          {
-            "id": 78,
-            "team_member_name": "Tineke Zwart",
-            "team_member_designation": "Functie Ipsum",
-            "team_member_image": {
-              "id": 19,
-              "documentId": "vu4shrihknbzz68csb1d2d1e",
-              "name": "tineke-zwart.jpeg",
-              "alternativeText": null,
-              "caption": null,
-              "width": 1080,
-              "height": 1350,
-              "formats": {
-                "thumbnail": {
-                  "name": "thumbnail_tineke-zwart.jpeg",
-                  "hash": "thumbnail_tineke_zwart_430817cf60",
-                  "ext": ".jpeg",
-                  "mime": "image/jpeg",
-                  "path": null,
-                  "width": 125,
-                  "height": 156,
-                  "size": 3.91,
-                  "sizeInBytes": 3914,
-                  "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/thumbnail_tineke_zwart_430817cf60.jpeg"
-                },
-                "large": {
-                  "name": "large_tineke-zwart.jpeg",
-                  "hash": "large_tineke_zwart_430817cf60",
-                  "ext": ".jpeg",
-                  "mime": "image/jpeg",
-                  "path": null,
-                  "width": 800,
-                  "height": 1000,
-                  "size": 78.64,
-                  "sizeInBytes": 78643,
-                  "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/large_tineke_zwart_430817cf60.jpeg"
-                },
-                "small": {
-                  "name": "small_tineke-zwart.jpeg",
-                  "hash": "small_tineke_zwart_430817cf60",
-                  "ext": ".jpeg",
-                  "mime": "image/jpeg",
-                  "path": null,
-                  "width": 400,
-                  "height": 500,
-                  "size": 24.53,
-                  "sizeInBytes": 24530,
-                  "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/small_tineke_zwart_430817cf60.jpeg"
-                },
-                "medium": {
-                  "name": "medium_tineke-zwart.jpeg",
-                  "hash": "medium_tineke_zwart_430817cf60",
-                  "ext": ".jpeg",
-                  "mime": "image/jpeg",
-                  "path": null,
-                  "width": 600,
-                  "height": 750,
-                  "size": 48.64,
-                  "sizeInBytes": 48635,
-                  "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/medium_tineke_zwart_430817cf60.jpeg"
-                }
-              },
-              "hash": "tineke_zwart_430817cf60",
-              "ext": ".jpeg",
-              "mime": "image/jpeg",
-              "size": 121.29,
-              "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/tineke_zwart_430817cf60.jpeg",
-              "previewUrl": null,
-              "provider": "aws-s3",
-              "provider_metadata": null,
-              "createdAt": "2025-08-14T07:39:49.722Z",
-              "updatedAt": "2025-08-14T07:39:49.722Z",
-              "publishedAt": "2025-08-14T07:39:49.722Z"
-            }
-          },
-          {
-            "id": 79,
-            "team_member_name": "Myrte Scheffer",
-            "team_member_designation": "Functie Ipsum",
-            "team_member_image": {
-              "id": 20,
-              "documentId": "w39ck5v2pom0tgoez3pyriyh",
-              "name": "myrte-scheffer.jpeg",
-              "alternativeText": null,
-              "caption": null,
-              "width": 1080,
-              "height": 1350,
-              "formats": {
-                "thumbnail": {
-                  "name": "thumbnail_myrte-scheffer.jpeg",
-                  "hash": "thumbnail_myrte_scheffer_ca556c29b0",
-                  "ext": ".jpeg",
-                  "mime": "image/jpeg",
-                  "path": null,
-                  "width": 125,
-                  "height": 156,
-                  "size": 3.86,
-                  "sizeInBytes": 3863,
-                  "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/thumbnail_myrte_scheffer_ca556c29b0.jpeg"
-                },
-                "small": {
-                  "name": "small_myrte-scheffer.jpeg",
-                  "hash": "small_myrte_scheffer_ca556c29b0",
-                  "ext": ".jpeg",
-                  "mime": "image/jpeg",
-                  "path": null,
-                  "width": 400,
-                  "height": 500,
-                  "size": 23.55,
-                  "sizeInBytes": 23553,
-                  "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/small_myrte_scheffer_ca556c29b0.jpeg"
-                },
-                "medium": {
-                  "name": "medium_myrte-scheffer.jpeg",
-                  "hash": "medium_myrte_scheffer_ca556c29b0",
-                  "ext": ".jpeg",
-                  "mime": "image/jpeg",
-                  "path": null,
-                  "width": 600,
-                  "height": 750,
-                  "size": 45.96,
-                  "sizeInBytes": 45956,
-                  "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/medium_myrte_scheffer_ca556c29b0.jpeg"
-                },
-                "large": {
-                  "name": "large_myrte-scheffer.jpeg",
-                  "hash": "large_myrte_scheffer_ca556c29b0",
-                  "ext": ".jpeg",
-                  "mime": "image/jpeg",
-                  "path": null,
-                  "width": 800,
-                  "height": 1000,
-                  "size": 73.19,
-                  "sizeInBytes": 73187,
-                  "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/large_myrte_scheffer_ca556c29b0.jpeg"
-                }
-              },
-              "hash": "myrte_scheffer_ca556c29b0",
-              "ext": ".jpeg",
-              "mime": "image/jpeg",
-              "size": 110.63,
-              "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/myrte_scheffer_ca556c29b0.jpeg",
-              "previewUrl": null,
-              "provider": "aws-s3",
-              "provider_metadata": null,
-              "createdAt": "2025-08-14T07:40:28.572Z",
-              "updatedAt": "2025-08-14T07:40:28.572Z",
-              "publishedAt": "2025-08-14T07:40:28.572Z"
-            }
-          },
-          {
-            "id": 80,
-            "team_member_name": "Tamara Stroop",
-            "team_member_designation": "Functie Ipsum",
-            "team_member_image": {
-              "id": 21,
-              "documentId": "tx0h42ps4ifg87smx7ok1wno",
-              "name": "tamara-stroop.png",
-              "alternativeText": null,
-              "caption": null,
-              "width": 1707,
-              "height": 2560,
-              "formats": {
-                "thumbnail": {
-                  "name": "thumbnail_tamara-stroop.png",
-                  "hash": "thumbnail_tamara_stroop_f237692f5e",
-                  "ext": ".png",
-                  "mime": "image/png",
-                  "path": null,
-                  "width": 104,
-                  "height": 156,
-                  "size": 24.12,
-                  "sizeInBytes": 24123,
-                  "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/thumbnail_tamara_stroop_f237692f5e.png"
-                },
-                "medium": {
-                  "name": "medium_tamara-stroop.png",
-                  "hash": "medium_tamara_stroop_f237692f5e",
-                  "ext": ".png",
-                  "mime": "image/png",
-                  "path": null,
-                  "width": 500,
-                  "height": 750,
-                  "size": 398.36,
-                  "sizeInBytes": 398356,
-                  "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/medium_tamara_stroop_f237692f5e.png"
-                },
-                "small": {
-                  "name": "small_tamara-stroop.png",
-                  "hash": "small_tamara_stroop_f237692f5e",
-                  "ext": ".png",
-                  "mime": "image/png",
-                  "path": null,
-                  "width": 333,
-                  "height": 500,
-                  "size": 190.35,
-                  "sizeInBytes": 190354,
-                  "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/small_tamara_stroop_f237692f5e.png"
-                },
-                "large": {
-                  "name": "large_tamara-stroop.png",
-                  "hash": "large_tamara_stroop_f237692f5e",
-                  "ext": ".png",
-                  "mime": "image/png",
-                  "path": null,
-                  "width": 667,
-                  "height": 1000,
-                  "size": 669.94,
-                  "sizeInBytes": 669940,
-                  "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/large_tamara_stroop_f237692f5e.png"
-                }
-              },
-              "hash": "tamara_stroop_f237692f5e",
-              "ext": ".png",
-              "mime": "image/png",
-              "size": 935.17,
-              "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/tamara_stroop_f237692f5e.png",
-              "previewUrl": null,
-              "provider": "aws-s3",
-              "provider_metadata": null,
-              "createdAt": "2025-08-14T07:41:43.816Z",
-              "updatedAt": "2025-08-14T07:41:43.816Z",
-              "publishedAt": "2025-08-14T07:41:43.816Z"
-            }
-          },
-          {
-            "id": 81,
-            "team_member_name": "Anníka van Loon",
-            "team_member_designation": "Crypto expert",
-            "team_member_image": {
-              "id": 22,
-              "documentId": "lc1rwo2giprf4ud6wij63af6",
-              "name": "anníka-van-loon.jpeg",
-              "alternativeText": null,
-              "caption": null,
-              "width": 522,
-              "height": 468,
-              "formats": {
-                "thumbnail": {
-                  "name": "thumbnail_anníka-van-loon.jpeg",
-                  "hash": "thumbnail_annika_van_loon_63efa6480f",
-                  "ext": ".jpeg",
-                  "mime": "image/jpeg",
-                  "path": null,
-                  "width": 174,
-                  "height": 156,
-                  "size": 4.57,
-                  "sizeInBytes": 4565,
-                  "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/thumbnail_annika_van_loon_63efa6480f.jpeg"
-                },
-                "small": {
-                  "name": "small_anníka-van-loon.jpeg",
-                  "hash": "small_annika_van_loon_63efa6480f",
-                  "ext": ".jpeg",
-                  "mime": "image/jpeg",
-                  "path": null,
-                  "width": 500,
-                  "height": 448,
-                  "size": 22.05,
-                  "sizeInBytes": 22053,
-                  "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/small_annika_van_loon_63efa6480f.jpeg"
-                }
-              },
-              "hash": "annika_van_loon_63efa6480f",
-              "ext": ".jpeg",
-              "mime": "image/jpeg",
-              "size": 23.42,
-              "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/annika_van_loon_63efa6480f.jpeg",
-              "previewUrl": null,
-              "provider": "aws-s3",
-              "provider_metadata": null,
-              "createdAt": "2025-08-14T07:42:48.044Z",
-              "updatedAt": "2025-08-14T09:02:19.298Z",
-              "publishedAt": "2025-08-14T07:42:48.044Z"
-            }
-          },
-          {
-            "id": 82,
-            "team_member_name": "Tristan Melano",
-            "team_member_designation": "Chief Audiovisual Officer",
-            "team_member_image": {
-              "id": 23,
-              "documentId": "h4xu6rvqsqk300h88sds33wc",
-              "name": "tristan-melano.png",
-              "alternativeText": null,
-              "caption": null,
-              "width": 640,
-              "height": 640,
-              "formats": {
-                "small": {
-                  "name": "small_tristan-melano.png",
-                  "hash": "small_tristan_melano_b3b7aa4eef",
-                  "ext": ".png",
-                  "mime": "image/png",
-                  "path": null,
-                  "width": 500,
-                  "height": 500,
-                  "size": 281.02,
-                  "sizeInBytes": 281016,
-                  "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/small_tristan_melano_b3b7aa4eef.png"
-                },
-                "thumbnail": {
-                  "name": "thumbnail_tristan-melano.png",
-                  "hash": "thumbnail_tristan_melano_b3b7aa4eef",
-                  "ext": ".png",
-                  "mime": "image/png",
-                  "path": null,
-                  "width": 156,
-                  "height": 156,
-                  "size": 34.23,
-                  "sizeInBytes": 34233,
-                  "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/thumbnail_tristan_melano_b3b7aa4eef.png"
-                }
-              },
-              "hash": "tristan_melano_b3b7aa4eef",
-              "ext": ".png",
-              "mime": "image/png",
-              "size": 94.83,
-              "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/tristan_melano_b3b7aa4eef.png",
-              "previewUrl": null,
-              "provider": "aws-s3",
-              "provider_metadata": null,
-              "createdAt": "2025-08-14T07:43:35.697Z",
-              "updatedAt": "2025-08-14T07:43:35.697Z",
-              "publishedAt": "2025-08-14T07:43:35.698Z"
-            }
-          },
-          {
-            "id": 83,
-            "team_member_name": "Barry Nijkamp",
-            "team_member_designation": "CFO",
-            "team_member_image": {
-              "id": 24,
-              "documentId": "jl1h1c83gdbfs6rqvtw58wlp",
-              "name": "barry-nijkamp.jpeg",
-              "alternativeText": null,
-              "caption": null,
-              "width": 2281,
-              "height": 2362,
-              "formats": {
-                "thumbnail": {
-                  "name": "thumbnail_barry-nijkamp.jpeg",
-                  "hash": "thumbnail_barry_nijkamp_ba4b33bfb4",
-                  "ext": ".jpeg",
-                  "mime": "image/jpeg",
-                  "path": null,
-                  "width": 151,
-                  "height": 156,
-                  "size": 5.49,
-                  "sizeInBytes": 5492,
-                  "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/thumbnail_barry_nijkamp_ba4b33bfb4.jpeg"
-                },
-                "medium": {
-                  "name": "medium_barry-nijkamp.jpeg",
-                  "hash": "medium_barry_nijkamp_ba4b33bfb4",
-                  "ext": ".jpeg",
-                  "mime": "image/jpeg",
-                  "path": null,
-                  "width": 724,
-                  "height": 750,
-                  "size": 78.19,
-                  "sizeInBytes": 78193,
-                  "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/medium_barry_nijkamp_ba4b33bfb4.jpeg"
-                },
-                "small": {
-                  "name": "small_barry-nijkamp.jpeg",
-                  "hash": "small_barry_nijkamp_ba4b33bfb4",
-                  "ext": ".jpeg",
-                  "mime": "image/jpeg",
-                  "path": null,
-                  "width": 483,
-                  "height": 500,
-                  "size": 37.42,
-                  "sizeInBytes": 37418,
-                  "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/small_barry_nijkamp_ba4b33bfb4.jpeg"
-                },
-                "large": {
-                  "name": "large_barry-nijkamp.jpeg",
-                  "hash": "large_barry_nijkamp_ba4b33bfb4",
-                  "ext": ".jpeg",
-                  "mime": "image/jpeg",
-                  "path": null,
-                  "width": 966,
-                  "height": 1000,
-                  "size": 137.29,
-                  "sizeInBytes": 137292,
-                  "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/large_barry_nijkamp_ba4b33bfb4.jpeg"
-                }
-              },
-              "hash": "barry_nijkamp_ba4b33bfb4",
-              "ext": ".jpeg",
-              "mime": "image/jpeg",
-              "size": 723.2,
-              "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/barry_nijkamp_ba4b33bfb4.jpeg",
-              "previewUrl": null,
-              "provider": "aws-s3",
-              "provider_metadata": null,
-              "createdAt": "2025-08-14T07:44:31.816Z",
-              "updatedAt": "2025-08-14T07:44:31.816Z",
-              "publishedAt": "2025-08-14T07:44:31.816Z"
-            }
-          }
-        ]
-      }
-    },
     "call_to_action_section": {
-      "id": 20,
+      "id": 38,
       "heading": "Meld je direct aan!",
-      "description": "Aftrekbaar voor ondernemers, per maand opzegbaar. Na aanmelding ontvang je meteen de onboarding en de Crypto Alerts WhatsApp Community link.",
-      "button_text": "ik do mee!",
-      "image": {
-        "id": 18,
-        "documentId": "ff9tcsct62dp0z2n7i2y1km0",
-        "name": "tinke_crypto.jpg",
+      "button_text": "Ik doe mee",
+      "description": "€39 inclusief 21% BTW per maand. Maandelijks opzegbaar.\n\nStartdatum: maandag 18 augustus.\n\nNa aanmelding ontvang je meteen alle informatie,\ninclusief de link naar het Discord kanaal. Als nieuw\nlid word je op weg geholpen middels ons\nonboarding proces.",
+      "image_1": {
+        "id": 19,
+        "documentId": "vu4shrihknbzz68csb1d2d1e",
+        "name": "tineke-zwart.jpeg",
         "alternativeText": null,
         "caption": null,
-        "width": 1000,
-        "height": 1200,
+        "width": 1080,
+        "height": 1350,
         "formats": {
           "thumbnail": {
-            "name": "thumbnail_tinke_crypto.jpg",
-            "hash": "thumbnail_tinke_crypto_56808ed513",
-            "ext": ".jpg",
+            "name": "thumbnail_tineke-zwart.jpeg",
+            "hash": "thumbnail_tineke_zwart_430817cf60",
+            "ext": ".jpeg",
             "mime": "image/jpeg",
             "path": null,
-            "width": 130,
+            "width": 125,
             "height": 156,
-            "size": 4.9,
-            "sizeInBytes": 4903,
-            "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/thumbnail_tinke_crypto_56808ed513.jpg"
-          },
-          "medium": {
-            "name": "medium_tinke_crypto.jpg",
-            "hash": "medium_tinke_crypto_56808ed513",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "path": null,
-            "width": 625,
-            "height": 750,
-            "size": 64.32,
-            "sizeInBytes": 64322,
-            "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/medium_tinke_crypto_56808ed513.jpg"
-          },
-          "small": {
-            "name": "small_tinke_crypto.jpg",
-            "hash": "small_tinke_crypto_56808ed513",
-            "ext": ".jpg",
-            "mime": "image/jpeg",
-            "path": null,
-            "width": 417,
-            "height": 500,
-            "size": 32.49,
-            "sizeInBytes": 32491,
-            "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/small_tinke_crypto_56808ed513.jpg"
+            "size": 3.91,
+            "sizeInBytes": 3914,
+            "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/thumbnail_tineke_zwart_430817cf60.jpeg"
           },
           "large": {
-            "name": "large_tinke_crypto.jpg",
-            "hash": "large_tinke_crypto_56808ed513",
-            "ext": ".jpg",
+            "name": "large_tineke-zwart.jpeg",
+            "hash": "large_tineke_zwart_430817cf60",
+            "ext": ".jpeg",
             "mime": "image/jpeg",
             "path": null,
-            "width": 833,
+            "width": 800,
             "height": 1000,
-            "size": 104.86,
-            "sizeInBytes": 104859,
-            "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/large_tinke_crypto_56808ed513.jpg"
+            "size": 78.64,
+            "sizeInBytes": 78643,
+            "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/large_tineke_zwart_430817cf60.jpeg"
+          },
+          "small": {
+            "name": "small_tineke-zwart.jpeg",
+            "hash": "small_tineke_zwart_430817cf60",
+            "ext": ".jpeg",
+            "mime": "image/jpeg",
+            "path": null,
+            "width": 400,
+            "height": 500,
+            "size": 24.53,
+            "sizeInBytes": 24530,
+            "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/small_tineke_zwart_430817cf60.jpeg"
+          },
+          "medium": {
+            "name": "medium_tineke-zwart.jpeg",
+            "hash": "medium_tineke_zwart_430817cf60",
+            "ext": ".jpeg",
+            "mime": "image/jpeg",
+            "path": null,
+            "width": 600,
+            "height": 750,
+            "size": 48.64,
+            "sizeInBytes": 48635,
+            "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/medium_tineke_zwart_430817cf60.jpeg"
           }
         },
-        "hash": "tinke_crypto_56808ed513",
-        "ext": ".jpg",
+        "hash": "tineke_zwart_430817cf60",
+        "ext": ".jpeg",
         "mime": "image/jpeg",
-        "size": 145.24,
-        "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/tinke_crypto_56808ed513.jpg",
+        "size": 121.29,
+        "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/tineke_zwart_430817cf60.jpeg",
         "previewUrl": null,
         "provider": "aws-s3",
         "provider_metadata": null,
-        "createdAt": "2025-08-10T15:37:39.709Z",
-        "updatedAt": "2025-08-10T15:37:39.709Z",
-        "publishedAt": "2025-08-10T15:37:39.710Z"
+        "createdAt": "2025-08-14T07:39:49.722Z",
+        "updatedAt": "2025-08-14T07:39:49.722Z",
+        "publishedAt": "2025-08-14T07:39:49.722Z"
+      },
+      "image_2": {
+        "id": 25,
+        "documentId": "pncdd9nv8vnf63w3u5174zvh",
+        "name": "tim.jpeg",
+        "alternativeText": null,
+        "caption": null,
+        "width": 648,
+        "height": 948,
+        "formats": {
+          "thumbnail": {
+            "name": "thumbnail_tim.jpeg",
+            "hash": "thumbnail_tim_4f6d16da28",
+            "ext": ".jpeg",
+            "mime": "image/jpeg",
+            "path": null,
+            "width": 107,
+            "height": 156,
+            "size": 3.3,
+            "sizeInBytes": 3304,
+            "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/thumbnail_tim_4f6d16da28.jpeg"
+          },
+          "medium": {
+            "name": "medium_tim.jpeg",
+            "hash": "medium_tim_4f6d16da28",
+            "ext": ".jpeg",
+            "mime": "image/jpeg",
+            "path": null,
+            "width": 513,
+            "height": 750,
+            "size": 29.72,
+            "sizeInBytes": 29715,
+            "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/medium_tim_4f6d16da28.jpeg"
+          },
+          "small": {
+            "name": "small_tim.jpeg",
+            "hash": "small_tim_4f6d16da28",
+            "ext": ".jpeg",
+            "mime": "image/jpeg",
+            "path": null,
+            "width": 342,
+            "height": 500,
+            "size": 16.4,
+            "sizeInBytes": 16398,
+            "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/small_tim_4f6d16da28.jpeg"
+          }
+        },
+        "hash": "tim_4f6d16da28",
+        "ext": ".jpeg",
+        "mime": "image/jpeg",
+        "size": 41.79,
+        "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/tim_4f6d16da28.jpeg",
+        "previewUrl": null,
+        "provider": "aws-s3",
+        "provider_metadata": null,
+        "createdAt": "2025-08-17T20:03:09.113Z",
+        "updatedAt": "2025-08-17T20:03:09.113Z",
+        "publishedAt": "2025-08-17T20:03:09.114Z"
       }
     },
     "about_company_section": {
-      "id": 19,
+      "id": 37,
       "heading": "Over The Limitless Way",
       "description": "###### he Limitless Way is een digitale community en platform voor iedereen die grip wil krijgen op zijn financiële toekomst met crypto.\n\nOpgericht door Tineke Zwart en Myrte Scheffer, bouwen we aan toegankelijke producten die kennis, strategie en overzicht combineren. Ons team bestaat inmiddels uit meer dan 15 experts uit binnen- en buitenland.\n\n**We bieden nu twee krachtige formats:**\n\n🔔 Crypto Alerts – dagelijkse updates, signalen en inzichten om mee te bewegen met de markt.\n\n📊 Trade & Invest Academy – een leercommunity waarin je zelf leert analyseren en traden. Hierin werken 2 van onze beste traders iedere dag samen met de community!\n\nDaarnaast ontwikkelen we op dit moment een alles-in-één app waarin je je portfolio beheert, leert investeren en persoonlijke doelen stelt. Alles overzichtelijk op één plek — voor beginners én ervaren investeerders."
     },
     "faq_section": {
-      "id": 17,
+      "id": 35,
       "heading": "Veelgestelde vragen",
       "question_answers": [
         {
-          "id": 65,
+          "id": 137,
           "question": "Neem je ons mee in welke coins nu interessant zijn om in te investeren?",
           "answer": "We hebben veel waardevolle producten voor beginners, maar dit event is bedoeld voor mensen die al crypto bezitten. Je hoeft er echter niet per se veel over te weten om mee te kunnen doen."
         },
         {
-          "id": 66,
+          "id": 138,
           "question": "Is er ruimte om vragen te stellen?",
           "answer": "In sommige gevallen kan dat, maar in de meeste gevallen niet. Het wisselt ook per bedrijf. Daarom is het slim om dit even met je boekhouder te checken."
         },
         {
-          "id": 67,
+          "id": 139,
           "question": "Ben ik niet al te laat voor deze bull run?",
           "answer": "Je kunt je kaartje aan iemand anders geven als je echt niet kan, maar terug doen kan helaas niet. Dit mede in verband met het reserveren van de locatie op basis van het aantal mensen dat erbij is."
         },
         {
-          "id": 68,
+          "id": 140,
           "question": "Ik heb nog helemaal geen crypto en ik heb de cursus niet gedaan, is dit product interessant voor mij?",
           "answer": "Ja, dit product is interessant voor jou. Je kunt deze producten gebruiken om jezelf te informeren over de cryptomarkt en om jezelf te voorbereiden op de komende bull run."
         }
       ]
     },
     "disclaimer_section": {
-      "id": 13,
+      "id": 31,
       "button_text": "Ik wil geen Alert missen!",
       "disclaimer": "Wat ik deel is geen financieel advies, maar een kijkje in mijn aanpak.\n\nWat je hiermee doet, is jouw verantwoordelijkheid."
     },
     "perks_comparison_section": {
-      "id": 13,
-      "heading": "Lorem ipsum dolor sit",
+      "id": 31,
+      "heading": "Het verschil tussen de Crypto Alerts en de Trade & Invest Academy",
       "perks": [
         {
-          "id": 85,
+          "id": 211,
           "perk": "Markt updates",
           "for_crypto_alerts": {
-            "id": 169,
-            "availablity": "Yes",
-            "text": null
+            "id": 421,
+            "availablity": "Other",
+            "text": "Dagelijks"
           },
           "for_crypto_tech_and_tech": {
-            "id": 176,
-            "availablity": "Yes",
-            "text": null
+            "id": 428,
+            "availablity": "Other",
+            "text": "Alleen op maandag"
           }
         },
         {
-          "id": 86,
+          "id": 212,
           "perk": "Q&A",
           "for_crypto_alerts": {
-            "id": 170,
+            "id": 422,
             "availablity": "Yes",
             "text": null
           },
           "for_crypto_tech_and_tech": {
-            "id": 177,
+            "id": 429,
             "availablity": "Yes",
             "text": null
           }
         },
         {
-          "id": 87,
+          "id": 213,
           "perk": "Trade alerts",
           "for_crypto_alerts": {
-            "id": 171,
+            "id": 423,
             "availablity": "Other",
             "text": "Regelmatig BTC + altcoins"
           },
           "for_crypto_tech_and_tech": {
-            "id": 178,
+            "id": 430,
             "availablity": "Other",
             "text": "Af en toe BTC en ETH"
           }
         },
         {
-          "id": 88,
+          "id": 214,
           "perk": "Technische analyse op verzoek",
           "for_crypto_alerts": {
-            "id": 172,
+            "id": 424,
             "availablity": "No",
             "text": null
           },
           "for_crypto_tech_and_tech": {
-            "id": 179,
+            "id": 431,
             "availablity": "Yes",
             "text": null
           }
         },
         {
-          "id": 89,
+          "id": 215,
           "perk": "Masterclasses",
           "for_crypto_alerts": {
-            "id": 173,
+            "id": 425,
             "availablity": "Yes",
             "text": null
           },
           "for_crypto_tech_and_tech": {
-            "id": 180,
+            "id": 432,
             "availablity": "No",
             "text": null
           }
         },
         {
-          "id": 90,
+          "id": 216,
           "perk": "Trading lessen",
           "for_crypto_alerts": {
-            "id": 174,
+            "id": 426,
             "availablity": "Other",
             "text": "Beginners"
           },
           "for_crypto_tech_and_tech": {
-            "id": 181,
+            "id": 433,
             "availablity": "Other",
-            "text": "Gevorderden"
+            "text": "Beginners en gevorderden"
           }
         },
         {
-          "id": 91,
+          "id": 217,
           "perk": "Community platform",
           "for_crypto_alerts": {
-            "id": 175,
+            "id": 427,
             "availablity": "Other",
             "text": "Whatsapp"
           },
           "for_crypto_tech_and_tech": {
-            "id": 182,
+            "id": 434,
             "availablity": "Other",
             "text": "Discord"
           }

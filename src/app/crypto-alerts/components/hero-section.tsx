@@ -42,18 +42,20 @@ export default function HeroSection({ heroSectionData }: HeroSectionProps) {
           />
 
           {/* Floating Info Box */}
-          <div className="absolute top-[40%] lg:-translate-x-[10%] xl:-translate-x-[40%] animate-slide-in-right bg-[#E6C7FF] rounded-2xl pl-4 pr-3 py-2 shadow-lg flex gap-1">
-            <div className="max-w-[160px] text-sm leading-[1.2] flex flex-col gap-1">
-              <Markdown>{popup_text.text}</Markdown>
+          {popup_text?.text && (
+            <div className="absolute top-[40%] lg:-translate-x-[10%] xl:-translate-x-[40%] animate-slide-in-right bg-[#E6C7FF] rounded-2xl pl-4 pr-3 py-2 shadow-lg flex gap-1">
+              <div className="max-w-[160px] text-sm leading-[1.2] flex flex-col gap-1">
+                <Markdown>{popup_text.text}</Markdown>
+              </div>
+              <Image
+                src="/team/tineke-zwart.jpeg"
+                alt="Tineke Zwart"
+                width={80}
+                height={80}
+                className="object-cover object-center rounded-md aspect-square"
+              />
             </div>
-            <Image
-              src="/team/tineke-zwart.jpeg"
-              alt="Tineke Zwart"
-              width={80}
-              height={80}
-              className="object-cover object-center rounded-md aspect-square"
-            />
-          </div>
+          )}
         </div>
       </div>
 

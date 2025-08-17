@@ -30,7 +30,9 @@ export default function QuoteSection({ quoteSectionData }: QuoteSectionProps) {
         </blockquote>
 
         {/* Name */}
-        <cite className="text-md lg:text-lg text-gray-600">- {name}</cite>
+        {name && (
+          <cite className="text-md lg:text-lg text-gray-600">- {name}</cite>
+        )}
       </div>
     </div>
   );
