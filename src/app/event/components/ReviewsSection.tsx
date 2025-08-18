@@ -16,6 +16,14 @@ export default function ReviewsSection() {
       bgColor: "#7F65CA",
       textColor: "#FFFFFF",
     },
+    {
+      name: "1:1 klant over Anníka van Loon",
+      title: "",
+      text: "Het contact met Anníka verloopt vanaf het begin heel erg prettig. Anníka is begripvol, zakelijk, vriendelijk en alert. Ze geeft me vertrouwen in een goed verloop van het proces door de bullrun. Niek geeft duidelijke uitleg, neemt de tijd om te verhelderen, luistert naar wat ik zeg en beantwoordt mijn vragen goed.",
+      date: "21 maand 2025",
+      bgColor: "#FFE4E1",
+      textColor: "#4A4A4A",
+    },
   ];
 
   const rightReviews = [
@@ -25,6 +33,22 @@ export default function ReviewsSection() {
       text: "Otto toont keer op keer de markt een stapje voor te zijn met waardevolle en praktische inzichten over hoe je je geld het beste kunt investeren zodat je vermogen weet op te bouwen.",
       date: "21 maart 2025",
       bgColor: "#e3f0d5",
+      textColor: "#525252",
+    },
+    {
+      name: "Kelly over Michael de Jong en Sjoerd Lommen",
+      title: "",
+      text: "Echt dikke complimenten voor Michael en Sjoerd. Geen onnodig ingewikkeld gedoe, maar heldere uitleg, eerlijke inzichten en praktische tips waar je echt iets aan hebt. Of je nu net begint of al wat ervaring hebt, hun content geeft je telkens weer nieuwe inzichten.",
+      date: "21 maart 2025",
+      bgColor: "#fbf8bc",
+      textColor: "#525252",
+    },
+    {
+      name: "Samantha van Vianen over Giovanni Jimmink",
+      title: "",
+      text: "In Spanje is het vaak een wild westen als het op makelaars aankomt, maar bij Giovanni weet je zeker dat je in goede handen bent. Hij spreekt de taal, kent de markt door en door, en – misschien wel het belangrijkste – hij denkt echt met je mee, ook ver na de aankoop.",
+      date: "21 maart 2025",
+      bgColor: "#c1ecf5",
       textColor: "#525252",
     },
   ];
