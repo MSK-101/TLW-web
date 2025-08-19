@@ -86,7 +86,7 @@ export default function PreLaunch() {
               Stap 2
             </div>
             <h2 className="text-[26px] md:text-[48px] text-gray-50 max-w-[568px] leading-[100%]">
-              Koppel je crypto exchanges en/of hardware walle
+              Koppel je crypto exchanges en/of hardware wallet
             </h2>
             <p className="text-gray-50 max-w-[568px]">
               Binnen een paar minuten kun je op een veilige manier jouw crypto
