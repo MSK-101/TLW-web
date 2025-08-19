@@ -2,7 +2,7 @@ export default function ReviewsSection() {
   const leftReviews = [
     {
       name: "Christel Kersten over Tineke Zwart",
-      title: "(cursist)",
+      title: "",
       text: "Tineke heeft me echt al geld opgeleverd en het is allemaal zo veel makkelijker dan je denkt.",
       date: "21 maart 2025",
       bgColor: "#E6C7FF",

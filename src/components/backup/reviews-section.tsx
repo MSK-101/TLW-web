@@ -18,7 +18,7 @@ import Image from "next/image";
 const reviews = [
   {
     full_name: "Marjolein Baas",
-    username: "(cursist)",
+    username: "",
     rating: 5,
     text: "Niemand kan dit soort ingewikkelde en technische dingen zo makkelijk uitleggen als dat Tineke dat kan.",
     date: "21 maart 2025",

@@ -10,7 +10,7 @@ import "swiper/css";
 const reviews = [
   {
     name: "Marjolein Baas",
-    title: "(cursist)",
+    title: "",
     text: "Niemand kan dit soort ingewikkelde en technische dingen zo makkelijk uitleggen als dat Tineke dat kan.",
     date: "21 maart 2025",
     bgColor: "#E6C7FF",
