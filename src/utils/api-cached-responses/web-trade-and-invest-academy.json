@@ -1,14 +1,14 @@
 {
   "data": {
-    "id": 19,
+    "id": 23,
     "documentId": "sejyu1l39lgxyje2ebcw814s",
     "createdAt": "2025-08-13T23:54:14.827Z",
-    "updatedAt": "2025-08-17T20:05:15.763Z",
-    "publishedAt": "2025-08-17T20:05:16.088Z",
+    "updatedAt": "2025-08-20T16:01:58.091Z",
+    "publishedAt": "2025-08-20T16:01:58.479Z",
     "hero_section": {
-      "id": 69,
+      "id": 91,
       "heading": "Trade & Invest Academy",
-      "button_text": "Count me in!",
+      "button_text": "Ik doe mee",
       "phone_image": {
         "id": 14,
         "documentId": "oo8gwxvdstnbbu0ba0lld8ox",
@@ -52,81 +52,81 @@
         "provider": "aws-s3",
         "provider_metadata": null,
         "createdAt": "2025-08-09T20:20:22.626Z",
-        "updatedAt": "2025-08-09T20:20:22.626Z",
+        "updatedAt": "2025-08-19T12:51:33.310Z",
         "publishedAt": "2025-08-09T20:20:22.628Z"
       },
       "description": {
-        "id": 635,
+        "id": 859,
         "text": "**Leer winstgevend traden in crypto en aandelen met twee toptraders uit Team TLW.**\n\nIn de Trade & Invest Academy krijg je een exclusieve kijk in de denkwijze en strategieën van ervaren traders Sjoerd en Michael. In een besloten Discord community delen zij, stap voor stap, alles wat je moet weten om succesvol te kunnen traden.\n\nZe nemen je mee in talloze video’s, doen regelmatig analyses van verschillende coins, beantwoorden vragen en geven feedback. Hierdoor leer jij stap voor stap hoe je grafieken kunt analyseren en goede trades kunt spotten.\n\n**Meld je aan via de knop hieronder.** Het is maandelijks opzegbaar."
       },
       "popup_text": null
     },
     "benefits_section": {
-      "id": 66,
+      "id": 89,
       "heading": "Wat krijg je?",
       "button_text": "Direct aanmelden",
       "description": {
-        "id": 636,
+        "id": 860,
         "text": "In het besloten Discord kanaal zijn Sjoerd en Michael iedere dag actief om jou te helpen groeien als beginnende, maar ook als gevorderde trader.\n\nJe kunt uitlegvideo’s bekijken waarin alles van A tot Z wordt uitgelegd. Daarnaast delen Sjoerd en Michael wekelijkse technische setups, extra kennis en behandelen ze ook veel vragen.\n\nZe delen niet alleen kennis over crypto, maar ook over aandelen. Zo nemen ze je bijvoorbeeld mee in de opbouw van een slimme aandelenportfolio.\n\nOok Tineke is actief in de Trade & Invest Academy. Op maandag deelt ze altijd een uitgebreide marktupdate zodat je weet wat er speelt in de markt en ook wat de belangrijkste gebeurtenissen zijn die week. Daar kun je vervolgens rekening mee houden in je trades.\n\nDaarnaast beantwoord ze ook regelmatig vragen in de groep.\n\nJe kunt lid worden voor €39 inclusief BTW per maand. Het is maandelijks opzegbaar."
       },
       "benefits": [
         {
-          "id": 261,
+          "id": 353,
           "heading": "Leer traden als een pro — mét begeleiding van echte traders",
           "description": "Geen eindeloze YouTube-rabbit holes waar je niets mee kunt. In **Trade & Invest Academy** laten we je zien wat er speelt, leggen we uit hoe je dat technisch én strategisch interpreteert én leren we je hoe je zélf sterke analyses maakt."
         },
         {
-          "id": 262,
+          "id": 354,
           "heading": "Ontwikkel je eigen strategie — met begeleiding",
           "description": "Het doel van Trade & Invest Academy is niet dat je klakkeloos iets overneemt, maar dat je zélf nog meer leert denken als een trader. Je leert hoe je signalen herkent, hoe je marktbewegingen interpreteert en hoe je daar je eigen strategie op baseert. Kom je er even niet uit? Dan kun je altijd je vragen stellen aan Sjoerd, Michael of andere leden in de community.\n\nSamen groeien = sneller leren. 💡"
         },
         {
-          "id": 263,
+          "id": 355,
           "heading": "Dieper inzicht in de markt",
           "description": "Sjoerd en Michael delen regelmatig lessen over het herkennen van patronen, technische indicatoren en hoe je marktbewegingen leert lezen. Ook leggen ze uit welke invloed nieuws heeft op de charts. Want hoe beter jij begrijpt wat er gebeurt, hoe slimmer je kunt handelen. 😉"
         },
         {
-          "id": 264,
+          "id": 356,
           "heading": "Kijk mee over de schouder van een pro",
           "description": "Sjoerd en Michael laten je regelmatig meekijken met interessante trades: waar zien zij kansen, welke indicatoren gebruiken ze, en hoe bepalen ze hun entry en exit? Ze nemen je mee in hun denkwijze, zodat jij leert hoe je zélf zulke afwegingen maakt. Wat je ermee doet, is helemaal aan jou."
         }
       ]
     },
     "quote_section": {
-      "id": 65,
+      "id": 88,
       "quote": "A few months of learning how to trade can produce a lifetime of freedom.",
       "name": null
     },
     "audience_section": {
-      "id": 49,
+      "id": 72,
       "button_text": "Direct aanmelden",
       "audience_benefits": [
         {
-          "id": 637,
-          "text": "Je hebt al een cryptoportfolio en wilt leren hoe je hier slimmer en strategischer mee omgaat"
+          "id": 861,
+          "text": "Je voelt een sterk verlangen om een vaardigheid te leren waarmee je altijd en vanaf elke plek geld kunt verdienen"
         },
         {
-          "id": 638,
+          "id": 862,
           "text": "Je hebt misschien al wat ervaring met traden (bijvoorbeeld via Crypto Alerts) en wilt zelf leren analyseren"
         },
         {
-          "id": 639,
+          "id": 863,
           "text": "Je wilt meer verdieping: technische analyses, patronen herkennen en eigen strategieën ontwikkelen"
         },
         {
-          "id": 640,
+          "id": 864,
           "text": "Je zoekt een leeromgeving waarin alles begrijpelijk wordt uitgelegd — ook de complexere materie"
         },
         {
-          "id": 641,
+          "id": 865,
           "text": "Je wilt niet alles alleen doen, maar samen groeien in een betrokken, toegankelijke community"
         },
         {
-          "id": 642,
+          "id": 866,
           "text": "Je hebt behoefte aan begeleiding van echte traders, maar zonder afhankelijk te zijn van “signalen”"
         },
         {
-          "id": 643,
+          "id": 867,
           "text": "Je bent al bekend met de basis van crypto — dit is geen instapgroep voor beginners"
         }
       ],
@@ -202,25 +202,25 @@
       }
     },
     "product_overview_section": {
-      "id": 48,
+      "id": 71,
       "product_overview": {
-        "id": 95,
+        "id": 141,
         "heading": "De markt beweegt. Nu is het moment om jouw skills te verdiepen.",
         "text": "De cryptomarkt zit in een cruciale fase. De halving van april 2024 markeert opnieuw het startschot van een mogelijke bull run — een periode waarin koersen historisch gezien sterk kunnen stijgen.\n\nMaar: rendement maken in deze markt vraagt meer dan alleen “erin zitten”. Het vraagt inzicht. Timing. Strategie. Weten wat je doet — en waarom.\n\n**Daarom is er Trade & Invest Academy.**\nVoor investeerders (in ontwikkeling ;)) die niet alleen willen meeliften, maar écht willen begrijpen wat er gebeurt. Die zelf willen leren analyseren, technische patronen willen herkennen en hun eigen keuzes willen maken. En dat niet alleen: ook willen sparren, vragen stellen en leren in een toegankelijke community van gelijkgestemden.\n\n**Sjoerd en Michael – ervaren traders uit Team TLW – nemen je dagelijks mee in de markt via een besloten WhatsApp- en Discord-groep.** Ze delen technische updates, marktinzichten, setups en strategie. Jij kijkt mee, stelt vragen én leert hoe je zelf steeds beter wordt.\n\nGeen financieel advies. Wel: verdieping, structuur en ondersteuning op weg naar meer zelfstandigheid in je trading journey.\n\nBen je klaar om je kennisniveau naar next level te tillen? Dan is dit voor jou. 👇"
       },
       "call_to_action": {
-        "id": 96,
+        "id": 142,
         "heading": "Meld je direct aan",
-        "text": "**Je betaalt een maandelijks bedrag van €XX,- inclusief BTW. **\n\nBen je al lid van de Crypto Alerts? Dan geldt er een speciaal aanbod (meer info volgt).\n\nBonus: … (wordt nog ingevuld)\n\nVoor ondernemers is dit aftrekbaar. Je schrijft je in voor minimaal één maand en kunt daarna per maand opzeggen."
+        "text": "Je betaalt een maandelijks bedrag van €39 inclusief BTW. Het is maandelijks opzegbaar."
       }
     },
     "reviews_section": {
-      "id": 47,
-      "heading": "Wat anderen vinden..",
+      "id": 70,
+      "heading": "Wat anderen vinden",
       "description": "De reviews zijn afkomstig van deelnemers die meededen met de Crypto Cursus, de Trading cursus en/of de Crypto Alerts.",
       "reviews": [
         {
-          "id": 187,
+          "id": 279,
           "username": "Florien Oost",
           "review": "**Tineke’s uitleg is helder en to-the-point. Wat ik vooral waardeer, is dat ze niet alleen haar keuzes onderbouwt, maar ook actuele nieuwsberichten en relevante ontwikkelingen deelt die je helpen om zelf betere beslissingen te nemen.** Binnen de Crypto Collective heerst een fijne, open sfeer. De communicatie in de verschillende groepen is vriendelijk, respectvol, en behulpzaam. Er zijn meerdere groepen binnen het programma, zoals een kletsgroep en een Q&A-groep, waardoor er voor iedereen iets passends is. **Ik heb in korte tijd ontzettend veel geleerd over traden en investeren in crypto, en ik ben meer dan tevreden met de winst die ik tot nu toe heb behaald.** Tineke’s enthousiasme en enorme kennis van crypto zijn aanstekelijk, en je merkt dat ze er plezier in heeft om haar kennis te delen en anderen te helpen groeien. **Als je serieus bent over crypto en op zoek bent naar een betrouwbare en inspirerende gids, dan is dit dé plek om te zijn.**",
           "date": null,
@@ -228,7 +228,7 @@
           "bg_color_code": "#E6C7FF"
         },
         {
-          "id": 188,
+          "id": 280,
           "username": "Naam Achternaam",
           "review": "Ik ben ontzettend blij dat ik de stap heb gezet in de wereld van crypto, en ik had het niet anders gewild dan leren van Tineke. Tineke legt alles altijd helder en begrijpelijk uit, neemt de tijd om al mijn vragen te beantwoorden, en denkt actief mee over hoe we in de crypto collective het maximale uit ons geld kunnen halen. Ik ben dankbaar dat ik van haar mag leren!",
           "date": "21 maand 2025",
@@ -236,7 +236,7 @@
           "bg_color_code": "#E6C7FF"
         },
         {
-          "id": 189,
+          "id": 281,
           "username": "Naam Achternaam",
           "review": "Zo blij dat ik ben ingestapt! Dankjewel, Tineke. Het gaat voor mij verder dan de winsten pakken. Ik leer veel en alleen al het feit om hiermee bezig te zijn voelt supergoed. Ik had eerder al crypto’s gekocht maar wist eerlijk gezegd niet wat ik er verder mee moest. Nu kan ik bouwen op de info en support van Tineke. Ik kan me voorstellen dat crypto’s best een beetje verslavend kunnen werken (dat gevoel als er weer een coin de limietorder heeft bereikt is eerlijk best lekker), maar omdat Tineke er zo strategisch in zit, laat je je niet leiden door gevoel en dopmineshotjes 😉 Tineke is duidelijk, betrouwbaar en ik heb respect hoe ze deze groep zo strak weet te leiden. Dikke aanrader!",
           "date": "21 maand 2025",
@@ -244,7 +244,7 @@
           "bg_color_code": "#E6C7FF"
         },
         {
-          "id": 190,
+          "id": 282,
           "username": "Naam Achternaam",
           "review": "Tineke neemt je elke dag mee in wat zij doet en legt duidelijk uit waarom ze wat doet. In makkelijk taal zodat iedereen dit begrijpt. Ik heb echt mega winsten behaald waar ik alleen maar van kon dromen. De whatsapp groep is heel fijn om met andere te sparren en te leren hoe Crypto ook voor jou kan werken zonder dat je een expert bent, want dat is Tineke. Ik raad dit iedereen aan die geld wilt verdienen met Crypto. ",
           "date": "21 maand 2025",
@@ -253,89 +253,8 @@
         }
       ]
     },
-    "about_team_section": {
-      "id": 40,
-      "team_members": [
-        {
-          "id": 64,
-          "heading": "Jouw volgende stap begint hier — met een team dat met je meegroeit",
-          "description": "Mijn reis in crypto begon klein, maar groeide uit tot een diepgaande expertise en uiteindelijk zelfs veel financieel succes, ik mag mezelf tegenwoordig cryptomiljonair noemen - hoewel ik dat nog steeds raar vind om op te schrijven.\n\nDie kennis geef ik nu door via The Limitless Way, het platform dat ik samen met Myrte Scheffer heb opgericht.\n\nWe geloven dat je sneller groeit als je leert van mensen die verder zijn — en dat je nóg sterker wordt als je onderdeel bent van een community die met je meedenkt. **Daarom werken we met een team van 12 experts aan onze content en begeleiding, én bouwen er 10 techspecialisten fulltime aan onze crypto app die we lanceren op 17 oktober 2025.**\n\n**Voor Trade & Invest Academy bundelen we de krachten met twee van onze meest ervaren traders: Sjoerd en Michael.**\n\nZij nemen je mee in hun strategie, denken hardop met je mee en leren je hoe jij zélf beter wordt in analyseren, interpreteren en beslissingen nemen.\n\n👇 Maak hieronder kennis met Sjoerd en Michael.",
-          "vertical_offset": 0,
-          "member_image": {
-            "id": 16,
-            "documentId": "r0asb7y72zgcbm80lzo3nbk7",
-            "name": "tinke_red.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 1000,
-            "height": 1400,
-            "formats": {
-              "thumbnail": {
-                "name": "thumbnail_tinke_red.png",
-                "hash": "thumbnail_tinke_red_20a1327f66",
-                "ext": ".png",
-                "mime": "image/png",
-                "path": null,
-                "width": 111,
-                "height": 156,
-                "size": 28.1,
-                "sizeInBytes": 28098,
-                "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/thumbnail_tinke_red_20a1327f66.png"
-              },
-              "small": {
-                "name": "small_tinke_red.png",
-                "hash": "small_tinke_red_20a1327f66",
-                "ext": ".png",
-                "mime": "image/png",
-                "path": null,
-                "width": 357,
-                "height": 500,
-                "size": 200.95,
-                "sizeInBytes": 200949,
-                "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/small_tinke_red_20a1327f66.png"
-              },
-              "medium": {
-                "name": "medium_tinke_red.png",
-                "hash": "medium_tinke_red_20a1327f66",
-                "ext": ".png",
-                "mime": "image/png",
-                "path": null,
-                "width": 536,
-                "height": 750,
-                "size": 405.3,
-                "sizeInBytes": 405300,
-                "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/medium_tinke_red_20a1327f66.png"
-              },
-              "large": {
-                "name": "large_tinke_red.png",
-                "hash": "large_tinke_red_20a1327f66",
-                "ext": ".png",
-                "mime": "image/png",
-                "path": null,
-                "width": 714,
-                "height": 1000,
-                "size": 675.42,
-                "sizeInBytes": 675417,
-                "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/large_tinke_red_20a1327f66.png"
-              }
-            },
-            "hash": "tinke_red_20a1327f66",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 313.99,
-            "url": "https://tlw-cms-prd.s3.eu-west-1.amazonaws.com/tinke_red_20a1327f66.png",
-            "previewUrl": null,
-            "provider": "aws-s3",
-            "provider_metadata": null,
-            "createdAt": "2025-08-10T15:12:16.064Z",
-            "updatedAt": "2025-08-10T15:12:16.064Z",
-            "publishedAt": "2025-08-10T15:12:16.065Z"
-          }
-        }
-      ]
-    },
     "call_to_action_section": {
-      "id": 38,
+      "id": 61,
       "heading": "Meld je direct aan!",
       "button_text": "Ik doe mee",
       "description": "€39 inclusief 21% BTW per maand. Maandelijks opzegbaar.\n\nStartdatum: maandag 18 augustus.\n\nNa aanmelding ontvang je meteen alle informatie,\ninclusief de link naar het Discord kanaal. Als nieuw\nlid word je op weg geholpen middels ons\nonboarding proces.",
@@ -469,139 +388,139 @@
       }
     },
     "about_company_section": {
-      "id": 37,
+      "id": 60,
       "heading": "Over The Limitless Way",
       "description": "###### he Limitless Way is een digitale community en platform voor iedereen die grip wil krijgen op zijn financiële toekomst met crypto.\n\nOpgericht door Tineke Zwart en Myrte Scheffer, bouwen we aan toegankelijke producten die kennis, strategie en overzicht combineren. Ons team bestaat inmiddels uit meer dan 15 experts uit binnen- en buitenland.\n\n**We bieden nu twee krachtige formats:**\n\n🔔 Crypto Alerts – dagelijkse updates, signalen en inzichten om mee te bewegen met de markt.\n\n📊 Trade & Invest Academy – een leercommunity waarin je zelf leert analyseren en traden. Hierin werken 2 van onze beste traders iedere dag samen met de community!\n\nDaarnaast ontwikkelen we op dit moment een alles-in-één app waarin je je portfolio beheert, leert investeren en persoonlijke doelen stelt. Alles overzichtelijk op één plek — voor beginners én ervaren investeerders."
     },
     "faq_section": {
-      "id": 35,
+      "id": 58,
       "heading": "Veelgestelde vragen",
       "question_answers": [
         {
-          "id": 137,
+          "id": 229,
           "question": "Neem je ons mee in welke coins nu interessant zijn om in te investeren?",
           "answer": "We hebben veel waardevolle producten voor beginners, maar dit event is bedoeld voor mensen die al crypto bezitten. Je hoeft er echter niet per se veel over te weten om mee te kunnen doen."
         },
         {
-          "id": 138,
+          "id": 230,
           "question": "Is er ruimte om vragen te stellen?",
           "answer": "In sommige gevallen kan dat, maar in de meeste gevallen niet. Het wisselt ook per bedrijf. Daarom is het slim om dit even met je boekhouder te checken."
         },
         {
-          "id": 139,
+          "id": 231,
           "question": "Ben ik niet al te laat voor deze bull run?",
           "answer": "Je kunt je kaartje aan iemand anders geven als je echt niet kan, maar terug doen kan helaas niet. Dit mede in verband met het reserveren van de locatie op basis van het aantal mensen dat erbij is."
         },
         {
-          "id": 140,
+          "id": 232,
           "question": "Ik heb nog helemaal geen crypto en ik heb de cursus niet gedaan, is dit product interessant voor mij?",
           "answer": "Ja, dit product is interessant voor jou. Je kunt deze producten gebruiken om jezelf te informeren over de cryptomarkt en om jezelf te voorbereiden op de komende bull run."
         }
       ]
     },
     "disclaimer_section": {
-      "id": 31,
+      "id": 54,
       "button_text": "Ik wil geen Alert missen!",
       "disclaimer": "Wat ik deel is geen financieel advies, maar een kijkje in mijn aanpak.\n\nWat je hiermee doet, is jouw verantwoordelijkheid."
     },
     "perks_comparison_section": {
-      "id": 31,
+      "id": 54,
       "heading": "Het verschil tussen de Crypto Alerts en de Trade & Invest Academy",
       "perks": [
         {
-          "id": 211,
+          "id": 375,
           "perk": "Markt updates",
           "for_crypto_alerts": {
-            "id": 421,
+            "id": 749,
             "availablity": "Other",
             "text": "Dagelijks"
           },
           "for_crypto_tech_and_tech": {
-            "id": 428,
+            "id": 756,
             "availablity": "Other",
             "text": "Alleen op maandag"
           }
         },
         {
-          "id": 212,
+          "id": 376,
           "perk": "Q&A",
           "for_crypto_alerts": {
-            "id": 422,
+            "id": 750,
             "availablity": "Yes",
             "text": null
           },
           "for_crypto_tech_and_tech": {
-            "id": 429,
+            "id": 757,
             "availablity": "Yes",
             "text": null
           }
         },
         {
-          "id": 213,
+          "id": 377,
           "perk": "Trade alerts",
           "for_crypto_alerts": {
-            "id": 423,
+            "id": 751,
             "availablity": "Other",
             "text": "Regelmatig BTC + altcoins"
           },
           "for_crypto_tech_and_tech": {
-            "id": 430,
+            "id": 758,
             "availablity": "Other",
             "text": "Af en toe BTC en ETH"
           }
         },
         {
-          "id": 214,
+          "id": 378,
           "perk": "Technische analyse op verzoek",
           "for_crypto_alerts": {
-            "id": 424,
+            "id": 752,
             "availablity": "No",
             "text": null
           },
           "for_crypto_tech_and_tech": {
-            "id": 431,
+            "id": 759,
             "availablity": "Yes",
             "text": null
           }
         },
         {
-          "id": 215,
+          "id": 379,
           "perk": "Masterclasses",
           "for_crypto_alerts": {
-            "id": 425,
+            "id": 753,
             "availablity": "Yes",
             "text": null
           },
           "for_crypto_tech_and_tech": {
-            "id": 432,
+            "id": 760,
             "availablity": "No",
             "text": null
           }
         },
         {
-          "id": 216,
+          "id": 380,
           "perk": "Trading lessen",
           "for_crypto_alerts": {
-            "id": 426,
+            "id": 754,
             "availablity": "Other",
             "text": "Beginners"
           },
           "for_crypto_tech_and_tech": {
-            "id": 433,
+            "id": 761,
             "availablity": "Other",
             "text": "Beginners en gevorderden"
           }
         },
         {
-          "id": 217,
+          "id": 381,
           "perk": "Community platform",
           "for_crypto_alerts": {
-            "id": 427,
+            "id": 755,
             "availablity": "Other",
             "text": "Whatsapp"
           },
           "for_crypto_tech_and_tech": {
-            "id": 434,
+            "id": 762,
             "availablity": "Other",
             "text": "Discord"
           }
