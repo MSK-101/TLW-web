@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
@@ -26,9 +27,14 @@ export default function HeroSection({ heroSectionData }: HeroSectionProps) {
           <div className="text-lg text-[#525252] leading-relaxed flex flex-col gap-4">
             <Markdown>{description.text}</Markdown>
           </div>
-          <button className="bg-[#7F65CA] lg:mt-4 text-white px-8 py-3 rounded-xl hover:bg-[#5a4a9a] transition-colors duration-300">
-            {button_text}
-          </button>
+          <Link
+            href="https://wwwthelimitlesswaynl.plugandpay.com/checkout/trade-invest-academy"
+            target="_blank"
+          >
+            <button className="cursor-pointer bg-[#7F65CA] lg:mt-4 text-white px-8 py-3 rounded-xl hover:bg-[#5a4a9a] transition-colors duration-300">
+              {button_text}
+            </button>
+          </Link>
         </div>
 
         {/* Phone Image */}

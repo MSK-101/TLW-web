@@ -62,11 +62,11 @@ export default function AudienceSection({
           ))}
 
           <Link
-            href="https://wwwthelimitlesswaynl.plugandpay.com/checkout/event"
+            href="https://wwwthelimitlesswaynl.plugandpay.com/checkout/trade-invest-academy"
             target="_blank"
             className="cursor-pointer mt-3"
           >
-            <button className="bg-[#7F65CA] text-white px-8 py-3 rounded-xl hover:bg-[#5a4a9a] transition-colors duration-300">
+            <button className="cursor-pointer bg-[#7F65CA] text-white px-8 py-3 rounded-xl hover:bg-[#5a4a9a] transition-colors duration-300">
               {button_text}
             </button>
           </Link>
