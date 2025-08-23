@@ -33,11 +33,7 @@ export default function RootLayout({
       lang="dl"
       className={`${funnelDisplay.variable} ${funnelSans.variable} antialiased scroll-smooth`}
     >
-      <body>
-        <Header />
-        {children}
-        <Footer />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
