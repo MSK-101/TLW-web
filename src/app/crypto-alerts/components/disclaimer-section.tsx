@@ -17,7 +17,7 @@ export default function DisclaimerSection({
 
   return (
     <div className="flex flex-col gap-5 items-center mt-20">
-      <Link
+      {/* <Link
         href="https://wwwthelimitlesswaynl.plugandpay.com/checkout/trade-invest-academy"
         target="_blank"
       >
@@ -25,7 +25,7 @@ export default function DisclaimerSection({
           {button_text}
           <FontAwesomeIcon icon={faBell} className="ml-3" />
         </button>
-      </Link>
+      </Link> */}
 
       <p className="text-gray-50 max-w-[500px] text-center">{disclaimer}</p>
     </div>

@@ -24,14 +24,14 @@ export default function CallToActionSection({
           <div className="text-base lg:text-md mb-4 mt-10 max-w-[400px] xl:max-w-[500px] flex flex-col gap-4">
             <Markdown>{description}</Markdown>
           </div>
-          <Link
+          {/* <Link
             href="https://wwwthelimitlesswaynl.plugandpay.com/checkout/trade-invest-academy"
             target="_blank"
           >
             <button className="cursor-pointer bg-[#7F65CA] text-white px-8 py-3 rounded-xl hover:bg-[#5a4a9a] transition-colors duration-300">
               {button_text}
             </button>
-          </Link>
+          </Link> */}
         </div>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-2">
           {image_1 && (
