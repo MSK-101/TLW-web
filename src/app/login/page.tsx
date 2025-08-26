@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function SignIn() {
   return (
-    <div className="flex flex-col items-center gap-10 px-10 py-20">
+    <div className="flex flex-col items-center gap-10 px-10 py-20 bg-gray-100 min-h-screen">
       <Image
         src={"/logos/logo animation.svg"}
         alt="Logo"
@@ -15,8 +15,8 @@ export default function SignIn() {
       <h1 className="text-4xl">Log in</h1>
 
       <div className="flex flex-col gap-6 min-w-[350px]">
-        <Input type="email" placeholder="E-mailadres" />
-        <Input type="password" placeholder="Wachtwoord" />
+        <Input type="email" placeholder="E-mailadres" className="bg-white" />
+        <Input type="password" placeholder="Wachtwoord" className="bg-white" />
 
         <div className="flex flex-col items-center text-[#6028AD]">
           <a href="#">Wachtwoord vergeten</a>

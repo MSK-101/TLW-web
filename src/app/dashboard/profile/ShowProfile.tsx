@@ -24,10 +24,12 @@ export default function ShowProfile({
 }) {
   return (
     <>
-      <h1 className="flex justify-center text-4xl my-20">Accountoverzicht</h1>
+      <h1 className="text-center text-3xl md:text-4xl my-20">
+        Accountoverzicht
+      </h1>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-        <div className="bg-gray-50 p-10 rounded-3xl shadow">
+        <div className="bg-white p-7 md:p-10 rounded-3xl shadow">
           <h2 className="mb-10 text-2xl">Mijn gegevens</h2>
           <div className="flex gap-3 items-center">
             <Image
@@ -63,7 +65,7 @@ export default function ShowProfile({
           </Button>
         </div>
 
-        <div className="bg-gray-50 p-10 rounded-3xl shadow">
+        <div className="bg-white p-7 md:p-10 rounded-3xl shadow">
           <h2 className="mb-10 text-2xl">Exchanges</h2>
           <div className="flex flex-col gap-3 mb-15">
             <div className="flex items-center gap-5">

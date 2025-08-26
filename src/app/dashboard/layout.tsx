@@ -6,11 +6,9 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <body className="bg-gray-200">
-      <div className="px-20 py-10">
-        <Navbar />
-        {children}
-      </div>
-    </body>
+    <div className="px-7 md:px-20 py-10 min-h-screen bg-gray-100">
+      <Navbar />
+      {children}
+    </div>
   );
 }
