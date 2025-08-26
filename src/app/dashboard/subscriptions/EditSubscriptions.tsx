@@ -80,7 +80,7 @@ export default function EditSubscriptions({
 
   return (
     <>
-      <h1 className="flex justify-center text-4xl mt-20">
+      <h1 className="text-center text-3xl md:text-4xl mt-20 mb-10">
         Wijzig je abonnement
       </h1>
 
@@ -96,7 +96,7 @@ export default function EditSubscriptions({
                 className="self-center -mb-12 z-10"
               />
               <div
-                className={`rounded-3xl bg-gray-50 overflow-hidden ${
+                className={`rounded-3xl bg-white overflow-hidden ${
                   plan.active ? "shadow-2xl" : ""
                 } hover:shadow-2xl`}
                 onClick={() => {

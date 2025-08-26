@@ -46,10 +46,12 @@ export default function EditProfile({
 
   return (
     <>
-      <h1 className="flex justify-center text-4xl my-20">Gegevens wijzigen</h1>
+      <h1 className="text-center text-3xl md:text-4xl my-20">
+        Gegevens wijzigen
+      </h1>
 
-      <div className="px-[10%]">
-        <div className="bg-gray-50 p-10 rounded-3xl shadow">
+      <div className="md:px-[10%]">
+        <div className="bg-white p-7 md:p-10 rounded-3xl shadow">
           <div className="flex gap-3 items-center">
             <Image
               src={"/user-purple.svg"}

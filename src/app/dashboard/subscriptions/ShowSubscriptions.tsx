@@ -51,12 +51,12 @@ export default function ShowSubscriptions({
 
   return (
     <>
-      <h1 className="flex justify-center text-4xl my-20">
+      <h1 className="text-center text-3xl md:text-4xl my-20">
         Abonnement en facturering
       </h1>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-        <div className="bg-gray-50 p-10 rounded-3xl shadow">
+        <div className="bg-white p-7 md:p-10 rounded-3xl shadow">
           <h2 className="mb-10 text-2xl">Mijn abonnement</h2>
 
           <div className="flex items-center gap-5 mb-10">
@@ -73,7 +73,7 @@ export default function ShowSubscriptions({
             <div className="text-sm -ml-2">€ xx p/m</div>
           </div>
 
-          <div className="flex gap-4 mb-15">
+          <div className="flex flex-wrap gap-4 mb-15">
             <Button
               onClick={() => {
                 setShowSubscriptions(false);
@@ -125,7 +125,7 @@ export default function ShowSubscriptions({
           </Button>
         </div>
 
-        <div className="bg-gray-50 p-10 rounded-3xl shadow">
+        <div className="bg-white p-7 md:p-10 rounded-3xl shadow">
           <h2 className="mb-10 text-2xl">Mijn facturen</h2>
 
           <div className="flex gap-5">
