@@ -3,6 +3,7 @@ import { Funnel_Display, Funnel_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import GTM from "@/components/GTM";
 
 const funnelDisplay = Funnel_Display({
   subsets: ["latin"],
@@ -34,6 +35,7 @@ export default function RootLayout({
       className={`${funnelDisplay.variable} ${funnelSans.variable} antialiased scroll-smooth`}
     >
       <body>
+        <GTM />
         <Header />
         {children}
         <Footer />
