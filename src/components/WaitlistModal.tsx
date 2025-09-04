@@ -62,7 +62,7 @@ export default function WaitlistModal({
           Wil je als een van de eersten de app proberen? Schrijf je in voor de
           wachtlijst en krijg direct bericht wanneer de app beschikbaar is.
         </p>
-        <div className="w-full h-[280px] p-0 m-0 relative">
+        <div className="w-full h-[380px] sm:h-[350px] p-0 m-0 relative">
           {isLoading && (
             <div className="absolute inset-0 flex items-center justify-center bg-gray-50 bg-opacity-50">
               <Spinner size="lg" variant="primary" />
