@@ -2,14 +2,39 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
+import { getCurrentUser, signOut } from "aws-amplify/auth";
+import "../../../lib/cognito";
 
 export default function Navbar() {
+  const router = useRouter();
   const pathname = usePathname();
   const currentPage = pathname.split("/dashboard/")[1];
 
   const [openMobileMenu, setOpenMobileMenu] = useState(false);
+
+  const logoutHandler = async () => {
+    await signOut();
+    console.log("here");
+    router.push("/login");
+  };
+
+  useEffect(() => {
+    const checkUserLogin = async () => {
+      try {
+        const currentUser = await getCurrentUser();
+        console.log(currentUser);
+        if (!currentUser) {
+          router.push("/login");
+        }
+      } catch (error) {
+        console.log("User not logged in:", error);
+        router.push("/login");
+      }
+    };
+    checkUserLogin();
+  }, []);
 
   const hamburgerBtnHandler = () => {
     setOpenMobileMenu((prev) => !prev);
@@ -57,7 +82,9 @@ export default function Navbar() {
 
         {/* <!-- Desktop Username (hidden on mobile) --> */}
         <div className="hidden md:flex items-center gap-3">
-          <div>Uitloggen</div>
+          <div className="cursor-pointer" onClick={logoutHandler}>
+            Uitloggen
+          </div>
           <Image
             src={"/user-purple.svg"}
             width={100}
@@ -106,7 +133,9 @@ export default function Navbar() {
               alt="User"
               className="w-10"
             />
-            <div>Uitloggen</div>
+            <div className="cursor-pointer" onClick={logoutHandler}>
+              Uitloggen
+            </div>
           </div>
           {/* <!-- Navigation Links --> */}
           <NavLinks />

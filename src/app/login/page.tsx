@@ -1,8 +1,72 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Image from "next/image";
+import { useEffect, useState } from "react";
+import { confirmSignIn, signIn, SignInInput } from "aws-amplify/auth";
+import "../../lib/cognito";
+
+import { getCurrentUser } from "aws-amplify/auth";
+import { useRouter } from "next/navigation";
+
+interface SignInData {
+  email: string;
+  password: string;
+}
 
 export default function SignIn() {
+  const router = useRouter();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [enableNewPassword, setEnableNewPassword] = useState(false);
+  const [newPassword, setNewPassword] = useState("");
+
+  useEffect(() => {
+    const checkUserLogin = async () => {
+      try {
+        const currentUser = await getCurrentUser();
+        console.log(currentUser);
+        if (currentUser) {
+          router.push("/dashboard/profile");
+        }
+      } catch (error) {
+        console.log("User not logged in:", error);
+      }
+    };
+
+    checkUserLogin();
+  }, [router]);
+
+  const handleSignIn = async () => {
+    try {
+      const signInInput: SignInInput = {
+        username: email,
+        password: password,
+      };
+
+      const { isSignedIn, nextStep } = await signIn(signInInput);
+      console.log(isSignedIn, nextStep);
+      if (isSignedIn) {
+        router.push("/dashboard/profile");
+      }
+      if (
+        nextStep.signInStep === "CONFIRM_SIGN_IN_WITH_NEW_PASSWORD_REQUIRED"
+      ) {
+        setEnableNewPassword(true);
+      }
+    } catch (error) {
+      console.error("Sign in failed:", error);
+    }
+  };
+
+  const confirmPassword = async () => {
+    const confirm = await confirmSignIn({
+      challengeResponse: newPassword,
+    });
+    router.push("dashboard/profile");
+  };
+
   return (
     <div className="flex flex-col items-center gap-10 px-10 py-20 bg-gray-100 min-h-screen">
       <Image
@@ -15,16 +79,36 @@ export default function SignIn() {
       <h1 className="text-4xl">Log in</h1>
 
       <div className="flex flex-col gap-6 min-w-[350px]">
-        <Input type="email" placeholder="E-mailadres" className="bg-white" />
-        <Input type="password" placeholder="Wachtwoord" className="bg-white" />
-
+        <Input
+          type="email"
+          placeholder="E-mailadres"
+          className="bg-white"
+          onChange={(event) => setEmail(event.target.value)}
+        />
+        {!enableNewPassword && (
+          <Input
+            type="password"
+            placeholder="Wachtwoord"
+            className="bg-white"
+            onChange={(event) => setPassword(event.target.value)}
+          />
+        )}
+        {enableNewPassword && (
+          <Input
+            type="password"
+            placeholder="New Password"
+            className="bg-white"
+            onChange={(event) => setNewPassword(event.target.value)}
+          />
+        )}
         <div className="flex flex-col items-center text-[#6028AD]">
           <a href="#">Wachtwoord vergeten</a>
           <a href="#">E-mailadres vergeten</a>
         </div>
-
-        <Button>Log in</Button>
-
+        {!enableNewPassword && <Button onClick={handleSignIn}>Log in</Button>}
+        {enableNewPassword && (
+          <Button onClick={confirmPassword}>Reset Password & Log in</Button>
+        )}
         <div className="text-center">
           <p>Nog geen account? Download de app</p>
 
