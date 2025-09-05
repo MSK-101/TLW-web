@@ -27,14 +27,14 @@ export default function HeroSection({ heroSectionData }: HeroSectionProps) {
           <div className="text-lg text-[#525252] leading-relaxed flex flex-col gap-4">
             <Markdown>{description.text}</Markdown>
           </div>
-          {/* <Link
+          <Link
             href="https://wwwthelimitlesswaynl.plugandpay.com/checkout/trade-invest-academy"
             target="_blank"
           >
             <button className="cursor-pointer bg-[#7F65CA] lg:mt-4 text-white px-8 py-3 rounded-xl hover:bg-[#5a4a9a] transition-colors duration-300">
               {button_text}
             </button>
-          </Link> */}
+          </Link>
         </div>
 
         {/* Phone Image */}
