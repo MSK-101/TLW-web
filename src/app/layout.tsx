@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Funnel_Display, Funnel_Sans } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import GTM from "@/components/GTM";
 
 const funnelDisplay = Funnel_Display({
@@ -36,9 +34,7 @@ export default function RootLayout({
     >
       <body>
         <GTM />
-        <Header />
         {children}
-        <Footer />
       </body>
     </html>
   );
