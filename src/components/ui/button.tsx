@@ -19,7 +19,7 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4",
       },
       size: {
-        default: "h-9 px-4 py-2",
+        default: "h-12 px-4 py-2 text-lg",
         sm: "h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5",
         lg: "h-10 rounded-md px-6 has-[>svg]:px-4",
         icon: "size-9",
@@ -47,7 +47,10 @@ function Button({
   return (
     <Comp
       data-slot="button"
-      className={cn(buttonVariants({ variant, size, className }))}
+      className={cn(
+        "cursor-pointer",
+        buttonVariants({ variant, size, className })
+      )}
       {...props}
     />
   );
