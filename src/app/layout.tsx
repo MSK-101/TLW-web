@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Funnel_Display, Funnel_Sans } from "next/font/google";
 import "./globals.css";
 import GTM from "@/components/GTM";
+import CookieConsentWrapper from "@/components/CookieConsentWrapper";
 
 const funnelDisplay = Funnel_Display({
   subsets: ["latin"],
@@ -35,6 +36,7 @@ export default function RootLayout({
       <body>
         <GTM />
         {children}
+        <CookieConsentWrapper />
       </body>
     </html>
   );
