@@ -12,7 +12,7 @@ export default function TopSection1() {
   return (
     <div className="flex mt-8 sm:mt-0 flex-col lg:flex-row items-end justify-start lg:justify-end lg:items-start gap-1 lg:gap-3 mx-[24px]">
       <WaitlistModal />
-      <TestpanelModal />
+      {/* <TestpanelModal /> */}
       <Button
         className="md:h-12 md:rounded-xl bg-gray-50 cursor-pointer"
         onClick={() => setOpenUser(true)}

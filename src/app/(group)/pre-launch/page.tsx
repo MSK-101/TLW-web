@@ -66,7 +66,7 @@ export default function PreLaunch() {
             </p>
             <div className="flex flex-wrap gap-3 justify-center mt-10">
               <WaitlistModal buttonVariant="dark" />
-              <TestpanelModal buttonVariant="dark" />
+              {/* <TestpanelModal buttonVariant="dark" /> */}
             </div>
           </div>
           {/* Row-1 Col-2  */}
