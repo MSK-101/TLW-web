@@ -8,7 +8,6 @@
     "hero_section": {
       "id": 87,
       "heading": "Crypto Alerts",
-      "button_text": "Count me in!",
       "phone_image": {
         "id": 14,
         "documentId": "oo8gwxvdstnbbu0ba0lld8ox",
@@ -62,7 +61,8 @@
       "popup_text": {
         "id": 823,
         "text": "De Crypto Alerts wordt geleid door\n\n**Tineke Zwart en is een product van The Limitless Way.**\n\n\nI'm changing it"
-      }
+      },
+      "button": null
     },
     "benefits_section": {
       "id": 85,

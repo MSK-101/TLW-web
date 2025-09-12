@@ -10,7 +10,7 @@ type HeroSectionProps = {
 };
 
 export default function HeroSection({ heroSectionData }: HeroSectionProps) {
-  const { heading, description, button_text, phone_image, popup_text } =
+  const { heading, description, button, phone_image, popup_text } =
     heroSectionData;
 
   if (!heroSectionData) {
@@ -27,14 +27,18 @@ export default function HeroSection({ heroSectionData }: HeroSectionProps) {
           <div className="text-lg text-[#525252] leading-relaxed flex flex-col gap-4">
             <Markdown>{description.text}</Markdown>
           </div>
-          <Link
-            href="https://wwwthelimitlesswaynl.plugandpay.com/checkout/trade-invest-academy"
-            target="_blank"
-          >
+          {button && button.link && (
+            <Link href={button.link} target="_blank">
+              <button className="cursor-pointer bg-[#7F65CA] lg:mt-4 text-white px-8 py-3 rounded-xl hover:bg-[#5a4a9a] transition-colors duration-300">
+                {button.label}
+              </button>
+            </Link>
+          )}
+          {button && !button.link && (
             <button className="cursor-pointer bg-[#7F65CA] lg:mt-4 text-white px-8 py-3 rounded-xl hover:bg-[#5a4a9a] transition-colors duration-300">
-              {button_text}
+              {button.label}
             </button>
-          </Link>
+          )}
         </div>
 
         {/* Phone Image */}
