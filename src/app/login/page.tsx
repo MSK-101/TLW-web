@@ -17,15 +17,16 @@ import "../../lib/cognito";
 
 import { useRouter } from "next/navigation";
 import Modal from "@/components/Modal";
+import { useNotification } from "@/contexts/NotificationContext";
 
 export default function SignIn() {
   const router = useRouter();
+  const { showError, showSuccess } = useNotification();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [enableNewPassword, setEnableNewPassword] = useState(false);
   const [newPassword, setNewPassword] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState("");
 
   const [code, setCode] = useState("");
   const [enableResetPassword, setEnableResetPassword] = useState(false);
@@ -36,10 +37,11 @@ export default function SignIn() {
       try {
         const currentUser = await getCurrentUser();
         if (currentUser) {
+          showSuccess("Already Logged In", "Redirecting to dashboard...");
           router.push("/dashboard/profile");
         }
       } catch (error) {
-        console.log("User not logged in:", error);
+        console.info("User not logged in:", error);
       }
     };
 
@@ -48,13 +50,15 @@ export default function SignIn() {
 
   const handleSignIn = async () => {
     if (!email || !password) {
-      setError("Please fill in both email and password");
+      showError(
+        "Missing Information",
+        "Please enter both your email and password"
+      );
       return;
     }
 
     try {
       setIsLoading(true);
-      setError("");
 
       const signInInput: SignInInput = {
         username: email,
@@ -64,6 +68,10 @@ export default function SignIn() {
       const { isSignedIn, nextStep } = await signIn(signInInput);
 
       if (isSignedIn) {
+        showSuccess(
+          "Welcome Back!",
+          "Login successful. Redirecting to dashboard..."
+        );
         router.push("/dashboard/profile");
       }
 
@@ -73,7 +81,10 @@ export default function SignIn() {
         setEnableNewPassword(true);
       }
     } catch (error: any) {
-      setError(error.message);
+      showError(
+        "Login Failed",
+        error.message || "Invalid email or password. Please try again."
+      );
     } finally {
       setIsLoading(false);
     }
@@ -82,59 +93,98 @@ export default function SignIn() {
   const confirmPassword = async () => {
     try {
       setIsLoading(true);
-      setError("");
 
       const confirm = await confirmSignIn({
         challengeResponse: newPassword,
       });
+      showSuccess(
+        "Password Updated",
+        "Your password has been successfully updated."
+      );
       router.push("dashboard/profile");
     } catch (error: any) {
-      console.error("Password reset failed:", error);
-      setError(error.message);
+      showError(
+        "Password Update Failed",
+        error.message || "Failed to update password. Please try again."
+      );
     } finally {
       setIsLoading(false);
     }
   };
 
-  const handleKeyPress = (event: React.KeyboardEvent) => {
-    if (event.key === "Enter") {
-      if (enableNewPassword) {
-        confirmPassword();
-      } else {
-        handleSignIn();
-      }
+  const resetViaEmail = async () => {
+    if (!email) {
+      showError("Email Required", "Please enter your email address first");
+      return;
+    }
+
+    try {
+      const response = await resetPassword({
+        username: email,
+        options: {
+          deliveryMethod: "EMAIL",
+        },
+      });
+      const { isPasswordReset, nextStep } = response;
+      showSuccess(
+        "Reset Code Sent",
+        "Please check your email for the password reset code."
+      );
+      setEnableCode(true);
+    } catch (error: any) {
+      showError(
+        "Reset Failed",
+        error.message ||
+          "Failed to send reset code. Please check your email and try again."
+      );
+    }
+  };
+  const resetViaPhone = async () => {
+    if (!email) {
+      showError("Email Required", "Please enter your email address first");
+      return;
+    }
+
+    try {
+      const response = await resetPassword({
+        username: email,
+        options: {
+          deliveryMethod: "SMS",
+        },
+      });
+      const { isPasswordReset, nextStep } = response;
+      showSuccess(
+        "Reset Code Sent",
+        "Please check your phone for the password reset code."
+      );
+      setEnableCode(true);
+    } catch (error: any) {
+      showError(
+        "Reset Failed",
+        error.message ||
+          "Failed to send reset code. Please check your phone number and try again."
+      );
     }
   };
 
-  const resetViaEmail = async () => {
-    const response = await resetPassword({
-      username: email,
-      options: {
-        deliveryMethod: "EMAIL",
-      },
-    });
-    const { isPasswordReset, nextStep } = response;
-    setEnableCode(true);
-  };
-  const resetViaPhone = async () => {
-    const response = await resetPassword({
-      username: email,
-      options: {
-        deliveryMethod: "SMS",
-      },
-    });
-    const { isPasswordReset, nextStep } = response;
-    setEnableCode(true);
-  };
-
   const handleCodeSubmit = async () => {
-    const response = await confirmResetPassword({
-      username: email,
-      confirmationCode: code,
-      newPassword,
-    });
-
-    window.location.reload();
+    try {
+      const response = await confirmResetPassword({
+        username: email,
+        confirmationCode: code,
+        newPassword,
+      });
+      showSuccess(
+        "Password Reset Complete",
+        "Your password has been successfully reset! Please log in with your new password."
+      );
+      window.location.reload();
+    } catch (error: any) {
+      showError(
+        "Reset Failed",
+        error.message || "Invalid reset code or password. Please try again."
+      );
+    }
   };
 
   return (
@@ -151,12 +201,6 @@ export default function SignIn() {
 
         <h1 className="text-5xl font-funnel-display">Log in</h1>
 
-        {error && (
-          <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-md max-w-md w-full text-center">
-            {error}
-          </div>
-        )}
-
         <div className="flex flex-col gap-6 min-w-[350px]">
           <Input
             type="email"
@@ -164,7 +208,6 @@ export default function SignIn() {
             className="bg-white"
             value={email}
             onChange={(event) => setEmail(event.target.value)}
-            onKeyDown={handleKeyPress}
             disabled={isLoading}
           />
           <Input
@@ -173,7 +216,6 @@ export default function SignIn() {
             className="bg-white"
             value={password}
             onChange={(event) => setPassword(event.target.value)}
-            onKeyDown={handleKeyPress}
             disabled={isLoading}
           />
           <div className="flex flex-col items-center text-[#6028AD]">
@@ -277,7 +319,6 @@ export default function SignIn() {
             className="bg-white"
             value={newPassword}
             onChange={(event) => setNewPassword(event.target.value)}
-            onKeyDown={handleKeyPress}
             disabled={isLoading}
           />
           <Button onClick={confirmPassword}>Save</Button>
@@ -297,7 +338,6 @@ export default function SignIn() {
             className="bg-white"
             value={email}
             onChange={(event) => setEmail(event.target.value)}
-            onKeyDown={handleKeyPress}
             disabled={isLoading}
           />
           <Button
@@ -335,7 +375,6 @@ export default function SignIn() {
             placeholder="New Password"
             value={newPassword}
             onChange={(event) => setNewPassword(event.target.value)}
-            onKeyDown={handleKeyPress}
             disabled={isLoading}
           />
           <Button onClick={handleCodeSubmit}>Save</Button>

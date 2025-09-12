@@ -6,9 +6,11 @@ import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { getCurrentUser, signOut } from "aws-amplify/auth";
 import "../../../lib/cognito";
+import { useNotification } from "@/contexts/NotificationContext";
 
 export default function Navbar() {
   const router = useRouter();
+  const { showError, showSuccess } = useNotification();
   const pathname = usePathname();
   const currentPage = pathname.split("/dashboard/")[1];
 
@@ -16,7 +18,7 @@ export default function Navbar() {
 
   const logoutHandler = async () => {
     await signOut();
-    console.log("here");
+    showSuccess("Logged Out", "You have been successfully logged out");
     router.push("/login");
   };
 
@@ -24,12 +26,14 @@ export default function Navbar() {
     const checkUserLogin = async () => {
       try {
         const currentUser = await getCurrentUser();
-        console.log(currentUser);
         if (!currentUser) {
           router.push("/login");
         }
       } catch (error) {
-        console.log("User not logged in:", error);
+        showError(
+          "Authentication Required",
+          "Please log in to access your dashboard"
+        );
         router.push("/login");
       }
     };

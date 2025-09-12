@@ -3,6 +3,8 @@ import { Funnel_Display, Funnel_Sans } from "next/font/google";
 import "./globals.css";
 import GTM from "@/components/GTM";
 import CookieConsentWrapper from "@/components/CookieConsentWrapper";
+import { NotificationProvider } from "@/contexts/NotificationContext";
+import NotificationContainer from "@/components/NotificationContainer";
 
 const funnelDisplay = Funnel_Display({
   subsets: ["latin"],
@@ -37,6 +39,10 @@ export default function RootLayout({
         <GTM />
         {children}
         <CookieConsentWrapper />
+        <NotificationProvider>
+          {children}
+          <NotificationContainer />
+        </NotificationProvider>
       </body>
     </html>
   );
