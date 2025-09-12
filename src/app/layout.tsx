@@ -37,12 +37,11 @@ export default function RootLayout({
     >
       <body>
         <GTM />
-        {children}
-        <CookieConsentWrapper />
         <NotificationProvider>
           {children}
           <NotificationContainer />
         </NotificationProvider>
+        <CookieConsentWrapper />
       </body>
     </html>
   );
