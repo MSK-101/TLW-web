@@ -5,11 +5,18 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Spinner } from "@/components/ui/spinner";
 import Image from "next/image";
-import { confirmSignIn, signIn, SignInInput } from "aws-amplify/auth";
+import {
+  confirmSignIn,
+  resetPassword,
+  confirmResetPassword,
+  signIn,
+  SignInInput,
+  getCurrentUser,
+} from "aws-amplify/auth";
 import "../../lib/cognito";
 
-import { getCurrentUser } from "aws-amplify/auth";
 import { useRouter } from "next/navigation";
+import Modal from "@/components/Modal";
 
 export default function SignIn() {
   const router = useRouter();
@@ -20,11 +27,14 @@ export default function SignIn() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
 
+  const [code, setCode] = useState("");
+  const [enableResetPassword, setEnableResetPassword] = useState(false);
+  const [enableCode, setEnableCode] = useState(false);
+
   useEffect(() => {
     const checkUserLogin = async () => {
       try {
         const currentUser = await getCurrentUser();
-        console.log(currentUser);
         if (currentUser) {
           router.push("/dashboard/profile");
         }
@@ -52,7 +62,6 @@ export default function SignIn() {
       };
 
       const { isSignedIn, nextStep } = await signIn(signInInput);
-      console.log(isSignedIn, nextStep);
 
       if (isSignedIn) {
         router.push("/dashboard/profile");
@@ -64,19 +73,7 @@ export default function SignIn() {
         setEnableNewPassword(true);
       }
     } catch (error: any) {
-      console.error("Sign in failed:", error);
-
-      // Handle different error types
-      if (
-        error.name === "NotAuthorizedException" ||
-        error.message?.includes("Incorrect username or password")
-      ) {
-        setError("Incorrect email or password. Please try again.");
-      } else if (error.name === "UserNotConfirmedException") {
-        setError("Please confirm your email address first.");
-      } else {
-        setError("Login failed. Please try again.");
-      }
+      setError(error.message);
     } finally {
       setIsLoading(false);
     }
@@ -93,7 +90,7 @@ export default function SignIn() {
       router.push("dashboard/profile");
     } catch (error: any) {
       console.error("Password reset failed:", error);
-      setError("Failed to reset password. Please try again.");
+      setError(error.message);
     } finally {
       setIsLoading(false);
     }
@@ -107,6 +104,37 @@ export default function SignIn() {
         handleSignIn();
       }
     }
+  };
+
+  const resetViaEmail = async () => {
+    const response = await resetPassword({
+      username: email,
+      options: {
+        deliveryMethod: "EMAIL",
+      },
+    });
+    const { isPasswordReset, nextStep } = response;
+    setEnableCode(true);
+  };
+  const resetViaPhone = async () => {
+    const response = await resetPassword({
+      username: email,
+      options: {
+        deliveryMethod: "SMS",
+      },
+    });
+    const { isPasswordReset, nextStep } = response;
+    setEnableCode(true);
+  };
+
+  const handleCodeSubmit = async () => {
+    const response = await confirmResetPassword({
+      username: email,
+      confirmationCode: code,
+      newPassword,
+    });
+
+    window.location.reload();
   };
 
   return (
@@ -139,56 +167,44 @@ export default function SignIn() {
             onKeyDown={handleKeyPress}
             disabled={isLoading}
           />
-          {!enableNewPassword && (
-            <Input
-              type="password"
-              placeholder="Wachtwoord"
-              className="bg-white"
-              value={password}
-              onChange={(event) => setPassword(event.target.value)}
-              onKeyDown={handleKeyPress}
-              disabled={isLoading}
-            />
-          )}
-          {enableNewPassword && (
-            <Input
-              type="password"
-              placeholder="New Password"
-              className="bg-white"
-              value={newPassword}
-              onChange={(event) => setNewPassword(event.target.value)}
-              onKeyDown={handleKeyPress}
-              disabled={isLoading}
-            />
-          )}
+          <Input
+            type="password"
+            placeholder="Wachtwoord"
+            className="bg-white"
+            value={password}
+            onChange={(event) => setPassword(event.target.value)}
+            onKeyDown={handleKeyPress}
+            disabled={isLoading}
+          />
           <div className="flex flex-col items-center text-[#6028AD]">
-            <a href="#">Wachtwoord vergeten</a>
-            <a href="#">E-mailadres vergeten</a>
-          </div>
-          {!enableNewPassword && (
             <Button
-              onClick={handleSignIn}
-              disabled={isLoading}
-              className="relative overflow-hidden bg-black text-white border-black hover:bg-black transition-all duration-300 ease-in-out transform hover:-translate-y-0.5 hover:shadow-2xl hover:shadow-black/30 active:translate-y-0 active:shadow-lg disabled:hover:translate-y-0 disabled:hover:shadow-none group"
+              variant="link"
+              className="text-[#6028AD] text-md font-normal"
+              onClick={() => setEnableResetPassword(true)}
             >
-              <span className="relative z-10 flex items-center justify-center">
-                {isLoading ? (
-                  <>
-                    <Spinner size="sm" className="mr-3" />
-                    Logging in...
-                  </>
-                ) : (
-                  "Log in"
-                )}
-              </span>
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 ease-in-out" />
+              Wachtwoord vergeten
             </Button>
-          )}
-          {enableNewPassword && (
-            <Button onClick={confirmPassword} disabled={isLoading}>
-              {isLoading ? "Resetting..." : "Reset Password & Log in"}
-            </Button>
-          )}
+            <a href="#" className="text-[#6028AD] text-md font-normal">
+              E-mailadres vergeten
+            </a>
+          </div>
+          <Button
+            onClick={handleSignIn}
+            disabled={isLoading}
+            className="relative overflow-hidden bg-black text-white border-black hover:bg-black transition-all duration-300 ease-in-out transform hover:-translate-y-0.5 hover:shadow-2xl hover:shadow-black/30 active:translate-y-0 active:shadow-lg disabled:hover:translate-y-0 disabled:hover:shadow-none group"
+          >
+            <span className="relative z-10 flex items-center justify-center">
+              {isLoading ? (
+                <>
+                  <Spinner size="sm" className="mr-3" />
+                  Logging in...
+                </>
+              ) : (
+                "Log in"
+              )}
+            </span>
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 ease-in-out" />
+          </Button>
           <div className="text-center">
             <p>Nog geen account? Download de app</p>
 
@@ -246,6 +262,85 @@ export default function SignIn() {
           </div>
         </div>
       </div>
+
+      <Modal
+        title="Set new Password"
+        description=""
+        open={enableNewPassword}
+        setOpen={setEnableNewPassword}
+      >
+        <div className="flex flex-col gap-3">
+          <div className="font-bold">New Password</div>
+          <Input
+            type="password"
+            placeholder="New Password"
+            className="bg-white"
+            value={newPassword}
+            onChange={(event) => setNewPassword(event.target.value)}
+            onKeyDown={handleKeyPress}
+            disabled={isLoading}
+          />
+          <Button onClick={confirmPassword}>Save</Button>
+        </div>
+      </Modal>
+
+      <Modal
+        title="Forgot Password?"
+        description=""
+        open={enableResetPassword}
+        setOpen={setEnableResetPassword}
+      >
+        <div className="flex flex-col gap-3">
+          <Input
+            type="email"
+            placeholder="E-mailadres"
+            className="bg-white"
+            value={email}
+            onChange={(event) => setEmail(event.target.value)}
+            onKeyDown={handleKeyPress}
+            disabled={isLoading}
+          />
+          <Button
+            variant={"secondary"}
+            className="text-base"
+            onClick={resetViaEmail}
+          >
+            Reset Password via Email
+          </Button>
+          <Button
+            variant={"secondary"}
+            className="text-base"
+            onClick={resetViaPhone}
+          >
+            Reset Password via Phone
+          </Button>
+        </div>
+      </Modal>
+
+      <Modal
+        title="Forgot Password?"
+        description="Enter the code"
+        open={enableCode}
+        setOpen={setEnableCode}
+      >
+        <div className="flex flex-col gap-3">
+          <Input
+            type="text"
+            placeholder="Code"
+            value={code}
+            onChange={(event) => setCode(event.target.value)}
+          />
+          <Input
+            type="password"
+            placeholder="New Password"
+            value={newPassword}
+            onChange={(event) => setNewPassword(event.target.value)}
+            onKeyDown={handleKeyPress}
+            disabled={isLoading}
+          />
+          <Button onClick={handleCodeSubmit}>Save</Button>
+        </div>
+      </Modal>
     </div>
   );
 }
