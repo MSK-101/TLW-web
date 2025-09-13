@@ -2,8 +2,6 @@
 
 import TLWButton from "@/components/TlwButton";
 import { faBell } from "@fortawesome/free-regular-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Link from "next/link";
 
 export default function DisclaimerSection({
   disclaimerSectionData,

@@ -1,7 +1,6 @@
 import TLWButton from "@/components/TlwButton";
 import Markdown from "@/components/ui/markdown";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function CallToActionSection({
   callToActionSectionData,
