@@ -1,13 +1,15 @@
 {
   "data": {
-    "id": 72,
+    "id": 83,
     "documentId": "pe7z9rknx3tsd3mcdf4geziv",
     "createdAt": "2025-08-07T19:42:06.232Z",
-    "updatedAt": "2025-08-19T13:24:45.829Z",
-    "publishedAt": "2025-08-19T13:24:46.097Z",
+    "updatedAt": "2025-09-13T03:15:34.444Z",
+    "publishedAt": "2025-09-13T03:15:34.703Z",
     "hero_section": {
-      "id": 87,
+      "id": 124,
       "heading": "Crypto Alerts",
+      "description": "  **Marktupdates, tradinglessen, masterclasses, trade-suggesties en interessante inzichten op weg naar de piek van deze bull run. 🚀**\n\nMet **Crypto Alerts 🔔** krijg je dagelijks een “alert” bestaande uit de belangrijkste crypto-updates, concrete tradinglessen én de belangrijkste tips voor een geweldige bull run.\n\nOok mag je vragen stellen in de Q&A groep en worden er geregeld trade-suggesties gedaan door mij en mijn team. Dit is geen financieel advies, maar een kijkje in de keuken van ervaren traders. Wat je daarmee doet is jouw eigen verantwoordelijkheid. 😉\n\n**Meld je via de knop hieronder aan.** Het is maandelijks opzegbaar.",
+      "popup_text": "De Crypto Alerts wordt geleid door\n\n**Tineke Zwart en is een product van The Limitless Way.**\n\n\nI'm changing it",
       "phone_image": {
         "id": 14,
         "documentId": "oo8gwxvdstnbbu0ba0lld8ox",
@@ -54,85 +56,47 @@
         "updatedAt": "2025-08-19T12:51:33.310Z",
         "publishedAt": "2025-08-09T20:20:22.628Z"
       },
-      "description": {
-        "id": 822,
-        "text": "**Marktupdates, tradinglessen, masterclasses, trade-suggesties en interessante inzichten op weg naar de piek van deze bull run. 🚀**\n\nMet **Crypto Alerts 🔔** krijg je dagelijks een “alert” bestaande uit de belangrijkste crypto-updates, concrete tradinglessen én de belangrijkste tips voor een geweldige bull run.\n\nOok mag je vragen stellen in de Q&A groep en worden er geregeld trade-suggesties gedaan door mij en mijn team. Dit is geen financieel advies, maar een kijkje in de keuken van ervaren traders. Wat je daarmee doet is jouw eigen verantwoordelijkheid. 😉\n\n**Meld je via de knop hieronder aan.** Het is maandelijks opzegbaar.\n\n\n"
-      },
-      "popup_text": {
-        "id": 823,
-        "text": "De Crypto Alerts wordt geleid door\n\n**Tineke Zwart en is een product van The Limitless Way.**\n\n\nI'm changing it"
-      },
       "button": null
     },
     "benefits_section": {
-      "id": 85,
+      "id": 122,
       "heading": "Wat krijg je?",
-      "button_text": "Direct aanmelden",
-      "description": {
-        "id": 824,
-        "text": "In de besloten Crypto Alerts Whatsapp Community ontvang je dagelijks een alert waarin ik (van ma t/m do) en Níek (van vrij t/m zo) tips, kennis en trades deelt.\n\nDaarnaast zit er in de Crypto Alerts Whatsapp Community een aparte Q&A Whatsapp-groep waar je ma t/m do al je vragen kan stellen. Níek en ik zullen een groot deel van de meest relevante vragen beantwoorden.\n\nJe betaalt een maandelijks bedrag van €77,- inclusief BTW. Maandelijks opzegbaar.\n\nBonus: 1 á 2 keer per maand zijn er masterclasses met experts die hun ervaring en ideeën vertellen over geld, investeren, goud, beleggen of ander relevante onderwerpen."
-      },
+      "description": "In de besloten Crypto Alerts Whatsapp Community ontvang je dagelijks een alert waarin ik (van ma t/m do) en Níek (van vrij t/m zo) tips, kennis en trades deelt.\n\nDaarnaast zit er in de Crypto Alerts Whatsapp Community een aparte Q&A Whatsapp-groep waar je ma t/m do al je vragen kan stellen. Níek en ik zullen een groot deel van de meest relevante vragen beantwoorden.\n\nJe betaalt een maandelijks bedrag van €77,- inclusief BTW. Maandelijks opzegbaar.\n\nBonus: 1 á 2 keer per maand zijn er masterclasses met experts die hun ervaring en ideeën vertellen over geld, investeren, goud, beleggen of ander relevante onderwerpen.\n",
       "benefits": [
         {
-          "id": 337,
+          "id": 485,
           "heading": "Crypto updates in Jip & Janneke taal",
           "description": "Je hoeft niet zelf alles uit te pluizen of je door ingewikkelde analyses heen te worstelen. We vertellen je gewoon wat er speelt in de cryptowereld, hoe je dat kunt interpreteren en wat je ermee zou kunnen doen. Behapbaar en begrijpelijk."
         },
         {
-          "id": 338,
+          "id": 486,
           "heading": "Interessante marktbewegingen",
           "description": "We nemen je mee in wat er speelt in de markt en deel interessante bewegingen die we zien. Zo leer je steeds beter zelf kansen spotten 🚀"
         },
         {
-          "id": 339,
+          "id": 487,
           "heading": "Extra inhoudelijke kennis",
           "description": "Regelmatig delen we lessen over bijvoorbeeld het herkennen van bepaalde patronen of duiken we dieper in op belangrijk nieuws. Want hoe meer kennis je hebt, hoe beter je kunt inspelen op wat er gebeurt. 😉"
         },
         {
-          "id": 340,
+          "id": 488,
           "heading": "Meekijken met interessante trades",
           "description": "Geregeld delen ik of mijn teamleden (Jeroen en Michael) trade-suggesties waarvan we denken dat ze op korte termijn potentie hebben. We onderbouwen waarom een bepaalde coin interessant is en wat de gedachtegang erachter is. Het blijft natuurlijk aan jou wat je daarmee doet."
         }
-      ]
+      ],
+      "button": {
+        "id": 89,
+        "label": "Direct aanmelden",
+        "link": null
+      }
     },
     "quote_section": {
-      "id": 84,
+      "id": 121,
       "quote": "Mijn verwachting is dat veel cryptomunten x10 gaan de komende maanden.",
       "name": "Tineke Zwart"
     },
     "audience_section": {
-      "id": 68,
-      "button_text": "Direct aanmelden",
-      "audience_benefits": [
-        {
-          "id": 825,
-          "text": "Als je al een portfolio hebt, maar je eigenlijk geen idee hebt waar je op moet letten"
-        },
-        {
-          "id": 826,
-          "text": "Wilt profiteren van deze bull run maar niet alles zelf wilt uitzoeken"
-        },
-        {
-          "id": 827,
-          "text": "Op de hoogte wilt blijven van cryptonieuws zonder er veel tijd aan kwijt te zijn"
-        },
-        {
-          "id": 828,
-          "text": "Wilt leren van praktijkvoorbeelden en echte situaties"
-        },
-        {
-          "id": 829,
-          "text": "Het nieuws wel volgt, maar eigenlijk niet weet wat dit voor jouw crypto betekent"
-        },
-        {
-          "id": 830,
-          "text": "Je mijn Crypto Cursus niet hebt gevolgd, maar wel graag updates van mij ontvangt"
-        },
-        {
-          "id": 831,
-          "text": "Je mijn Crypto Cursus wel hebt gevolgd en ook graag mijn updates ontvangt"
-        }
-      ],
+      "id": 105,
       "background_image": {
         "id": 15,
         "documentId": "pmnpeqc58p4bgdc051ds89bo",
@@ -202,28 +166,63 @@
         "createdAt": "2025-08-10T14:53:45.437Z",
         "updatedAt": "2025-08-13T23:46:44.282Z",
         "publishedAt": "2025-08-10T14:53:45.437Z"
-      }
+      },
+      "button": {
+        "id": 90,
+        "label": "Direct aanmelden",
+        "link": "https://wwwthelimitlesswaynl.plugandpay.com/checkout/event"
+      },
+      "audience_benefits": [
+        {
+          "id": 1118,
+          "text": "Als je al een portfolio hebt, maar je eigenlijk geen idee hebt waar je op moet letten"
+        },
+        {
+          "id": 1119,
+          "text": "Wilt profiteren van deze bull run maar niet alles zelf wilt uitzoeken"
+        },
+        {
+          "id": 1120,
+          "text": "Op de hoogte wilt blijven van cryptonieuws zonder er veel tijd aan kwijt te zijn"
+        },
+        {
+          "id": 1121,
+          "text": "Wilt leren van praktijkvoorbeelden en echte situaties"
+        },
+        {
+          "id": 1122,
+          "text": "Het nieuws wel volgt, maar eigenlijk niet weet wat dit voor jouw crypto betekent"
+        },
+        {
+          "id": 1123,
+          "text": "Je mijn Crypto Cursus niet hebt gevolgd, maar wel graag updates van mij ontvangt"
+        },
+        {
+          "id": 1124,
+          "text": "Je mijn Crypto Cursus wel hebt gevolgd en ook graag mijn updates ontvangt"
+        }
+      ]
     },
     "product_overview_section": {
-      "id": 67,
+      "id": 104,
       "product_overview": {
-        "id": 133,
+        "id": 207,
         "heading": "De cryptomarkt zit momenteel in een spannende fase, en ik verwacht dat er de komende maanden nog veel gaat gebeuren.",
         "text": "Wist je dat de waarde van Bitcoin en veel andere coins elke vier jaar een enorme stijging doormaakt? Dit komt door de zogenaamde 'halving'. Kort gezegd betekent dit dat er minder nieuwe bitcoins worden gemaakt, waardoor ze schaarser en waardevoller worden.\n\nIn totaal zijn er nu vier halvings geweest. Wat opvalt is dat de cryptomarkt binnen 12 tot 18 maanden na zo'n halving explosief groeit. Het goede nieuws? De vierde en meest recente halving vond plaats op 19 april. Als het patroon zich herhaalt, kunnen we tot ongeveer oktober 2025 een sterke stijging verwachten.\n\nMaar oké, dan zit je in crypto, hoe dan verder? Instappen is namelijk één ding, maar begrijpen wat je doet is een tweede. Denk aan het volgen van nieuws, het begrijpen van marktbewegingen, het spotten van kansen en natuurlijk op tijd uit stappen. (Dat laatste gaat vaak mis).\n\nOm je daarbij te helpen, heb ik Crypto Alerts 🔔 ontwikkeld. Hiermee ontvang je in een besloten WhatsApp-groep elke dag een \"alert\" bestaande uit updates, trade-suggesties, tradinglessen of belangrijk nieuws uit de cryptowereld. Zo kun je goed geïnformeerde beslissingen nemen en haal je het maximale uit jouw crypto-avontuur. 😉"
       },
       "call_to_action": {
-        "id": 134,
+        "id": 208,
         "heading": "Meld je direct aan",
         "text": "**Je betaalt een maandelijks bedrag van €77,- inclusief BTW.**\n\nDe reviews zijn afkomstig van deelnemers die meededen met de Crypto Cursus, de Trading cursus en/of de Crypto Alerts."
       }
     },
     "reviews_section": {
-      "id": 66,
+      "id": 103,
       "heading": "Wat anderen vinden..",
       "description": "De reviews zijn afkomstig van deelnemers die meededen met de Crypto Cursus, de Trading cursus en/of de Crypto Alerts.",
       "reviews": [
         {
-          "id": 263,
+          "id": 369,
           "username": "Florien Oost",
           "review": "**Tineke’s uitleg is helder en to-the-point. Wat ik vooral waardeer, is dat ze niet alleen haar keuzes onderbouwt, maar ook actuele nieuwsberichten en relevante ontwikkelingen deelt die je helpen om zelf betere beslissingen te nemen.** Binnen de Crypto Collective heerst een fijne, open sfeer. De communicatie in de verschillende groepen is vriendelijk, respectvol, en behulpzaam. Er zijn meerdere groepen binnen het programma, zoals een kletsgroep en een Q&A-groep, waardoor er voor iedereen iets passends is. **Ik heb in korte tijd ontzettend veel geleerd over traden en investeren in crypto, en ik ben meer dan tevreden met de winst die ik tot nu toe heb behaald.** Tineke’s enthousiasme en enorme kennis van crypto zijn aanstekelijk, en je merkt dat ze er plezier in heeft om haar kennis te delen en anderen te helpen groeien. **Als je serieus bent over crypto en op zoek bent naar een betrouwbare en inspirerende gids, dan is dit dé plek om te zijn.**",
           "date": null,
@@ -231,7 +230,7 @@
           "bg_color_code": "#E6C7FF"
         },
         {
-          "id": 264,
+          "id": 370,
           "username": "Naam Achternaam",
           "review": "Ik ben ontzettend blij dat ik de stap heb gezet in de wereld van crypto, en ik had het niet anders gewild dan leren van Tineke. Tineke legt alles altijd helder en begrijpelijk uit, neemt de tijd om al mijn vragen te beantwoorden, en denkt actief mee over hoe we in de crypto collective het maximale uit ons geld kunnen halen. Ik ben dankbaar dat ik van haar mag leren!",
           "date": "21 maand 2025",
@@ -239,7 +238,7 @@
           "bg_color_code": "#E6C7FF"
         },
         {
-          "id": 265,
+          "id": 371,
           "username": "Naam Achternaam",
           "review": "Zo blij dat ik ben ingestapt! Dankjewel, Tineke. Het gaat voor mij verder dan de winsten pakken. Ik leer veel en alleen al het feit om hiermee bezig te zijn voelt supergoed. Ik had eerder al crypto’s gekocht maar wist eerlijk gezegd niet wat ik er verder mee moest. Nu kan ik bouwen op de info en support van Tineke. Ik kan me voorstellen dat crypto’s best een beetje verslavend kunnen werken (dat gevoel als er weer een coin de limietorder heeft bereikt is eerlijk best lekker), maar omdat Tineke er zo strategisch in zit, laat je je niet leiden door gevoel en dopmineshotjes 😉 Tineke is duidelijk, betrouwbaar en ik heb respect hoe ze deze groep zo strak weet te leiden. Dikke aanrader!",
           "date": "21 maand 2025",
@@ -247,7 +246,7 @@
           "bg_color_code": "#E6C7FF"
         },
         {
-          "id": 266,
+          "id": 372,
           "username": "Naam Achternaam",
           "review": "Tineke neemt je elke dag mee in wat zij doet en legt duidelijk uit waarom ze wat doet. In makkelijk taal zodat iedereen dit begrijpt. Ik heb echt mega winsten behaald waar ik alleen maar van kon dromen. De whatsapp groep is heel fijn om met andere te sparren en te leren hoe Crypto ook voor jou kan werken zonder dat je een expert bent, want dat is Tineke. Ik raad dit iedereen aan die geld wilt verdienen met Crypto. ",
           "date": "21 maand 2025",
@@ -257,10 +256,10 @@
       ]
     },
     "about_team_section": {
-      "id": 59,
+      "id": 74,
       "team_members": [
         {
-          "id": 101,
+          "id": 127,
           "heading": "Ik ben Tineke Zwart en ik ben crypto-miljonair",
           "description": "Al sinds 2010 ben ik actief in de cryptomarkt. In het begin was ik nog wat terughoudend, maar na verloop van tijd begon ik steeds meer te investeren. Uiteindelijk heb ik meer dan €300.000 geïnvesteerd in verschillende cryptocurrencies.\n\nTegenwoordig werk ik als marketing consultant in de crypto wereld en help ik bedrijven hun weg te vinden in deze nieuwe technologie. Samen met mijn zakenpartner en vriendin Tamara deel ik graag mijn kennis en ervaring.",
           "vertical_offset": 0,
@@ -336,7 +335,7 @@
           }
         },
         {
-          "id": 102,
+          "id": 128,
           "heading": "Ik ben Tamara Stroop en samen met Tineke ondersteun ik je graag in je crypto avontuur.",
           "description": "Mijn crypto reis begon met veel enthousiasme, maar na een bull run zag ik mijn portfolio flink dalen. Dit was het moment waarop ik besloot om me echt te verdiepen in de marktdynamiek en te begrijpen hoe alles werkt.\n\nWat ik heb geleerd is dat crypto niet alleen een financieel spel is, maar ook een mentaal spel. Het is een tool voor persoonlijke groei en het ontwikkelen van discipline. 😊\n\nUiteindelijk heb ik al mijn spaargeld geïnvesteerd in crypto en andere assets, en nu deel ik graag mijn ervaringen met anderen. ✈️",
           "vertical_offset": 25,
@@ -414,9 +413,8 @@
       ]
     },
     "call_to_action_section": {
-      "id": 57,
+      "id": 94,
       "heading": "Meld je direct aan!",
-      "button_text": "ik do mee!",
       "description": "Aftrekbaar voor ondernemers, per maand opzegbaar. Na aanmelding ontvang je meteen de onboarding en de Crypto Alerts WhatsApp Community link.",
       "image_1": {
         "id": 18,
@@ -488,142 +486,151 @@
         "updatedAt": "2025-08-10T15:37:39.709Z",
         "publishedAt": "2025-08-10T15:37:39.710Z"
       },
-      "image_2": null
+      "image_2": null,
+      "button": {
+        "id": 91,
+        "label": "ik do mee!",
+        "link": "https://wwwthelimitlesswaynl.plugandpay.com/checkout/trade-invest-academy"
+      }
     },
     "about_company_section": {
-      "id": 56,
+      "id": 93,
       "heading": "Over The Limitless Way",
       "description": "###### he Limitless Way is een digitale community en platform voor iedereen die grip wil krijgen op zijn financiële toekomst met crypto.\n\nOpgericht door Tineke Zwart en Myrte Scheffer, bouwen we aan toegankelijke producten die kennis, strategie en overzicht combineren. Ons team bestaat inmiddels uit meer dan 15 experts uit binnen- en buitenland.\n\n**We bieden nu twee krachtige formats:**\n\n🔔 Crypto Alerts – dagelijkse updates, signalen en inzichten om mee te bewegen met de markt.\n\n📊 Crypto Tech & Teach – een leercommunity waarin je zelf leert analyseren en traden. Hierin werken 2 van onze beste traders iedere dag samen met de community!\n\nDaarnaast ontwikkelen we op dit moment een alles-in-één app waarin je je portfolio beheert, leert investeren en persoonlijke doelen stelt. Alles overzichtelijk op één plek — voor beginners én ervaren investeerders."
     },
     "faq_section": {
-      "id": 54,
+      "id": 91,
       "heading": "Veelgestelde vragen",
       "question_answers": [
         {
-          "id": 213,
+          "id": 361,
           "question": "Neem je ons mee in welke coins nu interessant zijn om in te investeren?",
           "answer": "We hebben veel waardevolle producten voor beginners, maar dit event is bedoeld voor mensen die al crypto bezitten. Je hoeft er echter niet per se veel over te weten om mee te kunnen doen."
         },
         {
-          "id": 214,
+          "id": 362,
           "question": "Is er ruimte om vragen te stellen?",
           "answer": "In sommige gevallen kan dat, maar in de meeste gevallen niet. Het wisselt ook per bedrijf. Daarom is het slim om dit even met je boekhouder te checken."
         },
         {
-          "id": 215,
+          "id": 363,
           "question": "Ben ik niet al te laat voor deze bull run?",
           "answer": "Je kunt je kaartje aan iemand anders geven als je echt niet kan, maar terug doen kan helaas niet. Dit mede in verband met het reserveren van de locatie op basis van het aantal mensen dat erbij is."
         },
         {
-          "id": 216,
+          "id": 364,
           "question": "Ik heb nog helemaal geen crypto en ik heb de cursus niet gedaan, is dit product interessant voor mij?",
           "answer": "Ja, dit product is interessant voor jou. Je kunt deze producten gebruiken om jezelf te informeren over de cryptomarkt en om jezelf te voorbereiden op de komende bull run."
         }
       ]
     },
     "disclaimer_section": {
-      "id": 50,
-      "button_text": "Ik wil geen Alert missen!",
-      "disclaimer": "Wat ik deel is geen financieel advies, maar een kijkje in mijn aanpak. Wat je hiermee doet, is jouw verantwoordelijkheid."
+      "id": 87,
+      "disclaimer": "Wat ik deel is geen financieel advies, maar een kijkje in mijn aanpak. Wat je hiermee doet, is jouw verantwoordelijkheid.",
+      "button": {
+        "id": 92,
+        "label": "Ik wil geen Alert missen!",
+        "link": null
+      }
     },
     "perks_comparison_section": {
-      "id": 50,
+      "id": 87,
       "heading": "Lorem ipsum dolor sit",
       "perks": [
         {
-          "id": 347,
+          "id": 606,
           "perk": "Markt updates",
           "for_crypto_alerts": {
-            "id": 693,
+            "id": 1211,
             "availablity": "Yes",
             "text": null
           },
           "for_crypto_tech_and_tech": {
-            "id": 700,
+            "id": 1218,
             "availablity": "Yes",
             "text": null
           }
         },
         {
-          "id": 348,
+          "id": 607,
           "perk": "Q&A",
           "for_crypto_alerts": {
-            "id": 694,
+            "id": 1212,
             "availablity": "Yes",
             "text": null
           },
           "for_crypto_tech_and_tech": {
-            "id": 701,
+            "id": 1219,
             "availablity": "Yes",
             "text": null
           }
         },
         {
-          "id": 349,
+          "id": 608,
           "perk": "Trade alerts",
           "for_crypto_alerts": {
-            "id": 695,
+            "id": 1213,
             "availablity": "Other",
             "text": "Regelmatig BTC + altcoins"
           },
           "for_crypto_tech_and_tech": {
-            "id": 702,
+            "id": 1220,
             "availablity": "Other",
             "text": "Af en toe BTC en ETH"
           }
         },
         {
-          "id": 350,
+          "id": 609,
           "perk": "Technische analyse op verzoek",
           "for_crypto_alerts": {
-            "id": 696,
+            "id": 1214,
             "availablity": "No",
             "text": null
           },
           "for_crypto_tech_and_tech": {
-            "id": 703,
+            "id": 1221,
             "availablity": "Yes",
             "text": null
           }
         },
         {
-          "id": 351,
+          "id": 610,
           "perk": "Masterclasses",
           "for_crypto_alerts": {
-            "id": 697,
+            "id": 1215,
             "availablity": "Yes",
             "text": null
           },
           "for_crypto_tech_and_tech": {
-            "id": 704,
+            "id": 1222,
             "availablity": "No",
             "text": null
           }
         },
         {
-          "id": 352,
+          "id": 611,
           "perk": "Trading lessen",
           "for_crypto_alerts": {
-            "id": 698,
+            "id": 1216,
             "availablity": "Other",
             "text": "Beginners"
           },
           "for_crypto_tech_and_tech": {
-            "id": 705,
+            "id": 1223,
             "availablity": "Other",
             "text": "Gevorderden"
           }
         },
         {
-          "id": 353,
+          "id": 612,
           "perk": "Community platform",
           "for_crypto_alerts": {
-            "id": 699,
+            "id": 1217,
             "availablity": "Other",
             "text": "Whatsapp"
           },
           "for_crypto_tech_and_tech": {
-            "id": 706,
+            "id": 1224,
             "availablity": "Other",
             "text": "Discord"
           }

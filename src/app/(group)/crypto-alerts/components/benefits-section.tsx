@@ -1,5 +1,6 @@
 "use client";
 
+import TLWButton from "@/components/TlwButton";
 import Markdown from "@/components/ui/markdown";
 import Link from "next/link";
 
@@ -10,7 +11,7 @@ type BenefitsSectionProps = {
 export default function BenefitsSection({
   benefitsSectionData,
 }: BenefitsSectionProps) {
-  const { heading, description, button_text, benefits } = benefitsSectionData;
+  const { heading, description, button, benefits } = benefitsSectionData;
 
   if (!benefitsSectionData) {
     return null;
@@ -20,15 +21,10 @@ export default function BenefitsSection({
     <div className="flex md:flex-row flex-col gap-16">
       <div className="flex-2/5 text-center md:text-left mb-5 flex flex-col gap-4">
         <h2 className="text-5xl">{heading}</h2>
-        <Markdown>{description.text}</Markdown>
-        <Link
-          href="https://wwwthelimitlesswaynl.plugandpay.com/checkout/trade-invest-academy"
-          target="_blank"
-        >
-          <button className="cursor-pointer bg-[#7F65CA] text-white px-8 py-3 rounded-xl hover:bg-[#5a4a9a] transition-colors duration-300 self-center md:self-start">
-            {button_text}
-          </button>
-        </Link>
+        <Markdown>{description}</Markdown>
+        <div>
+          <TLWButton button={button} />
+        </div>
       </div>
       <div className="flex-3/5 flex flex-col lg:flex-row gap-4">
         <div className="flex flex-col gap-4 lg:flex-1/2">

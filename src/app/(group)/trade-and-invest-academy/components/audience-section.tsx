@@ -1,5 +1,6 @@
 "use client";
 
+import TLWButton from "@/components/TlwButton";
 import Markdown from "@/components/ui/markdown";
 import Link from "next/link";
 
@@ -8,8 +9,7 @@ export default function AudienceSection({
 }: {
   audienceSectionData: any;
 }) {
-  const { audience_benefits, button_text, background_image } =
-    audienceSectionData;
+  const { audience_benefits, button, background_image } = audienceSectionData;
 
   if (!audienceSectionData) {
     return null;
@@ -61,15 +61,7 @@ export default function AudienceSection({
             </div>
           ))}
 
-          <Link
-            href="https://wwwthelimitlesswaynl.plugandpay.com/checkout/trade-invest-academy"
-            target="_blank"
-            className="cursor-pointer mt-3"
-          >
-            <button className="cursor-pointer bg-[#7F65CA] text-white px-8 py-3 rounded-xl hover:bg-[#5a4a9a] transition-colors duration-300">
-              {button_text}
-            </button>
-          </Link>
+          <TLWButton button={button} />
         </div>
       </div>
     </div>

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import Markdown from "@/components/ui/markdown";
+import TLWButton from "@/components/TlwButton";
 
 type HeroSectionProps = {
   heroSectionData: any;
@@ -25,20 +26,9 @@ export default function HeroSection({ heroSectionData }: HeroSectionProps) {
             {heading}
           </div>
           <div className="text-lg text-[#525252] leading-relaxed flex flex-col gap-4">
-            <Markdown>{description.text}</Markdown>
+            <Markdown>{description}</Markdown>
           </div>
-          {button && button.link && (
-            <Link href={button.link} target="_blank">
-              <button className="cursor-pointer bg-[#7F65CA] lg:mt-4 text-white px-8 py-3 rounded-xl hover:bg-[#5a4a9a] transition-colors duration-300">
-                {button.label}
-              </button>
-            </Link>
-          )}
-          {button && !button.link && (
-            <button className="cursor-pointer bg-[#7F65CA] lg:mt-4 text-white px-8 py-3 rounded-xl hover:bg-[#5a4a9a] transition-colors duration-300">
-              {button.label}
-            </button>
-          )}
+          <TLWButton button={button} />
         </div>
 
         {/* Phone Image */}
@@ -52,10 +42,10 @@ export default function HeroSection({ heroSectionData }: HeroSectionProps) {
           />
 
           {/* Floating Info Box */}
-          {popup_text?.text && (
+          {popup_text && (
             <div className="absolute top-[40%] lg:-translate-x-[10%] xl:-translate-x-[40%] animate-slide-in-right bg-[#E6C7FF] rounded-2xl pl-4 pr-3 py-2 shadow-lg flex gap-1">
               <div className="max-w-[160px] text-sm leading-[1.2] flex flex-col gap-1">
-                <Markdown>{popup_text.text}</Markdown>
+                <Markdown>{popup_text}</Markdown>
               </div>
               <Image
                 src="/team/tineke-zwart.jpeg"

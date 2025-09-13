@@ -1,3 +1,4 @@
+import TLWButton from "@/components/TlwButton";
 import Markdown from "@/components/ui/markdown";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,7 +8,7 @@ export default function CallToActionSection({
 }: {
   callToActionSectionData: any;
 }) {
-  const { heading, description, button_text, image_1, image_2 } =
+  const { heading, description, button, image_1, image_2 } =
     callToActionSectionData;
 
   if (!callToActionSectionData) {
@@ -24,14 +25,7 @@ export default function CallToActionSection({
           <div className="text-base lg:text-md mb-4 mt-10 max-w-[400px] xl:max-w-[500px] flex flex-col gap-4">
             <Markdown>{description}</Markdown>
           </div>
-          <Link
-            href="https://wwwthelimitlesswaynl.plugandpay.com/checkout/trade-invest-academy"
-            target="_blank"
-          >
-            <button className="cursor-pointer bg-[#7F65CA] text-white px-8 py-3 rounded-xl hover:bg-[#5a4a9a] transition-colors duration-300">
-              {button_text}
-            </button>
-          </Link>
+          <TLWButton button={button} />
         </div>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-2">
           {image_1 && (
