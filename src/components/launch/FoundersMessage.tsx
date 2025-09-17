@@ -36,7 +36,7 @@ export default function FoundersMessage() {
           <p>
             Myrte is fantastisch in het uitdenken van concepten (
             <span className="font-bold">de app was haar idee!</span>) en het
-            neerzetten van alle ‘grote lijnen’. Zij houdt zich dus vooral bezig
+            neerzetten van alle 'grote lijnen'. Zij houdt zich dus vooral bezig
             met: Waar willen we uiteindelijk naartoe en wat is daar nú voor
             nodig? Dit doet ze inmiddels al 15 jaar voor andere bedrijven, maar
             nu voor TLW. Leuk weetje: alle bedrijven waar ze dit voor heeft

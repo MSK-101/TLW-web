@@ -1,163 +1,222 @@
 "use client";
 
-import { useState } from "react";
+import TopSection1 from "@/components/launch/top-section-1";
+import TopSection2 from "@/components/launch/top-section-2";
 import Image from "next/image";
-import Link from "next/link";
+import { BitvavoLogo } from "@/components/logos";
+import SubscriptionCard from "@/components/launch/subscriptions-card";
+import subscriptions from "@/utils/subscriptions";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
-import { faEnvelope, faPaperPlane } from "@fortawesome/free-regular-svg-icons";
+import WishlistSection from "@/components/launch/wishlist-section";
+import DownloadAppSection from "@/components/launch/download-app-section";
+import TeamCarousel from "@/components/TeamCarousel";
+import FAQSection from "@/components/launch/FAQSection";
+import NewsletterSignup from "@/components/NewsletterSignup";
+import WaitlistModal from "@/components/WaitlistModal";
+import TestpanelModal from "@/components/TestpanelModal";
+import FeaturesSection from "@/components/launch/FeaturesSection";
+import FoundersMessage from "@/components/launch/FoundersMessage";
+import ReviewsSection from "@/components/launch/ReviewsSection";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export default function Home() {
-  const [isChecked, setIsChecked] = useState(false);
-
-  const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setIsChecked(e.target.checked);
-  };
-
-  const handleIconClick = () => {
-    if (isChecked) {
-      // Handle email submission logic here
-      console.log("Email submitted");
-    }
-  };
-
   return (
     <>
       <Header />
-      <main className="bg-[#282828] py-4 lg:py-8">
-        <section className="bg-[url(/cs_hero_bg.png)] bg-center bg-cover bg-no-repeat rounded-[32px] bg-[#F0F0F0] mx-4 lg:mx-8 pt-24 pb-8 lg:pb-12">
-          <div className="flex flex-col lg:flex-row items-center justify-center pb-8 lg:pb-12">
-            <div className="w-full lg:w-1/2 px-6 lg:pl-36 lg:pr-0">
-              <div className="text-[#282828] font-extrabold xl:leading-[120px] xl:tracking-wide text-5xl sm:text-6xl lg:text-7xl xl:text-[120px] lg:-mr-[250px] font-funnel-display">
-                Grip op je crypto, controle over je toekomst.
+      <div className="bg-[#282828] p-[24px]">
+        <div className="bg-[url(/cs_hero_bg.png)] bg-center bg-cover bg-no-repeat rounded-[32px] bg-[#F0F0F0] py-[24px] overflow-hidden">
+          <div className="flex flex-col mt-8">
+            <TopSection1 />
+            <TopSection2 />
+          </div>
+        </div>
+
+        <div>
+          <div className="flex flex-col justify-center items-center text-gray-50 text-center">
+            <h2 className="text-[32px] md:text-7xl font-bold mt-20 max-w-[1200px]">
+              Op 17 oktober 2025 lanceren wij dé alles-in-één app voor jouw
+              crypto
+            </h2>
+            <Image
+              src="/logos/pre-launch-logo.png"
+              width={350}
+              height={350}
+              alt="Pre-Launch Logo"
+              className="mt-4 w-[250px] md:w-[350px]"
+            />
+            <p className="text-sm md:text-xl max-w-[800px] mt-4">
+              Beheer veilig al je crypto vanuit 1 overzichtelijke en
+              gebruiksvriendelijke app en meld je alvast via deze website aan
+              voor de wachtlijst
+              <br />
+              <br />
+              Vraag jezelf nooit meer af hoeveel winst of verlies je eigenlijk
+              hebt per coin of in totaal. In onze app wordt alles automatisch
+              voor je berekend zodat je continu weet hoe je portfolio ervoor
+              staat.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-20 gap-x-6 md:gap-6 items-center justify-center my-20">
+            {/* Row-1 Col-1  */}
+            <div className="flex flex-col justify-center items-center gap-4 px-[40px] text-center">
+              <div className="bg-[#E6C7FF] rounded-full py-[12px] px-[36px] text-[#282828]">
+                Stap 1
+              </div>
+              <h2 className="text-[26px] md:text-[48px] text-gray-50 max-w-[568px] leading-[100%]">
+                Download de app gratis via de app store
+              </h2>
+              <p className="text-gray-50 max-w-[568px]">
+                Maak een gratis account aan en je kunt meteen aan de slag.
+              </p>
+              <div className="flex flex-wrap gap-3 justify-center mt-10">
+                <WaitlistModal buttonVariant="dark" />
+                {/* <TestpanelModal buttonVariant="dark" /> */}
               </div>
             </div>
-            <div className="w-full lg:w-1/2 flex justify-center mt-8 lg:mt-0">
+            {/* Row-1 Col-2  */}
+            <div className="bg-[#E6C7FF] rounded-3xl flex justify-center">
               <Image
-                src="/cs_hero_phone.png"
+                src="/phones/phone-2.png"
+                width={415}
+                height={734}
                 alt="Phone"
-                width={1000}
-                height={1000}
-                className="animate-slide-in-right"
+                className=""
+              />
+            </div>
+
+            {/* Row-2 Col-1  */}
+            <div className="flex flex-col justify-center items-center gap-4 px-[40px] text-center">
+              <div className="bg-[#E6C7FF] rounded-full py-[12px] px-[36px] text-[#282828]">
+                Stap 2
+              </div>
+              <h2 className="text-[26px] md:text-[48px] text-gray-50 max-w-[568px] leading-[100%]">
+                Koppel je crypto exchanges en/of hardware wallet
+              </h2>
+              <p className="text-gray-50 max-w-[568px]">
+                Binnen een paar minuten kun je op een veilige manier jouw crypto
+                exchanges en/of hardware wallet koppelen aan de app. Daarna kun
+                je je bestaande crypto beheren, maar ook nieuwe crypto kopen.
+              </p>
+              <div className="flex flex-wrap gap-x-3 md:gap-x-8 gap-y-3 md:gap-y-3 justify-center items-center mt-10">
+                <BitvavoLogo />
+                <Image
+                  src="/logos/coinbase.svg"
+                  width={106}
+                  height={24}
+                  alt="Logo Coinbase"
+                  className="h-[18px]"
+                />
+
+                <Image
+                  src="/logos/bybit-logo-white.svg"
+                  width={55}
+                  height={24}
+                  alt="Logo bybit"
+                  className="h-[20px]"
+                />
+
+                <Image
+                  src="/logos/mexc.svg"
+                  width={95}
+                  height={24}
+                  alt="Logo Mexc"
+                  className="h-[14px]"
+                />
+              </div>
+            </div>
+
+            {/* Row-2 Col-2  */}
+            <div className="bg-[#E6C7FF] rounded-3xl flex justify-center">
+              <Image
+                src="/phones/phone-2.png"
+                width={415}
+                height={734}
+                alt="Phone"
+                className=""
+              />
+            </div>
+
+            {/* Row-3 Col-1  */}
+            <div className="flex flex-col justify-center items-center gap-4 px-[40px] text-center">
+              <div className="bg-[#E6C7FF] rounded-full py-[12px] px-[36px] text-[#282828]">
+                Stap 3
+              </div>
+              <h2 className="text-[26px] md:text-[48px] text-gray-50 max-w-[568px] leading-[100%]">
+                Create a new reality
+              </h2>
+              <p className="text-gray-50 max-w-[568px]">
+                Ga aan de slag met jouw persoonlijke plan om financieel vrij te
+                worden en leer alles, in Jip & Janneke taal, over de
+                cryptomarkt. Van slim investeren voor de langere termijn tot
+                snel geld verdienen door te traden.
+              </p>
+              <div className="flex mt-10 items-center gap-2">
+                <Image
+                  src="/team/tineke-zwart-sm.png"
+                  width={68}
+                  height={68}
+                  alt="User Image"
+                  className="rounded-full"
+                />
+                <div className="text-gray-50 flex flex-col items-start">
+                  <p className="font-bold">Tineke Zwart</p>
+                  <p className="text-left max-w-[300px]">
+                    In de app zitten 3 uitgebreide cursussen die gemaakt zijn
+                    door cryptomiljonair Tineke Zwart
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Row-3 Col-2  */}
+            <div className="bg-[#E6C7FF] rounded-3xl flex justify-center">
+              <Image
+                src="/phones/phone-2.png"
+                width={415}
+                height={734}
+                alt="Phone"
+                className=""
               />
             </div>
           </div>
+        </div>
 
-          <div className="flex flex-col lg:flex-row lg:w-1/2 justify-self-center items-center text-[#525252] px-4 lg:px-0 lg:gap-20">
-            <p className="w-full lg:w-[60%] mb-5 lg:mb-0">
-              The Limitless Way is de crypto-interface die jou helpt bouwen aan
-              je financiële toekomst – met overzicht, educatie en volledige
-              controle. Koppel je eigen exchanges, stel doelen, maak spaardoelen
-              en volg e-learning en cursussen die passen bij jouw manier van
-              investeren. Jij beslist. Wij geven je de inzichten en tools om
-              slimme keuzes te maken – op jouw voorwaarden. Disclaimer: The
-              Limitless Way geeft geen financieel advies. Alle keuzes worden
-              volledig gemaakt en uitgevoerd door de gebruiker.
-            </p>
-            <div className="w-8 h-14 rounded-full border border-gray-600 relative text-[22px]">
-              <FontAwesomeIcon
-                icon={faArrowDown}
-                width={22}
-                className="absolute left-[50%] -translate-x-[50%] animate-custom-bounce top-4"
-              />
+        <div className="-mx-[24px] px-[24px] lg:px-[124px] py-[100px] rounded-3xl bg-gray-50 flex flex-col gap-[100px]">
+          <FeaturesSection />
+          <ReviewsSection />
+          <WishlistSection />
+          <FoundersMessage />
+
+          <div className="flex flex-col gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div className="flex flex-col mt-10">
+                <h2>Abonnementen</h2>
+                <p className="text-[20px] md:text-[40px] leading-none">
+                  Kies het abonnement dat bij je past en haal het maximale uit
+                  je crypto portfolio.
+                </p>
+              </div>
+              <SubscriptionCard {...subscriptions[0]} />
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+              <SubscriptionCard {...subscriptions[1]} />
+              <SubscriptionCard {...subscriptions[2]} />
+              <SubscriptionCard {...subscriptions[3]} />
             </div>
           </div>
-        </section>
 
-        <section className="py-20 text-white lg:py-40 px-4">
-          <p className="font-bold text-center text-4xl sm:text-6xl lg:text-8xl">
-            The Limitless Way
-          </p>
-          <p className="mt-6 font-bold text-lg lg:text-2xl text-center lg:w-[40rem] mx-auto px-4 lg:px-0">
-            Binnenkort lanceren wij onze nieuwe website en onze app is in
-            ontwikkeling.
-          </p>
-          <p className="mt-6 text-base lg:text-xl text-center lg:w-[40rem] mx-auto px-4 lg:px-0">
-            Save the date: op 17 oktober 2025 vindt de app lancering plaats in
-            Utrecht. Meer informatie volgt in juli 2025. Via de link onderaan de
-            pagina kun je aangeven of je op de hoogte gehouden wil worden.
-          </p>
-          <p className="mt-6 text-base lg:text-xl text-center lg:w-[40rem] mx-auto px-4 lg:px-0">
-            The Limitless Way is opgericht door co-founders Tineke Zwart en
-            Myrte Scheffer.
-          </p>
-        </section>
-        <section className="flex flex-col text-white lg:flex-row mx-4 lg:mx-8 gap-10 lg:gap-0">
-          <div className="w-full lg:w-1/2 flex flex-col justify-center items-center">
-            <h2 className="text-3xl lg:text-5xl mb-6 lg:mb-8">
-              Neem contact op
-            </h2>
-            <p className="text-center text-base lg:text-lg">
-              The Limitless Way BV <br />
-              KVK: 96470186 <br />
-              <br />
-              The Netherlands
-            </p>
-            <Link
-              href="mailto:info@thelimitlessway.nl"
-              className="flex gap-4 cursor-pointer mt-6 lg:mt-8 hover:text-[#7F65CA] items-center"
-            >
-              <FontAwesomeIcon icon={faEnvelope} width={20} />
-              <span className="text-base lg:text-lg">
-                info@thelimitlessway.nl
-              </span>
-            </Link>
+          <TeamCarousel />
+
+          <div className="lg:-mx-[56px]">
+            <FAQSection />
           </div>
 
-          <div className="w-full lg:w-1/2 flex justify-center">
-            <Image
-              src="/cs_seminar.png"
-              alt="Seminar"
-              width={800}
-              height={800}
-              className="w-full lg:w-3xl"
-            />
-          </div>
-        </section>
-
-        <section className="flex justify-center bg-white text-[#282828] rounded-2xl lg:rounded-[32px] mx-4 lg:mx-0 mt-16 lg:mt-20 py-20 lg:py-40">
-          <div className="w-full px-6 lg:px-0 lg:w-2/4 text-center">
-            <h1 className="text-4xl lg:text-7xl mb-6 lg:mb-8">
-              Op de hoogte blijven van de app & lanceringsevent op 17.10.2025?
-            </h1>
-            <div className="flex items-center relative mb-4">
-              <input
-                type="email"
-                placeholder="janjansen@mail.com"
-                className="w-full bg-[#F0F0F0] rounded-full py-3 lg:py-4 pl-6 pr-14 focus:outline-[#7F65CA]"
-              />
-              <FontAwesomeIcon
-                icon={faPaperPlane}
-                width={20}
-                className={`cursor-pointer absolute right-4 ${
-                  isChecked
-                    ? "text-[#7F65CA] hover:text-[#5a4a9a]"
-                    : "text-gray-400 cursor-not-allowed"
-                }`}
-                onClick={handleIconClick}
-              />
-            </div>
-            <div className="flex items-center justify-center">
-              <input
-                type="checkbox"
-                className="mr-2"
-                id="tnc_checkbox"
-                checked={isChecked}
-                onChange={handleCheckboxChange}
-              />
-              <label
-                className="text-gray-600 text-sm lg:text-base"
-                htmlFor="tnc_checkbox"
-              >
-                Ik ga akkoord met de algemene voorwaarden
-              </label>
-            </div>
-          </div>
-        </section>
-      </main>
+          <DownloadAppSection />
+          <NewsletterSignup />
+        </div>
+      </div>
       <Footer />
     </>
   );
