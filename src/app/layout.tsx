@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import { Funnel_Display, Funnel_Sans } from "next/font/google";
 import "./globals.css";
 import GTM from "@/components/GTM";
-import CookieConsentWrapper from "@/components/CookieConsentWrapper";
+import CookieBot from "react-cookiebot";
 import { NotificationProvider } from "@/contexts/NotificationContext";
 import NotificationContainer from "@/components/NotificationContainer";
+import Script from "next/script";
 
 const funnelDisplay = Funnel_Display({
   subsets: ["latin"],
@@ -35,13 +36,27 @@ export default function RootLayout({
       lang="dl"
       className={`${funnelDisplay.variable} ${funnelSans.variable} antialiased scroll-smooth`}
     >
+      <head>
+        <Script
+          id="Cookiebot"
+          src="https://consent.cookiebot.com/uc.js"
+          data-cbid="1f8dd403-2e24-492d-b605-a1ea8d0d2f42"
+          data-blockingmode="auto"
+          type="text/javascript"
+        ></Script>
+        <Script
+          id="CookieDeclaration"
+          src="https://consent.cookiebot.com/1f8dd403-2e24-492d-b605-a1ea8d0d2f42/cd.js"
+          type="text/javascript"
+          async
+        ></Script>
+      </head>
       <body>
         <GTM />
         <NotificationProvider>
           {children}
           <NotificationContainer />
         </NotificationProvider>
-        <CookieConsentWrapper />
       </body>
     </html>
   );
