@@ -4,26 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
 
-function CookieSettingsButton() {
-  const handleCookieSettings = () => {
-    if (typeof window !== "undefined") {
-      // Clear the cookie consent to show the banner again
-      document.cookie =
-        "tlw-cookie-consent=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-      window.location.reload();
-    }
-  };
-
-  return (
-    <button
-      onClick={handleCookieSettings}
-      className="hover:underline text-[#7A7A7A] hover:text-white transition-colors bg-transparent border-none cursor-pointer text-sm"
-    >
-      Cookie Settings
-    </button>
-  );
-}
-
 export default function Footer() {
   return (
     <footer className="pt-20 lg:pt-32 flex flex-col items-center px-6 lg:px-10 bg-[#282828]">
@@ -79,7 +59,6 @@ export default function Footer() {
           <Link href="/terms-of-service" className="hover:underline">
             Terms of Service
           </Link>
-          <CookieSettingsButton />
         </div>
       </div>
 
