@@ -18,7 +18,7 @@ const eventAgenda = [
     time: "15:00 – 15:45",
     title: "Workshopblok 1 (keuze uit 6 sessies, max. 50 p.p.)",
     description:
-      "Je geeft je voorkeur op nadat je je ticket hebt gekocht - er is per workshop ruimte voor maximaal 50 mensen - en je ontvangt in aanloop naar het event meer informatie. Alle workshops worden opgenomen, zodat je alles sowieso terug kunt kijken!",
+      "Koop je je ticket na 23 september dan wordt je willekeurig ingedeeld bij twee van de zes workshops. Alle workshops worden opgenomen, zodat je alles sowieso terug kunt kijken!",
   },
   {
     time: "15:45 – 16:00",
@@ -29,7 +29,7 @@ const eventAgenda = [
     time: "16:00 – 16:45",
     title: "Workshopblok 2 (keuze uit 6 sessies, max. 50 p.p.)",
     description:
-      "Je geeft je voorkeur op nadat je je ticket hebt gekocht - er is per workshop ruimte voor maximaal 50 mensen - en je ontvangt in aanloop naar het event meer informatie. Alle workshops worden opgenomen, zodat je alles sowieso terug kunt kijken!",
+      "Koop je je ticket na 23 september dan wordt je willekeurig ingedeeld bij twee van de zes workshops. Alle workshops worden opgenomen, zodat je alles sowieso terug kunt kijken!",
   },
   {
     time: "16:45 – 17:05",

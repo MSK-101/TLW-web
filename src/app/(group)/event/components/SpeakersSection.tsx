@@ -80,28 +80,25 @@ export default function SpeakersSection() {
           </div>
         </div>
       </section>
-
       <div className="flex flex-col items-center">
         <h1 className="text-gray-50 text-3xl lg:text-[64px] font-bold mt-24">
           Sprekers
         </h1>
         <div className="text-[#CCCCCC] md:w-[584px] text-center text-lg flex flex-col gap-3 mt-3">
           <p>
-            Op deze middag kun je naar meerdere inspirerende sprekers luisteren
-            en daarbij kun je deels zelf aangeven bij wiens presentatie je wilt
-            zijn.
-          </p>
-          <p>
-            Je kunt je voorkeur aangeven nadat je je ticket hebt gekocht en
-            dichter na het event toe ontvang je hierover per mail meer
+            Op deze middag kun je naar meerdere inspirerende sprekers luisteren.
+            Dichter na het event toe ontvang je hierover per mail meer
             informatie.
           </p>
           <p>
             Tineke Zwart begint de middag met een plenaire keynote presentatie
-            en daarna kun je 2 workshops van 45 minuten over specifieke
-            financiële onderwerpen volgen bij andere sprekers
+            en daarna kun je twee workshops (van de zes) van 45 minuten over
+            specifieke financiële onderwerpen volgen bij andere sprekers.
           </p>
-          <p>Hierbij kun je kiezen uit maar liefst 6 verschillende experts.</p>
+          <p>
+            Koop je je ticket na 23 september dan wordt je willekeurig
+            ingedeeld.
+          </p>
           <p>
             We sluiten af met de lancering van de app door Tineke Zwart en Myrte
             Scheffer.
