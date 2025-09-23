@@ -16,16 +16,15 @@ export default function AudienceSection({
 
   return (
     <div
-      className="bg-center bg-cover bg-no-repeat rounded-2xl lg:-mx-[84px] px-6 lg:px-[124px] py-12 lg:py-20"
+      className="bg-center bg-cover bg-no-repeat rounded-2xl -mx-6 lg:-mx-[84px] px-6 lg:px-[124px] py-12 lg:py-20"
       style={{
-        height: "891px",
         backgroundImage: `url(${background_image.url})`,
       }}
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 h-full items-end justify-center md:justify-between">
         {/* Left Side - Heading */}
         <div className="col-auto self-start text-center lg:text-left">
-          <h2 className="text-5xl xl:text-6xl font-bold leading-[90%] mb-8 text-[#282828]">
+          <h2 className="text-5xl xl:text-6xl font-bold leading-[90%] text-[#282828]">
             Voor wie is
             <br />
             <span className="text-[#7F65CA]">Trade & Invest Academy</span>{" "}
@@ -35,7 +34,7 @@ export default function AudienceSection({
         </div>
 
         {/* Right Side - Card */}
-        <div className="col-auto bg-white rounded-2xl px-6 lg:px-10 py-8 lg:py-12 shadow-l mx-auto max-w-[450px] flex flex-col gap-4">
+        <div className="col-auto bg-white/80 backdrop-blur-sm rounded-2xl px-6 lg:px-10 py-8 lg:py-12 shadow-l mx-auto max-w-[500px] flex flex-col gap-4">
           {audience_benefits.map((benefit: { id: number; text: string }) => (
             <div key={benefit.id} className="flex items-start gap-3">
               <svg
@@ -60,7 +59,9 @@ export default function AudienceSection({
             </div>
           ))}
 
-          <TLWButton button={button} />
+          <div className="flex justify-center mt-4">
+            <TLWButton button={button} />
+          </div>
         </div>
       </div>
     </div>
