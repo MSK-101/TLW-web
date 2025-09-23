@@ -44,12 +44,6 @@ export default function RootLayout({
           data-blockingmode="auto"
           type="text/javascript"
         ></Script>
-        <Script
-          id="CookieDeclaration"
-          src="https://consent.cookiebot.com/1f8dd403-2e24-492d-b605-a1ea8d0d2f42/cd.js"
-          type="text/javascript"
-          async
-        ></Script>
       </head>
       <body>
         <GTM />
