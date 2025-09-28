@@ -31,6 +31,8 @@ export default function SignIn() {
   const [code, setCode] = useState("");
   const [enableResetPassword, setEnableResetPassword] = useState(false);
   const [enableCode, setEnableCode] = useState(false);
+  const [enableMfaCode, setEnableMfaCode] = useState(false);
+  const [mfaCode, setMfaCode] = useState("");
 
   useEffect(() => {
     const checkUserLogin = async () => {
@@ -79,6 +81,12 @@ export default function SignIn() {
         nextStep.signInStep === "CONFIRM_SIGN_IN_WITH_NEW_PASSWORD_REQUIRED"
       ) {
         setEnableNewPassword(true);
+      }
+      if (nextStep.signInStep === "CONFIRM_SIGN_IN_WITH_TOTP_CODE") {
+        setEnableMfaCode(true);
+      }
+      if (nextStep.signInStep === "CONFIRM_SIGN_IN_WITH_EMAIL_CODE") {
+        setEnableMfaCode(true);
       }
     } catch (error: any) {
       showError(
@@ -167,6 +175,29 @@ export default function SignIn() {
     }
   };
 
+  const handleMfaCodeSubmit = async () => {
+    try {
+      setIsLoading(true);
+
+      const confirm = await confirmSignIn({
+        challengeResponse: mfaCode,
+      });
+      console.log("confirm", confirm);
+      showSuccess(
+        "Welcome Back!",
+        "Login successful. Redirecting to dashboard..."
+      );
+      router.push("/dashboard/profile");
+    } catch (error: any) {
+      showError(
+        "Code Verification Failed",
+        error.message || "Failed to verify your code. Please try again."
+      );
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   const handleCodeSubmit = async () => {
     try {
       const response = await confirmResetPassword({
@@ -226,9 +257,9 @@ export default function SignIn() {
             >
               Wachtwoord vergeten
             </Button>
-            <a href="#" className="text-[#6028AD] text-md font-normal">
+            {/* <a href="#" className="text-[#6028AD] text-md font-normal">
               E-mailadres vergeten
-            </a>
+            </a> */}
           </div>
           <Button
             onClick={handleSignIn}
@@ -378,6 +409,23 @@ export default function SignIn() {
             disabled={isLoading}
           />
           <Button onClick={handleCodeSubmit}>Save</Button>
+        </div>
+      </Modal>
+
+      <Modal
+        title="2FA Verification"
+        description="Enter the code"
+        open={enableMfaCode}
+        setOpen={setEnableMfaCode}
+      >
+        <div className="flex flex-col gap-3">
+          <Input
+            type="text"
+            placeholder="Code"
+            value={mfaCode}
+            onChange={(event) => setMfaCode(event.target.value)}
+          />
+          <Button onClick={handleMfaCodeSubmit}>Save</Button>
         </div>
       </Modal>
     </div>

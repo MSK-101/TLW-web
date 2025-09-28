@@ -16,6 +16,11 @@ const cognitoConfig = {
       loginWith: {
         email: true,
       },
+      multifactor: {
+        mode: 'REQUIRED',
+        totp: true,
+      },
+      accountRecovery: 'EMAIL_ONLY'
     }
   }
 };
