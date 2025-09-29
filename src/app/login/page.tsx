@@ -24,15 +24,16 @@ export default function SignIn() {
   const { showError, showSuccess } = useNotification();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [enableNewPassword, setEnableNewPassword] = useState(false);
-  const [newPassword, setNewPassword] = useState("");
+
   const [isLoading, setIsLoading] = useState(false);
 
-  const [code, setCode] = useState("");
-  const [enableResetPassword, setEnableResetPassword] = useState(false);
-  const [enableCode, setEnableCode] = useState(false);
-  const [enableMfaCode, setEnableMfaCode] = useState(false);
+  const [newPassword, setNewPassword] = useState("");
+  const [verificationCode, setVerificationCode] = useState("");
   const [mfaCode, setMfaCode] = useState("");
+
+  const [showNewPasswordModal, setShowNewPasswordModal] = useState(false);
+  const [showForgotPasswordModal, setShowForgotPasswordModal] = useState(false);
+  const [showMfaModal, setShowMfaModal] = useState(false);
 
   useEffect(() => {
     const checkUserLogin = async () => {
@@ -50,7 +51,7 @@ export default function SignIn() {
     checkUserLogin();
   }, [router]);
 
-  const handleSignIn = async () => {
+  const signInHandler = async () => {
     if (!email || !password) {
       showError(
         "Missing Information",
@@ -80,13 +81,13 @@ export default function SignIn() {
       if (
         nextStep.signInStep === "CONFIRM_SIGN_IN_WITH_NEW_PASSWORD_REQUIRED"
       ) {
-        setEnableNewPassword(true);
+        setShowNewPasswordModal(true);
       }
       if (nextStep.signInStep === "CONFIRM_SIGN_IN_WITH_TOTP_CODE") {
-        setEnableMfaCode(true);
+        setShowMfaModal(true);
       }
       if (nextStep.signInStep === "CONFIRM_SIGN_IN_WITH_EMAIL_CODE") {
-        setEnableMfaCode(true);
+        setShowMfaModal(true);
       }
     } catch (error: any) {
       showError(
@@ -98,7 +99,7 @@ export default function SignIn() {
     }
   };
 
-  const confirmPassword = async () => {
+  const newPasswordHandler = async () => {
     try {
       setIsLoading(true);
 
@@ -120,25 +121,22 @@ export default function SignIn() {
     }
   };
 
-  const resetViaEmail = async () => {
+  const resetPasswordHandler = async () => {
     if (!email) {
       showError("Email Required", "Please enter your email address first");
       return;
     }
 
     try {
-      const response = await resetPassword({
-        username: email,
-        options: {
-          deliveryMethod: "EMAIL",
-        },
-      });
+      const response = await resetPassword({ username: email });
       const { isPasswordReset, nextStep } = response;
-      showSuccess(
-        "Reset Code Sent",
-        "Please check your email for the password reset code."
-      );
-      setEnableCode(true);
+      if (nextStep.resetPasswordStep == "CONFIRM_RESET_PASSWORD_WITH_CODE") {
+        showSuccess(
+          "Reset Code Sent",
+          `Please check your ${nextStep.codeDeliveryDetails.deliveryMedium} for the password reset code.`
+        );
+        setShowForgotPasswordModal(true);
+      }
     } catch (error: any) {
       showError(
         "Reset Failed",
@@ -147,35 +145,28 @@ export default function SignIn() {
       );
     }
   };
-  const resetViaPhone = async () => {
-    if (!email) {
-      showError("Email Required", "Please enter your email address first");
-      return;
-    }
 
+  const confirmResetPasswordHandler = async () => {
     try {
-      const response = await resetPassword({
+      const response = await confirmResetPassword({
         username: email,
-        options: {
-          deliveryMethod: "SMS",
-        },
+        confirmationCode: verificationCode,
+        newPassword,
       });
-      const { isPasswordReset, nextStep } = response;
       showSuccess(
-        "Reset Code Sent",
-        "Please check your phone for the password reset code."
+        "Password Reset Complete",
+        "Your password has been successfully reset! Please log in with your new password."
       );
-      setEnableCode(true);
+      window.location.reload();
     } catch (error: any) {
       showError(
-        "Reset Failed",
-        error.message ||
-          "Failed to send reset code. Please check your phone number and try again."
+        "Password Reset Failed",
+        error.message || "Your code or Password is invalid! Please try again."
       );
     }
   };
 
-  const handleMfaCodeSubmit = async () => {
+  const mfaHandler = async () => {
     try {
       setIsLoading(true);
 
@@ -195,26 +186,6 @@ export default function SignIn() {
       );
     } finally {
       setIsLoading(false);
-    }
-  };
-
-  const handleCodeSubmit = async () => {
-    try {
-      const response = await confirmResetPassword({
-        username: email,
-        confirmationCode: code,
-        newPassword,
-      });
-      showSuccess(
-        "Password Reset Complete",
-        "Your password has been successfully reset! Please log in with your new password."
-      );
-      window.location.reload();
-    } catch (error: any) {
-      showError(
-        "Reset Failed",
-        error.message || "Invalid reset code or password. Please try again."
-      );
     }
   };
 
@@ -253,7 +224,7 @@ export default function SignIn() {
             <Button
               variant="link"
               className="text-[#6028AD] text-md font-normal"
-              onClick={() => setEnableResetPassword(true)}
+              onClick={resetPasswordHandler}
             >
               Wachtwoord vergeten
             </Button>
@@ -262,7 +233,7 @@ export default function SignIn() {
             </a> */}
           </div>
           <Button
-            onClick={handleSignIn}
+            onClick={signInHandler}
             disabled={isLoading}
             className="relative overflow-hidden bg-black text-white border-black hover:bg-black transition-all duration-300 ease-in-out transform hover:-translate-y-0.5 hover:shadow-2xl hover:shadow-black/30 active:translate-y-0 active:shadow-lg disabled:hover:translate-y-0 disabled:hover:shadow-none group"
           >
@@ -339,8 +310,8 @@ export default function SignIn() {
       <Modal
         title="Set new Password"
         description=""
-        open={enableNewPassword}
-        setOpen={setEnableNewPassword}
+        open={showNewPasswordModal}
+        setOpen={setShowNewPasswordModal}
       >
         <div className="flex flex-col gap-3">
           <div className="font-bold">New Password</div>
@@ -352,54 +323,22 @@ export default function SignIn() {
             onChange={(event) => setNewPassword(event.target.value)}
             disabled={isLoading}
           />
-          <Button onClick={confirmPassword}>Save</Button>
-        </div>
-      </Modal>
-
-      <Modal
-        title="Forgot Password?"
-        description=""
-        open={enableResetPassword}
-        setOpen={setEnableResetPassword}
-      >
-        <div className="flex flex-col gap-3">
-          <Input
-            type="email"
-            placeholder="E-mailadres"
-            className="bg-white"
-            value={email}
-            onChange={(event) => setEmail(event.target.value)}
-            disabled={isLoading}
-          />
-          <Button
-            variant={"secondary"}
-            className="text-base"
-            onClick={resetViaEmail}
-          >
-            Reset Password via Email
-          </Button>
-          <Button
-            variant={"secondary"}
-            className="text-base"
-            onClick={resetViaPhone}
-          >
-            Reset Password via Phone
-          </Button>
+          <Button onClick={newPasswordHandler}>Save</Button>
         </div>
       </Modal>
 
       <Modal
         title="Forgot Password?"
         description="Enter the code"
-        open={enableCode}
-        setOpen={setEnableCode}
+        open={showForgotPasswordModal}
+        setOpen={setShowForgotPasswordModal}
       >
         <div className="flex flex-col gap-3">
           <Input
             type="text"
             placeholder="Code"
-            value={code}
-            onChange={(event) => setCode(event.target.value)}
+            value={verificationCode}
+            onChange={(event) => setVerificationCode(event.target.value)}
           />
           <Input
             type="password"
@@ -408,15 +347,15 @@ export default function SignIn() {
             onChange={(event) => setNewPassword(event.target.value)}
             disabled={isLoading}
           />
-          <Button onClick={handleCodeSubmit}>Save</Button>
+          <Button onClick={confirmResetPasswordHandler}>Reset Password</Button>
         </div>
       </Modal>
 
       <Modal
         title="2FA Verification"
         description="Enter the code"
-        open={enableMfaCode}
-        setOpen={setEnableMfaCode}
+        open={showMfaModal}
+        setOpen={setShowMfaModal}
       >
         <div className="flex flex-col gap-3">
           <Input
@@ -425,7 +364,7 @@ export default function SignIn() {
             value={mfaCode}
             onChange={(event) => setMfaCode(event.target.value)}
           />
-          <Button onClick={handleMfaCodeSubmit}>Save</Button>
+          <Button onClick={mfaHandler}>Confirm</Button>
         </div>
       </Modal>
     </div>
