@@ -89,6 +89,9 @@ export default function SignIn() {
       if (nextStep.signInStep === "CONFIRM_SIGN_IN_WITH_EMAIL_CODE") {
         setShowMfaModal(true);
       }
+      if (nextStep.signInStep === "CONFIRM_SIGN_IN_WITH_SMS_CODE") {
+        setShowMfaModal(true);
+      }
     } catch (error: any) {
       showError(
         "Login Failed",
