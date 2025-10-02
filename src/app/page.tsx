@@ -27,7 +27,7 @@ export default function Home() {
       <div className="bg-[#282828] p-[24px]">
         <div className="bg-[url(/cs_hero_bg.png)] bg-center bg-cover bg-no-repeat rounded-[32px] bg-[#F0F0F0] py-[24px] overflow-hidden">
           <div className="flex flex-col mt-8">
-            <TopSection1 />
+            {/* <TopSection1 /> */}
             <TopSection2 />
           </div>
         </div>

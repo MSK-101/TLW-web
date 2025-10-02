@@ -243,3 +243,9 @@ body {
 .review-slider .swiper-slide.swiper-slide-active {
   z-index: 100 !important;
 }
+
+.bg-header {
+  -webkit-backdrop-filter: blur(7.5px);
+  backdrop-filter: blur(7.5px);
+  box-shadow: .75px 3px 10.51px -2.25px #5252520f,.09px .36px 1.27px -1.13px #52525214;
+}
