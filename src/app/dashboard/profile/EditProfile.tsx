@@ -1,12 +1,9 @@
-import Modal from "@/components/Modal";
 import { Button } from "@/components/ui/button";
-import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useNotification } from "@/contexts/NotificationContext";
 import { fetchAuthSession } from "aws-amplify/auth";
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 
 interface Address {
@@ -33,7 +30,7 @@ export default function EditProfile({
   disableEditMode: () => void;
 }) {
   const [data, setData] = useState(user);
-  const { showError, showSuccess } = useNotification();
+  const { showSuccess } = useNotification();
 
   const saveChangesHandler = async () => {
     const session = await fetchAuthSession();
