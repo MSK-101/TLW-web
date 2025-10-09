@@ -61,11 +61,13 @@ export default function ShowProfile({
       }
     );
     const data = await response.json();
-    const exchanges = data.data.map((exchange: any) => ({
-      id: exchange.id,
-      name: exchange.exchangeName,
-      logo: exchange.icon.Mobile,
-    }));
+    const exchanges = data.data
+      .filter((exchange: any) => exchange.isExchange)
+      .map((exchange: any) => ({
+        id: exchange.id,
+        name: exchange.exchangeName,
+        logo: exchange.icon.Mobile,
+      }));
 
     setExchanges(exchanges);
   };

@@ -87,8 +87,10 @@ export default function EditProfile({
                   id="firstname"
                   type="text"
                   placeholder="Voornaam"
-                  defaultValue={data.firstName}
-                  disabled
+                  value={data.firstName}
+                  onChange={(event) =>
+                    setData({ ...data, firstName: event.target.value })
+                  }
                 />
               </div>
               <div className="flex flex-col gap-2">
@@ -97,8 +99,10 @@ export default function EditProfile({
                   id="lastname"
                   type="text"
                   placeholder="Achternaam"
-                  defaultValue={data.lastName}
-                  disabled
+                  value={data.lastName}
+                  onChange={(event) =>
+                    setData({ ...data, lastName: event.target.value })
+                  }
                 />
               </div>
               <div className="flex flex-col gap-2">
