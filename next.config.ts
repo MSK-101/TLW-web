@@ -9,7 +9,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "tlw-cms-prd.s3.eu-west-1.amazonaws.com",
+        hostname: "*",
         port: "",
         pathname: "/**",
       },

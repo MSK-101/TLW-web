@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ShowProfile from "./ShowProfile";
 import EditProfile from "./EditProfile";
 import { Button } from "@/components/ui/button";
@@ -10,26 +10,59 @@ import {
   setUpTOTP,
   updateMFAPreference,
   verifyTOTPSetup,
+  fetchAuthSession,
 } from "aws-amplify/auth";
 
-export default function Profile() {
-  const data = {
-    firstname: "Henk",
-    lastname: "Peters",
-    email: "voornaam@mail.com",
-    phone: "+31 6 00 00 00 00",
-    address: {
-      line_1: "Straatnaam 00",
-      line_2: "0000 AA Plaatnaam",
-    },
-    bank: "NL00 BANK 0000 0000 00",
-  };
+interface Address {
+  street: string;
+  postalCode: string;
+  city: string;
+}
+interface UserData {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  address: Address;
+  bank?: string;
+}
 
-  const [user, setUser] = useState(data);
+export default function Profile() {
+  const [user, setUser] = useState<UserData | null>(null);
   const [editProfile, setEditProfile] = useState(false);
 
   const [mfaCode, setMfaCode] = useState("");
   const [authKey, setAuthKey] = useState("");
+
+  useEffect(() => {
+    fetchUser();
+  }, []);
+
+  const fetchUser = async () => {
+    const session = await fetchAuthSession();
+
+    const tlwUser = await fetch(
+      "https://api.thelimitlessway.nl/api/v1/user/user-profile",
+      {
+        headers: {
+          Authorization: `Bearer ${session.tokens?.idToken?.toString()}`,
+        },
+      }
+    );
+    const tlwUserJson = await tlwUser.json();
+    const { address, contact, firstName, lastName } = tlwUserJson.data;
+    setUser({
+      firstName: firstName,
+      lastName: lastName,
+      email: contact.email,
+      phone: contact.phone,
+      address: {
+        street: address.street,
+        postalCode: address.postalCode,
+        city: address.city,
+      },
+    });
+  };
 
   const enableEditMode = () => {
     setEditProfile(true);
@@ -68,11 +101,11 @@ export default function Profile() {
 
   return (
     <>
-      {!editProfile && (
+      {!editProfile && user && (
         <ShowProfile user={user} enableEditMode={enableEditMode} />
       )}
 
-      {editProfile && (
+      {editProfile && user && (
         <EditProfile
           user={user}
           setUser={setUser}
@@ -97,6 +130,8 @@ export default function Profile() {
       />
 
       <Button onClick={verfyTotpHandler}> Verify TOTP </Button> */}
+
+      {/* <Button onClick={makeRequest}> Make Request </Button> */}
     </>
   );
 }
